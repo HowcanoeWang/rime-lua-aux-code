@@ -99,7 +99,15 @@ local function aux_filter (input, env)
         -- 给待选项加上辅助码提示
         if code_list then
             local code_comment = table.concat(code_list, ',', 1, #code_list)
-            cand.comment = '(' .. code_comment .. ')'
+
+            if cand:get_dynamic_type() == "Shadow" then
+                local s_text= cand.text
+                local s_comment = cand.comment 
+                local org_cand = cand:get_genuine() 
+                cand = ShadowCandidate(org_cand, org_cand.type, s_text, org_cand.comment .. s_comment  .. '(' .. code_comment .. ')' )
+            else
+                cand.comment = '(' .. code_comment .. ')'
+            end
             -- print(cand.text .. ' -> code_list: ' .. code_comment)
         end
 
