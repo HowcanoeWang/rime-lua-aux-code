@@ -1,1 +1,1 @@
-require("aux_code")
+-- aux_filter = require("aux_code") -- use auto_loader
