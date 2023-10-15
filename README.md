@@ -42,8 +42,9 @@ RIME输入法辅助码音形分离插件
             - simplifier@emoji_suggestion
             - simplifier
             - uniquifier
-            - lua_filter@aux_filter
-   ```
+            # auto load aux_code.lua, name_space: ZRM_Aux-code_4.3(load dict ZRM_Aux-code_4.3.txt)
+            - lua_filter@*aux_code@ZRM_Aux-code_4.3
+      ```
    **一定要在 `simplifier` 后面，不然简体字的辅码提示会不显示**
 4. 重新配置rime输入法，不出意外的话即可使用
 
