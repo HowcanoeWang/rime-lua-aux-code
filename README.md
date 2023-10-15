@@ -31,9 +31,8 @@ RIME输入法辅助码音形分离插件
 
 ### 插件安装
 
-1. 在用户Rime配置文件夹内创建 `rime.lua` 文件(在上面的操作里应该已经创建好了)，然后将`require("aux_code")`添加到第一行
-2. 将本项目中的的 `lua/aux_code.lua`和`lua/ZRM_Aux-code_4.3.txt`(自然码辅码表) 复制到 `Rime配置文件夹/lua/` 文件夹中
-3. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，在 `filters` 最后面中添加 `lua_filter@aux_filter`，如下：
+1. 将本项目中的的 `lua/aux_code.lua`和`lua/ZRM_Aux-code_4.3.txt`(自然码辅码表) 复制到 `Rime配置文件夹/lua/` 文件夹中
+2. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，在 `filters` 最后面中添加 `lua_filter@*aux_code`，如下：
    ```yaml
     ...
     engine:
@@ -42,10 +41,10 @@ RIME输入法辅助码音形分离插件
             - simplifier@emoji_suggestion
             - simplifier
             - uniquifier
-            - lua_filter@aux_filter
+            - lua_filter@*aux_code
    ```
    **一定要在 `simplifier` 后面，不然简体字的辅码提示会不显示**
-4. 重新配置rime输入法，不出意外的话即可使用
+3. 重新配置rime输入法，不出意外的话即可使用
 
 ### 定制码表
 
