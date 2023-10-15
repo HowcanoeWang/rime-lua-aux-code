@@ -3,6 +3,7 @@ RIME输入法辅助码音形分离插件
 
 ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/rime_select.gif)
 
+
 ## 特点
 
 * 使用独立的文件来存储辅码，不用生成音形混合的词典。
@@ -30,7 +31,7 @@ RIME输入法辅助码音形分离插件
 
 ### 插件安装
 
-1. 在用户Rime配置文件夹内创建 `rime.lua` 文件(在上面的操作里应该已经创建好了)，然后将`aux_filter = require("aux_code")`添加到第一行
+1. 在用户Rime配置文件夹内创建 `rime.lua` 文件(在上面的操作里应该已经创建好了)，然后将`require("aux_code")`添加到第一行
 2. 将本项目中的的 `lua/aux_code.lua`和`lua/ZRM_Aux-code_4.3.txt`(自然码辅码表) 复制到 `Rime配置文件夹/lua/` 文件夹中
 3. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，在 `filters` 最后面中添加 `lua_filter@aux_filter`，如下：
    ```yaml
@@ -61,39 +62,16 @@ RIME输入法辅助码音形分离插件
 ...
 ```
 
-如果保存为了不同的txt文件名，如`my_aux_code.txt`，还需要修改一下`lua/aux_code.lua`源代码。使用任何文本编辑器打开代码文件，把第三行的    
+如果保存为了不同的txt文件名，如`my_aux_code.txt`，还需要修改一下`lua/aux_code.lua`源代码。使用任何文本编辑器打开代码文件，把第二行的    
 `local path = 'ZRM_Aux-code_4.3.txt'` 改成     
 `local path = 'my_aux_code.txt'` 即可。
+
+记得修改完后，重新配置Rime输入法
 
 ## TODO
 
 - [ ] 目前使用辅助码上屏的词组，似乎没有添加到用户词典里
-- [ ] 提供YAML配置文件进行更方便的配置
 
 ## 异常处理
 
-使用该插件，在Rime自动同步时会导致fcitx5崩溃。不确定是插件的问题还是lua插件的bug。如果出现，请在命令管理器中启动，并查看报错是否为下面的：
-
-```bash
-I2023-10-15 13:37:06.294940 instance.cpp:1179] Running autosave...
-=========================
-Fcitx 5.1.1 -- Get Signal No.: 11
-Date: try "date -d @1697344626" if you are using GNU date ***
-ProcessID: 19566
-/usr/bin/fcitx5(+0x1030c)[0x55a33591a30c]
-/usr/lib/libc.so.6(+0x3e710)[0x7f1114c5c710]
-/usr/lib/liblua.so.5.4(+0x19024)[0x7f111177d024]
-/usr/lib/liblua.so.5.4(lua_rawgeti+0x1b)[0x7f111176f5fb]
-/usr/lib/liblua.so.5.4(luaL_unref+0x34)[0x7f111178b7f4]
-/usr/lib/rime-plugins/librime-lua.so(_ZN6LuaObjD2Ev+0x19)[0x7f1110faca69]
-/usr/lib/rime-plugins/librime-lua.so(+0x98a87)[0x7f1110faca87]
-/usr/lib/rime-plugins/librime-lua.so(+0x2e997)[0x7f1110f42997]
-/usr/lib/rime-plugins/librime-lua.so(+0x88988)[0x7f1110f9c988]
-/usr/lib/rime-plugins/librime-lua.so(+0x38d4a)[0x7f1110f4cd4a]
-/usr/lib/rime-plugins/librime-lua.so(+0x89cfc)[0x7f1110f9dcfc]
-...
-```
-
-目前还没有找到解决方案，好在频率不高，一直挂着后台绷了就重启一下fcitx，笑（
-
-如果是其他报错，需要debug的话，可以考虑把 `lua/aux_code.lua` 里面的print注释取消，查看输出(会很多，不建议亲自搞)
+如果需要debug的话，请在命令管理器中启动，可以考虑把 `lua/aux_code.lua` 里面的print注释取消，查看输出(会很多，不建议亲自搞)

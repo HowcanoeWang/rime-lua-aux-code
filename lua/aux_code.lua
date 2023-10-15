@@ -1,55 +1,18 @@
 -- local the aux table
--- local path = 'ZRM_Aux-code_4.3_test.txt'
 local path = 'ZRM_Aux-code_4.3.txt'
 
-local script_path = debug.getinfo(1).source:match("@(.*)$")
-local script_directory = string.match(script_path, "(.*/)")
+local AuxFilter = {}
 
-local fileAbs = script_directory .. path
-local file, err, code = assert(io.open(fileAbs, 'r'))
+function AuxFilter.init(env)
+    print( "** AuxCode filter", env.name_space )
 
-aux_code = {}
+    env.aux_code = AuxFilter.read_aux_txt(path);
 
-if not file then
-    print("Error opening file", fileAbs, error)
-else
-	local content = file:read("*a")
-    for line in content:gmatch("[^\r\n]+") do  --去掉换行符
-        local key, value = line:match("([^=]+)=(.+)")  -- 分割=左右的变量
-        if key and value then
-            -- 这个字不存在，则创建这个字的辅码索引
-            if not aux_code[key] then
-                aux_code[key] = {}
-            end
-
-            table.insert(aux_code[key], value)
-        end
-    end
-end
-
-file:close()
-
--- 确认code能打印出来
--- for key, value in pairs(aux_code) do
---     print(key, table.concat(value, ','))
--- end
-
--- 判断字符串内是否有英文字母
-local function hasEnglishLetter(str)
-    return string.find(str, "%a") ~= nil
-end
--- print('啊阿oa；', hasEnglishLetter('啊阿oa；'))
--- print('啊阿吖；', hasEnglishLetter('啊阿吖；'))
-
-local function aux_filter (input, env)
-    local engine = env.engine
-    local context = engine.context
-    local input_code = engine.context.input
-
-    -- 持续选词上屏，保持分号存在
-    -- 这个需要上来就触发这个函数，不然会诡异的报错
-    local group = env.engine.context.select_notifier:connect(function(ctx)
-
+    ----------------------------
+    -- 持续选词上屏，保持分号存在 --
+    ----------------------------
+    env.notifier = env.engine.context.select_notifier:connect(
+    function(ctx)
         -- 含有辅助码分割符；
         if string.find(ctx.input, ';') then
             local preedit = ctx:get_preedit()
@@ -63,7 +26,7 @@ local function aux_filter (input, env)
 
             -- 所以当最终不含有任何字母时，就跳出分割模式并把；符号删掉 (使用pop_input)
             if ctx.is_composing then
-                if hasEnglishLetter(preedit.text) then
+                if AuxFilter.hasEnglishLetter(preedit.text) then
                     -- 給詞尾自動添加分隔符，上面的re.match會把分隔符刪掉
                     ctx.input = remove_aux_input .. ';'
                 else
@@ -75,6 +38,66 @@ local function aux_filter (input, env)
             end
         end
     end)
+end
+
+----------------
+-- 阅读辅码文件 --
+----------------
+function AuxFilter.read_aux_txt(txtpath)
+    print( "** AuxCode filter", 'read Aux code txt:', txtpath)
+
+    local script_path = debug.getinfo(1).source:match("@(.*)$")
+    local script_directory = string.match(script_path, "(.*/)")
+    
+    local fileAbs = script_directory .. txtpath
+    local file, err, code = assert(io.open(fileAbs, 'r'))
+    
+    local aux_code = {}
+    
+    if not file then
+        print("Error opening file", fileAbs, error)
+    else
+        local content = file:read("*a")
+        for line in content:gmatch("[^\r\n]+") do  --去掉换行符
+            local key, value = line:match("([^=]+)=(.+)")  -- 分割=左右的变量
+            if key and value then
+                -- 这个字不存在，则创建这个字的辅码索引
+                if not aux_code[key] then
+                    aux_code[key] = {}
+                end
+    
+                table.insert(aux_code[key], value)
+            end
+        end
+    end
+    
+    file:close()
+
+    -- 确认code能打印出来
+    -- for key, value in pairs(env.aux_code) do
+    --     print(key, table.concat(value, ','))
+    -- end
+
+    return aux_code
+end
+
+----------------------------
+-- 判断字符串内是否有英文字母 --
+----------------------------
+function AuxFilter.hasEnglishLetter(str)
+    return string.find(str, "%a") ~= nil
+end
+-- 测试是否能运行字母判断
+-- print('啊阿oa；', hasEnglishLetter('啊阿oa；'))
+-- print('啊阿吖；', hasEnglishLetter('啊阿吖；'))
+
+-----------------
+-- filter主函数 --
+-----------------
+function AuxFilter.func(input,env)
+    local engine = env.engine
+    local context = engine.context
+    local input_code = engine.context.input
 
     -- 分割部分正式开始
     local aux_str = ''
@@ -82,7 +105,7 @@ local function aux_filter (input, env)
     if string.find(input_code, ';') then
         -- 字符串中包含;分字字符
         local local_split = input_code:match(";([^,]+)")
-       
+        
         if local_split then
             aux_str = string.sub(local_split, 1, 2)
             -- print('re.match ' .. local_split)
@@ -94,7 +117,7 @@ local function aux_filter (input, env)
     -- 遍历每一个待选项
     for cand in input:iter() do
         -- 获取当前待选项的所有辅助码编号
-        local code_list = aux_code[cand.text]
+        local code_list = env.aux_code[cand.text]
 
         -- 给待选项加上辅助码提示
         if code_list then
@@ -110,12 +133,6 @@ local function aux_filter (input, env)
             end
             -- print(cand.text .. ' -> code_list: ' .. code_comment)
         end
-
-        -- 使用繁简转换的filters/simplifier会导致备注无法修改
-        -- if cand:get_dynamic_type() == 'Shadow' then
-        --     cand.inhert_comment = '<ab>'
-        --     print(cand.text, cand.comment, cand.inhert_comment)
-        -- end
 
         -- 过滤辅助码
         if aux_str and code_list and #aux_str>0 then
@@ -138,4 +155,8 @@ local function aux_filter (input, env)
     end
 end
 
-return aux_filter
+function AuxFilter.fini(env)
+    -- env.notifier:disconnect()
+end
+
+aux_filter = AuxFilter
