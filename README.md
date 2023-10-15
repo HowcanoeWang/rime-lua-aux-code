@@ -1,15 +1,15 @@
 # rime-lua-aux-code
 RIME输入法辅助码音形分离插件
 
-![](static/rime_select.gif)
+![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/rime_select.gif)
 
 ## 特点
 
 * 使用独立的文件来存储辅码，不用生成音形混合的词典。
 * 在输入的末尾使用`;`开启辅码模式，候选上屏后(空格或数字选择)可以连续输入，插件会自动清除已上屏文字的辅码。
-  ![](static/aux_split.png)
+  ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
 * 在候选单中直接提示辅助码。
-  ![](static/aux_notice.png)
+  ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_notice.png)
 * 此方案适用于使用辅助码排序候选项，而非音形结合的四键单字输入模式(请用单字字库来满足需求)
 
 ## 背景
@@ -64,6 +64,11 @@ RIME输入法辅助码音形分离插件
 如果保存为了不同的txt文件名，如`my_aux_code.txt`，还需要修改一下`lua/aux_code.lua`源代码。使用任何文本编辑器打开代码文件，把第三行的    
 `local path = 'ZRM_Aux-code_4.3.txt'` 改成     
 `local path = 'my_aux_code.txt'` 即可。
+
+## TODO
+
+- [ ] 目前使用辅助码上屏的词组，似乎没有添加到用户词典里
+- [ ] 提供YAML配置文件进行更方便的配置
 
 ## 异常处理
 
