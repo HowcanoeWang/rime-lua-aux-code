@@ -12,25 +12,35 @@ function AuxFilter.init(env)
     function(ctx)
         -- 含有辅助码分割符才處理，；
         if not string.find(ctx.input, ';') then return end
-        local preedit = ctx:get_preedit()
-        -- print('select_notifier', ctx.input, ctx.caret_pos, preedit.text, preedit.sel_start, preedit.sel_end)
-        local remove_aux_input = ctx.input:match("([^,]+);")
 
+        local preedit = ctx:get_preedit()
+        local remove_aux_input = ctx.input:match("([^,]+);")
+        local reedit_text_front = preedit.text:match("([^,]+);")
+        
         -- ctx.text随着选字的进行，oaoaoa； 有如下的输出：
+        -- ----有辅助码----
+        -- >>> 啊 oaoa；au
+        -- >>> 啊吖 oa；au
+        -- >>> 啊吖啊；au
+        -- ----无辅助码----
         -- >>> 啊 oaoa；
         -- >>> 啊吖 oa；
         -- >>> 啊吖啊；
-
-        -- 所以当最终不含有任何字母时，就跳出分割模式并把；符号删掉 (使用pop_input)
-        if AuxFilter.hasEnglishLetter(preedit.text) then
-           -- 給詞尾自動添加分隔符，上面的re.match會把分隔符刪掉
-           ctx.input = remove_aux_input .. ';'
+        -- 这边把已经上屏的字段(preedit:text)进行分割；
+        -- 如果已经全部选完了，分割后的结果就是nil，否则都是 吖卡a 这种字符串
+        -- 验证方式：
+        -- print('select_notifier', ctx.input, remove_aux_input, preedit.text, reedit_text_front)
+        
+        -- 当最终不含有任何字母时(候选)，就跳出分割模式，并把；符号删掉
+        if reedit_text_front ~= nil then
+            -- 給詞尾自動添加分隔符，上面的re.match會把分隔符刪掉
+            ctx.input = remove_aux_input .. ';'
         else
-           -- 把；符号删掉 (使用pop_input)
-           ctx:pop_input(1)
-           -- 剩下的直接上屏
-           ctx:commit()
-        end        
+            -- 把；符号删掉
+            ctx.input = remove_aux_input
+            -- 剩下的直接上屏
+            ctx:commit()
+        end 
     end)
 end
 
@@ -59,17 +69,6 @@ function AuxFilter.read_aux_txt(txtpath)
 
     return aux_code
 end
-
-----------------------------
--- 判断字符串内是否有英文字母 --
-----------------------------
-function AuxFilter.hasEnglishLetter(str)
-    return string.find(str, "%a") ~= nil
-end
--- 测试是否能运行字母判断
--- print('啊阿oa；', hasEnglishLetter('啊阿oa；'))
--- print('啊阿吖；', hasEnglishLetter('啊阿吖；'))
-
 
 -----------------------------------------------
 -- 计算词语整体的辅助码
@@ -107,7 +106,7 @@ function AuxFilter.match(full_aux, aux_str)
         return false
     end
     for i = 1, #aux_str do
-        if not full_aux[i]:find(aux_str:sub(i,i)) then
+        if i and not full_aux[i]:find(aux_str:sub(i,i)) then
             return false
         end
     end

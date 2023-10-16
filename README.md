@@ -30,7 +30,10 @@ RIME输入法辅助码音形分离插件
 
 ### 环境依赖
 
-首先需要测试rime输入法是否能正常运行Lua插件，比较简单的测试方法是，按照[Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki)安装并测试能否正常运行，即输入date可以成功在候选中找到当前的日期。
+已知Linux和mac的Rime，lua插件是自动开启的，不需要该测试。但如果你直接按照下面的插件安装过程后，发现不起作用，请使用下面的方法来验证lua插件的可用性：
+
+> 按照[Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki)测试能否正常使用date提示，即输入date可以成功在候选中找到当前的日期。
+
 
 ### 插件安装
 
@@ -53,7 +56,7 @@ RIME输入法辅助码音形分离插件
     ```yaml
     speller:
       alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA.,;  
-      #最后的;号，英文字符。前面的根据自己的配置自行修改
+      #最后的;号为英文半角字符，而不是中文全角。前面的根据自己的配置自行修改
     ```
    
 3. 重新配置rime输入法，不出意外的话即可使用
@@ -83,7 +86,7 @@ RIME输入法辅助码音形分离插件
 ## TODO
 
 - [ ] 目前使用辅助码上屏的词组，似乎没有添加到用户词典里
-- [ ] 偶发`；`没有被移除的问题
+- [x] 偶发`；`没有被移除
 
 ## 异常处理
 
