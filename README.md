@@ -73,7 +73,7 @@ RIME输入法辅助码音形分离插件
 ...
 ```
 
-如果保存为了不同的txt文件名，如`my_aux_code.txt`，只需要修改配置yaml文件中的`- lua_filter@*aux_code@ZRM_Aux-code_4.3`
+如果保存为了不同的txt文件名，如`my_aux_code.txt`，只需要修改配置yaml文件中的`- lua_filter@*aux_code@ZRM_Aux-code_4.3`   
 `- lua_filter@*aux_code@ZRM_Aux-code_4.3` 改成     
 `- lua_filter@*aux_code@my_aux_code` 即可。(不需要`.txt`后缀)
 
