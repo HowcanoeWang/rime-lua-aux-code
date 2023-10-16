@@ -30,10 +30,7 @@ RIME输入法辅助码音形分离插件
 
 ### 环境依赖
 
-已知Linux和mac的Rime，lua插件是自动开启的，不需要该测试。但如果你直接按照下面的插件安装过程后，发现不起作用，请使用下面的方法来验证lua插件的可用性：
-
-> 按照[Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki)测试能否正常使用date提示，即输入date可以成功在候选中找到当前的日期。
-
+已知Linux和mac的Rime，lua插件是自动开启的。但如果你执行完**插件安装**后发现不起作用，请按照[Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki)测试能否输入date在候选中出现当前的日期(如2023年10月16日，不一定在首页需要往后翻翻)。如果能出现日期候选项且此插件不起作用，请开issue反馈。
 
 ### 插件安装
 
@@ -59,7 +56,7 @@ RIME输入法辅助码音形分离插件
       #最后的;号为英文半角字符，而不是中文全角。前面的根据自己的配置自行修改
     ```
    
-3. 重新配置rime输入法，不出意外的话即可使用
+3. 重新配置rime输入法，不出意外的话即可使用。
 
 ### 定制码表
 
@@ -76,12 +73,12 @@ RIME输入法辅助码音形分离插件
 ...
 ```
 
-如果保存为了不同的txt文件名，如`my_aux_code.txt`，只需要修改配置yaml文件中的    
+保存为不同的txt文件名，如`my_aux_code.txt`，然后需要修改配置`*.schema.yaml`文件中对应的部分，将     
 `- lua_filter@*aux_code@ZRM_Aux-code_4.3` 改成     
 `- lua_filter@*aux_code@my_aux_code` 即可。    
 (不需要`.txt`后缀)
 
-修改完后，重新配置Rime输入法
+修改完后，重新配置Rime输入法即可生效。
 
 ## TODO
 
