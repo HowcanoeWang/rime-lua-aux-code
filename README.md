@@ -35,7 +35,7 @@ RIME输入法辅助码音形分离插件
 ### 插件安装
 
 1. 将本项目中的的 `lua/aux_code.lua`和`lua/ZRM_Aux-code_4.3.txt`(自然码辅码表) 复制到 `Rime配置文件夹/lua/` 文件夹中
-2. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，在 `filters` 最后面中添加 `lua_filter@*aux_code@ZRM_Aux-code_4.3`，如下：
+2. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，在 `filters` 最后面中添加 `lua_filter@*aux_code@ZRM_Aux-code_4.3`；以及在 `spellers`的 `alphabet` 中允许 `;` 符号上屏，具体如下：
    ```yaml
     ...
     engine:
@@ -45,6 +45,10 @@ RIME输入法辅助码音形分离插件
             - simplifier
             - uniquifier
             - lua_filter@*aux_code@ZRM_Aux-code_4.3
+    ...
+    speller:
+      alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA.,;  
+      #最后的;号，英文字符。前面的根据自己的配置自行修改
    ```
    **一定要在 `simplifier` 后面，不然简体字的辅码提示会不显示**
 3. 重新配置rime输入法，不出意外的话即可使用
