@@ -198,4 +198,4 @@ function AuxFilter.fini(env)
     -- env.notifier:disconnect()
 end
 
-aux_filter = AuxFilter
+return AuxFilter
