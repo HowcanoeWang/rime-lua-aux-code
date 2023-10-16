@@ -91,6 +91,49 @@ end
 -- print('啊阿oa；', hasEnglishLetter('啊阿oa；'))
 -- print('啊阿吖；', hasEnglishLetter('啊阿吖；'))
 
+-----------------------------------------------
+-- 计算词语整体的辅助码
+-- 目前定义为
+--   fullAux(word)[k] = { code[k] | code in aux_code(char) for char in word }
+-----------------------------------------------
+function AuxFilter.fullAux(env, word)
+    local full_aux = {}
+    for i, cp in utf8.codes(word) do
+        local c = utf8.char(cp)
+        local cl = env.aux_code[c]
+        if cl then
+            for j, code in ipairs(cl) do
+                for k = 1, #code do
+                    if not full_aux[k] then
+                        full_aux[k] = ""
+                    end
+                    if not string.find(full_aux[k], code:sub(k, k)) then
+                        full_aux[k] = full_aux[k] .. code:sub(k, k)
+                    end
+                end
+            end
+        end
+    end
+    return full_aux
+end
+
+
+-----------------------------------------------
+-- 判断 aux_str 是否匹配 full_aux，目前定义为
+--   full_aux not empty && all(aux_str[k] in full_aux[k])
+-----------------------------------------------
+function AuxFilter.match(full_aux, aux_str)
+    if #full_aux == 0 then
+        return false
+    end
+    for i = 1, #aux_str do
+        if not full_aux[i]:find(aux_str:sub(i,i)) then
+            return false
+        end
+    end
+    return true
+end
+
 -----------------
 -- filter主函数 --
 -----------------
@@ -116,35 +159,31 @@ function AuxFilter.func(input,env)
 
     -- 遍历每一个待选项
     for cand in input:iter() do
-        -- 获取当前待选项的所有辅助码编号
-        local code_list = env.aux_code[cand.text]
+        local code_list = env.aux_code[cand.text]  -- 仅单字非 nil
+        local current_aux = AuxFilter.fullAux(env, cand.text)
+
+        -- 处理 simplifier
+        if cand:get_dynamic_type() == "Shadow" then
+            local org_cand = cand:get_genuine()
+            cand = ShadowCandidate(org_cand, org_cand.type, cand.text, cand.comment)
+        end
 
         -- 给待选项加上辅助码提示
         if code_list then
             local code_comment = table.concat(code_list, ',', 1, #code_list)
-
             if cand:get_dynamic_type() == "Shadow" then
                 local s_text= cand.text
-                local s_comment = cand.comment 
-                local org_cand = cand:get_genuine() 
+                local s_comment = cand.comment
+                local org_cand = cand:get_genuine()
                 cand = ShadowCandidate(org_cand, org_cand.type, s_text, org_cand.comment .. s_comment  .. '(' .. code_comment .. ')' )
             else
                 cand.comment = '(' .. code_comment .. ')'
             end
-            -- print(cand.text .. ' -> code_list: ' .. code_comment)
         end
 
         -- 过滤辅助码
-        if aux_str and code_list and #aux_str>0 then
-            -- print('input aux code ->')
-
-            for i, cl in ipairs(code_list) do
-                -- print(cl, i, aux_str)
-                if cl == aux_str then
-                    -- print('matched!')
-                    yield(cand)
-                end
-            end
+        if aux_str and #aux_str > 0 and current_aux and (cand.type == 'user_phrase' or cand.type == 'phrase') and AuxFilter.match(current_aux, aux_str) then
+            yield(cand)
         else
             table.insert(l, cand)
         end
