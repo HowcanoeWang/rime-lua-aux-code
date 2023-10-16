@@ -1,6 +1,3 @@
--- local the aux table
-local DEFAULT_FILE = 'ZRM_Aux-code_4.3.txt'
-local user_path = rime_api.get_user_data_dir() .. "/lua/"
 local AuxFilter = {}
 
 function AuxFilter.init(env)
@@ -42,10 +39,13 @@ end
 ----------------
 function AuxFilter.read_aux_txt(txtpath)
     print( "** AuxCode filter", 'read Aux code txt:', txtpath)
-   
+
+    local DEFAULT_FILE = 'ZRM_Aux-code_4.3.txt'
+    local user_path = rime_api.get_user_data_dir() .. "/lua/"
     local fileAbs = user_path .. txtpath .. ".txt"  
     local aux_code = {}
-    for line in (io.open(fileAbs) or io.open(user_path .. )):lines() do
+    for line in (io.open(fileAbs) or io.open(user_path .. DEFAULT_FILE)):lines() do
+        line = line:match("[^\r\n]+") --去掉换行符，不然value是带着\n的
         local key, value = line:match("([^=]+)=(.+)")  -- 分割=左右的变量
         if key and value then
             aux_code[key] = aux_code[key] or {}
@@ -69,6 +69,7 @@ end
 -- 测试是否能运行字母判断
 -- print('啊阿oa；', hasEnglishLetter('啊阿oa；'))
 -- print('啊阿吖；', hasEnglishLetter('啊阿吖；'))
+
 
 -----------------------------------------------
 -- 计算词语整体的辅助码

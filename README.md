@@ -11,6 +11,9 @@ RIME输入法辅助码音形分离插件
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
 * 在候选单中直接提示辅助码。
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_notice.png)
+* 支持词语级筛选(非首字筛选)    
+  ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)   
+  如「白日依山尽」仍然可以匹配到「i」（尽的辅码）
 * 此方案适用于使用辅助码排序候选项，而非音形结合的四键单字输入模式(请用单字字库来满足需求)
 
 ## 背景
@@ -32,7 +35,7 @@ RIME输入法辅助码音形分离插件
 ### 插件安装
 
 1. 将本项目中的的 `lua/aux_code.lua`和`lua/ZRM_Aux-code_4.3.txt`(自然码辅码表) 复制到 `Rime配置文件夹/lua/` 文件夹中
-2. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，在 `filters` 最后面中添加 `lua_filter@*aux_code`，如下：
+2. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，在 `filters` 最后面中添加 `lua_filter@*aux_code@ZRM_Aux-code_4.3`，如下：
    ```yaml
     ...
     engine:
@@ -41,14 +44,14 @@ RIME输入法辅助码音形分离插件
             - simplifier@emoji_suggestion
             - simplifier
             - uniquifier
-            - lua_filter@*aux_code
+            - lua_filter@*aux_code@ZRM_Aux-code_4.3
    ```
    **一定要在 `simplifier` 后面，不然简体字的辅码提示会不显示**
 3. 重新配置rime输入法，不出意外的话即可使用
 
 ### 定制码表
 
-上面的安装过程中，使用的是这个手心拼音的自然码表：[copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)。源文件是GB2324编码，Linux下会乱码所以我项目里的txt文件已经转换为UTF-8编码了，可以直接使用。
+默认使用的是这个自然码码表：[copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)。源文件是GB2324编码，Linux下会乱码所以我项目里的txt文件已经转换为UTF-8编码了，可以直接使用。
 
 如果需要制作自己的码表，只要保证文件为UTF-8编码，然后文件的每一行都是一个字的辅码即可，中间用 `=` 号隔开。对于同一个字有不同的编码方案，需要另开一行，如：
 
@@ -61,16 +64,23 @@ RIME输入法辅助码音形分离插件
 ...
 ```
 
-如果保存为了不同的txt文件名，如`my_aux_code.txt`，还需要修改一下`lua/aux_code.lua`源代码。使用任何文本编辑器打开代码文件，把第二行的    
-`local path = 'ZRM_Aux-code_4.3.txt'` 改成     
-`local path = 'my_aux_code.txt'` 即可。
+如果保存为了不同的txt文件名，如`my_aux_code.txt`，只需要修改配置yaml文件中的`- lua_filter@*aux_code@ZRM_Aux-code_4.3`
+`- lua_filter@*aux_code@ZRM_Aux-code_4.3` 改成     
+`- lua_filter@*aux_code@my_aux_code` 即可。(不需要`.txt`后缀)
 
-记得修改完后，重新配置Rime输入法
+修改完后，重新配置Rime输入法
 
 ## TODO
 
 - [ ] 目前使用辅助码上屏的词组，似乎没有添加到用户词典里
+- [ ] 偶发`；`没有被移除的问题
 
 ## 异常处理
 
 如果需要debug的话，请在命令管理器中启动，可以考虑把 `lua/aux_code.lua` 里面的print注释取消，查看输出(会很多，不建议亲自搞)
+
+## 致谢
+
+* [@copperay](https://github.com/copperay) 维护的手心输入法自然码码表 [copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)
+* [@ksqsf](https://github.com/ksqsf) 贡献的词语级筛选功能
+* [@shewer](https://github.com/shewer) 优化的代码以及辅码文件配置
