@@ -1,42 +1,39 @@
 -- local the aux table
-local path = 'ZRM_Aux-code_4.3.txt'
-
+local DEFAULT_FILE = 'ZRM_Aux-code_4.3.txt'
+local user_path = rime_api.get_user_data_dir() .. "/lua/"
 local AuxFilter = {}
 
 function AuxFilter.init(env)
     print( "** AuxCode filter", env.name_space )
 
-    env.aux_code = AuxFilter.read_aux_txt(path);
+    env.aux_code = AuxFilter.read_aux_txt(env.name_space);
 
     ----------------------------
     -- 持续选词上屏，保持分号存在 --
     ----------------------------
     env.notifier = env.engine.context.select_notifier:connect(
     function(ctx)
-        -- 含有辅助码分割符；
-        if string.find(ctx.input, ';') then
-            local preedit = ctx:get_preedit()
-            -- print('select_notifier', ctx.input, ctx.caret_pos, preedit.text, preedit.sel_start, preedit.sel_end)
-            local remove_aux_input = ctx.input:match("([^,]+);")
+        -- 含有辅助码分割符才處理，；
+        if not string.find(ctx.input, ';') then return end
+        local preedit = ctx:get_preedit()
+        -- print('select_notifier', ctx.input, ctx.caret_pos, preedit.text, preedit.sel_start, preedit.sel_end)
+        local remove_aux_input = ctx.input:match("([^,]+);")
 
-            -- ctx.text随着选字的进行，oaoaoa； 有如下的输出：
-            -- >>> 啊 oaoa；
-            -- >>> 啊吖 oa；
-            -- >>> 啊吖啊；
+        -- ctx.text随着选字的进行，oaoaoa； 有如下的输出：
+        -- >>> 啊 oaoa；
+        -- >>> 啊吖 oa；
+        -- >>> 啊吖啊；
 
-            -- 所以当最终不含有任何字母时，就跳出分割模式并把；符号删掉 (使用pop_input)
-            if ctx.is_composing then
-                if AuxFilter.hasEnglishLetter(preedit.text) then
-                    -- 給詞尾自動添加分隔符，上面的re.match會把分隔符刪掉
-                    ctx.input = remove_aux_input .. ';'
-                else
-                    -- 把；符号删掉 (使用pop_input)
-                    ctx:pop_input(1)
-                    -- 剩下的直接上屏
-                    ctx:commit()
-                end
-            end
-        end
+        -- 所以当最终不含有任何字母时，就跳出分割模式并把；符号删掉 (使用pop_input)
+        if AuxFilter.hasEnglishLetter(preedit.text) then
+           -- 給詞尾自動添加分隔符，上面的re.match會把分隔符刪掉
+           ctx.input = remove_aux_input .. ';'
+        else
+           -- 把；符号删掉 (使用pop_input)
+           ctx:pop_input(1)
+           -- 剩下的直接上屏
+           ctx:commit()
+        end        
     end)
 end
 
@@ -45,34 +42,16 @@ end
 ----------------
 function AuxFilter.read_aux_txt(txtpath)
     print( "** AuxCode filter", 'read Aux code txt:', txtpath)
-
-    local script_path = debug.getinfo(1).source:match("@(.*)$")
-    local script_directory = string.match(script_path, "(.*/)")
-    
-    local fileAbs = script_directory .. txtpath
-    local file, err, code = assert(io.open(fileAbs, 'r'))
-    
+   
+    local fileAbs = user_path .. txtpath .. ".txt"  
     local aux_code = {}
-    
-    if not file then
-        print("Error opening file", fileAbs, error)
-    else
-        local content = file:read("*a")
-        for line in content:gmatch("[^\r\n]+") do  --去掉换行符
-            local key, value = line:match("([^=]+)=(.+)")  -- 分割=左右的变量
-            if key and value then
-                -- 这个字不存在，则创建这个字的辅码索引
-                if not aux_code[key] then
-                    aux_code[key] = {}
-                end
-    
-                table.insert(aux_code[key], value)
-            end
+    for line in (io.open(fileAbs) or io.open(user_path .. )):lines() do
+        local key, value = line:match("([^=]+)=(.+)")  -- 分割=左右的变量
+        if key and value then
+            aux_code[key] = aux_code[key] or {}
+            table.insert(aux_code[key], value)
         end
     end
-    
-    file:close()
-
     -- 确认code能打印出来
     -- for key, value in pairs(env.aux_code) do
     --     print(key, table.concat(value, ','))
@@ -195,7 +174,7 @@ function AuxFilter.func(input,env)
 end
 
 function AuxFilter.fini(env)
-    -- env.notifier:disconnect()
+    env.notifier:disconnect()
 end
 
 return AuxFilter
