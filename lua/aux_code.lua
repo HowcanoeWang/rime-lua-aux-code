@@ -175,7 +175,7 @@ function AuxFilter.func(input,env)
         if aux_str and #aux_str > 0 and code_list and (cand.type == 'user_phrase' or cand.type == 'phrase') then
             local match_id =  AuxFilter.fullMatch(code_list, aux_str)
             if match_id > 0 then
-                print('匹配到候选['.. cand.text ..  '] 第' .. match_id .. '个字，权重：'.. cand.quality)
+                -- print('匹配到候选['.. cand.text ..  '] 第' .. match_id .. '个字，权重：'.. cand.quality)
                 -- yield(cand)
                 order_by_index[match_id] = order_by_index[match_id] or {}
                 table.insert(order_by_index[match_id], cand)
@@ -186,7 +186,7 @@ function AuxFilter.func(input,env)
     end
 
     -- 逐个添加辅助码过滤出来的结果
-    -- 并且按照字数进行排序
+    -- 并且按照匹配到的字数进行排序
     for i, obi in ipairs(order_by_index) do
         for j, cand in ipairs(obi) do
             yield(cand)
