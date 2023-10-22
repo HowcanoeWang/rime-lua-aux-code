@@ -74,23 +74,22 @@ end
 -- 计算词语整体的辅助码
 -- 目前定义为
 --   fullAux(word)[k] = { code[k] | code in aux_code(char) for char in word }
+--   白日依山尽
+--   fullAux = {
+--       1: [p,pa,pn,pn, ..]  -- '白'
+--       2: [o,or,ri, ..]     -- '日'
+--   }
 -----------------------------------------------
 function AuxFilter.fullAux(env, word)
     local full_aux = {}
+    -- print('候选词：', word)
     for i, cp in utf8.codes(word) do
+        -- i = 1, 4, 7, ...
         local c = utf8.char(cp)
-        local cl = env.aux_code[c]
-        if cl then
-            for j, code in ipairs(cl) do
-                for k = 1, #code do
-                    if not full_aux[k] then
-                        full_aux[k] = ""
-                    end
-                    if not string.find(full_aux[k], code:sub(k, k)) then
-                        full_aux[k] = full_aux[k] .. code:sub(k, k)
-                    end
-                end
-            end
+        local cl = env.aux_code[c]   -- cl = 每个字的辅助码组
+        if cl then  -- 辅助码存在
+            -- print('遍历第'.. i//3+1 .. '个字', c, table.concat(cl, ',', 1, #cl))
+            full_aux[i//3+1] = cl
         end
     end
     return full_aux
@@ -98,19 +97,27 @@ end
 
 
 -----------------------------------------------
--- 判断 aux_str 是否匹配 full_aux，目前定义为
---   full_aux not empty && all(aux_str[k] in full_aux[k])
+-- 判断 aux_str 是否匹配 full_aux，且返回匹配的是第几个字，
+--    如果没有匹配，则返回0
 -----------------------------------------------
-function AuxFilter.match(full_aux, aux_str)
+function AuxFilter.fullMatch(full_aux, aux_str)
     if #full_aux == 0 then
-        return false
+        return 0
     end
-    for i = 1, #aux_str do
-        if i and not full_aux[i]:find(aux_str:sub(i,i)) then
-            return false
+
+    for i = 1, #full_aux do
+        local code_list = full_aux[i]
+
+        -- 一个个遍历待选项
+        for j, cl in ipairs(code_list) do
+            -- print(cl, i, aux_str)
+            if cl == aux_str then
+                return i
+            end
         end
     end
-    return true
+
+    return 0
 end
 
 -----------------
@@ -134,22 +141,26 @@ function AuxFilter.func(input,env)
         end
     end
 
-    local l = {}
+    local insert_later = {}
+    local order_by_index = {}
 
     -- 遍历每一个待选项
     for cand in input:iter() do
-        local code_list = env.aux_code[cand.text]  -- 仅单字非 nil
-        local current_aux = AuxFilter.fullAux(env, cand.text)
+        -- local code_list = env.aux_code[cand.text]  -- 仅单字非 nil
+        -- local current_aux = AuxFilter.fullAux(env, cand.text)
 
-        -- 处理 simplifier
-        if cand:get_dynamic_type() == "Shadow" then
-            local org_cand = cand:get_genuine()
-            cand = ShadowCandidate(org_cand, org_cand.type, cand.text, cand.comment)
-        end
+        local code_list = AuxFilter.fullAux(env, cand.text)
 
-        -- 给待选项加上辅助码提示
-        if code_list then
-            local code_comment = table.concat(code_list, ',', 1, #code_list)
+        -- 查看 code_list
+        -- print(cand.text, #code_list)
+        -- for i, cl in ipairs(code_list) do
+        --     print(i, table.concat(cl, ',', 1, #cl))
+        -- end
+        
+        -- 给单个字的待选项加上辅助码提示
+        if code_list and #code_list == 1 then
+            local code_comment = table.concat(code_list[1], ',', 1, #code_list[1])
+            -- 处理 simplifier
             if cand:get_dynamic_type() == "Shadow" then
                 local s_text= cand.text
                 local s_comment = cand.comment
@@ -161,14 +172,29 @@ function AuxFilter.func(input,env)
         end
 
         -- 过滤辅助码
-        if aux_str and #aux_str > 0 and current_aux and (cand.type == 'user_phrase' or cand.type == 'phrase') and AuxFilter.match(current_aux, aux_str) then
-            yield(cand)
+        if aux_str and #aux_str > 0 and code_list and (cand.type == 'user_phrase' or cand.type == 'phrase') then
+            local match_id =  AuxFilter.fullMatch(code_list, aux_str)
+            if match_id > 0 then
+                print('匹配到候选['.. cand.text ..  '] 第' .. match_id .. '个字，权重：'.. cand.quality)
+                -- yield(cand)
+                order_by_index[match_id] = order_by_index[match_id] or {}
+                table.insert(order_by_index[match_id], cand)
+            end
         else
-            table.insert(l, cand)
+            table.insert(insert_later, cand)
         end
     end
 
-    for i, cand in ipairs(l) do
+    -- 逐个添加辅助码过滤出来的结果
+    -- 并且按照字数进行排序
+    for i, obi in ipairs(order_by_index) do
+        for j, cand in ipairs(obi) do
+            yield(cand)
+        end
+    end
+
+    -- 把没有匹配上的待选给添加上
+    for i, cand in ipairs(insert_later) do
         yield(cand)
     end
 end
