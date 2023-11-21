@@ -9,7 +9,7 @@ function AuxFilter.init(env)
     -- 持续选词上屏，保持分号存在 --
     ----------------------------
     env.notifier = env.engine.context.select_notifier:connect(function(ctx)
-        -- 含有辅助码分割符才處理，；
+        -- 含有辅助码分割符才处理，；
         if not string.find(ctx.input, ';') then
             return
         end
@@ -30,7 +30,7 @@ function AuxFilter.init(env)
         -- 这边把已经上屏的字段 (preedit:text) 进行分割；
         -- 如果已经全部选完了，分割后的结果就是 nil，否则都是 吖卡 a 这种字符串
         -- 验证方式：
-        -- print('select_notifier', ctx.input, remove_aux_input, preedit.text, reedit_text_front)
+        -- print('select_notifier', ctx.input, removeAuxInput, preedit.text, reeditTextFront)
 
         -- 当最终不含有任何字母时 (候选)，就跳出分割模式，并把；符号删掉
         if reeditTextFront ~= nil then
@@ -82,7 +82,7 @@ end
 -----------------------------------------------
 -- 计算词语整体的辅助码
 -- 目前定义为
---   fullAux(word)[k] = {code[k] | code in aux_code(char) for char in word }
+--   fullAux(word)[k] = { code[k] | code in aux_code(char) for char in word }
 --   白日依山尽
 --   fullAux = {
 --       1: [p,pa,pn,pn, ..]  -- '白'
@@ -105,7 +105,7 @@ function AuxFilter.fullAux(env, word)
 end
 
 -----------------------------------------------
--- 判断 aux_str 是否匹配 full_aux，且返回匹配的是第几个字，
+-- 判断 auxStr 是否匹配 fullAux，且返回匹配的是第几个字，
 --    如果没有匹配，则返回 0
 -----------------------------------------------
 function AuxFilter.fullMatch(fullAux, auxStr)
@@ -118,7 +118,7 @@ function AuxFilter.fullMatch(fullAux, auxStr)
 
         -- 一个个遍历待选项
         for _, cl in ipairs(codeList) do
-            -- print(cl, i, aux_str)
+            -- print(cl, i, auxStr)
             if cl == auxStr then
                 return i
             end
@@ -138,7 +138,7 @@ function AuxFilter.func(input, env)
     -- 分割部分正式开始
     local auxStr = ''
     if string.find(inputCode, ';') then
-        -- 字符串中包含; 分字字符
+        -- 字符串中包含 ; 分字字符
         local localSplit = inputCode:match(";([^,]+)")
         if localSplit then
             auxStr = string.sub(localSplit, 1, 2)
@@ -151,14 +151,14 @@ function AuxFilter.func(input, env)
 
     -- 遍历每一个待选项
     for cand in input:iter() do
-        -- local code_list = env.aux_code[cand.text]  -- 仅单字非 nil
+        -- local auxCodes = env.aux_code[cand.text]  -- 仅单字非 nil
         -- local current_aux = AuxFilter.fullAux(env, cand.text)
 
         local auxCodes = AuxFilter.fullAux(env, cand.text)
 
-        -- 查看 code_list
-        -- print(cand.text, #code_list)
-        -- for i, cl in ipairs(code_list) do
+        -- 查看 auxCodes
+        -- print(cand.text, #auxCodes)
+        -- for i, cl in ipairs(auxCodes) do
         --     print(i, table.concat(cl, ',', 1, #cl))
         -- end
 
@@ -178,12 +178,14 @@ function AuxFilter.func(input, env)
         end
 
         -- 过滤辅助码
-        local matchId = AuxFilter.fullMatch(auxCodes, auxStr)
-        if matchId > 0 and (cand.type == 'user_phrase' or cand.type == 'phrase') then
-            -- print('匹配到候选['.. cand.text ..  '] 第' .. match_id .. '个字，权重：'.. cand.quality)
-            -- yield(cand)
-            orderByIndex[matchId] = orderByIndex[matchId] or {}
-            table.insert(orderByIndex[matchId], cand)
+        if #auxStr > 0 and auxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') then
+            local matchId = AuxFilter.fullMatch(auxCodes, auxStr)
+            if matchId > 0 then
+                -- print('匹配到候选['.. cand.text ..  '] 第' .. matchId .. '个字，权重：'.. cand.quality)
+                -- yield(cand)
+                orderByIndex[matchId] = orderByIndex[matchId] or {}
+                table.insert(orderByIndex[matchId], cand)
+            end
         else
             table.insert(insertLater, cand)
         end
