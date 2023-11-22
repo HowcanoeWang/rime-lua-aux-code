@@ -1,15 +1,22 @@
 local AuxFilter = {}
 
-function AuxFilter.init(env)
-    print("** AuxCode filter", env.name_space)
+-- local log = require 'log'
+-- log.outfile = "aux_code.log"
 
-    env.aux_code = AuxFilter.readAuxTxt(env.name_space);
+local function endswith(str, ending)
+    return ending == "" or str:sub(-#ending) == ending
+end
+
+function AuxFilter.init(env)
+    -- log.info("** AuxCode filter", env.name_space)
+
+    env.aux_code = AuxFilter.readAuxTxt(env.name_space)
 
     ----------------------------
-    -- 持续选词上屏，保持分号存在 --
+    -- 持續選詞上屏，保持分號存在 --
     ----------------------------
     env.notifier = env.engine.context.select_notifier:connect(function(ctx)
-        -- 含有辅助码分割符才处理，；
+        -- 含有輔助碼分隔符才處理，；
         if not string.find(ctx.input, ';') then
             return
         end
@@ -18,27 +25,26 @@ function AuxFilter.init(env)
         local removeAuxInput = ctx.input:match("([^,]+);")
         local reeditTextFront = preedit.text:match("([^,]+);")
 
-        -- ctx.text 随着选字的进行，oaoaoa； 有如下的输出：
-        -- ---- 有辅助码 ----
+        -- ctx.text 隨著選字的進行，oaoaoa； 有如下的輸出：
+        -- ---- 有輔助碼 ----
         -- >>> 啊 oaoa；au
         -- >>> 啊吖 oa；au
         -- >>> 啊吖啊；au
-        -- ---- 无辅助码 ----
+        -- ---- 無輔助碼 ----
         -- >>> 啊 oaoa；
         -- >>> 啊吖 oa；
         -- >>> 啊吖啊；
-        -- 这边把已经上屏的字段 (preedit:text) 进行分割；
-        -- 如果已经全部选完了，分割后的结果就是 nil，否则都是 吖卡 a 这种字符串
-        -- 验证方式：
-        -- print('select_notifier', ctx.input, removeAuxInput, preedit.text, reeditTextFront)
+        -- 這邊把已經上屏的字段 (preedit:text) 進行分割；
+        -- 如果已經全部選完了，分割後的結果就是 nil，否則都是 啞卡 a 這種字符串
+        -- 驗證方式：
+        -- log.info('select_notifier', ctx.input, removeAuxInput, preedit.text, reeditTextFront)
 
-        -- 当最终不含有任何字母时 (候选)，就跳出分割模式，并把；符号删掉
-        if reeditTextFront ~= nil then
+        -- 當最終不含有任何字母時 (候選)，就跳出分割模式，並把；符號刪掉
+        ctx.input = removeAuxInput
+        if reeditTextFront and reeditTextFront:match("[a-z]") then
             -- 給詞尾自動添加分隔符，上面的 re.match 會把分隔符刪掉
-            ctx.input = removeAuxInput .. ';'
+            ctx.input = ctx.input .. ';'
         else
-            -- 把；符号删掉
-            ctx.input = removeAuxInput
             -- 剩下的直接上屏
             ctx:commit()
         end
@@ -46,10 +52,10 @@ function AuxFilter.init(env)
 end
 
 ----------------
--- 阅读辅码文件 --
+-- 閱讀輔碼文件 --
 ----------------
 function AuxFilter.readAuxTxt(txtpath)
-    -- print("** AuxCode filter", 'read Aux code txt:', txtpath)
+    -- log.info("** AuxCode filter", 'read Aux code txt:', txtpath)
 
     local defaultFile = 'ZRM_Aux-code_4.3.txt'
     local userPath = rime_api.get_user_data_dir() .. "/lua/"
@@ -63,25 +69,25 @@ function AuxFilter.readAuxTxt(txtpath)
 
     local auxCodes = {}
     for line in file:lines() do
-        line = line:match("[^\r\n]+") -- 去掉换行符，不然 value 是带着 \n 的
-        local key, value = line:match("([^=]+)=(.+)") -- 分割 = 左右的变量
+        line = line:match("[^\r\n]+") -- 去掉換行符，不然 value 是帶著 \n 的
+        local key, value = line:match("([^=]+)=(.+)") -- 分割 = 左右的變數
         if key and value then
             auxCodes[key] = auxCodes[key] or {}
             table.insert(auxCodes[key], value)
         end
     end
     file:close()
-    -- 确认 code 能打印出来
+    -- 確認 code 能打印出來
     -- for key, value in pairs(env.aux_code) do
-    --     print(key, table.concat(value, ','))
+    --     log.info(key, table.concat(value, ','))
     -- end
 
     return auxCodes
 end
 
 -----------------------------------------------
--- 计算词语整体的辅助码
--- 目前定义为
+-- 計算詞語整體的輔助碼
+-- 目前定義為
 --   fullAux(word)[k] = { code[k] | code in aux_code(char) for char in word }
 --   白日依山尽
 --   fullAux = {
@@ -91,13 +97,13 @@ end
 -----------------------------------------------
 function AuxFilter.fullAux(env, word)
     local fullAuxCodes = {}
-    -- print('候选词：', word)
+    -- log.info('候选词：', word)
     for i, codePoint in utf8.codes(word) do
         -- i = 1, 4, 7, ...
         local char = utf8.char(codePoint)
-        local charAuxCodes = env.aux_code[char] -- cl = 每个字的辅助码组
-        if charAuxCodes then -- 辅助码存在
-            -- print('遍历第'.. (i-1)//3+1 .. '个字', c, table.concat(cl, ',', 1, #cl))
+        local charAuxCodes = env.aux_code[char] -- 每個字的輔助碼組
+        if charAuxCodes then -- 輔助碼存在
+            -- log.info('遍历第'.. (i-1)//3+1 .. '个字', char, table.concat(charAuxCodes, ',', 1, #charAuxCodes))
             fullAuxCodes[(i - 1) // 3 + 1] = charAuxCodes
         end
     end
@@ -105,8 +111,8 @@ function AuxFilter.fullAux(env, word)
 end
 
 -----------------------------------------------
--- 判断 auxStr 是否匹配 fullAux，且返回匹配的是第几个字，
---    如果没有匹配，则返回 0
+-- 判斷 auxStr 是否匹配 fullAux，且返回匹配的是第幾個字，
+--    如果沒有匹配，則返回 0
 -----------------------------------------------
 function AuxFilter.fullMatch(fullAux, auxStr)
     if #fullAux == 0 then
@@ -116,9 +122,9 @@ function AuxFilter.fullMatch(fullAux, auxStr)
     for i = 1, #fullAux do
         local codeList = fullAux[i]
 
-        -- 一个个遍历待选项
+        -- 一個個遍歷待選項
         for _, cl in ipairs(codeList) do
-            -- print(cl, i, auxStr)
+            -- log.info(cl, i, auxStr)
             if cl == auxStr then
                 return i
             end
@@ -129,43 +135,43 @@ function AuxFilter.fullMatch(fullAux, auxStr)
 end
 
 -----------------
--- filter 主函数 --
+-- filter 主函數 --
 -----------------
 function AuxFilter.func(input, env)
     local context = env.engine.context
     local inputCode = context.input
 
-    -- 分割部分正式开始
+    -- 分割部分正式開始
     local auxStr = ''
     if string.find(inputCode, ';') then
         -- 字符串中包含 ; 分字字符
         local localSplit = inputCode:match(";([^,]+)")
         if localSplit then
             auxStr = string.sub(localSplit, 1, 2)
-            -- print('re.match ' .. local_split)
+            -- log.info('re.match ' .. local_split)
         end
     end
 
     local insertLater = {}
     local orderByIndex = {}
 
-    -- 遍历每一个待选项
+    -- 遍歷每一個待選項
     for cand in input:iter() do
-        -- local auxCodes = env.aux_code[cand.text]  -- 仅单字非 nil
+        -- local auxCodes = env.aux_code[cand.text]  -- 僅單字非 nil
         -- local current_aux = AuxFilter.fullAux(env, cand.text)
 
         local auxCodes = AuxFilter.fullAux(env, cand.text)
 
         -- 查看 auxCodes
-        -- print(cand.text, #auxCodes)
+        -- log.info(cand.text, #auxCodes)
         -- for i, cl in ipairs(auxCodes) do
-        --     print(i, table.concat(cl, ',', 1, #cl))
+        --     log.info(i, table.concat(cl, ',', 1, #cl))
         -- end
 
-        -- 给单个字的待选项加上辅助码提示
+        -- 給單個字的待選項加上輔助碼提示
         if #auxCodes == 1 then
             local codeComment = table.concat(auxCodes[1], ',')
-            -- 处理 simplifier
+            -- 處理 simplifier
             if cand:get_dynamic_type() == "Shadow" then
                 local shadowText = cand.text
                 local shadowComment = cand.comment
@@ -177,11 +183,11 @@ function AuxFilter.func(input, env)
             end
         end
 
-        -- 过滤辅助码
+        -- 過濾輔助碼
         if #auxStr > 0 and auxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') then
             local matchId = AuxFilter.fullMatch(auxCodes, auxStr)
             if matchId > 0 then
-                -- print('匹配到候选['.. cand.text ..  '] 第' .. matchId .. '个字，权重：'.. cand.quality)
+                -- log.info('匹配到候选['.. cand.text ..  '] 第' .. matchId .. '个字，权重：'.. cand.quality)
                 -- yield(cand)
                 orderByIndex[matchId] = orderByIndex[matchId] or {}
                 table.insert(orderByIndex[matchId], cand)
@@ -191,15 +197,15 @@ function AuxFilter.func(input, env)
         end
     end
 
-    -- 逐个添加辅助码过滤出来的结果
-    -- 并且按照匹配到的字数进行排序
+    -- 逐個添加輔助碼過濾出來的結果
+    -- 並且按照匹配到的字數進行排序
     for _, obi in ipairs(orderByIndex) do
         for _, cand in ipairs(obi) do
             yield(cand)
         end
     end
 
-    -- 把没有匹配上的待选给添加上
+    -- 把沒有匹配上的待選給添加上
     for _, cand in ipairs(insertLater) do
         yield(cand)
     end
