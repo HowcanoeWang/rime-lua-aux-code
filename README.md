@@ -34,7 +34,7 @@ RIME 输入法辅助码音形分离插件
 
 ### 插件安装
 
-1. 将本项目中的的 `lua/aux_code.lua` 、 `lua/ZRM_Aux-code_4.3.txt`(自然码辅码表) 和 `lua/flypy_full.txt`(小鹤音形码) 复制到 `Rime 配置文件夹/lua/` 文件夹中
+1. 将本项目中的的 `lua/aux_code.lua` 、 `lua/ZRM_Aux-code_4.3.txt`(自然码辅码表) 和 `lua/flypy_full.txt`(小鹤形码表) 复制到 `Rime 配置文件夹/lua/` 文件夹中
 2. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，具体如下：    
    在 `engine/filters` 最后面中添加 `lua_filter@*aux_code@ZRM_Aux-code_4.3` 或 `lua_filter@*aux_code@flypy_full`。
     ```yaml
