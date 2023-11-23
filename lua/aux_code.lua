@@ -3,10 +3,6 @@ local AuxFilter = {}
 -- local log = require 'log'
 -- log.outfile = "aux_code.log"
 
-local function endswith(str, ending)
-    return ending == "" or str:sub(-#ending) == ending
-end
-
 function AuxFilter.init(env)
     -- log.info("** AuxCode filter", env.name_space)
 
@@ -85,6 +81,27 @@ function AuxFilter.readAuxTxt(txtpath)
     return auxCodes
 end
 
+-- local function getUtf8CharLength(byte)
+--     if byte < 128 then
+--         return 1
+--     elseif byte < 224 then
+--         return 2
+--     elseif byte < 240 then
+--         return 3
+--     else
+--         return 4
+--     end
+-- end
+
+-- 輔助函數，用於獲取表格的所有鍵
+local function table_keys(t)
+    local keys = {}
+    for key, _ in pairs(t) do
+        table.insert(keys, key)
+    end
+    return keys
+end
+
 -----------------------------------------------
 -- 計算詞語整體的輔助碼
 -- 目前定義為
@@ -98,40 +115,43 @@ end
 function AuxFilter.fullAux(env, word)
     local fullAuxCodes = {}
     -- log.info('候选词：', word)
-    for i, codePoint in utf8.codes(word) do
-        -- i = 1, 4, 7, ...
+    for _, codePoint in utf8.codes(word) do
         local char = utf8.char(codePoint)
         local charAuxCodes = env.aux_code[char] -- 每個字的輔助碼組
         if charAuxCodes then -- 輔助碼存在
-            -- log.info('遍历第'.. (i-1)//3+1 .. '个字', char, table.concat(charAuxCodes, ',', 1, #charAuxCodes))
-            fullAuxCodes[(i - 1) // 3 + 1] = charAuxCodes
-        end
-    end
-    return fullAuxCodes
-end
-
------------------------------------------------
--- 判斷 auxStr 是否匹配 fullAux，且返回匹配的是第幾個字，
---    如果沒有匹配，則返回 0
------------------------------------------------
-function AuxFilter.fullMatch(fullAux, auxStr)
-    if #fullAux == 0 then
-        return 0
-    end
-
-    for i = 1, #fullAux do
-        local codeList = fullAux[i]
-
-        -- 一個個遍歷待選項
-        for _, cl in ipairs(codeList) do
-            -- log.info(cl, i, auxStr)
-            if cl == auxStr then
-                return i
+            for _, code in ipairs(charAuxCodes) do
+                for i = 1, #code do
+                    fullAuxCodes[i] = fullAuxCodes[i] or {}
+                    fullAuxCodes[i][code:sub(i, i)] = true
+                end
             end
         end
     end
 
-    return 0
+    -- 將表格轉換為字符串
+    for i, chars in pairs(fullAuxCodes) do
+        fullAuxCodes[i] = table.concat(table_keys(chars), "")
+    end
+
+    return fullAuxCodes
+end
+
+-----------------------------------------------
+-- 判斷 auxStr 是否匹配 fullAux，目前定義為
+--   fullAux not empty && all(auxStr[k] in fullAux[k])
+-----------------------------------------------
+function AuxFilter.match(fullAux, auxStr)
+    if #fullAux == 0 then
+        return false
+    end
+
+    for i = 1, #auxStr do
+        if i and not fullAux[i]:find(auxStr:sub(i, i)) then
+            return false
+        end
+    end
+
+    return true
 end
 
 -----------------
@@ -153,14 +173,11 @@ function AuxFilter.func(input, env)
     end
 
     local insertLater = {}
-    local orderByIndex = {}
 
     -- 遍歷每一個待選項
     for cand in input:iter() do
-        -- local auxCodes = env.aux_code[cand.text]  -- 僅單字非 nil
-        -- local current_aux = AuxFilter.fullAux(env, cand.text)
-
-        local auxCodes = AuxFilter.fullAux(env, cand.text)
+        local auxCodes = env.aux_code[cand.text] -- 僅單字非 nil
+        local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
 
         -- 查看 auxCodes
         -- log.info(cand.text, #auxCodes)
@@ -168,40 +185,33 @@ function AuxFilter.func(input, env)
         --     log.info(i, table.concat(cl, ',', 1, #cl))
         -- end
 
-        -- 給單個字的待選項加上輔助碼提示
-        if #auxCodes == 1 then
-            local codeComment = table.concat(auxCodes[1], ',')
+        -- 處理 simplifier
+        if cand:get_dynamic_type() == "Shadow" then
+            local originalCand = cand:get_genuine()
+            cand = ShadowCandidate(originalCand, originalCand.type, cand.text, cand.comment)
+        end
+
+        -- 給待選項加上輔助碼提示
+        if auxCodes and #auxCodes > 0 then
+            local codeComment = table.concat(auxCodes, ',')
             -- 處理 simplifier
             if cand:get_dynamic_type() == "Shadow" then
                 local shadowText = cand.text
                 local shadowComment = cand.comment
                 local originalCand = cand:get_genuine()
                 cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
-                    originalCand.comment .. shadowComment .. ' (' .. codeComment .. ')')
+                    originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
             else
-                cand.comment = cand.comment .. ' (' .. codeComment .. ')'
+                cand.comment = '(' .. codeComment .. ')'
             end
         end
 
         -- 過濾輔助碼
-        if #auxStr > 0 and auxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') then
-            local matchId = AuxFilter.fullMatch(auxCodes, auxStr)
-            if matchId > 0 then
-                -- log.info('匹配到候选['.. cand.text ..  '] 第' .. matchId .. '个字，权重：'.. cand.quality)
-                -- yield(cand)
-                orderByIndex[matchId] = orderByIndex[matchId] or {}
-                table.insert(orderByIndex[matchId], cand)
-            end
+        if #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
+            AuxFilter.match(fullAuxCodes, auxStr) then
+            yield(cand)
         else
             table.insert(insertLater, cand)
-        end
-    end
-
-    -- 逐個添加輔助碼過濾出來的結果
-    -- 並且按照匹配到的字數進行排序
-    for _, obi in ipairs(orderByIndex) do
-        for _, cand in ipairs(obi) do
-            yield(cand)
         end
     end
 
