@@ -11,9 +11,9 @@ RIME 输入法辅助码音形分离插件
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
 * 在候选单中直接提示辅助码。
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_notice.png)
-* 支持词语级筛选 (非首字筛选)    
+* 支持词语级筛选 (非首字筛选)
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)   
-  如「白日依山尽」仍然可以匹配到「i」（尽的辅码）
+  如「白日依山尽」仍然可以匹配到「i」 (尽的辅码)
 * 此方案适用于使用辅助码排序候选项，而非音形结合的四键单字输入模式 (请用单字字库来满足需求)
 
 ## 背景
@@ -35,27 +35,18 @@ RIME 输入法辅助码音形分离插件
 ### 插件安装
 
 1. 将本项目中的的 `lua/aux_code.lua` 、 `lua/ZRM_Aux-code_4.3.txt`(自然码辅码表) 和 `lua/flypy_full.txt`(小鹤形码表) 复制到 `Rime 配置文件夹/lua/` 文件夹中
-2. 该插件须附加在某个具体的输入方案上，修改某个具体的输入方案的 `*.schema.yaml` 文件，具体如下：    
-   在 `engine/filters` 最后面中添加 `lua_filter@*aux_code@ZRM_Aux-code_4.3` 或 `lua_filter@*aux_code@flypy_full`。
+2. 本插件需要附加到特定的输入方案。首先，复制你要使用的输入方案的文件名，把文件名中的 `schema` 改为 `custom`，接着创建并打开名为 `*.custom.yaml` 的文件，在里面添加所需内容：  
     ```yaml
-    engine:
-        # ...
-        filters:
-            - simplifier@emoji_suggestion
-            - simplifier
-            - uniquifier
+    patch:
+        engine/filters:
+            # 需要将原文件的相应部分复制到这里，然后再添加下列内容：
             - lua_filter@*aux_code@ZRM_Aux-code_4.3
             # - lua_filter@*aux_code@flypy_full
-    ```
-   **一定要在 `simplifier` 后面，不然简体字的辅码提示会不显示**
 
-    ---
-   以及在 `spellers/alphabet` 中允许 `;` 符号上屏，
-    ```yaml
-    speller:
-      alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA.,;  
-      #最后的 `;` 号为英文半角字符，而不是中文全角。前面的根据自己的配置自行修改
+        #允许 `;` 符号上屏，最后的 `;` 号为英文半角字符，而不是中文全角。前面的根据自己的配置自行修改
+        speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA.,;
     ```
+   **上述 `engine/filters` 部分内容一定要在 `simplifier` 后面，不然简体字的辅码提示会不显示**
 
 3. 重新配置 rime 输入法，不出意外的话即可使用。
 
