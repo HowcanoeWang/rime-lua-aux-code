@@ -40,7 +40,9 @@ RIME 输入法辅助码与音形分离插件
 
     ```yaml
     patch:
-      engine/filters+: lua_filter@*aux_code@ZRM_Aux-code_4.3 # 或 lua_filter@*aux_code@flypy_full
+      engine/filters+:
+        - lua_filter@*aux_code@ZRM_Aux-code_4.3
+        # - lua_filter@*aux_code@flypy_full
 
       # 允许以 `;` 符号上屏，最后的 `;` 为英文半角字符，非中文全角。前面部分根据个人配置自行调整
       speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA.,;
