@@ -52,7 +52,7 @@ RIME 输入法辅助码与音形分离插件
 
 ### 定制码表
 
-默认采用的码表为自然码码表：[copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)。由于源文件采用 GB2324 编码，在 Linux 系统下可能出现乱码。因此，我在项目中的 txt 文件已转换为 UTF-8 编码，可供直接使用。
+默认采用的码表为自然码码表：[copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)。由于源文件采用 GB2312 编码，在 Linux 系统下会出现乱码。因此，我在项目中的 txt 文件已转换为 UTF-8 编码，可供直接使用。
 
 若要制作个人码表，确保文件格式为 UTF-8 编码即可。文件中每一行应对应一个字的辅码，使用 `=` 号作为分隔符。若同一汉字存在多种编码方案，应在新的一行中分别列出，例如：
 
