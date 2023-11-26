@@ -7,6 +7,7 @@ RIME 输入法辅助码与音形分离插件
 ## 特点
 
 * 通过独立的文件存储辅码，无需生成音形混合词典
+* 提供**自然码辅码表**和**小鹤形码表**两种主流方案
 * 在输入末尾添加 `;` 以激活辅码模式，选择候选并上屏（通过空格或数字）后，可以继续输入，插件将自动移除已上屏文字的辅码  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
 * 在候选单中直接提示辅助码  
@@ -14,7 +15,7 @@ RIME 输入法辅助码与音形分离插件
 * 支持词语级筛选 （非首字筛选）  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)  
   如「白日依山尽」仍然可以匹配到「i」 （尽的辅码）
-* 此方案适用于使用辅助码排序候选项，而非音形结合的四键单字输入模式 （请用单字字库来满足需求）
+* 此方案适用于使用辅助码排序候选项，而非音形结合的**四键单字**输入模式 （请用单字字库来满足需求）
 
 ## 背景
 
@@ -30,11 +31,11 @@ RIME 输入法辅助码与音形分离插件
 
 ### 环境依赖
 
-已知 Linux 和 Mac 上的 Rime 中，lua 插件默认是开启状态。但如果在执行完**插件安装**后发现无法使用，建议你按照 [Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki) 的指引进行测试。测试方法是输入 date，查看候选词中是否能显示当前日期（例如 2023 年 10 月 16 日）。请注意，日期信息可能不会出现在第一页候选词中，你可能需要向后翻页查找。如果日期显示正常，但此插件仍然无法使用，请开设一个 issue 进行反馈。
+已知 Win、Mac 和 Linux 上的 Rime 输入法中，lua 插件默认是开启状态。但如果在执行完**插件安装**后发现无法使用，建议你按照 [Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki) 的指引进行测试。测试方法是输入 date，查看候选词中是否能显示当前日期（例如 2023 年 10 月 16 日）。请注意，日期信息可能不会出现在第一页候选词中，你可能需要向后翻页查找。如果日期显示正常，但此插件仍然无法使用，请开设一个 issue 进行反馈。
 
 ### 插件安装
 
-1. 将本项目中的 `lua/aux_code.lua`、`lua/ZRM_Aux-code_4.3.txt` （自然码辅码表） 和 `lua/flypy_full.txt` （小鹤形码表） 复制到 `Rime 配置文件夹/lua/` 文件夹中。
+1. 将本项目中的 `lua/aux_code.lua`、`lua/ZRM_Aux-code_4.3.txt` （自然码辅码表） 或 `lua/flypy_full.txt` （小鹤形码表） 复制到 `Rime 配置文件夹/lua/` 文件夹中。
 
 2. 本插件需附加至特定输入方案。首先，复制你所需使用的输入方案文件名，将文件名中的 `schema` 改为 `custom`。然后，创建并打开一个名为 `*.custom.yaml` 的文件，在其中添加所需内容：
 
@@ -52,14 +53,10 @@ RIME 输入法辅助码与音形分离插件
 
 ### 定制码表
 
-默认采用的码表为自然码码表：[copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)。由于源文件采用 GB2312 编码，在 Linux 系统下会出现乱码。因此，我在项目中的 txt 文件已转换为 UTF-8 编码，可供直接使用。
-
 若要制作个人码表，确保文件格式为 UTF-8 编码即可。文件中每一行应对应一个字的辅码，使用 `=` 号作为分隔符。若同一汉字存在多种编码方案，应在新的一行中分别列出，例如：
 
 ```plaintxt
-阿=e
 阿=ek
-厑=i
 厑=ib
 厑=ii
 ...
@@ -71,19 +68,21 @@ RIME 输入法辅助码与音形分离插件
 
 修改完成后，重新配置 Rime 输入法，新的设置便会生效。
 
-## TODO
+## 开发与异常处理
 
-* [ ] 当前实现中，使用辅助码上屏的词组似乎未被加入用户词典
-* [x] 偶尔出现的 `;` 未被移除的问题
+目前有两种开发的方式：
 
-## 异常处理
+1. 对于Win和Mac端，若需进行调试，建议在 `lua/aux_code.lua` 文件中取消被注释的日志模块引入代码及 `log.info` 语句，以便查看详细的输出内容。
+2. 对于Linux端，可以通过在命令行中启动输入法，从而直接得到 `print` 语句的打印输出，或仍然采用上述日志模块获得输出结果
 
-若需进行调试，建议你在 `lua/aux_code.lua` 文件中取消被注释的日志模块引入代码及 `log.info` 语句，以便查看详细的输出内容。需要注意的是，输出的信息量可能较大，因此不推荐这样做。
+需要注意的是，输出的信息量可能较大，因此不推荐非插件开发人员这样做。
 
 ## 致谢
 
 感谢以下贡献者：
 
-* [@copperay](https://github.com/copperay) 维护的手心输入法自然码码表 [copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)
+* [@copperay](https://github.com/copperay) 维护的手心输入法自然码码表 [copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)    
+  源文件采用 GB2312 编码且包含手心拼音需要的冗余首码，此项目中的 txt 文件已转换为 UTF-8 编码并且移除了冗余首码，可直接使用（并提供去冗的 python 脚本）。
 * [@ksqsf](https://github.com/ksqsf) 贡献的词语级筛选功能
 * [@shewer](https://github.com/shewer) 优化的代码以及辅码文件配置
+* [@AiraNadih](https://github.com/AiraNadih) 增加小鹤码表、优化辅码分号逻辑以及润色此说明文档
