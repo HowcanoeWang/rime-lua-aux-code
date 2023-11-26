@@ -1,3 +1,6 @@
+# python script ignore
+scripts/*.txt
+
 # Compiled Lua sources
 luac.out
 
