@@ -10,7 +10,7 @@ RIME 输入法辅助码与音形分离插件
 * 提供**自然码辅码表**和**小鹤形码表**两种主流方案
 * 在输入末尾添加 `;` 以激活辅码模式，选择候选并上屏（通过空格或数字）后，可以继续输入，插件将自动移除已上屏文字的辅码  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
-* 在候选单中直接提示辅助码  
+* 在候选单中直接提示单字的辅助码  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_notice.png)
 * 支持词语级筛选 （非首字筛选）  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)  
