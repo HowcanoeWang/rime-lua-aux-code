@@ -41,7 +41,7 @@ RIME 输入法辅助码与音形分离插件
 
     ```yaml
     patch:
-      engine/filters+:
+      engine/filters/+:
         - lua_filter@*aux_code@ZRM_Aux-code_4.3
         # - lua_filter@*aux_code@flypy_full
 
