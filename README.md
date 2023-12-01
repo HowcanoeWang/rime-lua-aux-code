@@ -31,7 +31,13 @@ RIME 输入法辅助码与音形分离插件
 
 ### 环境依赖
 
-已知 Win、Mac 和 Linux 上的 Rime 输入法中，lua 插件默认是开启状态。但如果在执行完**插件安装**后发现无法使用，建议你按照 [Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki) 的指引进行测试。测试方法是输入 date，查看候选词中是否能显示当前日期（例如 2023 年 10 月 16 日）。请注意，日期信息可能不会出现在第一页候选词中，你可能需要向后翻页查找。如果日期显示正常，但此插件仍然无法使用，请开设一个 issue 进行反馈。
+已知 Windows、macOS 和 Linux 上的 Rime 输入法中，Lua 插件默认是开启状态。但如果在执行完**插件安装**后发现无法使用，建议你按照 [Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki) 的指引进行测试。测试方法是输入 date，查看候选词中是否能显示当前日期（例如 2023 年 10 月 16 日）。请注意，日期信息可能不会出现在第一页候选词中，你可能需要向后翻页查找。如果日期显示正常，但此插件仍然无法使用，请开设一个 issue 进行反馈。
+
+而在 Android 平台上，[同文输入法](https://github.com/osfans/trime) 和 [小企鹅输入法 5](https://github.com/fcitx5-android/fcitx5-android) 都支持 Lua 插件。经过我几天的亲身体验，我更倾向于推荐后者。但需要注意的是，为了支持 Rime 配置，必须安装 [Rime 插件](https://f-droid.org/packages/org.fcitx.fcitx5.android.plugin.rime/)。此外，为确保应用的正常运行，应选择安装 [F-Droid 发行的小企鹅输入法版本](https://f-droid.org/packages/org.fcitx.fcitx5.android/)，而不是 Google Play 上的版本。
+
+#### 如何在小企鹅输入法 5 中启用 Rime 插件
+
+首先打开 App，点击“插件”，加载 Rime 插件并返回。接着，依次操作：点击“输入法” -> 右下角的 “+” 号 -> 选择“中州韵” -> 点击新增行右侧的齿轮图标 -> 进入“用户数据目录”。然后，请确保应用已被授予读写权限。至此，Rime 插件的激活步骤基本完成，接下来的操作与其他平台相同。上述提到的“用户数据目录”即为接下来需要用到的 `Rime 配置文件夹`。
 
 ### 插件安装
 
@@ -47,6 +53,10 @@ RIME 输入法辅助码与音形分离插件
 
       # 允许以 `;` 符号上屏，最后的 `;` 为英文半角字符，非中文全角。前面部分根据个人配置自行调整
       speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA.,;
+
+      # 自定义触发键，注意：请确保所选字符已包含在上述 speller/alphabet 的值中
+      # key_binder/+;
+        # aux_code_trigger: "."
     ```
 
 3. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
@@ -85,4 +95,4 @@ RIME 输入法辅助码与音形分离插件
   源文件采用 GB2312 编码且包含手心拼音需要的冗余首码，此项目中的 txt 文件已转换为 UTF-8 编码并且移除了冗余首码，可直接使用（并提供去冗的 python 脚本）。
 * [@ksqsf](https://github.com/ksqsf) 贡献的词语级筛选功能
 * [@shewer](https://github.com/shewer) 优化的代码以及辅码文件配置
-* [@AiraNadih](https://github.com/AiraNadih) 增加小鹤码表、优化辅码分号逻辑以及润色此说明文档
+* [@AiraNadih](https://github.com/AiraNadih) 增加小鹤码表、优化辅码分号逻辑、触发键改为可配置项，以及润色此说明文档
