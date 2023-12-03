@@ -8,18 +8,25 @@ function AuxFilter.init(env)
 
     env.aux_code = AuxFilter.readAuxTxt(env.name_space)
 
+    local engine = env.engine
+    local config = engine.schema.config
+    
+    -- 設定預設觸發鍵為分號，並從配置中讀取自訂的觸發鍵
+    env.trigger_key = config:get_string("key_binder/aux_code_trigger") or ";"
+    
     ----------------------------
-    -- 持續選詞上屏，保持分號存在 --
+    -- 持續選詞上屏，保持輔助碼分隔符存在 --
     ----------------------------
-    env.notifier = env.engine.context.select_notifier:connect(function(ctx)
-        -- 含有輔助碼分隔符才處理，；
-        if not string.find(ctx.input, ';') then
+    env.notifier = engine.context.select_notifier:connect(function(ctx)
+        -- 含有輔助碼分隔符才處理
+        if not string.find(ctx.input, env.trigger_key) then
             return
         end
 
         local preedit = ctx:get_preedit()
-        local removeAuxInput = ctx.input:match("([^,]+);")
-        local reeditTextFront = preedit.text:match("([^,]+);")
+        local removeAuxInput = ctx.input:match("([^,]+)" .. env.trigger_key)
+        local reeditTextFront = preedit.text:match("([^,]+)" 
+        .. env.trigger_key)
 
         -- ctx.text 隨著選字的進行，oaoaoa； 有如下的輸出：
         -- ---- 有輔助碼 ----
@@ -31,15 +38,15 @@ function AuxFilter.init(env)
         -- >>> 啊吖 oa；
         -- >>> 啊吖啊；
         -- 這邊把已經上屏的字段 (preedit:text) 進行分割；
-        -- 如果已經全部選完了，分割後的結果就是 nil，否則都是 啞卡 a 這種字符串
+        -- 如果已經全部選完了，分割後的結果就是 nil，否則都是 吖卡 a 這種字符串
         -- 驗證方式：
         -- log.info('select_notifier', ctx.input, removeAuxInput, preedit.text, reeditTextFront)
 
-        -- 當最終不含有任何字母時 (候選)，就跳出分割模式，並把；符號刪掉
+        -- 當最終不含有任何字母時 (候選)，就跳出分割模式，並把輔助碼分隔符刪掉
         ctx.input = removeAuxInput
         if reeditTextFront and reeditTextFront:match("[a-z]") then
             -- 給詞尾自動添加分隔符，上面的 re.match 會把分隔符刪掉
-            ctx.input = ctx.input .. ';'
+            ctx.input = ctx.input .. env.trigger_key
         else
             -- 剩下的直接上屏
             ctx:commit()
@@ -163,9 +170,10 @@ function AuxFilter.func(input, env)
 
     -- 分割部分正式開始
     local auxStr = ''
-    if string.find(inputCode, ';') then
-        -- 字符串中包含 ; 分字字符
-        local localSplit = inputCode:match(";([^,]+)")
+    if string.find(inputCode, env.trigger_key) then
+        -- 字符串中包含輔助碼分隔符
+        local trigger_pattern = env.trigger_key:gsub("%W", "%%%1")  -- 處理特殊字符
+        local localSplit = inputCode:match(trigger_pattern .. "([^,]+)")
         if localSplit then
             auxStr = string.sub(localSplit, 1, 2)
             -- log.info('re.match ' .. local_split)
