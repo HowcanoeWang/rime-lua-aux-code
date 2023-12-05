@@ -35,29 +35,9 @@ RIME 输入法辅助码与音形分离插件
 
 ### 插件安装
 
-桌面平台(Windows, macOS 和 Linux)
+#### 桌面平台(Windows, macOS 和 Linux)
 
 1. 将本项目中的 `lua/aux_code.lua`、`lua/ZRM_Aux-code_4.3.txt` （自然码辅码表） 或 `lua/flypy_full.txt` （小鹤形码表） 复制到 `Rime 配置文件夹/lua/` 文件夹中。
-
-   <details>
-     <summary>如果不想手动复制，也可以使用 git 来下载或嵌入到其他项目中 (<b>仅限开发人员，普通用户不推荐</b>) </summary>    
-     
-     此步骤有两种方式，请根据自己的需要进行选择
-     
-     - 直接 git clone 的方式下载到本地    
-       执行 `git clone`` 命令，将此项目克隆到 lua 目录下（下面是将此项目 clone 为 rime_lua_aux_code 文件夹）
-       ```shell
-       git clone https://github.com/HowcanoeWang/rime-lua-aux-code rime_lua_aux_code
-       ```
-     - `git submodule` 方式内嵌到父项目   
-       > 注意⚠️：此种方式只适合你的 rime 配置文件也是使用 git 进行托管的场景
-       
-       执行 `git submodule` 命令
-       ```shell
-       git submodule add https://github.com/HowcanoeWang/rime-lua-aux-code rime_lua_aux_code
-       ```
-     <b>注意，如果你采用了 git 的这个方式，下一步的脚本路径需要加上 git 创建的文件夹路径, 从 `lua_filter@*aux_code@ZRM_Aux-code_4.3` 修改为 `lua_filter@*aux_code@rime_lua_aux_code/lua/ZRM_Aux-code_4.3`</b>
-   </details>
 
 2. 本插件需附加至特定输入方案。首先，复制你所需使用的输入方案文件名，将文件名中的 `schema` 改为 `custom`。然后，创建并打开一个名为 `*.custom.yaml` 的文件，在其中添加所需内容：
 
@@ -78,9 +58,8 @@ RIME 输入法辅助码与音形分离插件
 
 3. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
 
-<details>
 
-<summary>安卓平台的小企鹅输入法 5 安装与配置方法</summary>
+#### 安卓平台的小企鹅输入法 5 安装与配置方法
 
 为确保应用的正常运行，应选择安装 [F-Droid 发行的小企鹅输入法版本](https://f-droid.org/packages/org.fcitx.fcitx5.android/)，而不是从 Google Play 上安装。
 
@@ -89,9 +68,7 @@ RIME 输入法辅助码与音形分离插件
 
 至此，Rime 插件的激活步骤基本完成，接下来的操作与桌面平台一致。上述提到的 “用户数据目录” 即桌面端平台的 `Rime 配置文件夹`。
 
-</details>
-
-### 定制码表
+## 定制码表
 
 若要制作个人码表，确保文件格式为 UTF-8 编码即可。文件中每一行应对应一个字的辅码，使用 `=` 号作为分隔符。若同一汉字存在多种编码方案，应在新的一行中分别列出，例如：
 
@@ -126,4 +103,4 @@ RIME 输入法辅助码与音形分离插件
 * [@ksqsf](https://github.com/ksqsf) 贡献的词语级筛选功能
 * [@shewer](https://github.com/shewer) 优化的代码以及辅码文件配置
 * [@AiraNadih](https://github.com/AiraNadih) 增加小鹤码表、优化辅码分号逻辑、触发键改为可配置项，以及润色此说明文档
-* [@expoli]([https](https://github.com/expoli)) 添加 git 安装方式
+* [@expoli](https://github.com/expoli) 对文档说明的修改
