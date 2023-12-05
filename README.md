@@ -8,7 +8,7 @@ RIME 输入法辅助码与音形分离插件
 
 * 通过独立的文件存储辅码，无需生成音形混合词典
 * 提供**自然码辅码表**和**小鹤形码表**两种主流方案
-* 在输入末尾添加 `;` 以激活辅码模式，选择候选并上屏（通过空格或数字）后，可以继续输入，插件将自动移除已上屏文字的辅码  
+* 在输入末尾键入分隔符 (默认为 `;` ，可通过配置自定义) 激活辅码模式，选择候选并上屏（通过空格或数字）后，可以继续输入，插件将自动移除已上屏文字的辅码  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
 * 在候选单中直接提示单字的辅助码  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_notice.png)
@@ -31,51 +31,41 @@ RIME 输入法辅助码与音形分离插件
 
 已知 Windows、macOS 和 Linux 上的 Rime 输入法中，Lua 插件默认是开启状态。但如果在执行完**插件安装**后发现无法使用，建议你按照 [Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki) 的指引进行测试。测试方法是输入 date，查看候选词中是否能显示当前日期（例如 2023 年 10 月 16 日）。请注意，日期信息可能不会出现在第一页候选词中，你可能需要向后翻页查找。如果日期显示正常，但此插件仍然无法使用，请开设一个 issue 进行反馈。
 
-而在 Android 平台上，[同文输入法](https://github.com/osfans/trime) 和 [小企鹅输入法 5](https://github.com/fcitx5-android/fcitx5-android) 都支持 Lua 插件。经过我几天的亲身体验，我更倾向于推荐后者。但需要注意的是，为了支持 Rime 配置，必须安装 [Rime 插件](https://f-droid.org/packages/org.fcitx.fcitx5.android.plugin.rime/)。此外，为确保应用的正常运行，应选择安装 [F-Droid 发行的小企鹅输入法版本](https://f-droid.org/packages/org.fcitx.fcitx5.android/)，而不是 Google Play 上的版本。
-
-#### 如何在小企鹅输入法 5 中启用 Rime 插件
-
-首先打开 App，点击“插件”，加载 Rime 插件并返回。接着，依次操作：点击“输入法” -> 右下角的 “+” 号 -> 选择“中州韵” -> 点击新增行右侧的齿轮图标 -> 进入“用户数据目录”。然后，请确保应用已被授予读写权限。至此，Rime 插件的激活步骤基本完成，接下来的操作与其他平台相同。上述提到的“用户数据目录”即为接下来需要用到的 `Rime 配置文件夹`。
+而在 Android 平台上，[同文输入法](https://github.com/osfans/trime) 和 [小企鹅输入法 5 (强烈推荐)](https://github.com/fcitx5-android/fcitx5-android) 都支持 Lua 插件，安装方式见下面的插件安装部分。
 
 ### 插件安装
 
-#### 基于 git 的安装方式
+桌面平台(Windows, macOS 和 Linux)
 
-1. 首先进入到 rime 用户文件夹的 lua 目录下面
+1. 将本项目中的 `lua/aux_code.lua`、`lua/ZRM_Aux-code_4.3.txt` （自然码辅码表） 或 `lua/flypy_full.txt` （小鹤形码表） 复制到 `Rime 配置文件夹/lua/` 文件夹中。
 
-> （此步骤有两种方式，适合两种用户，请根据自己的需要进行选择）
-2. 开始安装
-  - 直接 git clone 的方式
-    - 执行 `git clone`` 命令，将此项目克隆到 lua 目录下（下面是将此项目 clone 为 rime_lua_aux_code 文件夹）
+   <details>
+     <summary>如果不想手动复制，也可以使用 git 来下载或嵌入到其他项目中 (<b>仅限开发人员，普通用户不推荐</b>) </summary>    
+     
+     此步骤有两种方式，请根据自己的需要进行选择
+     
+     - 直接 git clone 的方式下载到本地    
+       执行 `git clone`` 命令，将此项目克隆到 lua 目录下（下面是将此项目 clone 为 rime_lua_aux_code 文件夹）
+       ```shell
+       git clone https://github.com/HowcanoeWang/rime-lua-aux-code rime_lua_aux_code
+       ```
+     - `git submodule` 方式内嵌到父项目   
+       > 注意⚠️：此种方式只适合你的 rime 配置文件也是使用 git 进行托管的场景
+       
+       执行 `git submodule` 命令
+       ```shell
+       git submodule add https://github.com/HowcanoeWang/rime-lua-aux-code rime_lua_aux_code
+       ```
+     <b>注意，如果你采用了 git 的这个方式，下一步的脚本路径需要加上 git 创建的文件夹路径, 从 `lua_filter@*aux_code@ZRM_Aux-code_4.3` 修改为 `lua_filter@*aux_code@rime_lua_aux_code/lua/ZRM_Aux-code_4.3`</b>
+   </details>
 
-      ```shell
-      git clone https://github.com/HowcanoeWang/rime-lua-aux-code rime_lua_aux_code
-      ```
-
-  - `git submodule` 方式
-    > 注意⚠️：此种方式只适合你的 rime 配置文件也是使用 git 进行托管的场景
-    - 执行 `git submodule` 命令
-
-      ```shell
-      git submodule add https://github.com/HowcanoeWang/rime-lua-aux-code rime_lua_aux_code
-      ```
-
-3. 修改 `rime.lua` 添加 aux_code
-
-```yaml
-
--- RIME 输入法辅助码与音形分离插件
--- engine/filters/+ 增加 - lua_filter@aux_code@rime_lua_aux_code/lua/flypy_full
--- 第二个 @ 后面的是辅助码文件路径，可以自定义
-aux_code = require("rime_lua_aux_code.lua.aux_code")
-```
-
-4. 本插件需附加至特定输入方案。首先，复制你所需使用的输入方案文件名，将文件名中的 `schema` 改为 `custom`。然后，创建并打开一个名为 `*.custom.yaml` 的文件，在其中添加所需内容：
+2. 本插件需附加至特定输入方案。首先，复制你所需使用的输入方案文件名，将文件名中的 `schema` 改为 `custom`。然后，创建并打开一个名为 `*.custom.yaml` 的文件，在其中添加所需内容：
 
     ```yaml
     patch:
       engine/filters/+:
         - lua_filter@*aux_code@ZRM_Aux-code_4.3
+        # 或下面的小鹤形码方案
         # - lua_filter@*aux_code@flypy_full
 
       # 允许以 `;` 符号上屏，最后的 `;` 为英文半角字符，非中文全角。前面部分根据个人配置自行调整
@@ -86,7 +76,20 @@ aux_code = require("rime_lua_aux_code.lua.aux_code")
         # aux_code_trigger: "."
     ```
 
-2. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
+3. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
+
+<details>
+
+<summary>安卓平台的小企鹅输入法 5 安装与配置方法</summary>
+
+为确保应用的正常运行，应选择安装 [F-Droid 发行的小企鹅输入法版本](https://f-droid.org/packages/org.fcitx.fcitx5.android/)，而不是从 Google Play 上安装。
+
+随后为小企鹅输入法 5 安装 [Rime 插件](https://f-droid.org/packages/org.fcitx.fcitx5.android.plugin.rime/)。安装后启用 Rime 插件为：
+首先打开 App，点击“插件”，加载 Rime 插件并返回。接着，依次操作：点击“输入法” -> 右下角的 “+” 号 -> 选择“中州韵” -> 点击新增行右侧的齿轮图标 -> 进入“用户数据目录”。然后，请确保应用已被授予读写权限。
+
+至此，Rime 插件的激活步骤基本完成，接下来的操作与桌面平台一致。上述提到的 “用户数据目录” 即桌面端平台的 `Rime 配置文件夹`。
+
+</details>
 
 ### 定制码表
 
