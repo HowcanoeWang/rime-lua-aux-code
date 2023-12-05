@@ -27,8 +27,6 @@ RIME 输入法辅助码与音形分离插件
 
 ## 安装
 
-由于我目前的编程能力所限，暂时无法提供自动化的安装指令。因此，需要进行手动配置以完成安装过程。
-
 ### 环境依赖
 
 已知 Windows、macOS 和 Linux 上的 Rime 输入法中，Lua 插件默认是开启状态。但如果在执行完**插件安装**后发现无法使用，建议你按照 [Lua-DateTranslator](https://github.com/hchunhui/librime-lua/wiki) 的指引进行测试。测试方法是输入 date，查看候选词中是否能显示当前日期（例如 2023 年 10 月 16 日）。请注意，日期信息可能不会出现在第一页候选词中，你可能需要向后翻页查找。如果日期显示正常，但此插件仍然无法使用，请开设一个 issue 进行反馈。
@@ -41,9 +39,38 @@ RIME 输入法辅助码与音形分离插件
 
 ### 插件安装
 
-1. 将本项目中的 `lua/aux_code.lua`、`lua/ZRM_Aux-code_4.3.txt` （自然码辅码表） 或 `lua/flypy_full.txt` （小鹤形码表） 复制到 `Rime 配置文件夹/lua/` 文件夹中。
+#### 基于 git 的安装方式
 
-2. 本插件需附加至特定输入方案。首先，复制你所需使用的输入方案文件名，将文件名中的 `schema` 改为 `custom`。然后，创建并打开一个名为 `*.custom.yaml` 的文件，在其中添加所需内容：
+1. 首先进入到 rime 用户文件夹的 lua 目录下面
+
+> （此步骤有两种方式，适合两种用户，请根据自己的需要进行选择）
+2. 开始安装
+  - 直接 git clone 的方式
+    - 执行 `git clone`` 命令，将此项目克隆到 lua 目录下（下面是将此项目 clone 为 rime_lua_aux_code 文件夹）
+
+      ```shell
+      git clone https://github.com/HowcanoeWang/rime-lua-aux-code rime_lua_aux_code
+      ```
+
+  - `git submodule` 方式
+    > 注意⚠️：此种方式只适合你的 rime 配置文件也是使用 git 进行托管的场景
+    - 执行 `git submodule` 命令
+
+      ```shell
+      git submodule add https://github.com/HowcanoeWang/rime-lua-aux-code rime_lua_aux_code
+      ```
+
+3. 修改 `rime.lua` 添加 aux_code
+
+```yaml
+
+-- RIME 输入法辅助码与音形分离插件
+-- engine/filters/+ 增加 - lua_filter@aux_code@rime_lua_aux_code/lua/flypy_full
+-- 第二个 @ 后面的是辅助码文件路径，可以自定义
+aux_code = require("rime_lua_aux_code.lua.aux_code")
+```
+
+4. 本插件需附加至特定输入方案。首先，复制你所需使用的输入方案文件名，将文件名中的 `schema` 改为 `custom`。然后，创建并打开一个名为 `*.custom.yaml` 的文件，在其中添加所需内容：
 
     ```yaml
     patch:
@@ -59,7 +86,7 @@ RIME 输入法辅助码与音形分离插件
         # aux_code_trigger: "."
     ```
 
-3. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
+2. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
 
 ### 定制码表
 
@@ -82,7 +109,7 @@ RIME 输入法辅助码与音形分离插件
 
 目前有两种开发的方式：
 
-1. 对于Win和Mac端，若需进行调试，建议在 `lua/aux_code.lua` 文件中取消被注释的日志模块引入代码及 `log.info` 语句，以便查看详细的输出内容。
+1. 对于Win和Mac端，若需进行调试，建议在 `lua/your_config_dir/aux_code.lua` 文件中取消被注释的日志模块引入代码及 `log.info` 语句，以便查看详细的输出内容。
 2. 对于Linux端，可以通过在命令行中启动输入法，从而直接得到 `print` 语句的打印输出，或仍然采用上述日志模块获得输出结果
 
 需要注意的是，输出的信息量可能较大，因此不推荐非插件开发人员这样做。
@@ -96,3 +123,4 @@ RIME 输入法辅助码与音形分离插件
 * [@ksqsf](https://github.com/ksqsf) 贡献的词语级筛选功能
 * [@shewer](https://github.com/shewer) 优化的代码以及辅码文件配置
 * [@AiraNadih](https://github.com/AiraNadih) 增加小鹤码表、优化辅码分号逻辑、触发键改为可配置项，以及润色此说明文档
+* [@expoli]([https](https://github.com/expoli)) 添加 git 安装方式
