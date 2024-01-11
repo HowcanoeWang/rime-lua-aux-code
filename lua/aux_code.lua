@@ -112,13 +112,24 @@ end
 -----------------------------------------------
 -- 計算詞語整體的輔助碼
 -- 目前定義為
---   fullAux(word)[k] = { code[k] | code in aux_code(char) for char in word }
---   白日依山尽
---   fullAux = {
---       1: [p,pa,pn,pn, ..]  -- '白'
---       2: [o,or,ri, ..]     -- '日'
---   }
------------------------------------------------
+--   把字或词组的所有辅码，第一个键堆到一起，第二个键堆到一起
+--   例子：
+--       候选(word) = 拜日
+--          【拜】 的辅码有 charAuxCodes=
+--             p a
+--             p u
+--             u a
+--             u f
+--             u u
+--          【日】 的辅码有 charAuxCodes=
+--             o r
+--             r i
+--             a a
+--             u h
+--       (竖着拍成左右两个字符串)
+--   第一个辅码键的不重复列表为：fullAuxCodes[1]= urpao 
+--   第二个辅码键的不重复列表为：fullAuxCodes[2]= urhafi
+-- -----------------------------------------------
 function AuxFilter.fullAux(env, word)
     local fullAuxCodes = {}
     -- log.info('候选词：', word)
@@ -152,18 +163,39 @@ function AuxFilter.match(fullAux, auxStr)
         return false
     end
 
-    for i = 1, #auxStr do
-        if i and not fullAux[i]:find(auxStr:sub(i, i)) then
+    -- 输入辅助码只有一个键
+    if #auxStr == 1 then
+        -- 第一个匹配上就返回true
+        if fullAux[1]:find(auxStr:sub(1, 1)) then
+            return true
+        else
             return false
         end
-    end
+    -- 输入辅助码有一个键以上(这边假设为有两个键，超过部分就不管了)
+    else
+        local firstKeyMatched = false
+        local secondKeyMatched = false
 
-    return true
+        if fullAux[1]:find(auxStr:sub(1, 1)) then
+            firstKeyMatched = true
+        end
+        if fullAux[2]:find(auxStr:sub(2, 2)) then
+            secondKeyMatched = true
+        end
+
+        -- 只有两个键都匹配上了，才返回true
+        if firstKeyMatched and secondKeyMatched then
+            return true
+        else
+            return false
+        end
+
+    end
 end
 
------------------
+------------------
 -- filter 主函數 --
------------------
+------------------
 function AuxFilter.func(input, env)
     local context = env.engine.context
     local inputCode = context.input
