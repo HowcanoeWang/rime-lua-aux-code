@@ -4,6 +4,11 @@ RIME 输入法辅助码与音形分离插件
 
 ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/rime_select.gif)
 
+
+<p align="center">
+  <img alt="GitHub Downloads" height="400px" src="https://api.star-history.com/svg?repos=HowcanoeWang/rime-lua-aux-code&type=Date">
+</p>
+
 ## 特点
 
 * 通过独立的文件存储辅码，无需生成音形混合词典
