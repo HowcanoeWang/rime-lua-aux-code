@@ -10,10 +10,17 @@ function AuxFilter.init(env)
 
     local engine = env.engine
     local config = engine.schema.config
-    
+
     -- 設定預設觸發鍵為分號，並從配置中讀取自訂的觸發鍵
     env.trigger_key = config:get_string("key_binder/aux_code_trigger") or ";"
-    
+    -- 设定是否显示辅助码，默认为显示
+    env.show_aux_notice = config:get_string("key_binder/show_aux_notice") or 'true'
+    if env.show_aux_notice == "false" then
+        env.show_aux_notice = false
+    else
+        env.show_aux_notice = true
+    end
+ 
     ----------------------------
     -- 持續選詞上屏，保持輔助碼分隔符存在 --
     ----------------------------
@@ -225,14 +232,8 @@ function AuxFilter.func(input, env)
         --     log.info(i, table.concat(cl, ',', 1, #cl))
         -- end
 
-        -- 處理 simplifier
-        if cand:get_dynamic_type() == "Shadow" then
-            local originalCand = cand:get_genuine()
-            cand = ShadowCandidate(originalCand, originalCand.type, cand.text, cand.comment)
-        end
-
         -- 給待選項加上輔助碼提示
-        if auxCodes and #auxCodes > 0 then
+        if env.show_aux_notice and auxCodes and #auxCodes > 0 then
             local codeComment = table.concat(auxCodes, ',')
             -- 處理 simplifier
             if cand:get_dynamic_type() == "Shadow" then
