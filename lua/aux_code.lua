@@ -229,7 +229,10 @@ function AuxFilter.func(input, env)
         end
 
         -- 過濾輔助碼
-        if #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
+        if #auxStr == 0 then
+            -- 沒有輔助碼、不需篩選，直接返回待選項
+            yield(cand)
+        elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
             AuxFilter.match(fullAuxCodes, auxStr) then
             yield(cand)
         else
