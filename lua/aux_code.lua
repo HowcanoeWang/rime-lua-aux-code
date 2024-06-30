@@ -191,15 +191,15 @@ function AuxFilter.func(input, env)
     -- 分割部分正式開始
     local auxStr = ''
 
-    -- 判断
+    -- 判断字符串中是否包含輔助碼分隔符
     if not string.find(inputCode, env.trigger_key) then
-        -- 如果没有输入辅助码引导符，则直接yield所有待选项，不进入后续迭代，提升性能
+        -- 没有输入辅助码引导符，则直接yield所有待选项，不进入后续迭代，提升性能
         for cand in input:iter() do
             yield(cand)
         end
         return
     else
-        -- 字符串中是否包含輔助碼分隔符
+        -- 字符串中包含輔助碼分隔符
         local trigger_pattern = env.trigger_key:gsub("%W", "%%%1") -- 處理特殊字符
         local localSplit = inputCode:match(trigger_pattern .. "([^,]+)")
         if localSplit then
