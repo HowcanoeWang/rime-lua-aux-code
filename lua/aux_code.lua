@@ -190,60 +190,75 @@ function AuxFilter.func(input, env)
 
     -- 分割部分正式開始
     local auxStr = ''
-    if string.find(inputCode, env.trigger_key) then
-        -- 字符串中包含輔助碼分隔符
+
+    -- 判断
+    if not string.find(inputCode, env.trigger_key) then
+        -- 如果没有输入辅助码引导符，则直接yield所有待选项，不进入后续迭代，提升性能
+        for cand in input:iter() do
+            yield(cand)
+        end
+        return
+    else
+        -- 字符串中是否包含輔助碼分隔符
         local trigger_pattern = env.trigger_key:gsub("%W", "%%%1") -- 處理特殊字符
         local localSplit = inputCode:match(trigger_pattern .. "([^,]+)")
         if localSplit then
             auxStr = string.sub(localSplit, 1, 2)
             -- log.info('re.match ' .. local_split)
         end
-    end
 
-    local insertLater = {}
+        -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
+        -- local insertLater = {}
 
-    -- 遍歷每一個待選項
-    for cand in input:iter() do
-        local auxCodes = AuxFilter.aux_code[cand.text] -- 僅單字非 nil
-        local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
+        -- 遍歷每一個待選項
+        for cand in input:iter() do
+            local auxCodes = AuxFilter.aux_code[cand.text] -- 僅單字非 nil
+            local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
 
-        -- 查看 auxCodes
-        -- log.info(cand.text, #auxCodes)
-        -- for i, cl in ipairs(auxCodes) do
-        --     log.info(i, table.concat(cl, ',', 1, #cl))
-        -- end
+            -- 查看 auxCodes
+            -- log.info(cand.text, #auxCodes)
+            -- for i, cl in ipairs(auxCodes) do
+            --     log.info(i, table.concat(cl, ',', 1, #cl))
+            -- end
 
-        -- 給待選項加上輔助碼提示
-        if env.show_aux_notice and auxCodes and #auxCodes > 0 then
-            local codeComment = table.concat(auxCodes, ',')
-            -- 處理 simplifier
-            if cand:get_dynamic_type() == "Shadow" then
-                local shadowText = cand.text
-                local shadowComment = cand.comment
-                local originalCand = cand:get_genuine()
-                cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
-                    originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
+            -- 給待選項加上輔助碼提示
+            if env.show_aux_notice and auxCodes and #auxCodes > 0 then
+                local codeComment = table.concat(auxCodes, ',')
+                -- 處理 simplifier
+                if cand:get_dynamic_type() == "Shadow" then
+                    local shadowText = cand.text
+                    local shadowComment = cand.comment
+                    local originalCand = cand:get_genuine()
+                    cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
+                        originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
+                else
+                    cand.comment = '(' .. codeComment .. ')'
+                end
+            end
+
+            -- 過濾輔助碼
+            if #auxStr == 0 then
+                -- 沒有輔助碼、不需篩選，直接返回待選項
+                yield(cand)
+            elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
+                AuxFilter.match(fullAuxCodes, auxStr) then
+                -- 匹配到辅助码的待选项，直接插入到候选框中( 获得靠前的位置 )
+                yield(cand)
             else
-                cand.comment = '(' .. codeComment .. ')'
+                -- 待选项字词 没有 匹配到当前的辅助码，插入到列表中，最后插入到候选框里( 获得靠后的位置 )
+                -- table.insert(insertLater, cand)
+                -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
             end
         end
 
-        -- 過濾輔助碼
-        if #auxStr == 0 then
-            -- 沒有輔助碼、不需篩選，直接返回待選項
-            yield(cand)
-        elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
-            AuxFilter.match(fullAuxCodes, auxStr) then
-            yield(cand)
-        else
-            table.insert(insertLater, cand)
-        end
+        -- 把沒有匹配上的待選給添加上
+        -- for _, cand in ipairs(insertLater) do
+        --     yield(cand)
+        -- end
+        -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
+        
     end
 
-    -- 把沒有匹配上的待選給添加上
-    for _, cand in ipairs(insertLater) do
-        yield(cand)
-    end
 end
 
 function AuxFilter.fini(env)
