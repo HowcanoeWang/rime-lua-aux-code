@@ -6,7 +6,7 @@ local AuxFilter = {}
 function AuxFilter.init(env)
     -- log.info("** AuxCode filter", env.name_space)
 
-    env.aux_code = AuxFilter.readAuxTxt(env.name_space)
+    AuxFilter.aux_code = AuxFilter.readAuxTxt(env.name_space)
 
     local engine = env.engine
     local config = engine.schema.config
@@ -87,7 +87,7 @@ function AuxFilter.readAuxTxt(txtpath)
     end
     file:close()
     -- 確認 code 能打印出來
-    -- for key, value in pairs(env.aux_code) do
+    -- for key, value in pairs(AuxFilter.aux_code) do
     --     log.info(key, table.concat(value, ','))
     -- end
 
@@ -141,7 +141,7 @@ function AuxFilter.fullAux(env, word)
     -- log.info('候选词：', word)
     for _, codePoint in utf8.codes(word) do
         local char = utf8.char(codePoint)
-        local charAuxCodes = env.aux_code[char] -- 每個字的輔助碼組
+        local charAuxCodes = AuxFilter.aux_code[char] -- 每個字的輔助碼組
         if charAuxCodes then -- 輔助碼存在
             for _, code in ipairs(charAuxCodes) do
                 for i = 1, #code do
@@ -204,7 +204,7 @@ function AuxFilter.func(input, env)
 
     -- 遍歷每一個待選項
     for cand in input:iter() do
-        local auxCodes = env.aux_code[cand.text] -- 僅單字非 nil
+        local auxCodes = AuxFilter.aux_code[cand.text] -- 僅單字非 nil
         local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
 
         -- 查看 auxCodes
@@ -229,7 +229,10 @@ function AuxFilter.func(input, env)
         end
 
         -- 過濾輔助碼
-        if #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
+        if #auxStr == 0 then
+            -- 沒有輔助碼、不需篩選，直接返回待選項
+            yield(cand)
+        elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
             AuxFilter.match(fullAuxCodes, auxStr) then
             yield(cand)
         else
