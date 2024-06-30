@@ -10,15 +10,16 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
 ## 特点
 
-* 通过独立的文件存储辅码，无需生成音形混合词典
-* 提供包括**自然码辅码表**和**小鹤形码表**在内的两种主流方案
+* 通过独立的文件存储辅码，无需生成音形混合词典   
+* 提供包括**自然码辅码表**和**小鹤形码表**在内的两种主流方案 （你甚至能找到**五笔**辅助码）   
 * 在输入末尾键入分隔符 (默认为 `;` ，可自定义配置) 来激活辅码模式，选择候选词并上屏（通过空格或数字）后，可继续输入，插件会自动移除已上屏文字的辅码  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
-* 在候选单中直接提示单字的辅助码  
+* 在候选单中直接提示单字的辅助码 （可配置关闭）  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_notice.png)
 * 支持词语级筛选 （非首字筛选）  
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)  
   如「白日依山尽」仍然可以匹配到「i」 （尽的辅码）
+* 为优化性能，**未**匹配辅助码的候选**不会**出现在列表中
 * 此方案适用于使用辅助码排序候选项，而非音形结合的**四键单字**输入模式 （请用单字字库来满足需求）
 
 ## 背景
@@ -135,3 +136,4 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 * [@shewer](https://github.com/shewer) 优化的代码以及辅码文件配置
 * [@AiraNadih](https://github.com/AiraNadih) 增加小鹤码表、优化辅码分号逻辑、触发键改为可配置项，以及润色此说明文档
 * [@expoli](https://github.com/expoli) 对文档说明的修改
+* [@EtaoinWu](https://github.com/EtaoinWu) 候选过滤逻辑性能优化
