@@ -146,6 +146,8 @@ function AuxFilter.init(env)
         AuxFilter.main1_notifier(ctx)
     elseif AuxFilter.notifiermark==2 then
         AuxFilter.longcandimodify_notifier(ctx)
+    elseif AuxFilter.notifiermark==3 then
+        AuxFilter.longcandimodify_ybnotifier(ctx)
     end
     end)
 end
@@ -223,6 +225,14 @@ function AuxFilter.longcandimodify_notifier(ctx)
             ctx:commit()
         end
     end
+
+--- notifier longcandimodify模式
+
+function AuxFilter.longcandimodify_ybnotifier(ctx)
+    -- log.info("modifyinput",AuxFilter.ybmodifiedcode)
+    ctx.input = AuxFilter.ybmodifiedcode
+    end
+----------------
 ----------------
 -- 閱讀輔碼文件 --
 ----------------
@@ -397,18 +407,18 @@ function AuxFilter.match(fullAux, auxStr)
     end
 
     local firstKeyMatched = fullAux[1]:find(auxStr:sub(1, 1)) ~= nil
-    -- log.info("fullaux1",fullAux[1])
-    local secondKeyMatched = fullAux[2]:find(auxStr:sub(1, 1)) ~= nil
-    -- 如果辅助码只有一个键，且第一个键匹配，则返回 true
+    local secondKeymatched = fullAux[2]:find(auxStr:sub(1, 1)) ~= nil
+    -- 如果辅助码只有一个键，且第一个键匹配两辅码中任意一个，则返回 true
     if #auxStr == 1 then
-        return firstKeyMatched or secondKeyMatched
+        return firstKeyMatched or secondKeymatched
     end
 
-    -- 如果辅助码有两个或更多键，检查第二个键是否匹配
+    -- 如果辅助码有两个或以上,有效组合的排列都有效
+    local fiestKeymatched = fullAux[1]:find(auxStr:sub(2, 2)) ~= nil
     local secondKeyMatched = fullAux[2] and fullAux[2]:find(auxStr:sub(2, 2)) ~= nil
-
-    -- 只有当第一个键和第二个键都匹配时，才返回 true
-    return firstKeyMatched and secondKeyMatched
+    local vgpipw = firstKeyMatched and secondKeyMatched
+    local fjpipw = secondKeymatched and fiestKeymatched
+    return vgpipw or fjpipw
 end
 -- 返回指定长度的候选
 function AuxFilter.candisub(cand,len)
@@ -527,6 +537,7 @@ end
 
 --- 句子修改分支
 function AuxFilter.longcandimodify(input,env)
+    local branchmark = 1
     AuxFilter.notifiermark = 2
     ---获取第一个候选也就是最长的那个,,怎么简单的获取,
     local firstcandi = ""
@@ -535,17 +546,27 @@ function AuxFilter.longcandimodify(input,env)
         break
     end
     local context = env.engine.context
-    local inputCode = context.input
-    -- local inputCode = context:get_preedit().text
+    local inputCode0 = context.input:match("(%a+)" .. AuxFilter.trigger_key.."-")
+    local inputCode = context:get_preedit().text
+    -- log.info("inputcode",inputCode)
     -- log.info(inputCode)
     local removeAuxInput = inputCode:match("(%a+)" .. AuxFilter.trigger_key.."-")
-    -- log.info(inputCode)
+    local transdcode = string.gsub(inputCode0,removeAuxInput,"")
+    -- log.info("转换了的音码",transdcode)
+    -- log.info("removeauxinput",removeAuxInput)
     local auxcode = inputCode:match(AuxFilter.trigger_key .. "(%a*)" .. AuxFilter.trigger_key)
     -- log.info("auxcode",auxcode)
     local funccode = inputCode:match(AuxFilter.trigger_key .. "%a*" .. AuxFilter.trigger_key .. "+(%a*)")
     -- log.info("fucncode",funccode)
+    local ybmodif = funccode:match("s(%a%a)")
+    if ybmodif then
+        branchmark=2
+        funccode = string.gsub(funccode,"s" .. ybmodif,"")
+    end
+    -- log.info("音码",ybmodif)
+    -- log.info("funccode",funccode)
     local leftcompen = countSubstringOccurrences(funccode,"a")
-    local rightcompen = countSubstringOccurrences(funccode,"d")
+    local rightcompen = countSubstringOccurrences(funccode,"d") + 2 * countSubstringOccurrences(funccode,"f")
     local inputspls  = splitToPairs(removeAuxInput)
     local compensate = utf8len(firstcandi.text)
     local passnum = countSubstringOccurrences(inputCode,AuxFilter.trigger_key) -2
@@ -571,10 +592,20 @@ function AuxFilter.longcandimodify(input,env)
     if compensate<=0 then
         compensate =1
     end
+    if branchmark==2 then
+        AuxFilter.notifiermark = 3
+        local wrongyb = inputspls[compensate]
+        inputspls[compensate] = ybmodif
+        local inputcode2 = table.concat(inputspls,"")
+        -- log.info(inputcode2)
+        AuxFilter.ybmodifiedcode = transdcode .. inputcode2 .. AuxFilter.trigger_key
+        yield(Candidate(firstcandi.type,firstcandi._start,firstcandi._start,"",wrongyb .."->" .. ybmodif))
+    elseif branchmark==1 then
     -- compensate = compensate+trigger_key_n-1
     -- local compensate = utf8len(firstcandi.text) - trigger_key_n + 1
     local finalcandi = AuxFilter.candisub(firstcandi,compensate)
     yield(finalcandi)
+    end
 
 
     
