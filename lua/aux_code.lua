@@ -90,6 +90,7 @@ function AuxFilter.init(env)
     -- log.info("** AuxCode filter", env.name_space)
     local engine = env.engine
     local config = engine.schema.config
+    AuxFilter.matchmode=0 --设置匹配模式 0宽松匹配和1严格匹配
     --读码
     if AuxFilter.aux_code == nil then
         AuxFilter.readAuxTxt(env.name_space)
@@ -216,6 +217,28 @@ function AuxFilter.longcandimodify_ybnotifier(ctx)
     -- log.info("modifyinput",AuxFilter.ybmodifiedcode)
     ctx.input = AuxFilter.ybmodifiedcode
     end
+
+
+
+    -- 生成所有长度为1和2的组合的函数
+local function two_char_combinations(str)
+    local result = {}
+    local n = #str
+    
+    -- 生成所有长度为1的组合
+    for i = 1, n do
+        table.insert(result, str:sub(i, i))
+    end
+    
+    -- 生成所有长度为2的组合
+    for i = 1, n do
+        for j = i + 1, n do
+            table.insert(result, str:sub(i, i) .. str:sub(j, j))
+        end
+    end
+    
+    return result
+end
 ----------------
 ----------------
 -- 閱讀輔碼文件 --
@@ -243,19 +266,16 @@ function AuxFilter.readAuxTxt(txtpath)
         -- local key = zi
         -- local value = xk
         -- log.info(key,value)
+        local fuset = two_char_combinations(fu)
         if zi and fu and yb then
             -- auxCodes 的逻辑不变
             auxCodes[zi] = auxCodes[fu] or {}
             table.insert(auxCodes[zi], fu)
             --加入mixedcodes的逻辑  这里只考虑到音码是两位,且完整辅码是两位
             mixedCodes[yb] = mixedCodes[yb] or {}
-            for i=1,#fu do
-                v = fu:sub(i,i)
-                mixedCodes[yb][v]=true
-                
+            for k,v in ipairs(fuset) do
+                mixedCodes[yb][v] = true
             end
-            mixedCodes[yb][fu] = true
-            mixedCodes[yb][fu:reverse()] = true
 
         end
     end
@@ -387,6 +407,7 @@ function AuxFilter.match(fullAux, auxStr)
     if #fullAux == 0 then
         return false
     end
+    
 
     local firstKeyMatched = fullAux[1]:find(auxStr:sub(1, 1)) ~= nil
     local secondKeymatched = fullAux[2]:find(auxStr:sub(1, 1)) ~= nil
@@ -394,12 +415,14 @@ function AuxFilter.match(fullAux, auxStr)
     if #auxStr == 1 then
         return firstKeyMatched or secondKeymatched
     end
-
-    -- 如果辅助码有两个或以上,有效组合的排列都有效
+    -- 宽松模式下如果辅助码有两个或以上,有效组合的排列都有效  严格模式下 顺序一致有效
     local fiestKeymatched = fullAux[1]:find(auxStr:sub(2, 2)) ~= nil
     local secondKeyMatched = fullAux[2] and fullAux[2]:find(auxStr:sub(2, 2)) ~= nil
     local vgpipw = firstKeyMatched and secondKeyMatched
     local fjpipw = secondKeymatched and fiestKeymatched
+    if AuxFilter.matchmode==1 then
+        return vgpipw
+    end
     return vgpipw or fjpipw
 end
 -- 返回指定长度的候选
@@ -415,6 +438,29 @@ function AuxFilter.candisub(cand,len)
     return finalcandi
 
 end
+
+-- 辅码与音码匹配与否
+local function combmath(aux,tab)
+    local mark = true
+    if AuxFilter.matchmode ==0 then
+        if #aux~=0 then
+            if not (tab[aux] and tab[aux:reverse()]) then
+                mark = false
+            end
+        end
+    elseif AuxFilter.matchmode==1 then
+        if #aux~=0 then
+            if not tab[aux] then
+                mark = false
+            end
+        end
+    end
+
+
+    -- log.info(aux,mark)
+return mark
+end
+
 --- 分支一 原来的功能
 function AuxFilter.main1(input,env)
     AuxFilter.notifiermark = 1  --辅筛情况下的 选词后的逻辑标记 变为 1
@@ -501,8 +547,11 @@ function AuxFilter.main1(input,env)
             end
         end
         -- log.info(111)
-        local commentfirst = table.concat(matchybtab,"--")
-        -- log.info(firstcandi.text)
+        local commentfirst =  "无匹配"
+        if #matchybtab~=0 then
+            commentfirst = table.concat(matchybtab,"--")
+        end
+            -- log.info(firstcandi.text)
         firstcandi.comment = commentfirst
         -- log.info(firstcandi.text)
         -- log.info("comment" ,commentfirst)
@@ -521,24 +570,6 @@ function AuxFilter.defaultmain(input)
 end
 
 
-
--- 辅码与音码匹配与否  宽松匹配
-local function combmath(aux,tab)
-    local mark = true
-    if #aux==1 then
-        if not tab[aux] then
-            mark = false
-        end
-    elseif #aux==0 then
-        return true
-    else
-        mark = tab[aux] or tab[aux:reverse()]
-        -- log.info("匹配",aux,aux:reverse(),mark)
-    end
-
-    -- log.info(aux,mark)
-return mark
-end
 
 --- 句子修改分支
 function AuxFilter.longcandimodify(input,env)
@@ -578,10 +609,12 @@ function AuxFilter.longcandimodify(input,env)
     local passnum = countSubstringOccurrences(inputCode,AuxFilter.trigger_key) -2  --计算跳过匹配数  功能码中 ; 的作用
     -- log.info(inputspls[1])
     --确定最终断点位置
+    local matchedmark = false  --整句辅码是否有有效配对
     for index, value in ipairs(inputspls) do
         local auxtab = AuxFilter.comb_code[value]
         if combmath(auxcode,auxtab) then
             compensate = index
+            matchedmark= true
             if passnum==0 then
             break
             end
@@ -592,7 +625,11 @@ function AuxFilter.longcandimodify(input,env)
     -- if compensate<=0 then
     --     compensate=1
     -- end
-    compensate = compensate + rightcompen - leftcompen-1  --减1是要断在作用词之前
+    compensate = compensate + rightcompen - leftcompen
+    if matchedmark then
+       compensate = compensate -1  --减1是要断在作用词之前  
+    end
+  
     --如果前面没字就上一个
     if compensate<=0 then
         compensate =1
@@ -610,9 +647,14 @@ function AuxFilter.longcandimodify(input,env)
     
     --在断点处断句逻辑
     elseif branchmark==1 then
+        local comment = ""
     -- compensate = compensate+trigger_key_n-1
     -- local compensate = utf8len(firstcandi.text) - trigger_key_n + 1
     local finalcandi = AuxFilter.candisub(firstcandi,compensate)
+    if not matchedmark then
+        comment = "辅码无匹配"
+    end
+    finalcandi.comment = comment
     yield(finalcandi)
     end
 
