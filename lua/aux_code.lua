@@ -444,7 +444,7 @@ local function combmath(aux,tab)
     local mark = true
     if AuxFilter.matchmode ==0 then
         if #aux~=0 then
-            if not (tab[aux] and tab[aux:reverse()]) then
+            if not (tab[aux] or tab[aux:reverse()]) then  --都不匹配才false
                 mark = false
             end
         end
