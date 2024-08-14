@@ -1,8283 +1,9196 @@
-阿=ek
-锕=jk
-嗄=kw
-啊=kk
-哎=kx
-哀=wy
-唉=ku
-埃=tu
-挨=fu
-欸=sr
-嗳=ky
-锿=jy
-捱=ft
-皑=bj
-癌=be
-毐=uw
-矮=un
-蔼=cv
-霭=yv
-艾=cx
-爱=py
-砹=ux
-隘=em
-嗌=km
-嫒=ny
-碍=uc
-叆=ey
-暧=oy
-瑷=wy
-安=bn
-桉=mn
-氨=qn
-庵=gd
-谙=yo
-鹌=dn
-鞍=gn
-盦=rm
-垵=tn
-俺=rd
-唵=kd
-埯=td
-铵=jn
-揞=fo
-犴=qg
-岸=eg
-按=fn
-荌=cn
-案=bm
-胺=on
-暗=oo
-黯=ho
-肮=oj
-卬=pe
-昂=oe
-盎=ym
-凹=la
-敖=fw
-嗷=kw
-嶅=fe
-廒=gw
-遨=zw
-熬=fh
-獒=fq
-璈=ww
-翱=bx
-聱=fe
-螯=fi
-鳌=fa
-鏖=gj
-拗=fl
-袄=py
-媪=nm
-岙=ye
-坳=tl
-垇=ta
-傲=rw
-奡=al
-奥=pd
-骜=fm
-隩=ed
-懊=xd
-澳=dd
-鏊=fj
-八=pn
-巴=sl
-叭=kb
-扒=fb
-朳=mb
-岜=eb
-芭=cb
-疤=bb
-捌=fd
-笆=vb
-粑=mb
-羓=yb
-蚆=ib
-鲃=ab
-妭=nd
-拔=fd
-胈=od
-菝=cd
-跋=zd
-魃=gd
-把=fb
-钯=jb
-靶=gb
-坝=tr
-爸=bb
-罢=ss
-耙=lb
-鲅=ad
-鲌=ab
-霸=yo
-灞=do
-吧=kb
-掰=uu
-擘=uu
-白=po
-百=ab
-佰=rb
-柏=mb
-捭=fu
-摆=fs
-败=kw
-拜=uf
-稗=hu
-扳=fy
-攽=bw
-班=ww
-般=vy
-颁=br
-斑=ww
-搬=fy
-瘢=by
-癍=bw
-阪=ey
-坂=ty
-昄=oy
-板=my
-版=py
-钣=jy
-粄=my
-办=ld
-半=dl
-伴=rb
-扮=fd
-拌=fb
-绊=sb
-柈=mb
-湴=dy
-靽=gb
-瓣=lu
-邦=fe
-帮=fj
-梆=me
-浜=db
-绑=se
-榜=mf
-膀=of
-玤=wf
-蚌=if
-傍=rf
-棒=ml
-棓=mk
-谤=yf
-塝=tf
-搒=ff
-蒡=cf
-磅=uf
-镑=jf
-包=bs
-孢=zs
-苞=cs
-枹=ms
-胞=os
-煲=rh
-龅=vs
-褒=wy
-雹=ys
-薄=cc
-宝=by
-饱=us
-保=rm
-鸨=bn
-堡=rt
-葆=cm
-褓=pm
-报=fy
-抱=fs
-豹=vu
-趵=zu
-鲍=as
-暴=ou
-爆=hu
-陂=ey
-卑=pu
-杯=mb
-悲=fx
-椑=mu
-碑=uu
-鹎=pn
-北=lb
-贝=kr
-孛=uz
-狈=qr
-邶=le
-备=wt
-背=lo
-钡=jr
-倍=rk
-悖=xz
-被=py
-惫=wx
-焙=hk
-琲=wf
-辈=fi
-碚=uk
-蓓=ck
-褙=po
-鞁=gy
-糒=my
-鞴=gy
-鐾=uj
-呗=kr
-奔=dc
-贲=ur
-栟=mk
-犇=nn
-锛=jc
-本=aa
-苯=cb
-畚=st
-坋=td
-坌=bt
-倴=rc
-笨=vb
-祊=pf
-崩=eo
-绷=so
-嘣=ko
-甭=by
-琫=wl
-泵=uu
-迸=zk
-甏=uw
-镚=jo
-蹦=zo
-揼=fu
-屄=ub
-逼=zt
-鲾=at
-荸=cz
-鼻=zl
-匕=pv
-比=bb
-吡=kb
-妣=nb
-沘=db
-彼=iy
-秕=hb
-俾=ru
-笔=vm
-舭=vb
-鄙=ke
-币=pj
-必=dd
-毕=bu
-闭=mc
-佖=rb
-坒=bt
-庇=gb
-诐=yy
-邲=be
-畀=tl
-苾=cb
-哔=ku
-毖=bb
-珌=wb
-荜=cu
-陛=et
-毙=bb
-狴=qt
-铋=jb
-婢=nu
-庳=gu
-敝=dw
-萆=cu
-弼=gg
-愎=xw
-皕=bb
-筚=vu
-赑=kr
-滗=dm
-痹=bl
-蓖=cb
-裨=pu
-跸=zu
-弊=dc
-碧=wu
-箅=vl
-蔽=cw
-馝=hb
-壁=ut
-嬖=un
-篦=vb
-薜=cu
-觱=xy
-避=zu
-濞=dl
-臂=uo
-髀=gu
-璧=uy
-襞=uy
-边=zl
-砭=uf
-笾=vz
-编=sc
-煸=hc
-蝙=ic
-鳊=ac
-鞭=gg
-贬=kf
-扁=hc
-匾=kc
-萹=cc
-碥=uc
-褊=pc
-卞=dx
-弁=sc
-忭=xb
-抃=fb
-汴=db
-苄=cb
-变=wy
-便=rg
-昪=oc
-遍=zc
-辨=lu
-辩=lu
-辫=lu
-杓=mu
-标=mx
-飑=js
-骉=mm
-彪=hp
-脿=oy
-幖=jx
-摽=fx
-蔈=cx
-骠=mx
-熛=hx
-膘=ox
-瘭=bx
-镖=jx
-飙=qx
-儦=rh
-瀌=dh
-藨=ch
-镳=jh
-表=fy
-婊=ny
-裱=py
-俵=ry
-鳔=ax
-憋=dx
-鳖=da
-别=kd
-咇=kb
-蹩=dr
-瘪=bb
-邠=be
-玢=wd
-宾=bb
-彬=mp
-傧=rb
-斌=wv
-滨=db
-缤=sb
-槟=mb
-镔=jb
-濒=dr
-豳=eu
-摈=fb
-殡=db
-膑=ob
-髌=gb
-鬓=ab
-仌=rr
-冰=du
-兵=qb
-丙=an
-邴=be
-抦=fb
-秉=pn
-昺=ob
-柄=mb
-炳=hb
-饼=uk
-蛃=ib
-摒=fk
-禀=wx
-并=bk
-病=bb
-拨=fd
-波=dy
-玻=wy
-剥=ed
-哱=kz
-砵=ub
-钵=jb
-饽=uz
-啵=ky
-菠=cy
-嶓=et
-播=ft
-伯=rb
-驳=mx
-帛=bj
-勃=ul
-亳=wq
-浡=dz
-袯=pd
-钹=jd
-铂=jb
-脖=oz
-舶=vb
-博=uc
-渤=dl
-鹁=un
-搏=fc
-僰=ar
-箔=vb
-膊=oc
-踣=zk
-镈=jc
-馞=hz
-欂=mc
-礴=uc
-跛=zy
-簸=vy
-檗=um
-卜=ld
-逋=zf
-晡=of
-醭=yn
-卟=kb
-补=pb
-哺=kf
-捕=ff
-不=ad
-布=uj
-步=vp
-怖=xj
-钚=jb
-埔=tf
-埗=tp
-部=le
-埠=tu
-瓿=lw
-蔀=ce
-簿=vc
-嚓=kx
-擦=fx
-偲=rx
-猜=qo
-才=ap
-材=mc
-财=kc
-裁=uy
-采=pm
-彩=pp
-睬=om
-踩=zm
-菜=cm
-蔡=cx
-参=sp
-骖=mp
-喰=kl
-餐=ll
-残=dj
-蚕=ti
-惭=xj
-惨=xp
-黪=hp
-灿=he
-掺=fp
-孱=uz
-粲=lm
-璨=wm
-仓=rv
-伧=rv
-沧=dv
-苍=cv
-鸧=rn
-舱=vv
-藏=ci
-操=fm
-糙=mz
-曹=ao
-嘈=ko
-漕=do
-槽=mo
-艚=vo
-螬=io
-草=cu
-肏=rr
-册=pa
-侧=rd
-厕=id
-恻=xd
-测=dd
-策=vn
-岑=ev
-涔=dv
-梣=mv
-噌=ko
-层=us
-曾=bo
-嶒=eo
-蹭=zo
-叉=yd
-杈=mi
-插=fj
-馇=ua
-锸=jj
-垞=tq
-查=ma
-茬=ct
-茶=cm
-嵖=ea
-搽=fm
-猹=qa
-槎=mg
-察=bx
-碴=ua
-檫=mx
-衩=pi
-蹅=za
-镲=jx
-汊=di
-岔=be
-侘=rq
-诧=yq
-姹=nq
-差=yg
-拆=fi
-钗=ji
-侪=rl
-柴=vm
-豺=vc
-茝=cl
-虿=wi
-瘥=bg
-辿=ze
-觇=le
-梴=mz
-搀=fd
-襜=pk
-婵=nl
-谗=yd
-禅=pl
-馋=ud
-缠=sl
-僝=rz
-蝉=il
-廛=gt
-潺=dz
-澶=da
-镡=ju
-瀍=dt
-儳=rd
-蟾=ik
-巉=ed
-躔=zt
-镵=jd
-产=lp
-刬=jd
-旵=oe
-浐=di
-谄=yj
-啴=kl
-铲=ji
-阐=ml
-蒇=cr
-骣=mz
-冁=bn
-忏=xq
-颤=wr
-羼=uy
-韂=gk
-伥=ri
-昌=oo
-娼=no
-猖=qo
-菖=co
-阊=mo
-鲳=ao
-肠=op
-苌=ci
-尝=xs
-偿=rs
-常=xj
-徜=ik
-嫦=nj
-鲿=as
-厂=ap
-场=tp
-昶=yo
-惝=xk
-敞=xw
-氅=xm
-怅=xi
-玚=wp
-畅=up
-倡=ro
-鬯=xb
-唱=ko
-抄=fu
-弨=gk
-怊=xk
-钞=ju
-焯=hu
-超=tk
-晁=od
-巢=vg
-朝=uo
-嘲=ko
-潮=do
-吵=ku
-炒=hu
-耖=lu
-车=al
-車=al
-砗=ui
-唓=ki
-扯=fv
-彻=id
-坼=ti
-掣=pu
-撤=fw
-澈=dw
-抻=fu
-郴=me
-琛=wm
-嗔=kb
-瞋=ob
-尘=xt
-臣=kl
-忱=xv
-沉=dj
-辰=in
-陈=ed
-宸=bn
-莀=cn
-晨=on
-谌=yv
-煁=hv
-碜=up
-衬=pc
-疢=bh
-龀=vb
-趁=tp
-榇=mm
-谶=yj
-柽=mt
-琤=wl
-称=hx
-偁=rr
-蛏=it
-牚=xy
-赪=tr
-撑=fu
-瞠=ot
-丞=la
-成=wv
-呈=kw
-承=vn
-枨=mi
-诚=yi
-城=ti
-宬=bi
-乘=qn
-埕=tw
-晟=oi
-珹=wi
-珵=ww
-铖=ji
-惩=ix
-程=hw
-裎=pw
-塍=ot
-酲=yw
-憕=xa
-澂=dw
-澄=da
-橙=ma
-逞=zw
-骋=mv
-庱=gw
-秤=hp
-吃=kq
-哧=kd
-蚩=vi
-鸱=dn
-瓻=xw
-眵=ox
-笞=vk
-嗤=ki
-媸=ni
-摛=fd
-痴=bk
-螭=id
-魑=gd
-弛=gy
-池=dy
-驰=my
-迟=zi
-坻=td
-茌=cu
-持=fc
-墀=tn
-漦=wu
-踟=zk
-篪=vj
-尺=un
-侈=rx
-齿=vk
-胣=oy
-耻=ev
-褫=pj
-彳=pr
-叱=kb
-斥=pd
-赤=td
-饬=ul
-炽=hb
-翅=ux
-敕=uw
-痓=bt
-啻=wk
-傺=rx
-瘛=bx
-充=we
-冲=dv
-忡=xv
-茺=ce
-珫=we
-翀=xv
-舂=fj
-摏=fj
-憧=xl
-艟=vl
-虫=vd
-崇=ex
-宠=bl
-埫=tk
-铳=je
-抽=fy
-婤=nk
-瘳=bp
-犨=rn
-仇=rj
-俦=rc
-帱=jc
-惆=xk
-绸=sk
-椆=mk
-畴=tc
-愁=hx
-稠=hk
-筹=vc
-酬=yv
-踌=zc
-雠=rf
-丑=va
-杻=mi
-侴=rd
-瞅=oh
-臭=zq
-出=vk
-初=pd
-摴=fk
-樗=mk
-刍=de
-除=eh
-厨=ic
-滁=dh
-锄=jl
-蜍=ih
-雏=df
-橱=mc
-躇=zo
-蹰=zc
-杵=mw
-础=ui
-储=ro
-楮=mo
-楚=mr
-褚=po
-濋=dr
-亍=el
-处=wb
-怵=xu
-绌=si
-柷=me
-俶=ry
-畜=wt
-琡=wy
-搐=ft
-触=di
-憷=xr
-斶=ji
-黜=hi
-矗=uq
-欻=hr
-揣=fe
-搋=fj
-啜=ky
-嘬=ky
-踹=ze
-川=pl
-氚=qi
-穿=by
-传=rv
-船=vk
-圌=ke
-遄=ze
-椽=mu
-舛=xl
-喘=ke
-串=ll
-钏=ji
-疮=bv
-窗=bw
-床=gm
-噇=kl
-幢=jl
-闯=mm
-创=rd
-怆=xv
-吹=kr
-炊=hr
-垂=pa
-倕=ri
-陲=ei
-捶=fi
-棰=mi
-椎=mf
-槌=mz
-锤=ji
-春=fo
-堾=to
-椿=mo
-瑃=wo
-蝽=io
-纯=st
-唇=ik
-莼=ct
-淳=dz
-鹑=wn
-醇=yz
-蠢=fi
-逴=zu
-踔=zu
-戳=xg
-婼=nk
-惙=xy
-绰=su
-辍=iy
-龊=vr
-呲=kb
-疵=bb
-跐=zb
-词=yk
-祠=pk
-茈=cb
-茨=cr
-堲=gt
-瓷=dw
-慈=bx
-辞=qu
-磁=uy
-雌=vf
-鹚=bn
-糍=my
-此=vb
-泚=db
-玼=wb
-次=dr
-伺=rk
-佽=rr
-刺=ad
-莿=cd
-赐=kw
-匆=bd
-囱=pw
-苁=cr
-枞=mr
-葱=cx
-骢=mx
-熜=hx
-璁=wx
-聪=ex
-从=rr
-丛=ra
-悰=xx
-淙=dx
-琮=wx
-凑=dt
-腠=ot
-辏=it
-粗=mq
-麤=gb
-徂=iq
-殂=dq
-促=rr
-猝=qu
-酢=yv
-蔟=cu
-醋=yo
-簇=vu
-蹙=wr
-蹴=zy
-汆=ru
-撺=fi
-镩=ji
-蹿=zi
-窜=bi
-篡=vs
-爨=ph
-崔=ef
-催=rf
-缞=sy
-摧=ff
-榱=my
-漼=df
-璀=wf
-脆=ov
-啐=ku
-悴=xu
-淬=du
-萃=cu
-毳=mm
-瘁=bu
-粹=mu
-翠=xu
-邨=te
-村=mc
-皴=sy
-存=uz
-忖=xc
-寸=ad
-搓=fg
-瑳=wg
-磋=ug
-撮=fy
-蹉=zg
-嵯=eg
-痤=bt
-矬=ut
-鹾=lg
-酂=ne
-脞=ot
-厝=io
-挫=ft
-莝=ct
-措=fo
-棤=mo
-锉=jt
-错=jo
-耷=de
-嗒=kk
-搭=fk
-褡=pk
-达=zd
-妲=na
-怛=xa
-沓=uo
-哒=kz
-炟=ha
-荙=cz
-笪=va
-答=vk
-跶=zz
-阘=mx
-靼=ga
-鞑=gz
-打=fd
-大=un
-垯=tz
-瘩=bk
-呆=km
-呔=kt
-歹=ax
-逮=zn
-傣=ru
-代=ry
-轪=id
-垈=rt
-岱=re
-绐=sk
-迨=zk
-骀=mk
-带=fj
-待=ic
-怠=sx
-殆=dk
-玳=wy
-贷=rr
-埭=tn
-袋=ry
-叇=ez
-戴=ub
-黛=rh
-丹=pa
-妉=nv
-单=bl
-担=fa
-眈=ov
-耽=ev
-郸=be
-聃=er
-殚=dl
-瘅=bl
-箪=vl
-儋=rk
-胆=oa
-疸=ba
-掸=fl
-赕=kh
-亶=wa
-旦=oa
-但=ra
-诞=yz
-疍=va
-啖=kh
-弹=gl
-惮=xl
-淡=dh
-萏=cj
-蛋=vi
-氮=qh
-憺=xk
-澹=dk
-当=xe
-珰=we
-裆=pe
-铛=je
-筜=ve
-挡=fe
-党=xe
-谠=ye
-凼=uk
-宕=bu
-砀=up
-垱=te
-荡=cp
-档=me
-菪=cu
-刀=vp
-叨=kd
-忉=xd
-氘=ql
-舠=vd
-鱽=ad
-捯=fd
-导=sc
-岛=pe
-捣=fe
-祷=pc
-蹈=zj
-到=ad
-倒=rd
-悼=xu
-焘=fh
-盗=dm
-道=zz
-稻=hj
-纛=fx
-嘚=kc
-得=ic
-锝=jc
-德=ix
-地=ty
-的=bu
-扽=ft
-灯=hd
-登=va
-噔=ka
-璒=wa
-蹬=za
-等=vc
-戥=og
-邓=ye
-凳=vj
-嶝=ea
-瞪=oa
-磴=ua
-镫=ja
-氐=ud
-低=rd
-啲=ku
-羝=yd
-堤=tr
-滴=dk
-镝=jk
-鞮=gr
-狄=qh
-籴=rm
-迪=zy
-敌=qw
-涤=dm
-荻=ch
-笛=vy
-觌=ue
-髢=ay
-嘀=kk
-嫡=nk
-翟=xf
-蹢=zk
-诋=yd
-邸=de
-底=gd
-抵=fd
-柢=md
-砥=ud
-骶=gd
-弟=bp
-杕=md
-玓=wu
-俤=rp
-帝=wj
-娣=np
-递=zp
-第=vp
-菂=cu
-谛=yj
-媂=nj
-棣=mn
-睇=op
-缔=sj
-蒂=cj
-禘=pj
-碲=uj
-踶=zr
-甸=bt
-掂=fk
-滇=db
-颠=ur
-巅=er
-癫=br
-典=lb
-点=lh
-碘=ub
-踮=zk
-电=lv
-佃=rt
-阽=ek
-坫=tk
-店=gk
-垫=ft
-扂=hk
-玷=wk
-钿=jt
-惦=xk
-淀=dr
-奠=bd
-琔=wr
-殿=uy
-靛=fr
-癜=by
-簟=vu
-刁=va
-叼=kd
-汈=dd
-凋=dk
-貂=vk
-碉=uk
-雕=kf
-鲷=ak
-屌=uj
-吊=kj
-钓=ju
-窎=bn
-调=yk
-掉=fu
-铞=jj
-铫=jd
-爹=bx
-跌=zu
-嗲=kx
-迭=zu
-垤=tt
-昳=ou
-绖=st
-瓞=gu
-谍=ym
-喋=km
-堞=tm
-耋=lt
-叠=yq
-牒=pm
-碟=um
-蝶=im
-蹀=zm
-鲽=am
-哋=ky
-丁=al
-仃=rd
-叮=kd
-玎=wd
-疔=bd
-盯=od
-钉=jd
-耵=ed
-酊=yd
-顶=dr
-鼎=ov
-订=yd
-定=br
-啶=kr
-萣=cr
-铤=jz
-腚=or
-碇=ur
-锭=jr
-丢=ps
-铥=js
-东=ad
-冬=wd
-咚=kd
-岽=ed
-氡=qd
-鸫=dn
-董=cv
-懂=xv
-动=el
-冻=dd
-侗=rk
-垌=tk
-峒=ek
-恫=xk
-栋=md
-洞=dk
-胨=od
-胴=ok
-硐=uk
-都=le
-兜=pe
-蔸=ce
-篼=ve
-抖=fu
-陡=er
-唞=ku
-蚪=iu
-斗=du
-豆=aa
-逗=za
-痘=ba
-窦=bd
-厾=vs
-阇=mo
-嘟=ke
-督=uo
-毒=fm
-独=qi
-读=yd
-渎=dd
-椟=md
-牍=pd
-犊=nd
-碡=um
-黩=hd
-髑=gi
-笃=vm
-堵=to
-赌=ko
-睹=oo
-芏=ct
-妒=nh
-杜=mt
-肚=ot
-度=gy
-渡=dy
-镀=jy
-蠹=ai
-耑=ee
-端=le
-短=ua
-段=py
-断=mj
-塅=ty
-缎=sy
-椴=my
-煅=hy
-瑖=wy
-锻=jy
-簖=vj
-堆=tf
-队=er
-对=yc
-兑=be
-祋=py
-怼=yx
-碓=uf
-镦=jw
-吨=kt
-惇=xz
-敦=ww
-墩=tw
-礅=uw
-蹲=zc
-蹾=zw
-盹=ot
-趸=wr
-囤=kt
-沌=dt
-炖=ht
-盾=po
-砘=ut
-钝=jt
-顿=tr
-遁=zo
-楯=mo
-多=xx
-咄=ki
-哆=kx
-剟=yd
-掇=fy
-裰=py
-夺=dc
-铎=jl
-喥=ky
-踱=zy
-朵=jm
-哚=km
-垛=tm
-埵=ti
-躲=um
-亸=wl
-剁=jd
-饳=ui
-柁=mb
-堕=et
-舵=vb
-惰=xo
-跺=zm
-婀=nk
-屙=uk
-讹=yb
-俄=rw
-娥=nw
-峨=ew
-涐=dw
-莪=cw
-锇=jw
-鹅=wn
-蛾=iw
-额=br
-厄=iv
-呃=kv
-扼=fv
-苊=cv
-轭=iv
-垩=yt
-姶=nk
-恶=yx
-饿=uw
-谔=yk
-鄂=ke
-阏=md
-崿=ek
-愕=xk
-萼=ck
-遏=zv
-腭=ok
-锷=jk
-鹗=kn
-颚=kr
-噩=wk
-鳄=ak
-诶=yu
-奀=bd
-恩=kx
-蒽=cx
-摁=fx
-儿=pv
-而=al
-陑=ee
-鸸=en
-鲕=ae
-尔=dx
-耳=aa
-迩=zx
-洱=de
-饵=ue
-珥=we
-铒=je
-二=aa
-佴=re
-咡=ke
-贰=yr
-发=vd
-乏=pv
-伐=rg
-垡=rt
-罚=sd
-阀=mg
-砝=us
-筏=vg
-法=ds
-珐=ws
-帆=jf
-番=pt
-噃=kt
-幡=jt
-蕃=ct
-翻=px
-藩=ct
-凡=jd
-氾=dv
-矾=uf
-钒=jf
-烦=hr
-墦=tt
-樊=md
-燔=ht
-璠=wt
-繁=px
-蹯=zt
-蘩=cx
-反=py
-返=zy
-犯=qv
-泛=df
-饭=uy
-范=cv
-贩=ky
-畈=ty
-梵=mf
-方=dw
-邡=fe
-坊=tf
-芳=cf
-枋=mf
-牥=nf
-钫=jf
-蚄=if
-防=ef
-妨=nf
-房=hf
-肪=of
-鲂=af
-仿=rf
-访=yf
-彷=if
-纺=sf
-昉=of
-舫=vf
-放=fw
-飞=vd
-妃=nj
-非=la
-啡=kf
-绯=sf
-菲=cf
-扉=hf
-蜚=fi
-霏=yf
-鲱=af
-肥=ob
-淝=db
-腓=of
-朏=oi
-匪=kf
-诽=yf
-悱=xf
-斐=fw
-棐=fm
-榧=mf
-翡=fx
-篚=vf
-吠=kq
-芾=cl
-废=gd
-沸=df
-狒=qf
-肺=ol
-费=fr
-剕=fd
-痱=bf
-镄=jr
-分=bd
-吩=kd
-纷=sd
-芬=cd
-氛=qd
-翂=xd
-棻=cm
-酚=yd
-坟=tw
-汾=dd
-棼=md
-焚=mh
-豮=ur
-鼢=jd
-粉=md
-份=rd
-奋=dt
-忿=bx
-偾=rr
-愤=xr
-粪=mb
-鲼=ar
-瀵=db
-丰=al
-风=jx
-凨=js
-凬=jo
-沣=df
-沨=dx
-枫=mx
-封=tc
-疯=bx
-砜=ux
-峰=ef
-烽=hf
-崶=ec
-葑=cc
-锋=jf
-蜂=if
-酆=ee
-冯=dm
-浲=df
-逢=zf
-讽=yx
-唪=kl
-凤=jy
-奉=fl
-俸=rl
-缝=sz
-赗=ko
-缶=wk
-否=bk
-夫=an
-呋=kf
-玞=wf
-肤=of
-砆=uf
-垺=tz
-趺=zf
-麸=ff
-稃=hz
-跗=zc
-鄜=ge
-孵=lz
-敷=fw
-弗=vl
-伏=rq
-凫=pj
-佛=rf
-孚=pz
-扶=ff
-芙=cf
-芣=cb
-怫=xf
-拂=ff
-服=oy
-绂=sd
-绋=sf
-苻=cc
-茀=cf
-俘=rz
-氟=qf
-洑=dq
-祓=pd
-罘=sb
-茯=cq
-郛=pe
-韨=wd
-浮=dz
-莩=cz
-蚨=if
-匐=bt
-桴=mz
-涪=dk
-琈=wz
-符=vc
-艴=fb
-菔=cy
-袱=pq
-幅=jt
-福=pt
-蜉=iz
-辐=it
-榑=mc
-幞=jn
-蝠=it
-黻=yd
-呒=kw
-抚=fw
-甫=ad
-府=gc
-拊=fc
-斧=bj
-俯=rc
-釜=ba
-辅=if
-腑=oc
-滏=da
-腐=gr
-簠=vm
-黼=yf
-父=bx
-讣=yb
-付=rc
-妇=ne
-负=dr
-附=ec
-咐=kc
-阜=pu
-驸=mc
-复=pw
-赴=tb
-副=ad
-傅=rc
-富=bt
-赋=kv
-缚=sc
-腹=ow
-鲋=ac
-赙=kc
-蝮=iw
-覆=xw
-馥=hw
-旮=jo
-呷=kj
-嘎=kg
-钆=jv
-尜=xx
-噶=kv
-尕=nx
-尬=yl
-该=yr
-陔=er
-垓=tr
-荄=cr
-晐=or
-赅=kr
-改=jw
-丐=av
-钙=jg
-盖=ym
-溉=dv
-戤=ng
-概=mv
-甘=na
-杆=mg
-玕=wg
-肝=og
-坩=tg
-泔=dg
-矸=ug
-苷=cg
-柑=mg
-竿=vg
-疳=bg
-酐=yg
-尴=ym
-扞=fg
-秆=hg
-赶=tg
-敢=vw
-感=xx
-澉=dw
-橄=mw
-擀=fg
-鳡=ax
-干=au
-旰=og
-绀=sg
-淦=dj
-骭=gg
-赣=lr
-冈=kx
-冮=dg
-刚=kd
-杠=mg
-纲=sx
-肛=og
-矼=ug
-缸=fg
-钢=jx
-罡=sv
-堽=tv
-岗=ex
-港=ds
-筻=vg
-戆=lx
-皋=bu
-羔=yh
-高=wk
-槔=mu
-睾=pg
-膏=wo
-篙=vk
-糕=mh
-杲=om
-搞=fk
-缟=sk
-槁=mk
-稿=hk
-镐=jk
-藁=cm
-告=nk
-诰=yk
-郜=ne
-锆=jk
-筶=vk
-戈=ad
-仡=rq
-圪=tq
-纥=sq
-疙=bq
-咯=kk
-哥=dk
-胳=ok
-袼=pk
-鸽=rn
-割=bd
-搁=fk
-歌=dr
-阁=mk
-革=nl
-格=mk
-鬲=al
-葛=cv
-隔=el
-嗝=kl
-塥=tl
-滆=dl
-膈=ol
-镉=jl
-骼=gk
-哿=lk
-舸=vk
-个=rl
-各=wk
-虼=iq
-硌=uk
-铬=jk
-给=sk
-根=mg
-跟=zg
-哏=kg
-艮=en
-亘=aa
-茛=cg
-庚=gn
-畊=tj
-浭=dg
-耕=lj
-赓=gr
-鹒=gn
-羹=yd
-哽=kg
-埂=tg
-绠=sg
-耿=eh
-梗=mg
-鲠=ag
-更=an
-暅=oa
-工=aa
-弓=vv
-公=bs
-功=gl
-攻=gw
-供=rb
-肱=os
-宫=bk
-恭=cx
-蚣=is
-躬=ug
-龚=lb
-觥=dw
-巩=gf
-汞=gu
-拱=fb
-珙=wb
-共=cb
-贡=gr
-唝=kr
-勾=bs
-佝=rk
-沟=ds
-钩=js
-缑=su
-篝=vr
-鞲=gr
-芶=cs
-岣=ek
-狗=qk
-苟=ck
-枸=mk
-玽=wk
-耇=lk
-笱=vk
-构=ms
-诟=yk
-购=ks
-垢=tk
-姤=nk
-够=bx
-媾=nr
-彀=uy
-遘=zr
-雊=bf
-觏=ae
-估=rk
-呱=kg
-咕=kk
-姑=nk
-孤=zg
-沽=dk
-轱=ik
-鸪=un
-菇=ck
-菰=cg
-蛄=ik
-觚=dg
-辜=uu
-酤=yk
-箍=vj
-古=uk
-汩=do
-诂=yk
-谷=bk
-股=oy
-牯=nk
-骨=lo
-罟=sk
-羖=yy
-钴=jk
-蛊=im
-蓇=cg
-馉=ug
-鹄=nn
-毂=uy
-鼓=uy
-嘏=uy
-榖=uy
-鹘=gn
-臌=oy
-瀔=dy
-瞽=uo
-固=kk
-故=uw
-顾=ir
-堌=tk
-崮=ek
-梏=mk
-牿=nk
-雇=hf
-痼=bk
-锢=jk
-鲴=ak
-瓜=pn
-刮=qd
-胍=og
-栝=mk
-鸹=qn
-聒=ek
-剐=kd
-寡=bd
-卦=tb
-坬=tg
-诖=yt
-挂=ft
-啩=kb
-褂=pb
-乖=qb
-掴=fy
-拐=fl
-夬=vn
-怪=xt
-关=bt
-观=ye
-官=bk
-冠=bc
-倌=rk
-棺=mk
-蒄=cc
-鳏=ad
-莞=ce
-馆=uk
-琯=wk
-筦=ve
-管=vk
-鳤=ak
-毌=va
-贯=gr
-惯=xr
-掼=fr
-涫=dk
-祼=pg
-盥=pm
-灌=df
-爟=hf
-瓘=wf
-鹳=cn
-罐=ff
-光=xw
-咣=kw
-垙=tw
-洸=dw
-桄=mw
-珖=ww
-胱=ow
-广=di
-広=gs
-犷=qg
-逛=zw
-归=le
-圭=tt
-妫=nw
-龟=dv
-规=fe
-邽=te
-皈=by
-闺=mt
-珪=wt
-傀=rg
-硅=ut
-廆=gg
-瑰=wg
-鲑=at
-鬶=fl
-宄=bj
-氿=dj
-轨=ij
-庋=gy
-匦=kj
-诡=yv
-姽=nv
-癸=vt
-鬼=ps
-晷=ok
-簋=vm
-攰=ul
-刽=rd
-刿=ed
-柜=mj
-炔=hg
-贵=vr
-桂=mt
-桧=ms
-筀=vt
-跪=zv
-鳜=ar
-衮=wy
-绲=sb
-辊=ib
-滚=dy
-磙=uy
-鲧=ax
-棍=mb
-呙=kn
-埚=tn
-郭=we
-崞=ez
-锅=jn
-蝈=iy
-国=ky
-帼=jy
-腘=oy
-虢=pj
-馘=ba
-果=ln
-菓=cg
-馃=ug
-椁=mz
-粿=mg
-蜾=ig
-裹=wy
-过=zc
-哈=kk
-铪=jk
-蛤=ik
-咍=kk
-咳=kr
-嗨=km
-还=zb
-孩=zr
-骸=gr
-海=dm
-胲=or
-醢=ym
-亥=wr
-骇=mr
-害=bk
-氦=qr
-嗐=kk
-嚡=kt
-顸=gr
-蚶=ig
-酣=yg
-憨=vx
-鼾=zg
-邗=ge
-含=rk
-邯=ge
-函=lk
-咁=kg
-虷=ig
-浛=dk
-崡=ek
-晗=ok
-涵=dk
-焓=hk
-琀=wk
-寒=bd
-嵅=ek
-韩=uw
-罕=bg
-喊=kk
-蔊=cg
-阚=mw
-汉=dy
-汗=dg
-旱=og
-垾=tg
-悍=xg
-捍=fg
-焊=hg
-菡=ck
-颔=rr
-撖=fw
-暵=on
-憾=xx
-撼=fx
-翰=ux
-瀚=dx
-夯=dl
-杭=mj
-绗=si
-珩=wi
-航=vj
-颃=wr
-沆=dj
-蒿=ck
-嚆=kk
-薅=cc
-蚝=im
-毫=wm
-嗥=ku
-貉=vk
-豪=wu
-嚎=ku
-壕=tu
-濠=du
-好=nz
-郝=te
-号=kv
-昊=ot
-恏=nx
-浩=dk
-耗=lm
-淏=dt
-皓=bk
-鄗=we
-皞=bu
-颢=or
-灏=dr
-诃=yk
-呵=kk
-喝=kv
-嗬=kk
-禾=pm
-合=rk
-何=rk
-劾=wl
-和=hk
-姀=nh
-河=dk
-郃=re
-曷=ov
-阂=mr
-饸=uk
-核=mr
-盉=hm
-盍=tm
-荷=ck
-涸=dk
-盒=rm
-菏=ck
-龁=vq
-颌=rr
-阖=mm
-鹖=on
-翮=ax
-鞨=gv
-龢=rh
-垎=tk
-贺=lr
-熇=hk
-褐=pv
-赫=td
-鹤=dn
-翯=xk
-壑=lt
-黑=lh
-嘿=kh
-痕=bg
-很=ig
-狠=qg
-恨=xg
-亨=wl
-哼=kl
-姮=na
-恒=xa
-桁=mi
-鸻=in
-横=mb
-衡=ii
-蘅=ci
-堼=tt
-吽=kn
-轰=iy
-哄=kb
-訇=bk
-烘=hb
-薨=cb
-弘=gs
-红=sg
-宏=bs
-玒=wg
-纮=ss
-闳=ms
-泓=ds
-洪=db
-竑=ls
-荭=cg
-虹=ig
-翃=ux
-硔=ub
-鸿=dn
-谼=bb
-蕻=cb
-黉=xb
-讧=yg
-齁=zk
-侯=ru
-喉=ku
-猴=qu
-瘊=bu
-篌=vu
-糇=mu
-骺=gk
-吼=kv
-犼=qv
-后=pk
-郈=pe
-厚=iz
-垕=pt
-逅=zk
-候=ru
-堠=tu
-鲎=xa
-鲘=ak
-乎=pl
-呼=kh
-忽=wx
-昒=ow
-烀=hh
-轷=ih
-唿=kx
-惚=xx
-淴=dx
-滹=dh
-囫=kw
-弧=gg
-狐=qg
-胡=uo
-壶=uy
-隺=df
-斛=du
-湖=do
-猢=qo
-葫=co
-煳=ho
-瑚=wo
-鹕=un
-槲=mu
-糊=mo
-蝴=io
-縠=uy
-醐=yo
-觳=uy
-虎=hj
-浒=dw
-唬=kj
-琥=wj
-互=aa
-户=du
-冱=dh
-护=fh
-沪=dh
-岵=ek
-怙=xk
-戽=hu
-昈=oh
-祜=pk
-笏=vw
-扈=hb
-瓠=dg
-鄠=ye
-嫭=nh
-嫮=nk
-鹱=ny
-鳠=ay
-花=cb
-哗=ku
-华=ru
-骅=mu
-铧=ju
-滑=dg
-猾=qg
-化=rb
-划=gd
-画=ak
-话=yk
-桦=mu
-婳=nk
-嬅=nl
-觟=dt
-怀=xb
-徊=ik
-淮=df
-槐=mg
-踝=zg
-坏=tb
-欢=yr
-獾=qf
-环=wb
-郇=be
-峘=ea
-洹=da
-荁=ca
-桓=ma
-萑=cf
-貆=va
-锾=jy
-圜=ky
-嬛=ny
-寰=by
-澴=dy
-缳=sy
-镮=jy
-鹮=sn
-鬟=ay
-缓=sy
-幻=yv
-奂=dd
-宦=bi
-唤=kd
-换=fd
-浣=de
-涣=dd
-患=ix
-焕=hd
-逭=zk
-痪=bd
-豢=ju
-漶=dx
-鲩=ae
-擐=fy
-肓=wo
-荒=cv
-慌=xv
-皇=bw
-凰=jw
-隍=ew
-黄=cb
-喤=kw
-媓=nw
-徨=iw
-惶=xw
-湟=dw
-遑=zw
-煌=hw
-瑝=ww
-潢=db
-锽=jw
-璜=wb
-篁=vw
-艎=vw
-蝗=iw
-癀=bb
-磺=ub
-簧=vb
-蟥=ib
-鳇=aw
-恍=xw
-晃=ow
-谎=yv
-幌=jw
-滉=dw
-灰=uh
-诙=yh
-咴=kh
-恢=xh
-挥=fi
-虺=wi
-袆=pw
-晖=oi
-珲=wi
-豗=wu
-翚=xi
-辉=xi
-麾=gm
-徽=iw
-隳=ex
-回=kk
-洄=dk
-茴=ck
-烠=ho
-蛔=ik
-悔=xm
-毁=jy
-卉=uc
-汇=dk
-会=rs
-讳=yw
-哕=kx
-浍=ds
-绘=ss
-荟=cs
-诲=ym
-恚=tx
-烩=hs
-贿=ko
-彗=fe
-晦=om
-秽=hx
-喙=ku
-惠=ax
-翙=ex
-慧=fx
-蕙=cx
-橞=mx
-蟪=ix
-昏=uo
-荤=ci
-婚=no
-惛=xo
-阍=mo
-浑=di
-馄=ub
-魂=eg
-诨=yi
-混=db
-溷=du
-耠=lk
-锪=jx
-劐=cd
-嚄=ky
-豁=bk
-攉=ff
-佸=rk
-活=dk
-火=dr
-伙=rh
-钬=jh
-漷=de
-夥=gx
-或=ga
-货=rr
-砉=fu
-获=cq
-祸=pn
-惑=gx
-濩=dy
-霍=yf
-镬=jy
-嚯=kf
-藿=cf
-蠖=iy
-讥=yj
-击=ak
-叽=kj
-饥=uj
-乩=lv
-圾=tj
-机=mj
-玑=wj
-肌=oj
-芨=cj
-矶=uj
-鸡=yn
-枅=mk
-迹=zd
-剞=dd
-唧=ke
-姬=nl
-屐=uy
-积=hb
-笄=vk
-基=qt
-绩=sr
-嵇=he
-犄=nk
-缉=se
-赍=ur
-畸=tk
-跻=zl
-箕=vb
-畿=yt
-稽=ho
-觭=dk
-齑=wl
-墼=it
-激=dw
-羁=sm
-及=pn
-伋=rj
-吉=uk
-岌=ej
-汲=dj
-级=sj
-即=ge
-极=mj
-亟=la
-佶=rk
-诘=yk
-姞=nk
-急=dx
-笈=vj
-疾=bu
-脊=do
-戢=ka
-棘=an
-殛=da
-集=rm
-嫉=nu
-楫=me
-蒺=cu
-辑=ie
-耤=lo
-瘠=bo
-蕺=ca
-鹡=dn
-藉=co
-蹐=zo
-籍=vo
-几=pv
-己=vv
-虮=ij
-挤=fl
-掎=fk
-鱾=aj
-戟=ug
-嵴=eo
-麂=gj
-计=yu
-记=yj
-伎=ry
-纪=sj
-妓=ny
-忌=jx
-技=fy
-芰=cy
-际=ex
-剂=wd
-季=hz
-垍=tz
-既=gv
-洎=dz
-济=dl
-荠=cl
-继=sv
-觊=ee
-偈=rv
-寂=by
-寄=bk
-徛=ik
-悸=xz
-祭=px
-惎=qx
-蓟=cd
-暨=ga
-漈=dx
-跽=zx
-霁=yl
-鲚=al
-稷=hw
-鲫=ae
-冀=lb
-穄=hx
-髻=ak
-罽=sd
-骥=mb
-瀱=dd
-加=lk
-夹=an
-伽=rk
-佳=rt
-泇=dk
-茄=ck
-迦=zk
-枷=mk
-浃=dj
-珈=wk
-家=bu
-痂=bk
-笳=vk
-袈=ly
-葭=cy
-跏=zk
-嘉=uk
-镓=ju
-郏=je
-荚=cj
-恝=fx
-戛=ag
-铗=jj
-蛱=ij
-颊=jr
-甲=ll
-岬=ej
-胛=oj
-贾=xr
-钾=jj
-假=ry
-斝=ku
-槚=mr
-瘕=by
-价=rl
-驾=lm
-架=lm
-嫁=nu
-稼=hu
-戋=ad
-奸=ng
-尖=xd
-坚=lt
-歼=dq
-间=mo
-肩=ho
-艰=yg
-兼=bn
-监=lm
-笺=vj
-菅=ck
-湔=dd
-犍=nz
-缄=sk
-搛=fn
-煎=bh
-瑊=wk
-缣=sn
-蒹=cn
-鲣=at
-鹣=bn
-篯=vj
-鞬=gz
-鞯=gz
-鳒=an
-囝=kz
-拣=fd
-枧=me
-俭=ra
-柬=an
-茧=ci
-捡=fa
-笕=ve
-减=dk
-剪=bd
-检=ma
-趼=zk
-睑=oa
-裥=po
-锏=jo
-暕=oj
-简=vo
-谫=yd
-戬=yg
-碱=uk
-翦=bx
-謇=bk
-蹇=br
-见=ke
-件=rn
-建=zy
-饯=uj
-剑=rd
-牮=rn
-荐=cz
-贱=kj
-健=rz
-涧=do
-舰=ve
-渐=dj
-谏=yj
-楗=mz
-毽=mz
-溅=dj
-腱=oz
-践=zj
-鉴=lj
-键=jz
-僭=ro
-箭=vd
-踺=zz
-江=dg
-姜=yn
-将=dc
-茳=cg
-浆=du
-豇=ag
-僵=ra
-缰=sa
-鳉=ac
-礓=ua
-疆=ga
-讲=yj
-奖=dd
-桨=dm
-蒋=cc
-耩=lr
-膙=oi
-匠=kj
-降=el
-洚=dl
-绛=sl
-弶=gx
-酱=dy
-犟=gn
-糨=mi
-艽=cj
-交=wx
-郊=we
-姣=nx
-娇=nl
-峧=ex
-浇=dw
-茭=cx
-骄=ml
-胶=ox
-椒=my
-焦=rh
-蛟=ix
-跤=zx
-僬=rh
-鲛=ax
-蕉=ch
-燋=hh
-礁=uh
-鹪=rn
-角=dy
-佼=rx
-侥=rw
-恔=xx
-狡=qx
-绞=sx
-饺=ux
-皎=bx
-矫=ul
-脚=oe
-铰=jx
-搅=fe
-湫=dh
-剿=vd
-敫=bw
-徼=iw
-缴=sw
-璬=ww
-皦=bw
-叫=kl
-峤=el
-轿=il
-较=ix
-教=lw
-窖=bk
-滘=dk
-斠=au
-漖=dw
-酵=yz
-噍=kh
-藠=cb
-醮=yh
-皭=bc
-阶=el
-疖=be
-皆=bb
-接=fn
-秸=hk
-喈=kb
-嗟=kg
-揭=fv
-湝=db
-街=ii
-孑=va
-节=ce
-讦=yg
-劫=tl
-岊=be
-劼=ul
-杰=mh
-拮=fk
-洁=dk
-结=sk
-桀=xm
-婕=nr
-捷=fr
-絜=fx
-颉=ur
-睫=or
-蜐=il
-截=uf
-碣=uv
-竭=lv
-鲒=ak
-羯=yv
-姐=nq
-解=dn
-檞=mn
-介=rl
-戒=gc
-芥=cl
-届=uy
-玠=wl
-界=tl
-疥=bl
-诫=yc
-借=ro
-悈=xc
-蚧=il
-骱=gl
-褯=pj
-巾=ll
-今=rv
-斤=pl
-金=ra
-津=dy
-矜=sv
-衿=pv
-珒=wy
-筋=vl
-襟=px
-仅=ry
-尽=id
-卺=lv
-紧=lx
-堇=na
-谨=ya
-锦=jj
-廑=ga
-馑=ua
-槿=ma
-瑾=wa
-劲=vl
-妗=nv
-近=zj
-进=zj
-浕=dd
-荩=cd
-晋=yo
-浸=dy
-烬=hd
-赆=kd
-琎=wz
-祲=py
-溍=do
-禁=mx
-缙=so
-靳=gj
-墐=ta
-瑨=wo
-殣=da
-觐=ne
-噤=kx
-京=wx
-泾=dg
-经=sg
-茎=cg
-荆=cd
-惊=xx
-旌=fu
-猄=qx
-菁=co
-晶=oo
-腈=oo
-睛=oo
-粳=mg
-兢=ue
-精=mo
-鲸=ax
-麖=gx
-鼱=jo
-井=al
-丼=jd
-阱=ej
-刭=vd
-汫=dj
-肼=oj
-颈=vr
-景=ox
-儆=rw
-憬=xx
-璟=wx
-璥=ww
-警=ck
-净=dl
-径=ig
-迳=zg
-胫=og
-倞=rx
-痉=bg
-竞=le
-婧=no
-竫=ll
-竟=le
-敬=cw
-靓=fe
-靖=lo
-境=te
-獍=qe
-静=fl
-镜=je
-坰=tk
-扃=hk
-冏=kk
-囧=kv
-泂=dk
-炅=oh
-迥=zk
-炯=hk
-窘=bk
-颎=br
-纠=sl
-究=bj
-鸠=jn
-赳=tl
-阄=mv
-啾=kh
-揪=fh
-鬏=ah
-九=pv
-久=pn
-灸=jh
-玖=wj
-韭=fa
-酒=dy
-旧=lo
-臼=pa
-咎=wk
-疚=bj
-柩=mj
-桕=mj
-厩=iv
-救=qw
-就=wy
-舅=jl
-僦=ry
-鹫=wn
-居=uk
-拘=fk
-泃=dk
-狙=qq
-苴=cq
-驹=mk
-疽=bq
-砠=uq
-娵=ny
-崌=ek
-掬=fm
-菹=cq
-椐=mk
-琚=wk
-腒=ok
-趄=tq
-锔=jk
-裾=pk
-雎=qf
-鞠=gm
-鞫=gk
-局=uk
-桔=mk
-焗=hk
-菊=cm
-橘=mk
-咀=kq
-弆=tc
-沮=dq
-举=xl
-矩=uj
-莒=ck
-筥=vk
-榉=ml
-蒟=ck
-龃=vq
-踽=zy
-巨=ka
-句=bk
-讵=yj
-岠=ej
-拒=fj
-苣=cj
-具=qb
-炬=hj
-秬=hj
-钜=jj
-俱=rb
-倨=rk
-剧=ud
-惧=xb
-据=fk
-距=zj
-犋=nb
-飓=jb
-锯=jk
-窭=bn
-聚=en
-屦=un
-踞=zk
-澽=du
-遽=zu
-醵=yu
-娟=no
-捐=fo
-涓=do
-焆=ho
-鹃=kn
-镌=jn
-蠲=bi
-卷=jv
-锩=jv
-倦=rv
-桊=jm
-狷=qo
-绢=so
-隽=rn
-眷=jo
-鄄=xe
-罥=so
-噘=kr
-撅=fr
-孓=vn
-决=dg
-诀=yg
-抉=fg
-玦=wg
-珏=wy
-砄=ug
-绝=sb
-觉=xe
-倔=ri
-崛=ei
-掘=fi
-桷=my
-觖=dg
-傕=rf
-厥=ir
-劂=id
-谲=yk
-獗=qr
-蕨=cr
-噱=ku
-橛=mr
-爵=pc
-镢=jr
-蹶=zr
-嚼=kc
-矍=oy
-爝=hc
-攫=fy
-玃=qy
-军=bi
-君=yk
-均=td
-钧=jd
-莙=ck
-皲=by
-菌=ch
-鲪=ak
-麇=gh
-俊=rw
-郡=ye
-峻=ew
-捃=fk
-浚=dw
-骏=mw
-晙=ow
-焌=hw
-珺=wk
-畯=tw
-竣=lw
-咔=kb
-咖=kk
-喀=kk
-卡=ub
-佧=rb
-胩=ob
-开=ac
-揩=fb
-锎=jk
-凯=ej
-剀=ed
-垲=tj
-恺=xj
-闿=mj
-铠=jj
-嘅=kv
-慨=xv
-蒈=cb
-楷=mb
-锴=jb
-忾=xq
-炌=hl
-刊=gd
-勘=ql
-龛=rl
-堪=tv
-嵁=ev
-戡=qg
-冚=be
-坎=tr
-侃=rv
-砍=ur
-莰=cr
-槛=mm
-看=uo
-衎=ii
-崁=er
-墈=tl
-瞰=ow
-磡=ul
-闶=mj
-康=gn
-慷=xn
-糠=mn
-扛=fg
-亢=wj
-伉=rj
-抗=fj
-炕=hj
-钪=jj
-尻=uj
-考=lv
-拷=fv
-洘=dv
-栲=mv
-烤=hv
-铐=jv
-犒=nk
-靠=nf
-匼=kk
-苛=ck
-柯=mk
-牁=pk
-珂=wk
-科=hu
-轲=ik
-疴=bk
-棵=mg
-颏=wr
-嗑=km
-稞=hg
-窠=bg
-颗=gr
-瞌=om
-磕=um
-蝌=iu
-髁=gg
-壳=uj
-可=dk
-坷=tk
-岢=ek
-炣=hk
-渴=dv
-克=ue
-刻=wd
-客=bk
-恪=xk
-课=yg
-氪=qe
-骒=mg
-缂=sg
-溘=dm
-锞=jg
-剋=ud
-肯=vo
-垦=gt
-恳=gx
-啃=ko
-龈=vg
-裉=pg
-吭=kj
-坑=tj
-硁=ug
-铿=jt
-空=bg
-倥=rg
-埪=tg
-崆=eg
-硿=ug
-箜=vg
-孔=zv
-恐=gx
-控=fg
-抠=fx
-芤=cv
-眍=ox
-口=la
-叩=ke
-扣=fk
-寇=by
-筘=vk
-蔻=cy
-刳=dd
-矻=uq
-枯=mk
-哭=kq
-堀=ti
-圐=kf
-窟=bi
-骷=gk
-苦=ck
-库=gi
-绔=sk
-喾=xk
-裤=pi
-酷=yk
-夸=dk
-姱=nk
-侉=rk
-垮=tk
-挎=fk
-胯=ok
-跨=zk
-蒯=cd
-块=tg
-快=xg
-侩=rs
-郐=re
-哙=ks
-狯=qs
-脍=os
-筷=vg
-鲙=as
-宽=be
-髋=ge
-款=ur
-匡=kw
-诓=yw
-哐=kw
-洭=dw
-框=mw
-筐=vw
-狂=qw
-诳=yw
-夼=di
-邝=ge
-圹=tg
-纩=sg
-况=de
-旷=og
-矿=ug
-贶=ke
-眶=ow
-亏=ev
-岿=ee
-悝=xl
-盔=um
-窥=be
-奎=dt
-逵=zt
-隗=eg
-馗=jz
-喹=kt
-揆=ft
-葵=ct
-骙=mt
-戣=vg
-暌=ot
-魁=gu
-睽=ot
-蝰=it
-櫆=mu
-夔=bw
-煃=ht
-跬=zt
-匮=kr
-喟=ko
-愦=xr
-愧=xg
-溃=dr
-蒉=cr
-馈=ur
-篑=vr
-聩=er
-坤=tu
-昆=ob
-堃=ft
-婫=nb
-崑=ub
-裈=pi
-焜=hb
-琨=wb
-锟=jb
-髡=aw
-鹍=on
-醌=yb
-鲲=ab
-悃=xm
-捆=fm
-阃=mm
-壸=uy
-困=km
-扩=fg
-括=fk
-蛞=ik
-阔=mk
-廓=ge
-垃=tl
-拉=fl
-菈=cl
-邋=zv
-旯=oj
-剌=ud
-砬=ul
-喇=kd
-腊=oo
-瘌=bd
-蜡=io
-辣=lu
-蝲=id
-镴=jv
-啦=kl
-鞡=gl
-来=an
-俫=rl
-崃=el
-徕=il
-涞=dl
-莱=cl
-梾=ml
-铼=jl
-赉=lr
-睐=ol
-赖=ur
-濑=dr
-癞=br
-籁=vr
-兰=bs
-岚=ex
-拦=fs
-栏=ms
-婪=mn
-阑=mj
-蓝=cm
-谰=yj
-澜=dj
-褴=pm
-斓=wj
-篮=vm
-襕=pj
-镧=jj
-躝=zj
-览=le
-揽=fe
-缆=se
-榄=me
-漤=dn
-罱=sg
-懒=xr
-烂=hs
-滥=dm
-啷=ke
-郎=de
-狼=ql
-阆=ml
-廊=ge
-桹=ml
-琅=wl
-榔=me
-稂=hl
-锒=jl
-筤=vl
-螂=ie
-朗=do
-烺=hl
-塱=dt
-蓢=co
-朤=oo
-埌=tl
-崀=el
-浪=dl
-莨=cl
-蒗=cl
-捞=fl
-劳=cl
-牢=bn
-唠=kl
-崂=el
-痨=bl
-铹=jl
-醪=yp
-老=lb
-佬=rb
-姥=nb
-荖=cb
-栳=mb
-铑=jb
-潦=dx
-橑=mx
-涝=dl
-烙=hk
-耢=ll
-酪=yk
-嫪=np
-肋=ol
-仂=rl
-乐=pd
-叻=kl
-玏=wl
-泐=dl
-砳=uu
-簕=vl
-鳓=al
-了=vl
-饹=uk
-勒=gl
-雷=yt
-嫘=nx
-缧=sx
-擂=ft
-檑=mt
-礌=ut
-镭=jt
-羸=wf
-罍=tf
-耒=fn
-诔=yl
-垒=st
-磊=uu
-蕾=ct
-儡=rt
-癗=bt
-藟=ct
-泪=do
-类=md
-累=tx
-酹=yc
-嘞=kl
-崚=ew
-塄=tf
-棱=mw
-楞=mf
-冷=ds
-堎=tw
-愣=xf
-哩=kl
-厘=il
-狸=ql
-离=wd
-骊=ml
-梨=hm
-犁=hn
-喱=kl
-鹂=ln
-漓=dd
-缡=sd
-蓠=cd
-蜊=id
-嫠=wn
-璃=wd
-鲡=al
-黎=hu
-篱=vd
-罹=sf
-醨=yd
-嚟=ku
-藜=cu
-黧=hh
-蠡=vi
-礼=pv
-李=mz
-里=la
-俚=rl
-峛=ed
-娌=nl
-浬=dl
-逦=zl
-理=wl
-锂=jl
-鲤=al
-澧=da
-醴=ya
-鳢=aa
-力=vp
-历=il
-厉=iw
-立=wa
-吏=an
-朸=ml
-丽=ad
-利=hd
-励=il
-呖=kl
-坜=tl
-沥=dl
-苈=cl
-例=rd
-戾=hq
-枥=ml
-疠=bw
-隶=vn
-俐=rd
-俪=rl
-栎=ml
-疬=bl
-荔=cl
-轹=il
-郦=le
-栗=xm
-猁=qd
-珕=wl
-砺=uw
-砾=ul
-莅=cl
-莉=cd
-唳=kq
-笠=vl
-粒=ml
-粝=mw
-蛎=iw
-傈=rm
-凓=dm
-痢=bd
-詈=sk
-跞=zl
-雳=yl
-溧=dm
-篥=vm
-俩=rl
-奁=dx
-连=zi
-帘=bj
-怜=xs
-涟=dz
-莲=cz
-梿=mz
-联=et
-裢=pz
-廉=gn
-磏=un
-鲢=az
-濂=dn
-镰=jn
-蠊=in
-敛=rw
-琏=wz
-脸=oa
-裣=pa
-蔹=cw
-练=sd
-炼=hd
-恋=wx
-浰=dd
-殓=da
-链=jz
-楝=mj
-瑓=wj
-潋=dw
-良=dg
-俍=rl
-凉=dx
-梁=dm
-椋=mx
-辌=ix
-粮=ml
-粱=dm
-墚=tm
-踉=zl
-两=ad
-魉=gl
-亮=wj
-悢=xl
-谅=yx
-辆=il
-晾=ox
-量=ol
-撩=fx
-蹽=zx
-辽=zl
-疗=bl
-聊=ee
-僚=rx
-寥=bp
-漻=dp
-嘹=kx
-嫽=nx
-寮=bx
-敹=lw
-獠=qx
-缭=sx
-燎=hx
-鹩=dn
-簝=vx
-髎=gp
-钌=jl
-蓼=cp
-憭=xx
-尥=yu
-料=mu
-廖=gp
-撂=fk
-瞭=ox
-镣=jx
-咧=kd
-列=dd
-劣=ul
-冽=dd
-洌=dd
-埒=tc
-烈=dh
-捩=fq
-猎=qo
-脟=oc
-裂=dy
-趔=td
-躐=zv
-鬣=av
-拎=fs
-邻=re
-林=mm
-临=la
-冧=bm
-啉=km
-淋=dm
-琳=wm
-粦=ml
-箖=vm
-粼=mv
-嶙=el
-潾=dl
-遴=zl
-璘=wl
-辚=il
-霖=ym
-瞵=ol
-磷=ul
-翷=mx
-鳞=al
-麟=gl
-凛=dx
-廪=gx
-懔=xx
-檩=mx
-吝=wk
-赁=rr
-蔺=cf
-膦=ol
-躏=zf
-〇=vv
-伶=rs
-灵=eh
-囹=ks
-坽=ts
-姈=ns
-泠=ds
-苓=cs
-昤=os
-柃=ms
-玲=ws
-瓴=rw
-凌=dw
-铃=js
-陵=ew
-鸰=rn
-棂=mh
-绫=sw
-羚=ys
-翎=rx
-聆=es
-舲=vs
-菱=cw
-蛉=is
-祾=pw
-零=ys
-龄=vs
-澪=ds
-鲮=aw
-酃=ye
-岭=es
-领=rr
-令=rs
-另=kl
-呤=ks
-溜=dt
-熘=ht
-刘=wd
-浏=dd
-流=dv
-留=pt
-琉=wv
-硫=uv
-旒=fv
-遛=zt
-馏=ut
-骝=mt
-榴=mt
-瑠=wt
-飗=jt
-瑬=dy
-瘤=bt
-镏=jt
-鹠=pn
-疁=tp
-镠=jp
-鎏=dj
-柳=me
-珋=we
-绺=sk
-锍=jv
-罶=st
-六=wb
-鹨=xn
-龙=ud
-咙=kl
-泷=dl
-茏=cl
-昽=ol
-栊=ml
-珑=wl
-胧=ol
-眬=ol
-砻=lu
-笼=vl
-聋=le
-隆=eu
-漋=du
-癃=bu
-窿=bu
-陇=el
-垄=lt
-垅=tl
-拢=fl
-哢=kc
-剅=ad
-娄=mn
-偻=rn
-喽=kn
-溇=dn
-蒌=cn
-楼=mn
-耧=ln
-蝼=in
-髅=gn
-嵝=en
-搂=fn
-篓=vn
-陋=ev
-漏=dy
-瘘=bn
-镂=jn
-噜=ko
-撸=fo
-卢=lu
-庐=gh
-芦=ch
-垆=tu
-泸=du
-炉=hh
-栌=mu
-胪=ou
-轳=iu
-鸬=ln
-舻=vu
-颅=lr
-鲈=au
-卤=lx
-虏=hl
-掳=fl
-鲁=ao
-澛=do
-橹=mo
-镥=jo
-甪=py
-陆=ej
-录=eu
-赂=kk
-辂=ik
-渌=du
-菉=cu
-逯=zu
-鹿=gb
-琭=wu
-禄=pu
-僇=rp
-勠=xl
-碌=uu
-稑=ht
-路=zk
-漉=db
-箓=vu
-戮=xg
-辘=ib
-潞=dk
-蕗=ck
-璐=wk
-簏=vb
-鹭=zn
-麓=mb
-露=yk
-氇=mo
-驴=mh
-闾=mk
-榈=mk
-吕=kk
-侣=rk
-捋=fc
-旅=fn
-梠=mk
-稆=hk
-铝=jk
-屡=un
-缕=sn
-膂=fo
-褛=pn
-履=uw
-垏=ty
-律=iy
-虑=hx
-率=wu
-绿=su
-氯=qu
-葎=cy
-滤=dx
-娈=wn
-孪=wz
-峦=we
-挛=wu
-栾=wm
-鸾=wn
-脔=wr
-滦=dm
-銮=wj
-卵=pd
-乱=qv
-掠=fx
-略=tk
-锊=jc
-圙=km
-抡=fb
-仑=rb
-伦=rb
-囵=kb
-沦=db
-纶=sb
-轮=ib
-论=yb
-罗=sx
-啰=kx
-猡=qx
-脶=on
-萝=cx
-逻=zx
-椤=mx
-锣=jx
-箩=vx
-骡=mx
-螺=ix
-攞=ff
-倮=rg
-蓏=cg
-裸=pg
-瘰=bx
-蠃=wf
-泺=dl
-洛=dk
-络=sk
-荦=cn
-骆=mk
-珞=wk
-落=ck
-摞=fx
-漯=dx
-雒=wf
-呣=km
-妈=nm
-孖=zz
-嬷=nm
-麻=gm
-蟆=id
-马=va
-玛=wm
-码=um
-蚂=im
-犸=qm
-杩=mm
-祃=pm
-骂=km
-唛=kw
-吗=km
-嘛=km
-埋=tl
-霾=yl
-买=vd
-荬=cd
-劢=wl
-迈=zw
-麦=fw
-卖=ud
-脉=oy
-嫚=ny
-颟=cr
-蛮=wi
-谩=yy
-馒=uy
-瞒=ol
-鞔=gv
-蹒=zl
-鳗=ay
-鬘=ay
-满=dl
-螨=il
-曼=oy
-墁=ty
-幔=jy
-慢=xy
-漫=dy
-缦=sy
-蔓=cy
-镘=jy
-牤=nw
-邙=we
-忙=xw
-芒=cw
-尨=ud
-杧=mw
-氓=wm
-盲=wo
-茫=cw
-牻=nd
-硭=uw
-莽=cc
-漭=dc
-蟒=ic
-猫=qt
-毛=pv
-矛=sp
-牦=nm
-茅=cp
-茆=ce
-旄=fm
-锚=jt
-髦=am
-蝥=si
-蟊=si
-冇=uk
-卯=pe
-峁=ee
-泖=de
-昴=oe
-铆=je
-芼=cm
-茂=cw
-冒=ko
-眊=om
-贸=pr
-耄=lm
-袤=wy
-帽=jo
-鄚=ce
-楙=mm
-瑁=wo
-瞀=so
-貌=ve
-懋=mx
-么=ps
-没=dy
-枚=mw
-玫=ww
-眉=vo
-莓=cm
-梅=mm
-郿=ve
-媒=nm
-嵋=eo
-湄=do
-楣=mo
-煤=hm
-瑂=wo
-槑=km
-酶=ym
-镅=jo
-鹛=vn
-霉=ym
-每=pm
-美=yd
-浼=dv
-媄=nd
-渼=dd
-镁=jd
-妹=nw
-昧=ow
-袂=pg
-媚=no
-寐=bw
-魅=gw
-门=dv
-扪=fm
-钔=jm
-亹=wq
-闷=mx
-焖=hx
-懑=dx
-们=rm
-擝=fm
-虻=iw
-萌=co
-盟=om
-蒙=cn
-甍=cw
-瞢=co
-幪=jn
-濛=dn
-朦=on
-檬=mn
-礞=un
-鹲=cn
-艨=vn
-艨=vu
-勐=zl
-猛=qm
-锰=jm
-艋=vm
-蜢=im
-獴=qn
-懵=xo
-蠓=in
-孟=zm
-梦=mx
-咪=km
-眯=om
-弥=gx
-祢=px
-迷=zm
-猕=qx
-谜=yz
-醚=yz
-糜=gm
-縻=gx
-麋=gm
-靡=gf
-蘼=cf
-醾=ym
-米=dm
-芈=ll
-沵=dx
-弭=ge
-洣=dm
-敉=mw
-脒=om
-汨=do
-宓=bb
-泌=db
-觅=pe
-祕=pb
-秘=hb
-密=be
-幂=bj
-谧=ym
-嘧=ke
-蜜=bi
-眠=om
-绵=sj
-棉=mj
-丏=av
-免=dv
-沔=dm
-黾=kd
-勉=dl
-眄=om
-娩=nv
-偭=rm
-冕=kv
-勔=ml
-渑=dd
-愐=xm
-湎=dm
-缅=sm
-腼=om
-面=aa
-喵=kt
-苗=ct
-描=ft
-瞄=ot
-鹋=cn
-杪=mu
-眇=ou
-秒=hu
-淼=uu
-渺=du
-缈=su
-藐=ce
-邈=ze
-妙=nu
-庙=gy
-乜=vv
-咩=ky
-灭=ah
-搣=fh
-蔑=cu
-篾=vu
-民=vv
-岷=em
-忞=wx
-旻=ow
-苠=cm
-珉=wm
-缗=so
-碈=uo
-皿=la
-闵=mw
-抿=fm
-泯=dm
-闽=mi
-悯=xw
-敏=pw
-湣=do
-愍=mx
-慜=px
-鳘=pa
-名=xk
-明=oo
-鸣=kn
-洺=dk
-茗=ck
-冥=bb
-铭=jk
-溟=db
-蓂=cb
-暝=ob
-瞑=ob
-螟=ib
-酩=yk
-命=re
-谬=yp
-摸=fd
-尛=xx
-谟=yd
-嫫=nd
-馍=ud
-摹=cu
-模=md
-膜=od
-麽=gm
-摩=gu
-磨=gu
-蘑=cu
-魔=gg
-抹=fm
-末=an
-殁=dy
-沫=dm
-茉=cm
-陌=eb
-秣=hm
-莫=cd
-寞=bd
-漠=dd
-蓦=cm
-貊=vb
-靺=gm
-瘼=bd
-镆=jd
-墨=ht
-默=hq
-貘=vd
-藦=cu
-耱=lu
-哞=kn
-牟=sn
-侔=rn
-眸=on
-谋=ym
-蛑=in
-缪=sp
-鍪=sj
-某=gm
-毪=mn
-母=vd
-亩=wt
-牡=nt
-姆=nm
-拇=fm
-木=un
-仫=rm
-目=ka
-沐=dm
-牧=nw
-苜=co
-莯=cm
-钼=jo
-募=cl
-墓=ct
-幕=cj
-睦=ot
-慕=cx
-暮=co
-穆=hp
-嗯=kx
-拿=ru
-嗱=ku
-镎=ju
-乸=ym
-哪=ke
-雫=yx
-那=ve
-呐=kn
-纳=sn
-肭=on
-娜=ne
-衲=pn
-钠=jn
-捺=fx
-乃=vp
-奶=nn
-艿=cn
-氖=qn
-妳=nx
-迺=zx
-奈=dx
-柰=mx
-耏=ep
-耐=ec
-萘=cx
-鼐=nv
-囡=kn
-男=tl
-南=ug
-难=yf
-喃=kg
-楠=mg
-赧=ty
-萳=cg
-腩=og
-蝻=ig
-婻=ng
-囔=ky
-囊=ay
-馕=uy
-曩=oy
-攮=fy
-齉=zy
-孬=bz
-呶=ky
-挠=fw
-峱=qe
-硇=ux
-铙=jw
-猱=qm
-蛲=iw
-垴=tk
-恼=xk
-脑=ok
-嫐=nn
-瑙=wx
-闹=mj
-淖=du
-臑=oe
-讷=yn
-呢=kb
-馁=un
-内=ld
-恁=rx
-嫩=nw
-能=sb
-妮=nb
-尼=ub
-坭=tb
-怩=xb
-泥=db
-倪=re
-铌=jb
-婗=ne
-猊=qe
-霓=ye
-鲵=ae
-麑=ge
-你=rx
-拟=fr
-旎=fb
-薿=cr
-氼=ur
-伲=rb
-昵=ob
-逆=zp
-匿=kk
-溺=dd
-睨=oe
-腻=or
-拈=fk
-蔫=ch
-年=pl
-鲇=ak
-鲶=ax
-黏=hk
-捻=fx
-辇=fi
-辗=in
-撚=fh
-撵=fi
-碾=un
-廿=ca
-念=rx
-唸=kx
-埝=tx
-娘=nl
-嬢=ny
-孃=ny
-酿=yl
-鸟=wd
-茑=cn
-袅=py
-嬲=tl
-尿=uu
-脲=ou
-捏=ft
-苶=cx
-陧=et
-涅=dt
-聂=ey
-臬=zm
-啮=kk
-惗=xx
-菍=cx
-嗫=ky
-嵲=em
-镊=jy
-镍=jm
-颞=er
-蹑=zy
-孽=cz
-蘖=cm
-糵=cm
-您=rx
-宁=bd
-咛=kd
-拧=fd
-狞=qd
-苧=cd
-柠=md
-聍=ed
-甯=by
-凝=dr
-佞=rn
-泞=dd
-妞=ni
-牛=pl
-忸=xi
-扭=fi
-狃=qi
-纽=si
-钮=ji
-农=dn
-侬=rn
-哝=kn
-浓=dn
-脓=on
-秾=hn
-弄=wc
-耨=lc
-奴=ny
-孥=nz
-驽=nm
-笯=vy
-努=nl
-弩=ng
-砮=nu
-胬=nr
-怒=nx
-傉=rc
-女=va
-钕=jn
-恧=ex
-朒=or
-衄=xi
-暖=oy
-疟=ba
-虐=ha
-挪=fe
-傩=rf
-诺=yk
-喏=kk
-搦=fd
-锘=jk
-懦=xe
-糯=me
-喔=kt
-噢=kd
-哦=kw
-讴=yx
-沤=dx
-欧=kr
-殴=ky
-瓯=kw
-鸥=kn
-呕=kx
-偶=ry
-耦=ly
-藕=cy
-怄=xx
-趴=zb
-舥=vb
-啪=kb
-葩=cb
-杷=mb
-爬=vb
-琶=wb
-筢=vb
-潖=db
-帕=jb
-怕=xb
-拍=fb
-俳=rf
-徘=if
-排=ff
-牌=pu
-簰=vu
-哌=kn
-派=dn
-湃=df
-蒎=cn
-潘=dt
-攀=mu
-爿=vp
-盘=vm
-槃=vm
-磐=vu
-磻=ut
-蟠=it
-判=bd
-泮=db
-叛=by
-盼=od
-畔=tb
-袢=pb
-襻=pu
-乓=qd
-雱=yf
-滂=df
-膖=oz
-庞=gl
-厖=id
-逄=zl
-旁=wf
-螃=if
-鳑=af
-耪=lf
-胖=ob
-抛=fl
-脬=oz
-刨=bd
-咆=ks
-庖=gs
-狍=qs
-袍=ps
-匏=ds
-跑=zs
-泡=ds
-炮=hs
-疱=bs
-呸=kp
-胚=op
-衃=xb
-醅=yk
-陪=ek
-培=tk
-赔=kk
-锫=jk
-裴=fy
-沛=dl
-佩=rj
-帔=jy
-旆=fl
-珮=wj
-配=yj
-辔=sk
-霈=yl
-喷=kr
-盆=bm
-湓=dm
-怦=xp
-抨=fp
-砰=up
-烹=wh
-嘭=kp
-澎=dp
-芃=cf
-朋=oo
-堋=to
-弸=go
-彭=up
-棚=mo
-硼=uo
-蓬=cz
-鹏=on
-篷=vz
-膨=op
-蟛=ip
-捧=fl
-椪=my
-碰=uy
-丕=ba
-伾=rp
-批=fb
-纰=sb
-邳=pe
-坯=tp
-披=fy
-狉=qp
-砒=ub
-铍=jy
-劈=ud
-噼=ku
-霹=yu
-皮=vy
-芘=cb
-枇=mb
-毗=tb
-疲=by
-蚍=ib
-郫=pe
-陴=eu
-啤=ku
-埤=tu
-琵=wb
-脾=ou
-鲏=ay
-罴=sh
-蜱=iu
-貔=vb
-鼙=uu
-匹=ke
-仳=rb
-圮=tj
-苉=ce
-痞=bk
-癖=bu
-嚭=uk
-屁=ub
-淠=dl
-媲=nb
-睥=ou
-辟=uu
-僻=ru
-澼=du
-甓=uw
-譬=uk
-偏=rc
-犏=nc
-篇=vc
-翩=hx
-骈=mk
-胼=ok
-谝=yc
-楩=mg
-蹁=zc
-片=pv
-骗=mc
-剽=xd
-缥=sx
-飘=xx
-螵=ix
-嫖=nx
-瓢=xg
-薸=cx
-殍=dz
-瞟=ox
-票=xx
-嘌=kx
-漂=dx
-氕=qp
-撇=fw
-瞥=do
-苤=cp
-姘=nk
-拼=fk
-玭=wb
-贫=br
-嫔=nb
-频=vr
-颦=vu
-品=kk
-榀=mk
-牝=nb
-聘=ev
-乒=qp
-俜=rv
-娉=nv
-涄=dv
-砯=uu
-平=au
-评=yp
-凭=rj
-呯=kp
-坪=tp
-泙=dp
-苹=cp
-屏=uk
-帡=jk
-枰=mp
-洴=dk
-玶=wp
-荓=ck
-瓶=bw
-淜=do
-萍=cp
-蚲=ip
-鲆=ap
-钋=jb
-坡=ty
-泊=db
-泼=dd
-婆=dn
-鄱=pe
-皤=bt
-叵=kk
-钷=jk
-笸=vk
-颇=vr
-迫=zb
-珀=wb
-破=uy
-粕=mb
-酦=yd
-魄=bg
-桲=mz
-剖=ld
-抔=fb
-掊=fk
-裒=wy
-仆=rb
-扑=fb
-噗=kn
-潽=do
-匍=bf
-莆=cf
-脯=of
-菩=ck
-葡=cf
-蒱=cf
-蒲=cf
-酺=yf
-墣=tn
-璞=wn
-濮=dn
-穙=hn
-镤=jn
-朴=mb
-圃=kf
-浦=df
-普=bo
-溥=dc
-谱=yo
-氆=mo
-镨=jo
-蹼=zn
-铺=jf
-瀑=du
-曝=ou
-巭=gf
-七=av
-沏=dd
-妻=an
-柒=dm
-凄=dn
-栖=mx
-桤=mj
-郪=ae
-戚=wx
-萋=cn
-期=qo
-欺=qr
-嘁=kx
-漆=du
-槭=mx
-蹊=zd
-亓=el
-祁=pe
-齐=wl
-圻=tj
-岐=ey
-芪=cu
-其=qb
-奇=dk
-歧=vy
-祇=pu
-祈=pj
-俟=ru
-耆=lo
-脐=ol
-颀=jr
-埼=tk
-崎=ek
-淇=db
-畦=tt
-萁=cb
-跂=zy
-骐=mb
-骑=mk
-棋=mb
-琦=wk
-琪=wb
-祺=pb
-蛴=il
-愭=xo
-碁=qu
-锜=jk
-旗=fb
-綦=qx
-蜞=ib
-蕲=cj
-鲯=ab
-鳍=ao
-麒=gb
-乞=pv
-企=rv
-屺=ej
-岂=ej
-芑=cj
-启=hk
-呇=uk
-杞=mj
-玘=wj
-起=tj
-婍=nk
-绮=sk
-棨=hm
-綮=hx
-气=pv
-讫=yq
-汔=dq
-迄=zq
-弃=wc
-汽=dq
-泣=dl
-炁=ah
-契=fd
-砌=ud
-葺=ce
-碛=ur
-碶=ud
-器=kk
-憩=qx
-磜=ux
-掐=fj
-袷=pk
-葜=cd
-拤=fb
-恰=xk
-洽=dk
-髂=gk
-千=pu
-仟=rq
-阡=eq
-圲=tq
-扦=fq
-芊=cq
-迁=zq
-佥=ra
-岍=ek
-杄=mq
-汧=dk
-钎=jq
-牵=dn
-悭=xt
-铅=jk
-谦=yn
-愆=ix
-签=va
-骞=bm
-鹐=dn
-搴=bu
-褰=by
-孅=nj
-前=bd
-钤=jv
-虔=hw
-钱=jj
-钳=jg
-乾=uq
-掮=fo
-靬=gg
-墘=tq
-潜=do
-黔=hv
-浅=dj
-肷=or
-遣=zk
-谴=yz
-缱=sz
-欠=dr
-芡=cr
-茜=cx
-倩=ro
-堑=it
-嵌=er
-椠=im
-慊=xn
-蒨=co
-歉=br
-呛=kv
-羌=yv
-戕=pg
-戗=rg
-枪=mv
-玱=wv
-跄=zv
-腔=og
-蜣=iq
-锖=jo
-锵=jc
-镪=ji
-强=gi
-墙=tk
-嫱=nk
-蔷=ck
-樯=mk
-蔃=ci
-抢=fv
-羟=yg
-襁=pi
-炝=hv
-悄=xo
-硗=uw
-跷=zw
-劁=rd
-敲=wy
-锹=jh
-橇=mm
-缲=sm
-乔=yl
-侨=rl
-荞=cl
-桥=ml
-硚=ul
-谯=yh
-憔=xh
-鞒=gl
-樵=mh
-瞧=oh
-巧=gv
-愀=xh
-俏=ro
-诮=yo
-峭=eo
-窍=bv
-翘=ax
-撬=fm
-鞘=go
-癿=bv
-且=la
-切=qd
-妾=ln
-怯=xs
-郄=xe
-窃=bd
-挈=fu
-惬=xj
-箧=vj
-锲=jd
-亲=lm
-侵=ry
-钦=jr
-衾=ry
-骎=my
-嵚=er
-芩=cv
-芹=cj
-秦=fh
-琴=wv
-禽=rd
-勤=nl
-嗪=kh
-溱=dh
-慬=xa
-噙=kd
-擒=fd
-檎=md
-螓=ih
-锓=jy
-寝=by
-吣=kx
-沁=dx
-揿=fr
-青=fo
-氢=qg
-轻=ig
-倾=rr
-卿=pe
-郬=fe
-圊=ko
-清=do
-蜻=io
-鲭=ao
-勍=wl
-情=xo
-晴=oo
-氰=qo
-暒=ou
-擎=cu
-檠=cm
-黥=hx
-苘=ck
-顷=br
-请=yo
-庼=gr
-庆=gd
-碃=uo
-箐=vo
-靘=fb
-磬=uu
-罄=uf
-芎=cg
-邛=ge
-穷=bl
-穹=bg
-茕=cu
-筇=ve
-琼=wx
-蛩=gi
-跫=gr
-銎=gj
-丘=pa
-邱=qe
-秋=hh
-蚯=iq
-萩=ch
-楸=mh
-鹙=hn
-鳅=ah
-鞧=gy
-囚=kr
-犰=qj
-求=ad
-虬=iv
-泅=dr
-俅=rq
-訄=jk
-酋=by
-逑=zq
-球=wq
-赇=kq
-巯=vv
-遒=zy
-裘=qy
-璆=wp
-蝤=iy
-鼽=zj
-糗=mq
-区=kx
-曲=la
-岖=ex
-诎=yi
-驱=mx
-坥=tq
-屈=ui
-岨=eq
-祛=ps
-胠=os
-袪=ps
-蛆=iq
-躯=ux
-蛐=iq
-趋=te
-麹=fm
-黢=hw
-佢=rj
-劬=bl
-朐=ok
-鸲=bn
-渠=dm
-蕖=cm
-磲=um
-璩=wu
-瞿=of
-鼩=jk
-蘧=cz
-灈=df
-氍=om
-癯=bf
-衢=ii
-蠼=iy
-取=ey
-竘=lk
-娶=en
-龋=vy
-去=ts
-阒=mq
-觑=he
-趣=ty
-悛=xw
-圈=kv
-棬=mv
-全=rw
-权=my
-佺=rw
-诠=yw
-泉=bu
-荃=cw
-拳=ju
-辁=iw
-婘=nv
-痊=bw
-铨=jw
-筌=vw
-瑔=wu
-蜷=iv
-醛=yw
-鳈=au
-鬈=av
-颧=cr
-犬=dd
-畎=tq
-绻=sv
-劝=yl
-券=jd
-缺=fg
-阙=mr
-瘸=br
-却=te
-埆=ty
-悫=ux
-雀=uf
-确=uy
-阕=mt
-碏=uo
-鹊=cn
-榷=mf
-囷=kh
-逡=zw
-裙=pk
-群=yy
-蚺=ir
-然=ph
-髯=ar
-燃=hh
-冉=la
-苒=cr
-染=dm
-珃=wr
-儴=ry
-瀼=dy
-蘘=cy
-禳=py
-瓤=wg
-穰=hy
-嚷=ky
-壤=ty
-攘=fy
-让=yu
-娆=nw
-荛=cw
-饶=uw
-桡=mw
-扰=fy
-绕=sw
-惹=cx
-热=fh
-人=pn
-仁=re
-壬=pu
-忍=rx
-荏=cr
-稔=hx
-刃=dd
-认=yr
-仞=rr
-讱=yr
-任=rr
-纫=sr
-妊=nr
-纴=sr
-轫=ir
-韧=wr
-饪=ur
-衽=pr
-葚=cv
-扔=fn
-仍=rn
-礽=pn
-日=ka
-驲=mo
-茸=ce
-戎=gu
-狨=qu
-绒=su
-荣=cm
-容=bk
-嵘=em
-溶=dk
-蓉=ck
-榕=mk
-熔=hk
-瑢=wk
-蝾=im
-镕=jk
-融=ai
-冗=bj
-柔=sm
-揉=fm
-糅=mm
-蹂=zm
-鞣=gm
-肉=nr
-如=nk
-茹=ck
-铷=jk
-儒=re
-嚅=ke
-嬬=ne
-孺=ze
-濡=de
-薷=ce
-襦=pe
-蠕=ie
-颥=yr
-汝=dn
-乳=pv
-辱=ic
-入=pn
-洳=dk
-溽=dc
-缛=sc
-蓐=cc
-褥=pc
-挼=fn
-堧=td
-阮=ee
-朊=oe
-软=ir
-媆=nd
-瓀=we
-蕤=cu
-蕊=cx
-汭=dn
-芮=cn
-枘=mn
-蚋=in
-锐=je
-瑞=we
-睿=lo
-闰=mw
-润=dw
-叒=yy
-若=ck
-偌=rk
-弱=gd
-鄀=ce
-蒻=cd
-箬=vk
-爇=ch
-仨=rs
-挲=du
-撒=fw
-洒=dx
-靸=gj
-潵=dw
-卅=al
-飒=lx
-脎=om
-萨=ci
-塞=bt
-腮=ox
-嘥=kr
-噻=kt
-鳃=ax
-嗮=kx
-赛=br
-三=ae
-叁=ss
-毵=sm
-伞=ru
-糁=mp
-馓=uw
-散=cw
-桑=ym
-嗓=km
-搡=fm
-磉=um
-颡=yr
-丧=un
-搔=fi
-溞=di
-骚=mi
-缫=sg
-臊=om
-扫=fe
-嫂=ny
-埽=tj
-瘙=bi
-色=db
-洓=dn
-涩=dv
-啬=uk
-铯=jb
-瑟=wb
-穑=hk
-璱=wb
-森=mm
-僧=ro
-杀=xm
-沙=du
-纱=su
-刹=xd
-砂=uu
-莎=cu
-铩=jm
-痧=bu
-煞=dh
-裟=dy
-鲨=da
-傻=rw
-唼=kn
-啥=kk
-厦=iw
-歃=qr
-霎=yn
-筛=vj
-酾=yl
-晒=ox
-山=lk
-删=cd
-杉=mp
-芟=cy
-姗=nc
-苫=ck
-衫=pp
-钐=jp
-埏=tz
-珊=wc
-舢=ve
-跚=zc
-煽=hx
-潸=do
-膻=oa
-闪=mr
-陕=ej
-晱=oh
-讪=ye
-汕=de
-疝=be
-剡=hd
-扇=hx
-掞=fh
-善=yk
-骟=mx
-鄯=ye
-墡=tk
-缮=sk
-嬗=na
-擅=fa
-膳=ok
-赡=kk
-蟮=ik
-鳝=ak
-伤=rl
-殇=dp
-商=wk
-觞=dp
-墒=tk
-熵=hk
-垧=tk
-晌=ok
-赏=xr
-上=la
-尚=xk
-恦=xk
-绱=sk
-裳=xy
-捎=fo
-烧=hw
-梢=mo
-稍=ho
-筲=vo
-艄=vo
-蛸=io
-勺=bd
-芍=cu
-苕=ck
-柖=mk
-玿=wk
-韶=lk
-少=xp
-劭=dl
-邵=de
-绍=sk
-哨=ko
-睄=oo
-潲=do
-奢=do
-猞=qk
-赊=kx
-畬=rt
-畲=rt
-舌=qk
-佘=rx
-蛇=ib
-舍=rk
-厍=ii
-设=yy
-社=pt
-射=uc
-涉=dp
-赦=tw
-慑=xy
-摄=fy
-滠=dy
-歙=rr
-麝=gc
-谁=yf
-申=ll
-屾=ee
-伸=ru
-身=pp
-侁=re
-呻=ku
-绅=su
-诜=ye
-珅=wu
-娠=nn
-甡=uu
-砷=uu
-莘=cu
-深=dm
-棽=mv
-燊=hm
-鲹=ap
-什=ru
-甚=qv
-神=pu
-沈=dv
-审=bu
-哂=kx
-矧=ul
-谂=yx
-婶=nu
-瞫=ou
-肾=lo
-胂=ou
-渗=dp
-慎=xb
-椹=mv
-瘆=bp
-蜃=ii
-升=pc
-生=pf
-声=up
-昇=ou
-牲=nu
-珄=wu
-陞=et
-笙=vu
-湦=du
-焺=hu
-甥=ul
-绳=sd
-省=uo
-眚=uo
-圣=yt
-胜=ou
-盛=im
-剩=qd
-嵊=en
-琞=oy
-尸=vp
-失=pf
-师=lj
-虱=vi
-诗=yc
-邿=te
-鸤=un
-施=fy
-浉=dj
-狮=qj
-湿=dy
-蓍=co
-鲺=ai
-十=al
-石=ak
-时=oc
-识=yb
-实=bd
-実=bn
-拾=fk
-炻=hu
-祏=pu
-蚀=ui
-食=rl
-埘=tc
-莳=cc
-湜=dr
-鲥=ac
-鼫=ju
-史=ln
-矢=pt
-豕=an
-使=rl
-始=nk
-驶=mu
-屎=um
-士=ua
-氏=pv
-世=av
-仕=ru
-市=wj
-示=ex
-似=rr
-式=yg
-事=al
-侍=rc
-势=fl
-视=pe
-试=yg
-饰=uj
-室=bt
-恃=xc
-拭=fg
-是=or
-昰=ov
-柿=mj
-贳=ur
-适=zk
-栻=mg
-舐=qu
-轼=ig
-逝=zj
-铈=jj
-豉=ay
-媞=nr
-弑=xg
-谥=ym
-释=pl
-嗜=ko
-筮=vr
-誓=fk
-奭=db
-噬=kr
-螫=ti
-襫=pb
-匙=ob
-收=vw
-手=pl
-守=bc
-首=bz
-艏=vz
-寿=fc
-受=py
-狩=qc
-兽=bk
-售=rk
-授=fy
-绶=sy
-瘦=by
-书=vd
-殳=jy
-抒=fl
-纾=sl
-叔=uy
-枢=mx
-陎=ev
-姝=nv
-倏=rq
-殊=dv
-梳=mv
-淑=dy
-菽=cy
-鄃=re
-疏=vv
-舒=rl
-摅=fx
-毹=rm
-输=id
-蔬=cv
-秫=hu
-婌=ny
-孰=ww
-赎=kd
-塾=wt
-熟=wh
-属=uy
-暑=oo
-黍=hu
-署=so
-蜀=si
-鼠=jv
-薯=co
-曙=oo
-术=md
-戍=wd
-束=an
-沭=du
-述=zu
-树=mc
-竖=ll
-恕=nx
-庶=gh
-隃=ed
-数=mw
-腧=od
-墅=lt
-漱=dr
-澍=dc
-刷=ud
-唰=kd
-耍=en
-衰=wy
-摔=fu
-甩=kv
-帅=lj
-蟀=iu
-闩=ma
-拴=fw
-栓=mw
-涮=dd
-腨=oe
-双=yy
-霜=yo
-孀=no
-骦=mo
-礵=uo
-鹴=yn
-爽=dx
-灀=do
-水=ln
-帨=je
-税=he
-睡=oi
-瞓=oi
-吮=ke
-顺=ir
-舜=pl
-瞬=ol
-说=ye
-妁=nu
-烁=hl
-朔=bo
-铄=jl
-硕=ur
-搠=fo
-蒴=co
-槊=bm
-丝=va
-司=vk
-私=hs
-咝=ks
-思=tx
-虒=pj
-鸶=sn
-斯=qj
-缌=sx
-蛳=ij
-楒=mx
-飔=jx
-凘=dj
-厮=ij
-锶=jx
-嘶=kj
-撕=fj
-澌=dj
-死=db
-巳=vv
-亖=ee
-四=ke
-寺=tc
-汜=ds
-兕=ae
-姒=nr
-祀=ps
-泗=de
-饲=uk
-驷=me
-涘=du
-笥=vk
-耜=lk
-嗣=kk
-肆=ay
-忪=xs
-松=ms
-娀=nu
-凇=ds
-崧=es
-淞=ds
-菘=cs
-嵩=ek
-怂=rx
-悚=xu
-耸=re
-竦=lu
-讼=ys
-宋=bm
-诵=yy
-送=zt
-颂=br
-嗖=ky
-廋=gy
-搜=fy
-溲=dy
-蒐=cg
-馊=uy
-飕=jy
-锼=jy
-艘=vy
-螋=iy
-叟=py
-嗾=ku
-瞍=oy
-擞=fw
-薮=cw
-嗽=kr
-苏=cb
-甦=gu
-酥=yh
-稣=ah
-窣=bu
-俗=rk
-玊=wd
-夙=jd
-诉=yi
-肃=vd
-涑=du
-素=fx
-速=zu
-宿=bb
-骕=ms
-傃=rx
-粟=xm
-谡=yw
-嗉=kx
-塑=bt
-愫=xx
-溯=do
-鹔=sn
-僳=rm
-蔌=cr
-觫=du
-簌=vr
-蹜=zb
-狻=qw
-酸=yw
-蒜=cx
-算=vc
-虽=ki
-荽=cn
-眭=ot
-葰=cw
-睢=of
-濉=df
-绥=sn
-隋=eo
-随=ez
-髓=gz
-岁=ex
-祟=ix
-谇=yu
-遂=zu
-碎=uu
-隧=ez
-燧=hz
-璲=wz
-穗=hx
-穟=hz
-襚=pz
-邃=zu
-旞=fz
-孙=zx
-狲=qx
-荪=cx
-飧=xl
-损=fr
-笋=vy
-隼=ru
-榫=mu
-唆=kw
-娑=dn
-桫=mu
-梭=mw
-睃=ow
-嗍=ko
-羧=yw
-蓑=cy
-缩=sb
-所=pj
-唢=kr
-索=ux
-琐=wr
-锁=jr
-溹=dx
-嗦=kx
-他=ry
-它=bb
-她=ny
-祂=py
-趿=zj
-铊=jb
-塌=tx
-溻=dx
-褟=px
-塔=tk
-溚=dk
-獭=qr
-鳎=ax
-拓=fu
-挞=fz
-闼=mz
-遢=zx
-榻=mx
-踏=zo
-蹋=zx
-鞳=gk
-胎=ok
-台=sk
-邰=se
-抬=fk
-苔=ck
-炱=sh
-跆=zk
-鲐=ak
-薹=ct
-太=dd
-汰=dt
-态=tx
-肽=ot
-钛=jt
-泰=fu
-酞=yt
-坍=td
-贪=rr
-摊=ff
-滩=df
-瘫=bf
-坛=ts
-昙=os
-倓=rh
-谈=yh
-郯=he
-惔=xh
-覃=xu
-榃=mt
-痰=bh
-锬=jh
-谭=yu
-潭=du
-檀=ma
-磹=uu
-忐=ux
-坦=ta
-袒=pa
-钽=ja
-菼=ch
-毯=mh
-璮=wa
-叹=ky
-炭=eh
-探=fm
-碳=uh
-汤=dp
-铴=jp
-嘡=kt
-耥=lk
-劏=xd
-羰=yh
-镗=jt
-蹚=zt
-饧=up
-唐=gk
-堂=xt
-棠=xm
-鄌=ge
-塘=tk
-搪=fk
-溏=dk
-瑭=wk
-樘=mt
-膛=ot
-糖=mk
-螗=ik
-螳=it
-帑=nj
-倘=rk
-淌=dk
-傥=re
-躺=uk
-镋=je
-烫=dh
-趟=tk
-弢=gy
-涛=dc
-绦=sm
-掏=ff
-慆=xj
-滔=dj
-韬=wj
-饕=kl
-洮=dd
-逃=zd
-桃=md
-陶=ef
-啕=kf
-梼=mc
-淘=df
-绹=sf
-萄=cf
-鼗=ey
-讨=yc
-套=ds
-忑=xx
-忒=yx
-特=nc
-铽=jx
-慝=kx
-螣=oi
-熥=hz
-疼=bd
-腾=om
-誊=jk
-滕=ou
-縢=ox
-藤=cu
-剔=od
-梯=mp
-锑=jp
-踢=zw
-擿=fz
-荑=cy
-绨=sp
-啼=kj
-提=fr
-缇=sr
-遆=zj
-鹈=bn
-瑅=wr
-题=or
-蹄=zj
-醍=yr
-鳀=ar
-体=rb
-屉=uu
-剃=bd
-倜=rk
-悌=xp
-涕=dp
-逖=zh
-惕=xw
-替=fo
-裼=pw
-薙=cf
-嚏=kr
-趯=tf
-天=ad
-兲=wb
-添=dx
-黇=ck
-田=ku
-沺=dt
-恬=xk
-畋=tw
-畑=ht
-盷=od
-甜=qg
-湉=dk
-填=tb
-阗=mb
-忝=tx
-殄=dp
-淟=db
-晪=ob
-腆=ob
-舔=qx
-掭=fx
-佻=rd
-挑=fd
-祧=pd
-条=wm
-迢=zk
-笤=vk
-龆=vk
-蜩=ik
-髫=ak
-鲦=am
-朓=od
-窕=bd
-嬥=nf
-眺=od
-粜=im
-跳=zd
-帖=jk
-贴=kk
-萜=ck
-铁=ju
-餮=dl
-厅=id
-汀=dd
-听=kj
-町=td
-烃=hg
-桯=mw
-廷=zr
-亭=wd
-庭=gz
-莛=cz
-停=rd
-婷=nd
-渟=dd
-葶=cd
-蜓=iz
-霆=yz
-圢=td
-侹=rz
-挺=fz
-梃=mz
-烶=hz
-珽=wz
-艇=vz
-颋=rr
-通=zy
-嗵=kz
-仝=rg
-同=kk
-佟=rd
-彤=dp
-峂=ed
-哃=kk
-茼=ck
-桐=mk
-烔=hk
-砼=ug
-铜=jk
-童=ll
-酮=yk
-僮=rl
-鲖=ak
-潼=dl
-曈=ol
-橦=ml
-瞳=ol
-统=se
-捅=fy
-桶=my
-筒=vk
-恸=xl
-痛=by
-偷=rd
-头=dd
-投=fy
-骰=gy
-钭=ju
-透=zn
-凸=la
-秃=hj
-突=bq
-葖=cq
-图=kd
-徒=ir
-涂=dh
-荼=ch
-途=zh
-屠=uo
-梌=mh
-菟=cd
-稌=hh
-腯=oo
-酴=yh
-土=ua
-吐=kt
-钍=jt
-兔=dd
-堍=td
-湍=de
-猯=qe
-煓=he
-团=kc
-抟=fv
-疃=tl
-彖=vu
-推=ff
-颓=hr
-魋=gf
-腿=oz
-退=zg
-煺=hz
-蜕=ie
-褪=pz
-吞=tk
-焞=hz
-暾=ow
-屯=av
-坉=tt
-忳=xt
-饨=ut
-豚=ou
-鲀=at
-臀=uo
-托=fq
-侂=rq
-拖=fy
-脱=oe
-驮=md
-佗=rb
-陀=eb
-坨=tb
-沱=db
-驼=mb
-砣=ub
-鸵=nb
-跎=zb
-酡=yb
-橐=am
-鼍=kd
-妥=pn
-庹=gi
-椭=mo
-柝=mi
-唾=ki
-萚=cl
-箨=vl
-挖=fv
-洼=dt
-娲=nn
-畖=tg
-窊=bg
-蛙=it
-娃=nt
-瓦=ad
-佤=rw
-袜=pm
-腽=om
-哇=kt
-歪=bv
-崴=en
-外=xb
-弯=wg
-剜=bd
-婠=nk
-塆=tg
-湾=dg
-蜿=iv
-豌=av
-丸=pd
-纨=sw
-芄=cw
-完=be
-玩=we
-顽=er
-烷=he
-宛=bv
-挽=fv
-婉=nv
-惋=xv
-晚=ov
-绾=sk
-脘=oe
-菀=cv
-椀=mv
-琬=wv
-皖=be
-畹=tv
-碗=uv
-万=ap
-妧=ne
-腕=ov
-尪=yw
-汪=dw
-亡=wv
-王=at
-网=kx
-往=iv
-枉=mw
-罔=kw
-惘=xw
-辋=iw
-魍=gw
-妄=wn
-忘=wx
-旺=ow
-望=ww
-危=dv
-威=xn
-烓=ht
-偎=rn
-萎=cn
-逶=zn
-隈=en
-葳=cn
-微=iw
-溦=dw
-煨=hn
-薇=cw
-鳂=an
-巍=eg
-韦=al
-圩=ty
-围=kw
-帏=jw
-沩=dw
-违=zw
-闱=mw
-峗=ev
-洈=dv
-桅=mv
-涠=dw
-唯=kf
-帷=jf
-惟=xf
-硙=uj
-维=sf
-嵬=eg
-琟=wf
-潍=df
-伟=rw
-伪=rw
-尾=um
-纬=sw
-苇=cw
-委=hn
-炜=hw
-玮=ww
-洧=do
-娓=nm
-诿=yn
-硊=uv
-猥=qn
-痿=bn
-艉=vm
-韪=ow
-鲔=ao
-薳=cz
-卫=ea
-为=dd
-未=an
-位=rl
-味=kw
-畏=tn
-胃=to
-尉=uc
-谓=yo
-喂=kn
-渭=do
-猬=qo
-煟=ho
-碨=un
-蔚=cc
-慰=ux
-螱=ui
-魏=hg
-霨=yc
-鳚=ac
-温=dm
-榅=mm
-辒=im
-瘟=bm
-蕰=cm
-鳁=am
-文=wx
-纹=sw
-芠=cw
-炆=hw
-玟=ww
-闻=me
-蚊=iw
-阌=my
-雯=yw
-刎=wd
-吻=kw
-紊=wx
-稳=hx
-问=mk
-汶=dw
-揾=fm
-璺=py
-翁=bx
-嗡=kx
-滃=dx
-鹟=bn
-蓊=cx
-瓮=bw
-蕹=cf
-挝=fz
-倭=rn
-涡=dn
-莴=cn
-窝=bn
-蜗=in
-踒=zn
-我=pd
-沃=dy
-肟=ok
-卧=ib
-偓=rt
-涴=dv
-幄=jt
-握=ft
-渥=dt
-硪=uw
-斡=uu
-龌=vt
-乌=pa
-圬=tk
-污=dk
-邬=we
-呜=kw
-巫=gr
-屋=ut
-洿=dk
-诬=yr
-钨=jw
-无=ay
-毋=va
-吴=kt
-吾=wk
-芜=cw
-郚=we
-唔=kk
-浯=dk
-梧=mk
-珸=wk
-铻=jk
-鹀=gn
-蜈=it
-鼯=jk
-五=aa
-午=pg
-仵=rw
-伍=rw
-妩=nw
-庑=gw
-忤=xw
-怃=xw
-旿=ow
-武=av
-侮=rm
-捂=fk
-牾=nk
-珷=wv
-鹉=an
-舞=pl
-兀=ae
-勿=bp
-务=wl
-戊=gp
-阢=ee
-屼=ew
-坞=tw
-杌=mw
-芴=cw
-迕=zw
-物=nw
-误=yt
-悟=xk
-晤=ok
-焐=hk
-婺=sn
-痦=bk
-靰=gw
-骛=sm
-雾=yl
-寤=bk
-鹜=sn
-鋈=dj
-夕=pd
-兮=bv
-吸=kj
-汐=dx
-西=aa
-希=xj
-昔=co
-析=mj
-穸=bx
-肸=ou
-俙=rj
-恓=xx
-郗=xe
-饻=uy
-唏=kj
-奚=pd
-息=zx
-浠=dj
-牺=nx
-悉=px
-惜=xo
-晞=oj
-淅=dj
-烯=hj
-硒=ux
-菥=cj
-傒=rd
-晰=oj
-犀=un
-睎=oj
-稀=hj
-粞=mx
-翕=rx
-舾=vx
-溪=dd
-皙=mb
-锡=jw
-僖=rk
-熄=hx
-熙=kh
-蜥=ij
-豨=uj
-嘻=kk
-嬉=nk
-嶲=ev
-膝=ou
-憙=ux
-樨=mn
-熹=uh
-熻=hx
-窸=bx
-羲=yd
-螅=ix
-蟋=ix
-谿=pk
-釐=wl
-醯=ym
-巇=eg
-曦=od
-爔=hd
-酅=ee
-鼷=jd
-觿=dk
-习=vd
-席=gj
-袭=ly
-觋=ge
-喺=kx
-媳=nx
-嶍=eb
-隰=eh
-檄=mw
-鳛=ab
-枲=sm
-洗=de
-玺=dy
-徙=ir
-铣=je
-喜=uk
-葸=cx
-屣=ur
-蓰=cr
-暿=ok
-禧=pk
-卌=al
-戏=yg
-屃=ur
-系=px
-饩=uq
-矽=ux
-细=st
-係=rx
-咥=kt
-盻=ov
-郤=be
-绤=sk
-阋=me
-舄=jh
-隙=ex
-禊=pd
-潟=dh
-嚱=kg
-虾=ix
-瞎=ok
-匣=kj
-侠=rj
-狎=qj
-叚=vy
-峡=ej
-柙=mj
-狭=qj
-硖=uj
-翈=jx
-遐=zy
-暇=oy
-瑕=wy
-辖=ik
-霞=yy
-黠=hk
-下=ab
-吓=kx
-夏=aw
-罅=fh
-仙=re
-先=ne
-纤=sq
-忺=xr
-氙=qe
-祆=pt
-籼=me
-莶=ca
-掀=fr
-跹=zz
-酰=ye
-锨=jr
-鲜=ay
-暹=zf
-伭=ry
-闲=mm
-弦=gy
-贤=lr
-咸=xk
-挦=fc
-涎=dz
-娴=nm
-舷=vy
-衔=ii
-痫=bm
-鹇=mn
-嫌=nn
-冼=de
-狝=qx
-显=oy
-险=ea
-崄=ea
-猃=qa
-蚬=ie
-筅=ve
-禒=pu
-跣=ze
-藓=cy
-燹=uh
-伣=re
-县=qs
-岘=ee
-苋=ce
-现=we
-线=sj
-限=eg
-宪=be
-陷=ej
-硍=ug
-馅=uj
-缐=su
-羡=yr
-献=uq
-腺=ou
-霰=yw
-乡=vp
-芗=cx
-相=mo
-香=ho
-厢=io
-湘=do
-缃=so
-葙=co
-箱=vo
-襄=wy
-骧=my
-瓖=wy
-镶=jy
-详=yy
-庠=gy
-祥=py
-翔=yx
-享=wz
-响=kk
-饷=uk
-飨=xl
-想=mx
-鲞=ja
-向=pk
-巷=cs
-项=gr
-珦=wk
-象=dn
-像=rn
-橡=mn
-枭=pm
-哓=kw
-枵=mv
-骁=mw
-哮=kz
-宵=bo
-消=do
-绡=so
-虓=jj
-逍=zo
-鸮=kn
-婋=nj
-猇=qj
-萧=cs
-硝=uo
-翛=rx
-销=jo
-潇=ds
-箫=vs
-霄=yo
-魈=go
-蟏=is
-嚣=kk
-洨=dx
-崤=eo
-淆=do
-筊=vx
-小=ld
-晓=ow
-筱=vw
-皛=bb
-孝=lz
-肖=xo
-咲=kt
-效=ww
-校=mx
-涍=dz
-笑=vy
-啸=ks
-敩=xw
-些=ve
-揳=fd
-楔=md
-歇=or
-蝎=iv
-协=ub
-邪=ye
-胁=ob
-挟=fj
-偕=rb
-斜=ru
-谐=yb
-携=fn
-勰=lx
-撷=fr
-缬=sr
-鞋=gt
-写=by
-泄=du
-泻=dy
-绁=su
-卸=we
-屑=uo
-偰=rd
-械=mc
-亵=wy
-渫=dm
-谢=yc
-榍=mo
-榭=mc
-廨=gn
-懈=xn
-澥=dn
-獬=qn
-薢=cn
-薤=cj
-邂=zn
-燮=hy
-瀣=dj
-蟹=di
-躞=zy
-心=dd
-妡=nj
-忻=xj
-芯=cx
-辛=lu
-昕=oj
-杺=mx
-欣=jr
-炘=hj
-锌=ju
-新=lj
-歆=lr
-薪=cj
-馨=uo
-鑫=jj
-枔=mv
-伈=rx
-囟=px
-信=rk
-衅=xb
-星=ou
-骍=mu
-惺=xu
-猩=qu
-煋=hu
-瑆=wu
-腥=ou
-刑=kd
-行=ii
-邢=ke
-形=kp
-陉=eg
-型=kt
-荥=cu
-钘=jk
-硎=ud
-铏=jd
-醒=yu
-擤=fl
-兴=xb
-杏=mk
-姓=nu
-幸=tg
-性=xu
-荇=ci
-倖=rg
-婞=ng
-悻=xg
-凶=xk
-兄=ke
-匈=bk
-讻=yk
-汹=dk
-胸=ok
-雄=uf
-熊=sh
-诇=yk
-夐=dw
-休=rm
-修=rp
-咻=km
-庥=gm
-羞=yi
-脩=ro
-鸺=rn
-貅=vm
-馐=ui
-髹=am
-朽=mv
-滫=do
-秀=hn
-岫=ey
-珛=wo
-绣=sn
-袖=py
-琇=wn
-锈=jn
-嗅=kq
-溴=dq
-吁=ky
-戌=wa
-旴=oy
-盱=oy
-胥=vo
-须=pr
-顼=wr
-虚=hy
-谞=yo
-媭=pn
-湑=do
-嘘=ky
-墟=ty
-需=ye
-魆=gv
-徐=ih
-许=yw
-诩=yx
-冔=ky
-冔=oy
-栩=mx
-珝=wx
-糈=mo
-醑=yo
-旭=jo
-序=gl
-叙=ry
-恤=xx
-昫=ok
-洫=dx
-垿=tl
-勖=kl
-绪=so
-续=sd
-酗=yk
-婿=no
-溆=dy
-絮=nx
-煦=oh
-蓄=ct
-蓿=cb
-轩=ig
-昍=oo
-宣=ba
-谖=yy
-喧=ka
-愃=xa
-揎=fa
-萱=ca
-暄=oa
-煊=ha
-瑄=wa
-儇=ry
-禤=px
-翧=bx
-翾=sx
-玄=wy
-玹=wy
-痃=by
-悬=qx
-旋=fr
-漩=dr
-暶=or
-璇=wr
-咺=ka
-选=ze
-晅=oa
-烜=ha
-癣=by
-泫=dy
-昡=oy
-炫=hy
-绚=so
-眩=oy
-铉=jy
-琄=wo
-衒=ii
-渲=da
-楦=ma
-碹=ua
-削=xd
-靴=gb
-薛=cu
-穴=bb
-学=xz
-峃=xe
-茓=cb
-踅=fr
-雪=ye
-鳕=ae
-血=pm
-谑=ya
-勋=kl
-埙=tr
-熏=ph
-窨=bo
-獯=qh
-薰=ch
-曛=oh
-醺=yh
-寻=ec
-旬=bo
-巡=zv
-驯=mi
-询=yo
-峋=eo
-恂=xo
-洵=do
-浔=dc
-荀=co
-荨=cc
-栒=mo
-珣=wo
-循=io
-鲟=ac
-训=yi
-讯=yu
-汛=du
-迅=zu
-徇=io
-逊=zx
-殉=do
-巽=sb
-噀=kb
-蕈=cu
-丫=bl
-压=id
-吖=ky
-押=fj
-垭=ty
-鸦=yn
-桠=my
-鸭=jn
-牙=ap
-伢=ry
-岈=ey
-芽=cy
-玡=wy
-琊=we
-蚜=iy
-堐=tt
-崖=et
-涯=dt
-睚=ot
-衙=ii
-哑=ky
-雅=yf
-蕥=cf
-轧=iv
-亚=ay
-讶=yy
-迓=zy
-娅=ny
-砑=uy
-氩=qy
-揠=fn
-猰=qd
-呀=ky
-恹=xq
-烟=hd
-胭=od
-崦=ed
-淹=dd
-焉=vh
-阉=md
-湮=dt
-腌=od
-鄢=ve
-嫣=nh
-漹=dh
-延=zv
-闫=ms
-严=yp
-妍=nk
-芫=ce
-言=wk
-岩=eu
-沿=dk
-炎=hh
-研=uk
-盐=tm
-琂=wk
-阎=mj
-筵=vz
-蜒=iz
-颜=ir
-虤=hj
-檐=mk
-沇=de
-兖=we
-奄=dd
-俨=ry
-弇=rc
-衍=ii
-偃=rn
-厣=ij
-掩=fd
-眼=og
-郾=ke
-扊=hh
-棪=mh
-渰=dc
-琰=wh
-罨=sd
-演=db
-戭=bg
-蝘=in
-魇=ig
-黡=ih
-甗=hw
-鼹=jn
-厌=iq
-觃=kz
-咽=kd
-彦=ip
-砚=ue
-唁=kk
-宴=bn
-晏=on
-烻=hz
-艳=fb
-验=ma
-谚=yp
-堰=tn
-焰=hj
-焱=hh
-雁=if
-滟=db
-墕=th
-酽=yy
-谳=yq
-餍=il
-燕=nh
-赝=ir
-嬿=nh
-央=lg
-咉=ky
-泱=dy
-殃=dy
-秧=hy
-鸯=yn
-鞅=gy
-扬=fp
-羊=bl
-阳=eo
-旸=op
-杨=mp
-炀=hp
-飏=jp
-佯=ry
-疡=bp
-钖=jp
-垟=ty
-徉=iy
-洋=dy
-烊=hy
-蛘=iy
-仰=re
-养=yl
-氧=qy
-痒=by
-怏=xy
-恙=yx
-样=my
-羕=yy
-漾=dy
-幺=vs
-夭=pd
-吆=ky
-妖=ny
-腰=on
-邀=zw
-爻=xx
-尧=aw
-肴=xo
-垚=tt
-姚=nd
-峣=ew
-轺=ik
-珧=wd
-窑=bf
-谣=yf
-媱=nf
-徭=if
-摇=ff
-滧=dw
-猺=qf
-遥=zf
-瑶=wf
-繇=px
-鳐=af
-杳=mo
-咬=kx
-窅=bo
-窈=bl
-舀=pj
-崾=en
-药=cu
-要=xn
-钥=jo
-靿=gl
-鹞=pn
-曜=of
-耀=xf
-倻=re
-掖=fn
-椰=me
-噎=ka
-爷=be
-耶=ee
-揶=fe
-铘=je
-也=vv
-吔=ky
-冶=dk
-埜=mt
-野=ll
-嘢=kl
-业=la
-叶=ku
-曳=lp
-页=ar
-邺=ye
-夜=wn
-晔=ou
-烨=hu
-液=dn
-谒=yv
-堨=tv
-腋=on
-楪=mm
-馌=um
-靥=im
-一=aa
-伊=ry
-衣=wy
-医=ku
-依=ry
-祎=pw
-咿=ky
-洢=dy
-猗=qk
-铱=jy
-壹=ua
-揖=fe
-欹=dr
-漪=dk
-噫=kx
-繄=kx
-黟=hx
-仪=ry
-匜=ky
-圯=ts
-夷=an
-沂=dj
-诒=yk
-宜=bq
-怡=xk
-迤=zy
-饴=uk
-咦=ky
-姨=ny
-贻=kk
-宧=bl
-扅=hx
-眙=ok
-胰=oy
-痍=by
-移=hx
-遗=zr
-椸=my
-颐=kr
-疑=br
-嶷=er
-簃=vx
-彝=vc
-乙=vv
-已=vv
-以=vr
-钇=jv
-佁=rk
-矣=su
-苡=cr
-舣=vy
-蚁=iy
-倚=rk
-扆=hy
-酏=yy
-椅=mk
-旖=fk
-踦=zk
-乂=pn
-义=dx
-亿=rv
-弋=ad
-刈=xd
-忆=xv
-艺=cv
-议=yy
-亦=wd
-屹=eq
-异=sc
-佚=ru
-呓=kv
-役=iy
-抑=fe
-杙=my
-译=yl
-邑=kb
-佾=ro
-峄=el
-怿=xl
-易=ow
-枍=mv
-绎=sl
-诣=yo
-驿=ml
-奕=wd
-弈=wc
-疫=by
-羿=xc
-轶=iu
-悒=xb
-挹=fb
-浥=db
-益=bm
-谊=yq
-勚=ul
-埸=tw
-翊=lx
-翌=xl
-逸=zd
-晹=ow
-意=lx
-溢=dm
-缢=sm
-肄=by
-裔=wk
-裛=wy
-嫕=nx
-廙=gb
-潩=db
-瘗=bt
-蜴=iw
-毅=ly
-熠=hb
-镒=jm
-鹝=an
-鹢=bn
-劓=zd
-殪=da
-燚=hh
-薏=cx
-螠=im
-翳=kx
-翼=xb
-臆=ox
-癔=bx
-镱=jx
-懿=ux
-因=kd
-阴=eo
-姻=nd
-洇=dd
-茵=cd
-荫=co
-音=lo
-骃=md
-殷=py
-氤=qd
-铟=jd
-喑=ko
-堙=tt
-愔=xo
-歅=xr
-溵=dy
-禋=pt
-吟=kv
-烎=kh
-垠=tg
-狺=qk
-珢=wg
-訚=mk
-寅=bb
-崟=ej
-淫=dr
-银=jg
-龂=vj
-鄞=ne
-夤=xb
-嚚=kk
-蟫=iu
-霪=yr
-尹=vp
-引=gl
-吲=kl
-饮=ur
-蚓=il
-隐=ex
-瘾=bx
-印=pe
-茚=ce
-胤=pv
-慭=lx
-应=ga
-英=cy
-桜=mn
-莺=cn
-婴=kn
-媖=ny
-瑛=wy
-锳=jy
-嘤=kn
-撄=fn
-缨=sn
-罂=kf
-樱=mn
-璎=wn
-鹦=kn
-膺=go
-鹰=gn
-迎=ze
-茔=ct
-盈=nm
-荧=ch
-莹=cy
-萤=ci
-营=ck
-萦=cx
-溁=dm
-楹=mm
-滢=dy
-蓥=cj
-潆=dx
-蝇=id
-嬴=wf
-赢=wf
-瀛=df
-郢=ke
-颍=br
-颖=br
-影=op
-瘿=bn
-映=oy
-硬=ug
-媵=on
-哟=ku
-唷=ko
-佣=ry
-拥=fy
-痈=by
-邕=vb
-庸=gl
-鄘=ge
-雍=wf
-墉=tl
-慵=xl
-壅=wt
-澭=df
-镛=jl
-臃=of
-鳙=al
-饔=wl
-喁=ky
-颙=yr
-永=dn
-甬=sy
-咏=ky
-泳=dy
-俑=ry
-勇=sl
-栐=my
-埇=ty
-涌=dy
-恿=sx
-蛹=iy
-踊=zy
-鲬=ay
-用=kl
-优=ry
-忧=xy
-攸=rw
-呦=kl
-幽=ey
-悠=rx
-麀=gb
-耰=lw
-尢=uv
-尤=yd
-由=la
-犹=qy
-邮=ye
-油=dy
-疣=by
-浟=dw
-莜=cw
-莸=cy
-铀=jy
-蚰=iy
-游=dz
-鱿=ay
-猷=bq
-鲉=ay
-蝣=iz
-友=uy
-有=uo
-卣=la
-酉=xa
-羑=yj
-莠=cn
-铕=jo
-槱=mh
-牖=pf
-黝=hl
-又=vn
-右=uk
-幼=yl
-佑=rk
-侑=ro
-囿=ko
-宥=bo
-柚=my
-祐=pk
-诱=yn
-蚴=il
-釉=py
-鼬=jy
-込=zr
-纡=sy
-迂=zy
-淤=dd
-瘀=bd
-于=al
-邘=ye
-余=rh
-妤=nl
-欤=yr
-玙=wy
-於=fd
-盂=ym
-臾=pn
-鱼=da
-俞=rd
-禺=ld
-竽=vy
-舁=jc
-娱=nt
-狳=qh
-谀=yy
-渔=da
-萸=cy
-隅=ey
-雩=yk
-嵎=ey
-嵛=ed
-愉=xd
-揄=fd
-渝=dd
-腴=oy
-逾=zd
-愚=yx
-榆=md
-瑜=wd
-艅=vh
-虞=ht
-觎=re
-窬=bd
-舆=pb
-褕=pd
-蝓=id
-髃=gy
-与=aa
-予=sl
-伛=rx
-宇=by
-屿=ey
-羽=xx
-雨=ad
-俣=rt
-禹=pd
-语=yk
-圄=kk
-峿=ek
-圉=kg
-庾=gy
-敔=ww
-鄅=ye
-瑀=wy
-瘐=by
-窳=bg
-龉=vk
-玉=wd
-驭=my
-圫=tq
-聿=vl
-芋=cy
-妪=nx
-饫=uy
-育=wo
-郁=ue
-昱=ol
-狱=qq
-峪=ek
-彧=ad
-浴=dk
-钰=jy
-预=sr
-域=ta
-堉=to
-悆=rx
-欲=br
-淯=do
-谕=yd
-阈=ma
-喻=kd
-寓=by
-御=ie
-棫=ma
-矞=sk
-裕=pk
-遇=zy
-鹆=bn
-愈=rx
-滪=dr
-煜=hl
-蓣=cr
-誉=xk
-毓=pv
-蜮=ia
-潏=dk
-薁=cd
-豫=sn
-遹=zk
-燏=hk
-燠=hd
-鹬=sn
-鬻=gl
-鸢=yn
-冤=bd
-眢=xo
-鸳=xn
-渊=dl
-蜎=io
-箢=vv
-元=ee
-円=ka
-员=kr
-园=ke
-沅=de
-垣=ta
-爰=py
-原=ix
-圆=kr
-袁=ty
-援=fy
-湲=dy
-缘=su
-鼋=ed
-塬=tx
-嫄=nx
-源=dx
-猿=qy
-辕=iy
-橼=mu
-羱=yx
-螈=ix
-远=ze
-苑=cv
-怨=xx
-院=ee
-垸=te
-媛=ny
-掾=fu
-瑗=wy
-愿=ix
-曰=ka
-约=su
-彟=ey
-月=ka
-刖=od
-妜=ng
-岳=qe
-玥=wo
-悦=xe
-钺=jv
-阅=me
-跃=zy
-粤=pv
-越=tv
-樾=mv
-龠=rc
-瀹=dc
-爚=hc
-籥=vc
-晕=oi
-缊=sm
-氲=qm
-煴=hm
-赟=wr
-馧=hm
-云=es
-匀=bd
-妘=ns
-沄=ds
-纭=ss
-芸=cs
-昀=od
-郧=ke
-涢=dr
-耘=ls
-筠=vd
-筼=vr
-鋆=tj
-允=se
-狁=qe
-陨=er
-殒=dr
-孕=nz
-运=zs
-郓=be
-恽=xi
-酝=ys
-愠=xm
-韫=wm
-韵=ld
-熨=uh
-蕴=cm
-匝=kj
-咂=kj
-拶=fx
-臜=or
-杂=jm
-砸=uj
-咋=kv
-灾=bh
-甾=vt
-哉=uk
-栽=um
-宰=bu
-崽=ex
-再=ar
-在=ut
-载=ui
-糌=mo
-簪=vo
-咱=kz
-昝=wo
-寁=br
-攒=fr
-趱=tr
-暂=io
-赞=nr
-錾=ij
-瓒=wr
-牂=py
-赃=kt
-臧=wi
-驵=mq
-奘=pd
-奘=vd
-脏=ot
-葬=cc
-遭=zo
-糟=mo
-凿=yk
-早=ou
-枣=ad
-蚤=ii
-澡=dm
-璪=wm
-藻=cm
-灶=ht
-皂=bq
-唣=kq
-造=zk
-慥=xz
-噪=km
-簉=vz
-燥=hm
-躁=zm
-则=kd
-沢=di
-择=fl
-泽=dl
-责=fr
-迮=zv
-啧=kr
-帻=jr
-笮=vv
-舴=vv
-箦=vr
-赜=kr
-仄=ir
-昃=or
-贼=ku
-鲗=ad
-怎=vx
-谮=yo
-鄫=be
-增=to
-憎=xo
-缯=so
-矰=uo
-罾=so
-锃=jw
-甑=bw
-赠=ko
-扎=fv
-吒=kq
-奓=dx
-挓=fq
-哳=kj
-喳=ka
-揸=fa
-渣=da
-楂=ma
-劄=vd
-齇=zq
-札=mv
-闸=mj
-铡=jd
-拃=fv
-眨=of
-砟=uv
-鲊=av
-鲝=ya
-乍=pa
-诈=yv
-咤=kq
-柞=mv
-栅=mc
-炸=hv
-痄=bv
-蚱=iv
-溠=dg
-榨=mv
-霅=yk
-斋=we
-摘=fk
-宅=bq
-窄=bv
-债=rr
-砦=vu
-寨=bm
-瘵=bx
-沾=dk
-毡=mk
-旃=fd
-栴=md
-粘=mk
-詹=dk
-谵=yk
-嶦=ek
-瞻=ok
-鹯=wn
-鳣=aa
-斩=ij
-飐=jk
-展=un
-盏=jm
-崭=ej
-搌=fn
-占=lk
-战=lg
-栈=mj
-站=lk
-偡=rv
-绽=sr
-湛=dv
-蘸=ch
-张=gi
-章=lu
-鄣=le
-嫜=nu
-彰=lp
-漳=du
-獐=qu
-暲=ou
-樟=mu
-璋=wu
-蟑=iu
-仉=rj
-长=pn
-涨=di
-掌=xu
-丈=an
-仗=rv
-帐=ji
-杖=mv
-胀=oi
-账=ki
-障=eu
-嶂=eu
-幛=ju
-瘴=bu
-钊=jd
-招=fk
-昭=ok
-啁=kk
-爪=pn
-找=fg
-沼=dk
-召=dk
-兆=ed
-诏=yk
-炤=hk
-赵=tx
-笊=vv
-旐=fd
-棹=mu
-照=oh
-罩=su
-肇=hy
-曌=og
-蜇=fi
-嗻=kh
-遮=zh
-折=fj
-哲=fk
-晢=fo
-辄=iv
-喆=uk
-蛰=fi
-詟=lk
-谪=yk
-磔=um
-辙=iw
-者=lo
-啫=ko
-锗=jo
-赭=to
-褶=pb
-这=zw
-柘=mu
-浙=dj
-蔗=ch
-鹧=gn
-着=yo
-著=co
-贞=lr
-针=ju
-侦=rr
-浈=dr
-珍=wp
-胗=op
-桢=mr
-真=ub
-砧=uk
-祯=pr
-葴=ck
-斟=qu
-甄=xw
-蓁=ch
-榛=mh
-瑧=wh
-禛=pb
-箴=vk
-臻=ah
-诊=yp
-枕=mv
-昣=op
-轸=ip
-畛=tp
-疹=bp
-袗=pp
-缜=sb
-稹=hb
-鬒=ab
-圳=ti
-阵=ei
-纼=sl
-鸩=dn
-振=fn
-朕=ot
-赈=kn
-揕=fv
-瑱=wb
-镇=jb
-震=yn
-争=dl
-征=iv
-怔=xv
-诤=yl
-峥=el
-挣=fl
-狰=ql
-烝=lh
-钲=jv
-睁=ol
-铮=jl
-筝=vl
-蒸=ch
-拯=fa
-掟=fr
-整=uv
-正=av
-证=yv
-郑=be
-帧=jr
-政=vw
-症=bv
-之=dn
-支=uy
-卮=pv
-汁=du
-芝=cv
-吱=ky
-枝=my
-泜=dd
-知=uk
-织=sb
-肢=oy
-栀=mv
-祗=pd
-胝=od
-脂=oo
-禔=pr
-稙=hq
-榰=mo
-蜘=ik
-执=fw
-侄=rt
-直=uq
-值=rq
-埴=tq
-职=eb
-植=mq
-殖=dq
-絷=fx
-跖=zu
-摭=fh
-踯=ze
-止=la
-只=kb
-凪=jv
-旨=bo
-址=tv
-扺=fu
-沚=dv
-纸=su
-芷=cv
-祉=pv
-茋=cd
-咫=ib
-指=fo
-枳=mb
-轵=ib
-趾=zv
-黹=yd
-酯=yo
-徵=iw
-至=at
-志=ux
-忮=xy
-豸=pp
-制=pd
-帙=ju
-帜=jb
-治=dk
-炙=ph
-质=pr
-郅=ae
-峙=ec
-庤=gc
-栉=me
-陟=ep
-挚=fu
-晊=ot
-桎=mt
-秩=hu
-致=aw
-贽=fr
-轾=it
-掷=fe
-梽=mx
-畤=tc
-痔=bc
-窒=bt
-铚=jt
-鸷=fn
-彘=vb
-智=uo
-滞=dj
-痣=bx
-蛭=it
-骘=em
-滍=di
-稚=hf
-置=sq
-跱=zc
-锧=jr
-雉=uf
-疐=ur
-觯=dl
-踬=zr
-中=ll
-忠=vx
-终=sd
-柊=md
-盅=vm
-钟=jv
-舯=vv
-衷=wy
-锺=jv
-螽=wi
-肿=ov
-种=hv
-冢=bn
-踵=zv
-穜=hl
-仲=rv
-众=rr
-茽=cv
-重=pa
-州=dl
-舟=pd
-诌=ye
-周=kk
-洲=dv
-辀=iv
-鸼=vn
-粥=gg
-赒=kk
-妯=ny
-轴=iy
-肘=oc
-帚=ej
-纣=sc
-咒=kj
-宙=by
-绉=se
-昼=ia
-胄=yo
-荮=cc
-皱=dy
-酎=yc
-骤=mn
-籀=vt
-朱=pw
-侏=rv
-诛=yv
-邾=ve
-洙=dv
-茱=cv
-株=mv
-珠=wv
-诸=yo
-猪=qo
-铢=jv
-蛛=iv
-槠=mo
-潴=do
-橥=qm
-竹=pl
-竺=ve
-烛=hi
-逐=zu
-舳=vy
-瘃=bn
-蠋=ii
-躅=zi
-主=dw
-拄=fv
-渚=do
-煮=lh
-嘱=ky
-麈=gv
-瞩=oy
-伫=ra
-住=rv
-助=ql
-纻=sa
-苎=ca
-杼=ml
-注=dv
-贮=ka
-驻=mv
-柱=mv
-炷=hv
-祝=pe
-疰=bv
-砫=uv
-蛀=iv
-筑=vf
-铸=jc
-箸=vo
-翥=lx
-抓=fv
-髽=at
-拽=fy
-跩=zy
-专=ad
-砖=uv
-颛=er
-转=iv
-啭=kv
-瑑=wu
-僎=rb
-赚=kn
-撰=fb
-篆=vu
-馔=ub
-妆=dn
-庄=gt
-桩=mt
-装=dy
-壮=du
-状=dq
-漴=dx
-撞=fl
-隹=rf
-追=zk
-骓=mf
-锥=jf
-坠=et
-缀=sy
-惴=xe
-缒=sz
-赘=fr
-肫=ot
-窀=bt
-谆=yz
-衠=ii
-准=df
-卓=lu
-拙=fi
-倬=ru
-捉=fr
-桌=lm
-棁=me
-涿=dn
-汋=du
-灼=hu
-叕=yy
-茁=ci
-斫=uj
-浊=di
-浞=dr
-诼=yn
-酌=yu
-啄=kn
-晫=ou
-椓=mn
-禚=ph
-擢=ff
-濯=df
-镯=ji
-孜=zw
-兹=by
-咨=dk
-姿=dn
-赀=vr
-资=dr
-淄=dt
-缁=st
-嗞=ky
-孳=bz
-嵫=ey
-滋=dy
-粢=dm
-辎=it
-鄑=ye
-觜=vy
-訾=vk
-趑=tr
-锱=jt
-镃=jy
-龇=vb
-鼒=cv
-髭=ab
-鲻=at
-仔=rz
-姊=np
-秭=hp
-籽=mz
-耔=lz
-虸=iz
-笫=vp
-梓=mu
-紫=vx
-滓=du
-字=bz
-自=po
-恣=dx
-渍=dr
-眦=ob
-子=va
-宗=bx
-倧=rx
-综=sx
-棕=mx
-腙=ox
-踪=zx
-鬃=ax
-鬷=aw
-总=bx
-偬=rx
-纵=sr
-疭=br
-粽=mx
-邹=de
-驺=me
-诹=yy
-陬=ey
-鄹=ee
-鲰=ay
-走=tr
-奏=ft
-揍=ft
-租=hq
-足=kr
-卒=wu
-崒=eu
-族=fu
-镞=ju
-诅=yq
-阻=eq
-组=sq
-俎=rq
-珇=wq
-祖=pq
-钻=jk
-躜=zr
-缵=sr
-纂=vx
-攥=fx
-嘴=ky
-最=oy
-罪=sf
-槜=mn
-蕞=cy
-醉=yu
-尊=bc
-嶟=ec
-遵=zc
-樽=mc
-鳟=ac
-僔=rc
-噂=kc
-撙=fc
-昨=ov
-捽=fu
-琢=wn
-左=ug
-佐=rg
-作=rv
-坐=rt
-阼=ev
-岞=ev
-怍=xv
-祚=pv
-胙=ov
-唑=kt
-座=gt
-做=rw
-咗=kg
-鿍=tl
-鿎=uz
-鿏=jw
-鿔=jk
-㑇=re
-㑊=rd
-㕮=kx
-㗎=km
-㘎=kw
-㙍=ty
-㙘=tn
-㙦=rt
-㛃=fn
-㛚=ny
-㛹=ng
-㞎=ub
-㞗=uq
-㟃=ek
-㠇=ey
-㠓=en
-㤘=xe
-㥄=xw
-㧐=fy
-㧑=fw
-㧟=fk
-㨃=fz
-㨄=fk
-㫰=ol
-㬊=oy
-㬎=oh
-㬚=ow
-㭎=mx
-㭕=ms
-㮾=dm
-㰀=mu
-㳇=dx
-㳘=de
-㳚=du
-㴔=dx
-㵐=dr
-㶲=hy
-㸆=hf
-㸌=hf
-㺄=qd
-㻬=wk
-㽏=dg
-㿠=bw
-䁖=on
-䂮=fu
-䃅=ul
-䃎=ux
-䅟=hp
-䌷=sy
-䌹=sk
-䎃=rx
-䎖=bx
-䏝=ov
-䏡=ox
-䏲=op
-䐃=oh
-䓖=cl
-䓛=ci
-䓨=cf
-䓫=ck
-䓬=cu
-䗖=ij
-䗛=io
-䗪=gi
-䗴=iz
-䜣=yj
-䝙=vx
-䢺=ie
-䢼=ce
-䣘=xe
-䥽=jd
-䦃=jo
-䲟=ae
-䲠=ao
-䲢=oa
-䴓=an
-䴔=wn
-䴕=dn
-䴖=fn
-䴗=on
-䴘=pn
-䴙=un
-䶮=lt
-𠅤=wx
-𠙶=lk
-𠳐=ke
-𡎚=tc
-𡐓=tn
-𣗋=me
-𣲗=dw
-𣲘=dw
-𣸣=dr
-𤧛=wj
-𤩽=wq
-𤫉=wy
-𥔲=uk
-𥕢=uo
-𥖨=um
-𥻗=ma
-𦈡=se
-𦒍=lx
-𦙶=ok
-𦝼=on
-𦭜=cb
-𦰡=ce
-𧿹=zm
-𨐈=iw
-𨙸=ue
-𨚕=se
-𨟠=oe
-𨭉=wj
-𨱇=jq
-𨱏=jk
-𨱑=jb
-𨱔=jc
-𨺙=ee
-𩽾=an
-𩾃=av
-𩾌=an
-𪟝=fl
-𪣻=tn
-𪤗=tp
-𪨊=ur
-𪨰=eq
-𪨶=ei
-𪩘=eq
-𪾢=oe
-𫄧=sz
-𫄨=sj
-𫄷=sx
-𫄸=sh
-𫇭=cw
-𫌀=pr
-𫍣=yk
-𫍯=yk
-𫍲=yy
-𫍽=yy
-𫐄=iw
-𫐐=ie
-𫐓=im
-𫑡=ke
-𫓧=jf
-𫓯=jt
-𫓶=jo
-𫓹=jb
-𫔍=jt
-𫔎=jk
-𫔶=mm
-𫖮=er
-𫖯=er
-𫖳=yr
-𫗧=uu
-𫗴=ua
-𫘜=mw
-𫘝=mg
-𫘦=mf
-𫘧=mu
-𫘨=mr
-𫘪=mx
-𫘬=md
-𫚕=aj
-𫚖=va
-𫚭=av
-𫛭=qn
-𫞩=wl
-𫟅=sx
-𫟦=iz
-𫟹=jb
-𫟼=jz
-𫠆=ur
-𫠊=my
-𫠜=ve
-𫢸=rl
-𫫇=kx
-𫭟=tx
-𫭢=tb
-𫭼=tl
-𫮃=tl
-𫰛=ng
-𫵷=el
-𫶇=ej
-𫷷=gr
-𫸩=gx
-𬀩=ow
-𬀪=oe
-𬂩=mj
-𬃊=mr
-𬇕=dw
-𬇙=dr
-𬇹=dy
-𬉼=hx
-𬊈=hc
-𬊤=hl
-𬌗=yk
-𬍛=wl
-𬍡=dy
-𬍤=wc
-𬒈=xu
-𬒔=uo
-𬒗=ue
-𬕂=vr
-𬘓=si
-𬘘=sv
-𬘡=sd
-𬘩=sz
-𬘫=se
-𬘬=so
-𬘭=sm
-𬘯=sz
-𬙂=sb
-𬙊=st
-𬙋=sy
-𬜬=ck
-𬜯=cl
-𬞟=cr
-𬟁=cn
-𬟽=id
-𬣙=yy
-𬣞=ya
-𬣡=yj
-𬣳=yg
-𬤇=yt
-𬤊=yr
-𬤝=yx
-𬨂=iu
-𬨎=iy
-𬩽=ee
-𬪩=yn
-𬬩=jy
-𬬭=jb
-𬬮=ji
-𬬱=jj
-𬬸=ju
-𬬹=ju
-𬬻=ju
-𬬿=jk
-𬭁=jm
-𬭊=jt
-𬭎=js
-𬭚=jz
-𬭛=jy
-𬭤=ju
-𬭩=jx
-𬭬=je
-𬭯=jw
-𬭳=jk
-𬭶=jh
-𬭸=jl
-𬭼=jz
-𬮱=mt
-𬮿=ej
-𬯀=el
-𬯎=er
-𬱖=yr
-𬱟=dr
-𬳵=mp
-𬳶=mk
-𬳽=me
-𬳿=mh
-𬴂=mf
-𬴃=mu
-𬴊=ml
-𬶋=ak
-𬶍=ab
-𬶏=av
-𬶐=ad
-𬶟=ad
-𬶠=aj
-𬶨=ga
-𬶭=ax
-𬶮=ak
-𬷕=fn
-𬸘=kn
-𬸚=qn
-𬸣=bn
-𬸦=fn
-𬸪=pn
-𬹼=vl
-𬺈=vk
-𬺓=vr
+啊	aa	kk
+阿	aa	ek
+吖	aa	ky
+呵	aa	kk
+腌	aa	od
+嗄	aa	kw
+锕	aa	jk
+昂	ah	oe
+盎	ah	ym
+肮	ah	oj
+卬	ah	pe
+仰	ah	re
+爱	ai	py
+唉	ai	ku
+哎	ai	kx
+艾	ai	cx
+挨	ai	fu
+矮	ai	un
+癌	ai	be
+埃	ai	tu
+哀	ai	wy
+碍	ai	uc
+嗳	ai	ky
+暧	ai	oy
+隘	ai	em
+霭	ai	yv
+捱	ai	ft
+皑	ai	bj
+蔼	ai	cv
+嗌	ai	km
+嫒	ai	ny
+瑷	ai	wy
+欸	ai	sr
+毐	ai	uw
+锿	ai	jy
+砹	ai	ux
+𬮿	ai	ej
+叆	ai	ey
+堨	ai	tv
+硙	ai	uj
+按	an	fn
+俺	an	rd
+安	an	bn
+案	an	bm
+暗	an	oo
+岸	an	eg
+鞍	an	gn
+氨	an	qn
+庵	an	gd
+胺	an	on
+黯	an	ho
+铵	an	jn
+桉	an	mn
+谙	an	yo
+唵	an	kd
+盦	an	rm
+垵	an	tn
+厂	an	ap
+广	an	di
+鹌	an	dn
+犴	an	qg
+埯	an	td
+𩽾	an	dn
+奥	ao	pd
+熬	ao	fh
+澳	ao	dd
+傲	ao	rw
+凹	ao	la
+敖	ao	fw
+袄	ao	py
+嗷	ao	kw
+獒	ao	fq
+拗	ao	fl
+鳌	ao	fa
+坳	ao	tl
+螯	ao	fi
+岙	ao	ye
+翱	ao	bx
+遨	ao	zw
+骜	ao	fm
+媪	ao	nm
+鏊	ao	fj
+璈	ao	ww
+懊	ao	xd
+鏖	ao	gj
+廒	ao	gw
+奡	ao	al
+聱	ao	fe
+隩	ao	ed
+嚣	ao	kk
+吧	ba	kb
+把	ba	fb
+八	ba	pn
+爸	ba	bb
+巴	ba	sl
+拔	ba	fd
+罢	ba	ss
+坝	ba	tr
+霸	ba	yo
+扒	ba	fb
+芭	ba	cb
+疤	ba	bb
+捌	ba	fd
+靶	ba	gb
+叭	ba	kb
+灞	ba	do
+跋	ba	zd
+钯	ba	jb
+耙	ba	lb
+粑	ba	mb
+笆	ba	vb
+岜	ba	eb
+魃	ba	gd
+鲅	ba	ad
+菝	ba	cd
+蚆	ba	ib
+朳	ba	mb
+胈	ba	od
+鲃	ba	ab
+鲌	ba	ab
+哱	ba	kz
+妭	ba	nd
+伯	ba	rb
+羓	ba	yb
+斌	bb	wv
+彬	bb	mp
+宾	bb	bb
+滨	bb	db
+鬓	bb	ab
+镔	bb	jb
+濒	bb	dr
+殡	bb	db
+槟	bb	mb
+缤	bb	sb
+摈	bb	fb
+膑	bb	ob
+玢	bb	wd
+豳	bb	eu
+髌	bb	gb
+邠	bb	be
+傧	bb	rb
+份	bb	rd
+频	bb	vr
+包	bc	bs
+报	bc	fy
+宝	bc	by
+抱	bc	fs
+爆	bc	hu
+保	bc	rm
+暴	bc	ou
+饱	bc	us
+薄	bc	cc
+堡	bc	rt
+鲍	bc	as
+煲	bc	rh
+豹	bc	vu
+胞	bc	os
+曝	bc	ou
+葆	bc	cm
+苞	bc	cs
+褒	bc	wy
+孢	bc	zs
+雹	bc	ys
+刨	bc	bd
+鸨	bc	bn
+剥	bc	ed
+龅	bc	vs
+褓	bc	pm
+瀑	bc	du
+炮	bc	hs
+趵	bc	zu
+枹	bc	ms
+白	bd	po
+百	bd	ab
+摆	bd	fs
+拜	bd	uf
+败	bd	kw
+柏	bd	mb
+掰	bd	uu
+呗	bd	kr
+佰	bd	rb
+伯	bd	rb
+稗	bd	hu
+捭	bd	fu
+擘	bd	uu
+本	bf	aa
+笨	bf	vb
+奔	bf	dc
+苯	bf	cb
+锛	bf	jc
+贲	bf	ur
+犇	bf	nn
+畚	bf	st
+坌	bf	bt
+夯	bf	dl
+栟	bf	mk
+倴	bf	rc
+坋	bf	td
+泵	bg	uu
+蹦	bg	zo
+崩	bg	eo
+甭	bg	by
+绷	bg	so
+嘣	bg	ko
+迸	bg	zk
+蚌	bg	if
+祊	bg	pf
+甏	bg	uw
+琫	bg	wl
+镚	bg	jo
+堋	bg	to
+帮	bh	fj
+榜	bh	mf
+棒	bh	ml
+邦	bh	fe
+浜	bh	db
+绑	bh	se
+傍	bh	rf
+磅	bh	uf
+镑	bh	jf
+蚌	bh	if
+膀	bh	of
+谤	bh	yf
+梆	bh	me
+旁	bh	wf
+蒡	bh	cf
+搒	bh	ff
+塝	bh	tf
+蚄	bh	if
+𠳐	bh	ke
+棓	bh	mk
+彭	bh	up
+玤	bh	wf
+比	bi	bb
+必	bi	dd
+笔	bi	vm
+逼	bi	zt
+币	bi	pj
+俾	bi	ru
+碧	bi	wu
+毕	bi	bu
+壁	bi	ut
+避	bi	zu
+彼	bi	iy
+闭	bi	mc
+鼻	bi	zl
+臂	bi	uo
+弊	bi	dc
+屄	bi	ub
+畀	bi	tl
+璧	bi	uy
+毙	bi	bb
+辟	bi	uu
+痹	bi	bl
+蔽	bi	cw
+敝	bi	dw
+弼	bi	gg
+庇	bi	gb
+吡	bi	kb
+鄙	bi	ke
+滗	bi	dm
+婢	bi	nu
+荜	bi	cu
+陛	bi	et
+濞	bi	dl
+铋	bi	jb
+哔	bi	ku
+匕	bi	pv
+薜	bi	cu
+妣	bi	nb
+篦	bi	vb
+毖	bi	bb
+芘	bi	cb
+蓖	bi	cb
+髀	bi	gu
+秕	bi	hb
+嬖	bi	un
+泌	bi	db
+裨	bi	pu
+佖	bi	rb
+箅	bi	vl
+筚	bi	vu
+愎	bi	xw
+邲	bi	be
+坒	bi	bt
+荸	bi	cz
+庳	bi	gu
+秘	bi	hb
+睥	bi	ou
+狴	bi	qt
+贲	bi	ur
+珌	bi	wb
+觱	bi	wy
+觱	bi	xy
+鲾	bi	at
+皕	bi	bb
+苾	bi	cb
+萆	bi	cu
+沘	bi	db
+拂	bi	ff
+馝	bi	hb
+咇	bi	kb
+赑	bi	kr
+祕	bi	pb
+佛	bi	rf
+纰	bi	sb
+襞	bi	uy
+舭	bi	vb
+诐	bi	yy
+跸	bi	zu
+办	bj	ld
+版	bj	py
+半	bj	dl
+班	bj	ww
+板	bj	my
+般	bj	vy
+搬	bj	fy
+伴	bj	rb
+斑	bj	ww
+扮	bj	fd
+拌	bj	fb
+瓣	bj	lu
+绊	bj	sb
+扳	bj	fy
+颁	bj	br
+坂	bj	ty
+阪	bj	ey
+癍	bj	bw
+瘢	bj	by
+湴	bj	dy
+钣	bj	jy
+柈	bj	mb
+昄	bj	oy
+攽	bj	bw
+靽	bj	gb
+𨭉	bj	wj
+并	bk	bk
+病	bk	bb
+冰	bk	du
+兵	bk	qb
+饼	bk	uk
+丙	bk	an
+柄	bk	mb
+炳	bk	hb
+秉	bk	pn
+禀	bk	wx
+摒	bk	fk
+邴	bk	be
+屏	bk	uk
+槟	bk	mb
+昺	bk	ob
+蛃	bk	ib
+枋	bk	mf
+栟	bk	mk
+便	bm	rg
+变	bm	wy
+边	bm	zl
+遍	bm	zc
+编	bm	sc
+扁	bm	hc
+辩	bm	lu
+鞭	bm	gg
+辨	bm	lu
+贬	bm	kf
+卞	bm	dx
+匾	bm	kc
+辫	bm	lu
+苄	bm	cb
+汴	bm	db
+煸	bm	hc
+弁	bm	sc
+砭	bm	uf
+褊	bm	pc
+蝙	bm	ic
+忭	bm	xb
+鳊	bm	ac
+萹	bm	cc
+抃	bm	fb
+碥	bm	uc
+昪	bm	oc
+𨚕	bm	se
+笾	bm	vz
+表	bn	fy
+标	bn	mx
+彪	bn	hp
+飙	bn	qx
+镖	bn	jx
+膘	bn	ox
+裱	bn	py
+骠	bn	mx
+婊	bn	ny
+镳	bn	jh
+杓	bn	mu
+飑	bn	js
+鳔	bn	ax
+摽	bn	fx
+俵	bn	ry
+瘭	bn	bx
+藨	bn	ch
+瀌	bn	dh
+熛	bn	hx
+儦	bn	rh
+蔈	bn	cx
+幖	bn	jx
+骉	bn	mm
+脿	bn	oy
+波	bo	dy
+博	bo	uc
+拨	bo	fd
+播	bo	ft
+伯	bo	rb
+薄	bo	cc
+啵	bo	ky
+剥	bo	ed
+搏	bo	fc
+泊	bo	db
+柏	bo	mb
+勃	bo	ul
+驳	bo	mx
+膊	bo	oc
+钵	bo	jb
+卜	bo	ld
+铂	bo	jb
+脖	bo	oz
+玻	bo	wy
+帛	bo	bj
+渤	bo	dl
+舶	bo	vb
+跛	bo	zy
+箔	bo	vb
+菠	bo	cy
+亳	bo	wq
+钹	bo	jd
+簸	bo	vy
+僰	bo	ar
+魄	bo	bg
+礴	bo	uc
+擘	bo	uu
+檗	bo	um
+饽	bo	uz
+踣	bo	zk
+嶓	bo	et
+鹁	bo	un
+鲌	bo	ab
+蕃	bo	ct
+浡	bo	dz
+馞	bo	hz
+镈	bo	jc
+𬭛	bo	jy
+哱	bo	kz
+榑	bo	mc
+欂	bo	mc
+桲	bo	mz
+袯	bo	pd
+佛	bo	rf
+砵	bo	ub
+磻	bo	ut
+孛	bo	uz
+簿	bo	vc
+般	bo	vy
+趵	bo	zu
+别	bp	kd
+憋	bp	dx
+鳖	bp	da
+瘪	bp	bb
+蹩	bp	dr
+不	bu	ad
+部	bu	le
+补	bu	pb
+布	bu	uj
+步	bu	vp
+卜	bu	ld
+捕	bu	ff
+埠	bu	tu
+簿	bu	vc
+卟	bu	kb
+哺	bu	kf
+钚	bu	jb
+怖	bu	xj
+逋	bu	zf
+堡	bu	rt
+晡	bu	of
+埔	bu	tf
+蔀	bu	ce
+醭	bu	yn
+𬷕	bu	fn
+瓿	bu	lw
+埗	bu	tp
+被	bw	py
+呗	bw	kr
+北	bw	lb
+背	bw	lo
+倍	bw	rk
+杯	bw	mb
+贝	bw	kr
+备	bw	wt
+悲	bw	fx
+碑	bw	uu
+辈	bw	fi
+卑	bw	pu
+蓓	bw	ck
+焙	bw	hk
+钡	bw	jr
+惫	bw	wx
+悖	bw	xz
+陂	bw	ey
+狈	bw	qr
+臂	bw	uo
+碚	bw	uk
+鞴	bw	gy
+椑	bw	mu
+糒	bw	my
+鹎	bw	pn
+鐾	bw	uj
+鞁	bw	gy
+邶	bw	le
+棓	bw	mk
+褙	bw	po
+孛	bw	uz
+琲	bw	wf
+擦	ca	fx
+拆	ca	fi
+嚓	ca	kx
+草	cc	cu
+操	cc	fm
+曹	cc	ao
+槽	cc	mo
+肏	cc	rr
+糙	cc	mz
+嘈	cc	ko
+漕	cc	do
+螬	cc	io
+艚	cc	vo
+𥕢	cc	uo
+才	cd	ap
+菜	cd	cm
+猜	cd	qo
+踩	cd	zm
+蔡	cd	cx
+采	cd	pm
+财	cd	kc
+彩	cd	pp
+材	cd	mc
+裁	cd	uy
+睬	cd	om
+偲	cd	rx
+测	ce	dd
+侧	ce	rd
+册	ce	pa
+策	ce	vn
+厕	ce	id
+恻	ce	xd
+栅	ce	mc
+岑	cf	ev
+涔	cf	dv
+参	cf	sp
+梣	cf	mv
+曾	cg	bo
+层	cg	us
+蹭	cg	zo
+噌	cg	ko
+嶒	cg	eo
+藏	ch	ci
+仓	ch	rv
+苍	ch	cv
+舱	ch	vv
+沧	ch	dv
+伧	ch	rv
+臧	ch	wi
+鸧	ch	rn
+玱	ch	wv
+次	ci	dr
+此	ci	vb
+词	ci	yk
+刺	ci	ad
+辞	ci	qu
+赐	ci	kw
+慈	ci	bx
+瓷	ci	dw
+磁	ci	uy
+茨	ci	cr
+雌	ci	vf
+祠	ci	pk
+兹	ci	by
+疵	ci	bb
+差	ci	yg
+糍	ci	my
+鹚	ci	bn
+佽	ci	rr
+泚	ci	db
+伺	ci	rk
+茈	ci	cb
+莿	ci	cd
+跐	ci	zb
+呲	ci	kb
+𫚖	ci	va
+玼	ci	wb
+惨	cj	xp
+残	cj	dj
+餐	cj	ll
+参	cj	sp
+灿	cj	he
+蚕	cj	ti
+惭	cj	xj
+粲	cj	lm
+璨	cj	wm
+骖	cj	mp
+孱	cj	uz
+黪	cj	hp
+掺	cj	fp
+䅟	cj	hp
+错	co	jo
+撮	co	fy
+搓	co	fg
+措	co	fo
+挫	co	ft
+厝	co	io
+锉	co	jt
+痤	co	bt
+磋	co	ug
+矬	co	ut
+鹾	co	lg
+蹉	co	zg
+嵯	co	eg
+棤	co	mo
+脞	co	ot
+瘥	co	bg
+莝	co	ct
+瑳	co	wg
+酂	co	ne
+窜	cr	bi
+蹿	cr	zi
+攒	cr	fr
+篡	cr	vs
+汆	cr	ru
+撺	cr	fi
+镩	cr	ji
+爨	cr	ph
+从	cs	rr
+葱	cs	cx
+聪	cs	ex
+丛	cs	ra
+琮	cs	wx
+璁	cs	wx
+匆	cs	bd
+骢	cs	mx
+淙	cs	dx
+熜	cs	hx
+苁	cs	cr
+枞	cs	mr
+囱	cs	pw
+悰	cs	xx
+粗	cu	mq
+促	cu	rr
+醋	cu	yo
+簇	cu	vu
+蹙	cu	wr
+猝	cu	qu
+蹴	cu	zy
+蔟	cu	cu
+徂	cu	iq
+殂	cu	dq
+卒	cu	wu
+酢	cu	yv
+趋	cu	te
+趣	cu	ty
+㤘	cu	xe
+催	cv	rf
+崔	cv	ef
+翠	cv	xu
+脆	cv	ov
+摧	cv	ff
+粹	cv	mu
+萃	cv	cu
+淬	cv	du
+啐	cv	ku
+璀	cv	wf
+瘁	cv	bu
+悴	cv	xu
+榱	cv	my
+衰	cv	wy
+漼	cv	df
+崒	cv	eu
+毳	cv	mm
+隹	cv	rf
+缞	cv	sy
+村	cy	mc
+存	cy	uz
+寸	cy	ad
+忖	cy	xc
+皴	cy	sy
+邨	cy	te
+蹲	cy	zc
+凑	cz	dt
+腠	cz	ot
+辏	cz	it
+打	da	fd
+大	da	un
+达	da	zd
+答	da	vk
+搭	da	fk
+哒	da	kz
+嗒	da	kk
+妲	da	na
+妲	da	nd
+怛	da	xa
+沓	da	uo
+耷	da	de
+鞑	da	gz
+笪	da	va
+瘩	da	bk
+靼	da	ga
+褡	da	pk
+炟	da	ha
+荙	da	cz
+溚	da	dk
+𨱏	da	jk
+𫟼	da	jz
+垯	da	tz
+鿎	da	ud
+惮	da	xl
+跶	da	zz
+到	dc	ad
+道	dc	zz
+倒	dc	rd
+刀	dc	vp
+岛	dc	pe
+导	dc	sc
+盗	dc	dm
+捣	dc	fe
+稻	dc	hj
+悼	dc	xu
+叨	dc	kd
+蹈	dc	zj
+祷	dc	pc
+纛	dc	fx
+氘	dc	ql
+忉	dc	xd
+捯	dc	fd
+焘	dc	fh
+帱	dc	jc
+舠	dc	vd
+鱽	dc	ad
+梼	dc	mc
+带	dd	fj
+待	dd	ic
+代	dd	ry
+呆	dd	km
+戴	dd	ub
+袋	dd	ry
+贷	dd	rr
+黛	dd	rh
+逮	dd	zn
+岱	dd	re
+大	dd	un
+歹	dd	ax
+殆	dd	dk
+怠	dd	sx
+傣	dd	ru
+埭	dd	tn
+玳	dd	wy
+迨	dd	zk
+绐	dd	sk
+呔	dd	kt
+骀	dd	mk
+叇	dd	ez
+毒	dd	fm
+轪	dd	id
+棣	dd	mn
+垈	dd	rt
+诒	dd	yk
+的	de	bu
+得	de	ic
+地	de	ty
+德	de	ix
+锝	de	jc
+底	de	gd
+嘚	de	kc
+扽	df	ft
+等	dg	vc
+灯	dg	hd
+登	dg	va
+邓	dg	ye
+瞪	dg	oa
+蹬	dg	za
+凳	dg	vj
+噔	dg	ka
+澄	dg	da
+镫	dg	ja
+磴	dg	ua
+嶝	dg	ea
+戥	dg	og
+璒	dg	wa
+憕	dg	xa
+当	dh	xe
+党	dh	xe
+档	dh	me
+挡	dh	fe
+荡	dh	cp
+铛	dh	je
+裆	dh	pe
+宕	dh	bu
+凼	dh	uk
+砀	dh	up
+谠	dh	ye
+菪	dh	cu
+𬍡	dh	dy
+𣗋	dh	me
+垱	dh	te
+筜	dh	ve
+珰	dh	we
+地	di	ty
+第	di	vp
+低	di	rd
+滴	di	dk
+底	di	gd
+睇	di	op
+帝	di	wj
+的	di	bu
+迪	di	zy
+弟	di	bp
+抵	di	fd
+敌	di	qw
+蒂	di	cj
+递	di	zp
+狄	di	qh
+堤	di	tr
+笛	di	vy
+娣	di	np
+谛	di	yj
+嘀	di	kk
+荻	di	ch
+涤	di	dm
+邸	di	de
+骶	di	gd
+棣	di	mn
+嫡	di	nk
+缔	di	sj
+氐	di	ud
+菂	di	cu
+砥	di	ud
+镝	di	jk
+觌	di	ue
+翟	di	xf
+诋	di	yd
+柢	di	md
+籴	di	rm
+碲	di	uj
+鞮	di	gr
+俤	di	rp
+坻	di	td
+提	di	fr
+踶	di	zr
+髢	di	ay
+䗖	di	ij
+啲	di	ku
+杕	di	md
+媂	di	nj
+禘	di	pj
+䃅	di	ul
+疐	di	ur
+𤧛	di	wj
+玓	di	wu
+羝	di	yd
+𬱖	di	yr
+遆	di	zj
+蹢	di	zk
+但	dj	ra
+单	dj	bl
+蛋	dj	vi
+丹	dj	pa
+淡	dj	dh
+胆	dj	oa
+担	dj	fa
+弹	dj	gl
+氮	dj	qh
+旦	dj	oa
+啖	dj	kh
+诞	dj	yz
+耽	dj	ev
+澹	dj	dk
+掸	dj	fl
+儋	dj	rk
+殚	dj	dl
+亶	dj	wa
+惮	dj	xl
+聃	dj	er
+石	dj	ak
+赕	dj	kh
+眈	dj	ov
+疸	dj	ba
+疸	dj	bd
+郸	dj	be
+瘅	dj	bl
+萏	dj	cj
+膻	dj	oa
+憺	dj	xk
+𫢸	dj	rl
+𬘘	dj	sv
+疍	dj	va
+箪	dj	vl
+惔	dj	xh
+定	dk	br
+顶	dk	dr
+丁	dk	al
+订	dk	yd
+盯	dk	od
+鼎	dk	ov
+钉	dk	jd
+锭	dk	jr
+叮	dk	kd
+町	dk	td
+腚	dk	or
+啶	dk	kr
+碇	dk	ur
+玎	dk	wd
+酊	dk	yd
+仃	dk	rd
+疔	dk	bd
+萣	dk	cr
+耵	dk	ed
+掟	dk	fr
+铤	dk	jz
+点	dm	lh
+店	dm	gk
+电	dm	lv
+垫	dm	ft
+殿	dm	uy
+典	dm	lb
+颠	dm	ur
+掂	dm	fk
+碘	dm	ub
+滇	dm	db
+甸	dm	bt
+癫	dm	br
+靛	dm	fr
+踮	dm	zk
+淀	dm	dr
+巅	dm	er
+奠	dm	bd
+佃	dm	rt
+癜	dm	by
+钿	dm	jt
+簟	dm	vu
+玷	dm	wk
+惦	dm	xk
+坫	dm	tk
+阽	dm	ek
+扂	dm	hk
+琔	dm	wr
+掉	dn	fu
+吊	dn	kj
+调	dn	yk
+叼	dn	kd
+钓	dn	ju
+雕	dn	kf
+屌	dn	uj
+刁	dn	va
+凋	dn	dk
+貂	dn	vk
+鲷	dn	ak
+碉	dn	uk
+铞	dn	jj
+鸟	dn	wd
+铫	dn	jd
+窎	dn	bn
+汈	dn	dd
+椆	dn	mk
+多	do	xx
+躲	do	um
+夺	do	dc
+朵	do	jm
+堕	do	et
+剁	do	jd
+哆	do	kx
+铎	do	jl
+舵	do	vb
+跺	do	zm
+踱	do	zy
+垛	do	tm
+剟	do	yd
+惰	do	xo
+掇	do	fy
+哚	do	km
+埵	do	ti
+咄	do	ki
+柁	do	mb
+驮	do	md
+度	do	gy
+杕	do	md
+裰	do	py
+隋	do	eo
+隳	do	ex
+𬭚	do	jz
+㙍	do	ty
+饳	do	ui
+亸	do	wl
+跌	dp	zu
+碟	dp	um
+爹	dp	bx
+蝶	dp	im
+叠	dp	yq
+迭	dp	zu
+谍	dp	ym
+牒	dp	pm
+喋	dp	km
+耋	dp	lt
+鲽	dp	am
+堞	dp	tm
+垤	dp	tt
+蹀	dp	zm
+瓞	dp	gu
+咥	dp	kt
+昳	dp	ou
+𫶇	dp	ej
+楪	dp	mm
+䏲	dp	op
+佚	dp	ru
+绖	dp	st
+丢	dq	ps
+铥	dq	js
+段	dr	py
+断	dr	mj
+短	dr	ua
+端	dr	le
+锻	dr	jy
+缎	dr	sy
+椴	dr	my
+煅	dr	hy
+簖	dr	vj
+耑	dr	ee
+塅	dr	ty
+瑖	dr	wy
+动	ds	el
+东	ds	ad
+懂	ds	xv
+洞	ds	dk
+董	ds	cv
+冬	ds	wd
+栋	ds	md
+冻	ds	dd
+咚	ds	kd
+氡	ds	qd
+侗	ds	rk
+峒	ds	ek
+硐	ds	uk
+恫	ds	xk
+鸫	ds	dn
+胴	ds	ok
+垌	ds	tk
+岽	ds	ed
+胨	ds	od
+烔	ds	hk
+𬟽	ds	id
+读	du	yd
+度	du	gy
+都	du	le
+毒	du	fm
+杜	du	mt
+赌	du	ko
+独	du	qi
+堵	du	to
+渡	du	dy
+肚	du	ot
+督	du	uo
+嘟	du	ke
+镀	du	jy
+睹	du	oo
+笃	du	vm
+妒	du	nh
+犊	du	nd
+渎	du	dd
+蠹	du	ai
+顿	du	tr
+牍	du	pd
+芏	du	ct
+椟	du	md
+黩	du	hd
+髑	du	gi
+𬭊	du	jt
+阇	du	mo
+姤	du	nk
+竺	du	ve
+厾	du	vs
+对	dv	yc
+队	dv	er
+堆	dv	tf
+兑	dv	be
+碓	dv	uf
+敦	dv	ww
+怼	dv	yx
+镦	dv	jw
+𬯎	dv	er
+𬭚	dv	jz
+祋	dv	py
+追	dv	zk
+得	dw	ic
+嘚	dw	kc
+嗲	dx	kx
+吨	dy	kt
+顿	dy	tr
+盾	dy	po
+炖	dy	ht
+蹲	dy	zc
+墩	dy	tw
+敦	dy	ww
+钝	dy	jt
+遁	dy	zo
+盹	dy	ot
+沌	dy	dt
+囤	dy	kt
+趸	dy	wr
+惇	dy	xz
+礅	dy	uw
+砘	dy	ut
+镦	dy	jw
+楯	dy	mo
+坉	dy	tt
+忳	dy	xt
+蹾	dy	zw
+都	dz	le
+斗	dz	du
+豆	dz	aa
+逗	dz	za
+抖	dz	fu
+兜	dz	pe
+窦	dz	bd
+陡	dz	er
+痘	dz	ba
+蔸	dz	ce
+钭	dz	ju
+蚪	dz	iu
+篼	dz	ve
+读	dz	yd
+渎	dz	dd
+额	ee	br
+俄	ee	rw
+饿	ee	uw
+呃	ee	kv
+恶	ee	yx
+哦	ee	kw
+厄	ee	iv
+鹅	ee	wn
+鄂	ee	ke
+娥	ee	nw
+莪	ee	cw
+蛾	ee	iw
+扼	ee	fv
+鳄	ee	ak
+峨	ee	ew
+屙	ee	uk
+噩	ee	wk
+萼	ee	ck
+颚	ee	kr
+讹	ee	yb
+遏	ee	zv
+腭	ee	ok
+愕	ee	xk
+锷	ee	jk
+谔	ee	yk
+涐	ee	dw
+轭	ee	iv
+阿	ee	ek
+锇	ee	jw
+鹗	ee	kn
+婀	ee	nk
+垩	ee	yt
+苊	ee	cv
+崿	ee	ek
+𫫇	ee	kx
+阏	ee	md
+姶	ee	nk
+堨	ee	tv
+𥔲	ee	uk
+诶	ei	yu
+欸	ei	sr
+恩	en	kx
+嗯	en	kx
+摁	en	fx
+蒽	en	cx
+奀	en	bd
+唔	en	kk
+而	er	al
+二	er	aa
+儿	er	pv
+尔	er	dx
+耳	er	aa
+贰	er	yr
+饵	er	ue
+迩	er	zx
+洱	er	de
+珥	er	we
+鸸	er	en
+铒	er	je
+鲕	er	ae
+陑	er	ee
+耏	er	ep
+咡	er	ke
+佴	er	re
+发	fa	vd
+法	fa	ds
+伐	fa	rg
+罚	fa	sd
+阀	fa	mg
+乏	fa	pv
+筏	fa	vg
+珐	fa	ws
+垡	fa	rt
+砝	fa	us
+酦	fa	yd
+分	ff	bd
+份	ff	rd
+粉	ff	md
+芬	ff	cd
+粪	ff	mb
+坟	ff	tw
+奋	ff	dt
+酚	ff	yd
+纷	ff	sd
+愤	ff	xr
+焚	ff	mh
+汾	ff	dd
+忿	ff	bx
+氛	ff	qd
+瀵	ff	db
+鼢	ff	jd
+吩	ff	kd
+鲼	ff	ar
+玢	ff	wd
+棻	ff	cm
+棼	ff	md
+坋	ff	td
+翂	ff	xd
+𣸣	ff	dr
+偾	ff	rr
+豮	ff	ur
+风	fg	jx
+封	fg	tc
+疯	fg	bx
+峰	fg	ef
+冯	fg	dm
+凤	fg	jy
+丰	fg	al
+锋	fg	jf
+枫	fg	mx
+缝	fg	sz
+逢	fg	zf
+奉	fg	fl
+蜂	fg	if
+沣	fg	df
+烽	fg	hf
+讽	fg	yx
+俸	fg	rl
+葑	fg	cc
+砜	fg	ux
+酆	fg	ee
+崶	fg	ec
+唪	fg	kl
+浲	fg	df
+沨	fg	dx
+赗	fg	ko
+堼	fg	tt
+放	fh	fw
+方	fh	dw
+房	fh	hf
+防	fh	ef
+芳	fh	cf
+坊	fh	tf
+仿	fh	rf
+访	fh	yf
+纺	fh	sf
+舫	fh	vf
+妨	fh	nf
+枋	fh	mf
+昉	fh	of
+肪	fh	of
+鲂	fh	af
+彷	fh	if
+钫	fh	jf
+邡	fh	fe
+蚄	fh	if
+牥	fh	nf
+祊	fh	pf
+饭	fj	uy
+反	fj	py
+烦	fj	hr
+翻	fj	px
+凡	fj	jd
+范	fj	cv
+犯	fj	qv
+返	fj	zy
+番	fj	pt
+泛	fj	df
+繁	fj	px
+帆	fj	jf
+樊	fj	md
+贩	fj	ky
+梵	fj	mf
+藩	fj	ct
+钒	fj	jf
+蕃	fj	ct
+幡	fj	jt
+矾	fj	uf
+畈	fj	ty
+蘩	fj	cx
+璠	fj	wt
+燔	fj	ht
+墦	fj	tt
+蹯	fj	zt
+氾	fj	dv
+𫔍	fj	jt
+𬸪	fj	pn
+佛	fo	rf
+副	fu	ad
+付	fu	rc
+服	fu	oy
+富	fu	bt
+福	fu	pt
+夫	fu	an
+负	fu	dr
+复	fu	pw
+赴	fu	tb
+父	fu	bx
+府	fu	gc
+附	fu	ec
+傅	fu	rc
+符	fu	vc
+浮	fu	dz
+扶	fu	ff
+幅	fu	jt
+腹	fu	ow
+伏	fu	rq
+敷	fu	fw
+甫	fu	ad
+赋	fu	kv
+妇	fu	ne
+弗	fu	vl
+覆	fu	xw
+抚	fu	fw
+辅	fu	if
+拂	fu	ff
+腐	fu	gr
+氟	fu	qf
+芙	fu	cf
+肤	fu	of
+斧	fu	bj
+阜	fu	pu
+俯	fu	rc
+孚	fu	pz
+缚	fu	sc
+馥	fu	hw
+釜	fu	ba
+佛	fu	rf
+辐	fu	it
+孵	fu	lz
+腑	fu	oc
+俘	fu	rz
+蝠	fu	it
+苻	fu	cc
+涪	fu	dk
+祓	fu	pd
+凫	fu	pj
+麸	fu	ff
+呋	fu	kf
+脯	fu	of
+讣	fu	yb
+黻	fu	yd
+匐	fu	bt
+芣	fu	cb
+茀	fu	cf
+滏	fu	da
+洑	fu	dq
+拊	fu	fc
+蝮	fu	iw
+咐	fu	kc
+赙	fu	kc
+罘	fu	sb
+绂	fu	sd
+绋	fu	sf
+黼	fu	yf
+鲋	fu	ac
+茯	fu	cq
+幞	fu	jn
+驸	fu	mc
+桴	fu	mz
+袱	fu	pq
+跗	fu	zc
+趺	fu	zf
+芾	fu	cl
+菔	fu	cy
+艴	fu	fb
+鄜	fu	ge
+稃	fu	hz
+郛	fu	pe
+簠	fu	vm
+宓	fu	bb
+莩	fu	cz
+蚨	fu	if
+蜉	fu	iz
+榑	fu	mc
+枹	fu	ms
+砆	fu	uf
+琈	fu	wz
+怫	fu	xf
+䓛	fu	ci
+㳇	fu	dx
+𫖯	fu	er
+𫓧	fu	jf
+㕮	fu	kx
+垺	fu	tz
+韨	fu	wd
+玞	fu	wf
+非	fw	la
+飞	fw	vd
+费	fw	fr
+肥	fw	ob
+菲	fw	cf
+废	fw	gd
+肺	fw	ol
+妃	fw	nj
+匪	fw	kf
+斐	fw	fw
+绯	fw	sf
+沸	fw	df
+翡	fw	fx
+吠	fw	kq
+霏	fw	yf
+扉	fw	hf
+啡	fw	kf
+腓	fw	of
+诽	fw	yf
+痱	fw	bf
+芾	fw	cl
+淝	fw	db
+蜚	fw	fi
+镄	fw	jr
+狒	fw	qf
+篚	fw	vf
+悱	fw	xf
+棐	fw	fm
+鲱	fw	af
+剕	fw	fd
+榧	fw	mf
+𬴂	fw	mf
+朏	fw	oi
+否	fz	bk
+缶	fz	wk
+不	fz	ad
+噶	ga	kv
+嘎	ga	kg
+咖	ga	kk
+伽	ga	rk
+尬	ga	ul
+尬	ga	yl
+尕	ga	nx
+轧	ga	iv
+戛	ga	ag
+旮	ga	jo
+夹	ga	an
+钆	ga	jv
+尜	ga	xx
+呷	ga	kj
+高	gc	wk
+搞	gc	fk
+告	gc	nk
+稿	gc	hk
+膏	gc	wo
+糕	gc	mh
+皋	gc	bu
+镐	gc	jk
+锆	gc	jk
+郜	gc	ne
+篙	gc	vk
+羔	gc	yh
+诰	gc	yk
+杲	gc	om
+睾	gc	pg
+藁	gc	cm
+槁	gc	mk
+缟	gc	sk
+槔	gc	mu
+筶	gc	vk
+该	gd	yr
+改	gd	jw
+盖	gd	ym
+钙	gd	jg
+概	gd	mv
+丐	gd	av
+溉	gd	dv
+赅	gd	kr
+陔	gd	er
+垓	gd	tr
+芥	gd	cl
+荄	gd	cr
+戤	gd	ng
+𬮿	gd	ej
+晐	gd	or
+个	ge	rl
+各	ge	wk
+格	ge	mk
+歌	ge	dr
+哥	ge	dk
+隔	ge	el
+割	ge	bd
+葛	ge	cv
+阁	ge	mk
+戈	ge	ad
+搁	ge	fk
+咯	ge	kk
+革	ge	nl
+铬	ge	jk
+鸽	ge	rn
+镉	ge	jl
+舸	ge	vk
+嗝	ge	kl
+膈	ge	ol
+疙	ge	bq
+硌	ge	uk
+圪	ge	tq
+胳	ge	ok
+饹	ge	uk
+鬲	ge	al
+骼	ge	gk
+纥	ge	sq
+滆	ge	dl
+哿	ge	lk
+颌	ge	rr
+蛤	ge	ik
+虼	ge	iq
+袼	ge	pk
+合	ge	rk
+仡	ge	rq
+塥	ge	tl
+盖	ge	ym
+跟	gf	zg
+根	gf	mg
+艮	gf	en
+亘	gf	aa
+哏	gf	kg
+茛	gf	cg
+更	gg	an
+庚	gg	gn
+耿	gg	eh
+耕	gg	lj
+梗	gg	mg
+羹	gg	yd
+哽	gg	kg
+埂	gg	tg
+鲠	gg	ag
+赓	gg	gr
+绠	gg	sg
+颈	gg	vr
+浭	gg	dg
+畊	gg	tj
+鹒	gg	gn
+暅	gg	oa
+𬒔	gg	uo
+刚	gh	kd
+港	gh	ds
+钢	gh	jx
+岗	gh	ex
+缸	gh	fg
+冈	gh	kx
+纲	gh	sx
+杠	gh	mg
+肛	gh	og
+戆	gh	lx
+罡	gh	sv
+扛	gh	fg
+堽	gh	tv
+筻	gh	vg
+冮	gh	dg
+㭎	gh	mx
+鿍	gh	tl
+矼	gh	ug
+干	gj	au
+甘	gj	na
+敢	gj	vw
+感	gj	wx
+感	gj	xx
+赶	gj	tg
+杆	gj	mg
+肝	gj	og
+赣	gj	lr
+竿	gj	vg
+苷	gj	cg
+柑	gj	mg
+淦	gj	dj
+秆	gj	hg
+咁	gj	kg
+擀	gj	fg
+绀	gj	sg
+橄	gj	mw
+酐	gj	yg
+疳	gj	bg
+矸	gj	ug
+泔	gj	dg
+坩	gj	tg
+尴	gj	um
+尴	gj	ym
+旰	gj	og
+玕	gj	wg
+澉	gj	dw
+虷	gj	ig
+鳡	gj	ax
+㽏	gj	dg
+𬕂	gj	vr
+乖	gk	qb
+怪	gk	xt
+拐	gk	fl
+夬	gk	vn
+掴	gk	fy
+光	gl	xw
+广	gl	di
+逛	gl	zw
+咣	gl	kw
+桄	gl	mw
+胱	gl	ow
+洸	gl	dw
+犷	gl	qg
+垙	gl	tw
+潢	gl	db
+𨐈	gl	iw
+珖	gl	ww
+过	go	zc
+国	go	ky
+果	go	ln
+郭	go	we
+锅	go	jn
+裹	go	wy
+掴	go	fy
+椁	go	mz
+虢	go	pj
+蝈	go	iy
+帼	go	jy
+呙	go	kn
+粿	go	mg
+涡	go	dn
+聒	go	ek
+馘	go	ba
+崞	go	ez
+埚	go	tn
+蜾	go	ig
+𬇹	go	dy
+腘	go	oy
+馃	go	ug
+管	gr	vk
+关	gr	bt
+官	gr	bk
+观	gr	ye
+馆	gr	uk
+灌	gr	df
+冠	gr	bc
+罐	gr	ff
+惯	gr	xr
+棺	gr	mk
+莞	gr	ce
+倌	gr	rk
+祼	gr	pg
+掼	gr	fr
+鹳	gr	cn
+瓘	gr	wf
+琯	gr	wk
+鳏	gr	ad
+纶	gr	sb
+涫	gr	dk
+盥	gr	pm
+矜	gr	sv
+蒄	gr	cc
+爟	gr	hf
+毌	gr	va
+鳤	gr	ak
+贯	gr	gr
+斡	gr	uu
+筦	gr	ve
+共	gs	cb
+工	gs	aa
+公	gs	bs
+供	gs	rb
+宫	gs	bk
+功	gs	gl
+攻	gs	gw
+弓	gs	vv
+龚	gs	lb
+拱	gs	fb
+恭	gs	cx
+贡	gs	gr
+巩	gs	gf
+汞	gs	gu
+躬	gs	ug
+肱	gs	os
+觥	gs	dw
+珙	gs	wb
+蚣	gs	is
+红	gs	sg
+䢼	gs	ce
+唝	gs	kr
+𬕂	gs	vr
+股	gu	oy
+故	gu	uw
+古	gu	uk
+顾	gu	ir
+谷	gu	bk
+骨	gu	lo
+鼓	gu	uy
+固	gu	kk
+孤	gu	zg
+姑	gu	nk
+估	gu	rk
+雇	gu	hf
+沽	gu	dk
+菇	gu	ck
+蛊	gu	im
+辜	gu	uu
+箍	gu	vj
+钴	gu	jk
+呱	gu	kg
+咕	gu	kk
+瞽	gu	uo
+毂	gu	uy
+菰	gu	cg
+崮	gu	ek
+牯	gu	nk
+臌	gu	oy
+痼	gu	bk
+鹄	gu	nn
+诂	gu	yk
+汩	gu	do
+轱	gu	ik
+锢	gu	jk
+酤	gu	yk
+鲴	gu	ak
+鹘	gu	gn
+梏	gu	mk
+罟	gu	sk
+鸪	gu	un
+贾	gu	xr
+蓇	gu	cg
+蓇	gu	co
+瀔	gu	dy
+堌	gu	tk
+羖	gu	yy
+䓛	gu	ci
+觚	gu	dg
+蛄	gu	ik
+牿	gu	nk
+𦙶	gu	ok
+馉	gu	ug
+嘏	gu	uy
+榖	gu	uy
+贵	gv	vr
+鬼	gv	ps
+归	gv	le
+桂	gv	mt
+龟	gv	dv
+规	gv	fe
+柜	gv	mj
+硅	gv	ut
+跪	gv	zv
+轨	gv	ij
+圭	gv	tt
+闺	gv	mt
+癸	gv	vt
+瑰	gv	wg
+诡	gv	yv
+珪	gv	wt
+妫	gv	nw
+鲑	gv	at
+刿	gv	ed
+桧	gv	ms
+簋	gv	vm
+皈	gv	by
+炅	gv	oh
+匦	gv	kj
+晷	gv	ok
+鳜	gv	ar
+宄	gv	bj
+庋	gv	gy
+氿	gv	dj
+刽	gv	rd
+邽	gv	te
+嶲	gv	ev
+鬶	gv	fl
+廆	gv	gg
+匮	gv	kr
+姽	gv	nv
+傀	gv	rg
+筀	gv	vt
+给	gw	sk
+挂	gx	ft
+瓜	gx	pn
+刮	gx	qd
+卦	gx	tb
+寡	gx	bd
+剐	gx	kd
+呱	gx	kg
+褂	gx	pb
+胍	gx	og
+栝	gx	mk
+鸹	gx	qn
+诖	gx	yt
+括	gx	fk
+坬	gx	tg
+滚	gy	dy
+棍	gy	mb
+辊	gy	ib
+鲧	gy	ax
+衮	gy	wy
+绲	gy	sb
+磙	gy	uy
+够	gz	bx
+狗	gz	qk
+购	gz	ks
+沟	gz	ds
+勾	gz	bs
+钩	gz	js
+构	gz	ms
+苟	gz	ck
+垢	gz	tk
+媾	gz	nr
+诟	gz	yk
+觏	gz	ae
+岣	gz	ek
+觏	gz	je
+枸	gz	mk
+缑	gz	su
+彀	gz	uy
+篝	gz	vr
+遘	gz	zr
+鞲	gz	gr
+姤	gz	nk
+佝	gz	rk
+笱	gz	vk
+耇	gz	lk
+雊	gz	bf
+句	gz	bk
+拘	gz	fk
+哈	ha	kk
+蛤	ha	ik
+虾	ha	ix
+铪	ha	jk
+好	hc	nz
+号	hc	kv
+浩	hc	dk
+豪	hc	wu
+耗	hc	lm
+郝	hc	te
+昊	hc	ot
+皓	hc	bk
+毫	hc	wm
+灏	hc	dr
+嚎	hc	ku
+蒿	hc	ck
+濠	hc	du
+蚝	hc	im
+颢	hc	or
+壕	hc	tu
+镐	hc	jk
+薅	hc	cc
+貉	hc	vk
+淏	hc	dt
+鄗	hc	we
+皋	hc	bu
+皞	hc	bu
+嚆	hc	kk
+嗥	hc	ku
+侴	hc	rd
+还	hd	zb
+海	hd	dm
+害	hd	bk
+嗨	hd	km
+咳	hd	kr
+孩	hd	zr
+亥	hd	wr
+骇	hd	mr
+骸	hd	gr
+氦	hd	qr
+嗐	hd	kk
+醢	hd	ym
+胲	hd	or
+咍	hd	kk
+和	he	hk
+喝	he	kv
+何	he	rk
+合	he	rk
+河	he	dk
+呵	he	kk
+核	he	mr
+盒	he	rm
+贺	he	lr
+荷	he	ck
+鹤	he	dn
+赫	he	td
+禾	he	pm
+禾	he	qn
+褐	he	pv
+诃	he	yk
+壑	he	lt
+颌	he	rr
+阖	he	mm
+涸	he	dk
+翮	he	ax
+菏	he	ck
+嗬	he	kk
+阂	he	mr
+劾	he	wl
+曷	he	ov
+貉	he	vk
+鞨	he	gv
+郃	he	re
+纥	he	sq
+盍	he	tm
+吓	he	kx
+熇	he	hk
+盉	he	hm
+龢	he	rh
+翯	he	xk
+苛	he	ck
+隺	he	df
+鹖	he	on
+垎	he	tk
+饸	he	uk
+龁	he	vq
+𬌗	he	yk
+盖	he	ym
+很	hf	ig
+恨	hf	xg
+狠	hf	qg
+痕	hf	bg
+哏	hf	kg
+𬣳	hf	yg
+横	hg	mb
+哼	hg	kl
+恒	hg	xa
+衡	hg	ii
+亨	hg	wl
+蘅	hg	ci
+珩	hg	wi
+桁	hg	mi
+姮	hg	na
+行	hg	ii
+鸻	hg	in
+行	hh	ii
+航	hh	vj
+杭	hh	mj
+夯	hh	dl
+吭	hh	kj
+巷	hh	cs
+绗	hh	si
+沆	hh	dj
+颃	hh	wr
+桁	hh	mi
+汗	hj	dg
+喊	hj	kk
+含	hj	rk
+寒	hj	bd
+韩	hj	uw
+汉	hj	dy
+涵	hj	dk
+函	hj	lk
+焊	hj	hg
+翰	hj	ux
+旱	hj	og
+罕	hj	bg
+瀚	hj	dx
+憨	hj	vx
+撼	hj	fx
+悍	hj	xg
+憾	hj	xx
+晗	hj	ok
+酣	hj	yg
+菡	hj	ck
+捍	hj	fg
+琀	hj	wk
+邯	hj	ge
+焓	hj	hk
+鼾	hj	zg
+邗	hj	ge
+顸	hj	gr
+蚶	hj	ig
+颔	hj	rr
+蔊	hj	cg
+撖	hj	fw
+虷	hj	ig
+阚	hj	mw
+暵	hj	on
+犴	hj	qg
+浛	hj	dk
+崡	hj	ek
+嵅	hj	ek
+扞	hj	fg
+㘎	hj	kw
+旰	hj	og
+垾	hj	tg
+坏	hk	tb
+怀	hk	xb
+淮	hk	df
+槐	hk	mg
+踝	hk	zg
+徊	hk	ik
+划	hk	gd
+黄	hl	cb
+皇	hl	bw
+晃	hl	ow
+慌	hl	xv
+荒	hl	cv
+煌	hl	hw
+谎	hl	yv
+凰	hl	jw
+恍	hl	xw
+簧	hl	vb
+蝗	hl	iw
+磺	hl	ub
+篁	hl	vw
+璜	hl	wb
+惶	hl	xw
+幌	hl	jw
+潢	hl	db
+湟	hl	dw
+徨	hl	iw
+肓	hl	wo
+隍	hl	ew
+遑	hl	zw
+滉	hl	dw
+鳇	hl	aw
+癀	hl	bb
+蟥	hl	ib
+喤	hl	kw
+媓	hl	nw
+㿠	hl	bw
+𨱑	hl	jb
+锽	hl	jw
+艎	hl	vw
+瑝	hl	ww
+或	ho	ga
+活	ho	dk
+火	ho	dr
+货	ho	rr
+获	ho	cq
+霍	ho	yf
+祸	ho	pn
+惑	ho	gx
+伙	ho	rh
+豁	ho	bk
+和	ho	hk
+镬	ho	jy
+嚯	ho	kf
+佸	ho	rk
+嚄	ho	ky
+藿	ho	cf
+夥	ho	gx
+钬	ho	jh
+耠	ho	lk
+漷	ho	de
+蠖	ho	iy
+劐	ho	cd
+濩	ho	dy
+攉	ho	ff
+锪	ho	jx
+彟	ho	ey
+㸌	ho	hf
+𬴃	ho	mu
+换	hr	fd
+还	hr	zb
+环	hr	wb
+患	hr	ix
+欢	hr	yr
+幻	hr	yv
+缓	hr	sy
+焕	hr	hd
+唤	hr	kd
+桓	hr	ma
+浣	hr	de
+寰	hr	by
+宦	hr	bi
+奂	hr	dd
+涣	hr	dd
+鬟	hr	ay
+洹	hr	da
+獾	hr	qf
+痪	hr	bd
+豢	hr	ju
+嬛	hr	ny
+郇	hr	be
+擐	hr	fy
+圜	hr	ky
+缳	hr	sy
+鲩	hr	ae
+漶	hr	dx
+逭	hr	zk
+荁	hr	ca
+萑	hr	cf
+澴	hr	dy
+峘	hr	ea
+锾	hr	jy
+貆	hr	va
+镮	hr	jy
+㬊	hr	oy
+𬘫	hr	se
+鹮	hr	sn
+垸	hr	te
+𤩽	hr	wq
+红	hs	sg
+宏	hs	bs
+洪	hs	db
+鸿	hs	dn
+哄	hs	kb
+虹	hs	ig
+弘	hs	gs
+轰	hs	iy
+泓	hs	ds
+烘	hs	hb
+薨	hs	cb
+闳	hs	ms
+荭	hs	cg
+吽	hs	kn
+訇	hs	bk
+竑	hs	ls
+蕻	hs	cb
+黉	hs	xb
+谼	hs	bb
+玒	hs	wg
+讧	hs	yg
+浲	hs	df
+𫟹	hs	jb
+𬭎	hs	js
+唝	hs	kr
+纮	hs	ss
+硔	hs	ub
+翃	hs	ux
+胡	hu	uo
+户	hu	du
+湖	hu	do
+虎	hu	hj
+呼	hu	kh
+沪	hu	dh
+互	hu	aa
+护	hu	fh
+乎	hu	pl
+忽	hu	wx
+糊	hu	mo
+壶	hu	uy
+狐	hu	qg
+弧	hu	gg
+唬	hu	kj
+扈	hu	hb
+斛	hu	du
+祜	hu	pk
+琥	hu	wj
+浒	hu	dw
+许	hu	yw
+葫	hu	co
+瓠	hu	dg
+蝴	hu	io
+笏	hu	vw
+瑚	hu	wo
+戏	hu	yg
+滹	hu	dh
+和	hu	hk
+煳	hu	ho
+槲	hu	mu
+鹄	hu	nn
+怙	hu	xk
+惚	hu	xx
+戽	hu	hu
+唿	hu	kx
+鹘	hu	gn
+囫	hu	kw
+嫭	hu	nh
+鹕	hu	un
+淴	hu	dx
+岵	hu	ek
+轷	hu	ih
+核	hu	mr
+鹱	hu	ny
+昈	hu	oh
+昒	hu	ow
+猢	hu	qo
+鄠	hu	ye
+醐	hu	yo
+鳠	hu	ay
+芴	hu	cw
+隺	hu	df
+冱	hu	dh
+濩	hu	dy
+烀	hu	hh
+姱	hu	nk
+縠	hu	uy
+觳	hu	uy
+会	hv	rs
+回	hv	kk
+灰	hv	uh
+辉	hv	xi
+汇	hv	dk
+惠	hv	ax
+慧	hv	fx
+毁	hv	jy
+挥	hv	fi
+晖	hv	oi
+徽	hv	iw
+绘	hv	ss
+悔	hv	xm
+蕙	hv	cx
+卉	hv	uc
+秽	hv	hx
+晦	hv	om
+烩	hv	hs
+恢	hv	xh
+诲	hv	ym
+讳	hv	yw
+荟	hv	cs
+贿	hv	ko
+喙	hv	ku
+茴	hv	ck
+彗	hv	fe
+洄	hv	dk
+麾	hv	gm
+恚	hv	tx
+珲	hv	wi
+隳	hv	ex
+蛔	hv	ik
+哕	hv	kx
+桧	hv	ms
+溃	hv	dr
+咴	hv	kh
+虺	hv	wi
+诙	hv	yh
+蟪	hv	ix
+橞	hv	mx
+硊	hv	uv
+浍	hv	ds
+堕	hv	et
+翙	hv	ex
+廆	hv	gg
+烠	hv	ho
+袆	hv	pw
+翚	hv	xi
+𬤝	hv	yx
+黑	hw	lh
+嘿	hw	kh
+嗨	hw	km
+𬭶	hw	jh
+话	hx	yk
+花	hx	cb
+化	hx	rb
+画	hx	ak
+华	hx	ru
+滑	hx	dg
+划	hx	gd
+桦	hx	mu
+哗	hx	ku
+骅	hx	mu
+铧	hx	ju
+猾	hx	qg
+砉	hx	fu
+豁	hx	bk
+觟	hx	dt
+婳	hx	nk
+混	hy	db
+昏	hy	uo
+魂	hy	eg
+婚	hy	no
+荤	hy	ci
+浑	hy	di
+溷	hy	du
+馄	hy	ub
+阍	hy	mo
+惛	hy	xo
+诨	hy	yi
+珲	hy	wi
+湣	hy	do
+棍	hy	mb
+婫	hy	nb
+后	hz	pk
+厚	hz	iz
+侯	hz	ru
+吼	hz	kv
+猴	hz	qu
+候	hz	ru
+喉	hz	ku
+骺	hz	gk
+篌	hz	vu
+鲎	hz	xa
+逅	hz	zk
+瘊	hz	bu
+垕	hz	pt
+堠	hz	tu
+糇	hz	mu
+郈	hz	pe
+齁	hz	zk
+鲘	hz	ak
+𬭤	hz	ju
+吽	hz	kn
+差	ia	yg
+查	ia	ma
+茶	ia	cm
+插	ia	fj
+叉	ia	yd
+察	ia	bx
+茬	ia	ct
+搽	ia	fm
+岔	ia	be
+槎	ia	mg
+碴	ia	ua
+汊	ia	di
+杈	ia	mi
+檫	ia	mx
+姹	ia	nq
+诧	ia	yq
+镲	ia	jx
+嚓	ia	kx
+衩	ia	pi
+刹	ia	xd
+楂	ia	ma
+锸	ia	jj
+侘	ia	rq
+喳	ia	ka
+猹	ia	qa
+猹	ia	qd
+垞	ia	tq
+馇	ia	ua
+蹅	ia	za
+苴	ia	cq
+嵖	ia	ea
+𥻗	ia	ma
+梌	ia	mh
+超	ic	tk
+炒	ic	hu
+朝	ic	uo
+吵	ic	ku
+抄	ic	fu
+潮	ic	do
+巢	ic	vg
+钞	ic	ju
+嘲	ic	ko
+绰	ic	su
+焯	ic	hu
+晁	ic	od
+耖	ic	lu
+弨	ic	gk
+剿	ic	vd
+怊	ic	xk
+槱	ic	mh
+拆	id	fi
+柴	id	vm
+差	id	yg
+钗	id	ji
+豺	id	vc
+侪	id	rl
+虿	id	wi
+瘥	id	bg
+豸	id	pp
+茝	id	ci
+茝	id	cl
+车	ie	al
+扯	ie	fv
+撤	ie	fw
+彻	ie	id
+澈	ie	dw
+掣	ie	pu
+坼	ie	ti
+砗	ie	ui
+尺	ie	un
+㬚	ie	ow
+陈	if	ed
+趁	if	tp
+沉	if	dj
+臣	if	kl
+晨	if	on
+尘	if	xt
+辰	if	in
+称	if	hx
+衬	if	pc
+琛	if	wm
+嗔	if	kb
+宸	if	bn
+郴	if	me
+谌	if	yv
+抻	if	fu
+忱	if	xv
+谶	if	yj
+瞋	if	ob
+碜	if	up
+伧	if	rv
+龀	if	vb
+疢	if	bh
+沈	if	dv
+煁	if	hv
+榇	if	mm
+梣	if	mv
+棽	if	mv
+偁	if	rr
+𬘭	if	sm
+成	ig	wv
+称	ig	hx
+城	ig	ti
+呈	ig	kw
+程	ig	hw
+乘	ig	qn
+撑	ig	fu
+承	ig	vn
+诚	ig	yi
+橙	ig	ma
+澄	ig	da
+秤	ig	hp
+盛	ig	im
+丞	ig	la
+惩	ig	ix
+逞	ig	zw
+骋	ig	mv
+塍	ig	ot
+蛏	ig	it
+埕	ig	tw
+瞠	ig	ot
+裎	ig	pw
+偁	ig	rr
+琤	ig	wl
+宬	ig	bi
+澂	ig	dw
+枨	ig	mi
+柽	ig	mt
+酲	ig	yw
+庱	ig	gw
+铛	ig	je
+珹	ig	wi
+牚	ig	xy
+净	ig	dl
+抢	ig	fv
+铖	ig	ji
+噌	ig	ko
+晟	ig	oi
+赪	ig	tr
+珵	ig	ww
+憕	ig	xa
+长	ih	pn
+唱	ih	ko
+常	ih	xj
+厂	ih	ap
+场	ih	tp
+昌	ih	oo
+尝	ih	xs
+肠	ih	op
+畅	ih	up
+偿	ih	rs
+娼	ih	no
+倡	ih	ro
+敞	ih	xw
+昶	ih	yo
+嫦	ih	nj
+怅	ih	xi
+徜	ih	ik
+阊	ih	mo
+猖	ih	qo
+鲳	ih	ao
+菖	ih	co
+伥	ih	ri
+倘	ih	rk
+鬯	ih	xb
+裳	ih	xy
+惝	ih	xk
+鲿	ih	as
+苌	ih	ci
+淌	ih	dk
+𬬮	ih	ji
+玚	ih	wp
+氅	ih	xm
+吃	ii	kq
+持	ii	fc
+池	ii	dy
+迟	ii	zi
+赤	ii	td
+尺	ii	un
+齿	ii	vk
+痴	ii	bk
+耻	ii	ev
+驰	ii	my
+翅	ii	ux
+斥	ii	pd
+弛	ii	gy
+炽	ii	hb
+叱	ii	kb
+彳	ii	pr
+敕	ii	uw
+嗤	ii	ki
+螭	ii	id
+匙	ii	ob
+豉	ii	ay
+哧	ii	kd
+侈	ii	rx
+墀	ii	tn
+饬	ii	ul
+蚩	ii	vi
+篪	ii	vj
+笞	ii	vk
+茌	ii	cu
+魑	ii	gd
+啻	ii	wk
+瘛	ii	bx
+摛	ii	fd
+媸	ii	ni
+褫	ii	pj
+傺	ii	rx
+坻	ii	td
+眵	ii	ox
+踟	ii	zk
+痓	ii	bt
+鸱	ii	dn
+奓	ii	dx
+柢	ii	md
+眙	ii	ok
+胣	ii	oy
+佁	ii	rk
+𫄨	ii	sj
+漦	ii	wu
+瓻	ii	xw
+产	ij	lp
+缠	ij	sl
+禅	ij	pl
+铲	ij	ji
+掺	ij	fp
+馋	ij	ud
+颤	ij	wr
+蝉	ij	il
+婵	ij	nl
+搀	ij	fd
+谗	ij	yd
+澶	ij	da
+蟾	ij	ik
+阐	ij	ml
+忏	ij	xq
+蒇	ij	cr
+潺	ij	dz
+觇	ij	le
+谄	ij	yj
+躔	ij	zt
+单	ij	bl
+廛	ij	gt
+儳	ij	rd
+羼	ij	uy
+孱	ij	uz
+瀍	ij	dt
+镡	ij	ju
+冁	ij	bn
+巉	ij	ed
+梴	ij	mz
+骣	ij	mz
+旵	ij	oe
+僝	ij	rz
+辿	ij	ze
+浐	ij	di
+崭	ij	ej
+韂	ij	gk
+𬊤	ij	hd
+刬	ij	jd
+镵	ij	jd
+啴	ij	kl
+襜	ij	pk
+踹	ik	ze
+揣	ik	fe
+啜	ik	ky
+搋	ik	fj
+嘬	ik	ky
+床	il	gm
+创	il	rd
+窗	il	bw
+闯	il	mm
+疮	il	bv
+怆	il	xv
+幢	il	jl
+噇	il	kl
+橦	il	ml
+戳	io	xg
+绰	io	su
+啜	io	ky
+辍	io	iy
+龊	io	vr
+踔	io	zu
+惙	io	xy
+逴	io	zu
+淖	io	du
+婼	io	nk
+穿	ir	by
+传	ir	rv
+船	ir	vk
+川	ir	pl
+串	ir	ll
+喘	ir	ke
+舛	ir	xl
+椽	ir	mu
+钏	ir	ji
+氚	ir	qi
+遄	ir	ze
+圌	ir	ke
+堾	ir	to
+冲	is	dv
+重	is	pa
+充	is	we
+虫	is	vd
+宠	is	bl
+崇	is	ex
+舂	is	fj
+铳	is	je
+憧	is	xl
+忡	is	xv
+种	is	hv
+茺	is	ce
+涌	is	dy
+珫	is	we
+㳘	is	de
+漴	is	dx
+摏	is	fj
+埫	is	tk
+艟	is	vl
+翀	is	xv
+出	iu	vk
+处	iu	wb
+除	iu	eh
+初	iu	pd
+楚	iu	mr
+触	iu	di
+储	iu	ro
+厨	iu	ic
+褚	iu	po
+雏	iu	df
+锄	iu	jl
+杵	iu	mw
+畜	iu	wt
+亍	iu	ad
+亍	iu	el
+橱	iu	mc
+刍	iu	de
+矗	iu	uq
+怵	iu	xu
+滁	iu	dh
+础	iu	ui
+黜	iu	hi
+蹰	iu	zc
+濋	iu	dr
+樗	iu	mk
+绌	iu	si
+搐	iu	ft
+俶	iu	ry
+躇	iu	zo
+憷	iu	xr
+摴	iu	fk
+蜍	iu	ih
+䢺	iu	ie
+斶	iu	ji
+楮	iu	mo
+助	iu	ql
+𬺓	iu	vr
+䝙	iu	vx
+琡	iu	wy
+㤘	iu	xe
+吹	iv	kr
+垂	iv	pa
+锤	iv	ji
+捶	iv	fi
+炊	iv	hr
+槌	iv	mz
+棰	iv	mi
+陲	iv	ei
+圌	iv	ke
+椎	iv	mf
+倕	iv	ri
+惙	iv	xy
+欻	ix	hr
+春	iy	fo
+纯	iy	st
+唇	iy	ik
+蠢	iy	fi
+醇	iy	yz
+淳	iy	dz
+椿	iy	mo
+莼	iy	ct
+蝽	iy	io
+鹑	iy	wn
+瑃	iy	wo
+䲠	iy	ao
+𬭚	iy	jz
+朐	iy	ok
+肫	iy	ot
+䏝	iy	ov
+堾	iy	to
+抽	iz	fy
+丑	iz	va
+臭	iz	zq
+愁	iz	hx
+仇	iz	rj
+筹	iz	vc
+瞅	iz	oh
+畴	iz	tc
+稠	iz	hk
+酬	iz	yv
+绸	iz	sk
+俦	iz	rc
+踌	iz	zc
+惆	iz	xk
+瘳	iz	bp
+帱	iz	jc
+杻	iz	mi
+犨	iz	rn
+梼	iz	mc
+椆	iz	mk
+婤	iz	nk
+雠	iz	rf
+畤	iz	tc
+进	jb	zj
+金	jb	ra
+近	jb	zj
+仅	jb	ry
+尽	jb	id
+紧	jb	lx
+今	jb	rv
+斤	jb	pl
+劲	jb	vl
+锦	jb	jj
+禁	jb	mx
+晋	jb	yo
+津	jb	dy
+筋	jb	vl
+浸	jb	dy
+谨	jb	ya
+靳	jb	gj
+巾	jb	ll
+瑾	jb	wa
+噤	jb	kx
+襟	jb	px
+堇	jb	na
+矜	jb	sv
+槿	jb	ma
+缙	jb	so
+烬	jb	hd
+衿	jb	pv
+觐	jb	ne
+荩	jb	cd
+妗	jb	nv
+殣	jb	da
+溍	jb	do
+卺	jb	lv
+馑	jb	ua
+廑	jb	ga
+祲	jb	py
+珒	jb	wy
+浕	jb	dd
+𬬱	jb	jj
+赆	jb	kd
+墐	jb	ta
+瑨	jb	wo
+琎	jb	wz
+慬	jb	xa
+及	ji	pn
+即	ji	ge
+级	ji	sj
+几	ji	pv
+机	ji	mj
+既	ji	gv
+急	ji	dx
+集	ji	rm
+记	ji	yj
+极	ji	mj
+寄	ji	bk
+鸡	ji	yn
+基	ji	qt
+继	ji	sv
+挤	ji	fl
+季	ji	hz
+吉	ji	uk
+计	ji	yu
+剂	ji	wd
+暨	ji	ga
+纪	ji	sj
+己	ji	vv
+积	ji	hb
+籍	ji	vo
+击	ji	ak
+技	ji	fy
+姬	ji	nl
+济	ji	dl
+忌	ji	jx
+肌	ji	oj
+祭	ji	px
+疾	ji	bu
+激	ji	dw
+辑	ji	ie
+迹	ji	zd
+际	ji	ex
+冀	ji	lb
+叽	ji	kj
+寂	ji	by
+脊	ji	do
+妓	ji	ny
+戟	ji	ug
+饥	ji	uj
+霁	ji	yl
+棘	ji	an
+藉	ji	co
+汲	ji	dj
+骥	ji	mb
+绩	ji	sr
+髻	ji	ak
+蓟	ji	cd
+矶	ji	uj
+唧	ji	ke
+伎	ji	ry
+畸	ji	tk
+箕	ji	vb
+稽	ji	ho
+系	ji	px
+偈	ji	rv
+羁	ji	sm
+讥	ji	yj
+畿	ji	yt
+嵇	ji	he
+稷	ji	hw
+嫉	ji	nu
+缉	ji	se
+鲫	ji	ae
+亟	ji	la
+屐	ji	uy
+玑	ji	wj
+悸	ji	xz
+奇	ji	dk
+觊	ji	ee
+嵴	ji	eo
+麂	ji	gj
+戢	ji	ka
+戢	ji	kd
+楫	ji	me
+其	ji	qb
+期	ji	qo
+佶	ji	rk
+赍	ji	ur
+笈	ji	vj
+跻	ji	zl
+瘠	ji	bo
+芨	ji	cj
+漈	ji	dx
+洎	ji	dz
+给	ji	sk
+圾	ji	tj
+笄	ji	vk
+掎	ji	fk
+齑	ji	wl
+蕺	ji	ca
+荠	ji	cl
+岌	ji	ej
+虮	ji	ij
+墼	ji	it
+革	ji	nl
+罽	ji	sd
+鲚	ji	al
+堲	ji	gt
+徛	ji	ik
+犄	ji	nk
+惎	ji	qx
+诘	ji	yk
+蹐	ji	zo
+跽	ji	zx
+鱾	ji	aj
+𬶭	ji	ax
+䓫	ji	ck
+蒺	ji	cu
+芰	ji	cy
+殛	ji	da
+剞	ji	dd
+瀱	ji	dd
+觭	ji	dk
+鹡	ji	dn
+𬯀	ji	el
+𪟝	ji	fl
+𬶨	ji	ga
+穄	ji	hx
+𫓹	ji	jq
+𫓯	ji	jt
+耤	ji	lo
+乩	ji	lv
+枅	ji	mk
+姞	ji	nk
+𫌀	ji	pr
+伋	ji	rj
+垍	ji	tz
+𫚖	ji	va
+齐	ji	wl
+经	jk	sg
+静	jk	fl
+竟	jk	le
+精	jk	mo
+净	jk	dl
+景	jk	ox
+京	jk	wx
+井	jk	al
+惊	jk	xx
+敬	jk	cw
+镜	jk	je
+晶	jk	oo
+警	jk	ck
+境	jk	te
+颈	jk	vr
+径	jk	ig
+竞	jk	le
+靖	jk	lo
+劲	jk	vl
+荆	jk	cd
+茎	jk	cg
+菁	jk	co
+婧	jk	no
+鲸	jk	ax
+睛	jk	oo
+泾	jk	dg
+旌	jk	fu
+璟	jk	wx
+胫	jk	og
+兢	jk	ue
+粳	jk	mg
+迳	jk	zg
+痉	jk	bg
+阱	jk	ej
+肼	jk	oj
+腈	jk	oo
+憬	jk	xx
+儆	jk	rw
+靓	jk	fe
+刭	jk	vd
+獍	jk	qe
+汫	jk	dj
+鼱	jk	jo
+倞	jk	rx
+䴖	jk	fn
+麖	jk	gx
+丼	jk	jd
+竫	jk	ll
+猄	jk	qx
+箐	jk	vo
+璥	jk	ww
+将	jl	dc
+讲	jl	yj
+奖	jl	dd
+江	jl	dg
+降	jl	el
+蒋	jl	cc
+姜	jl	yn
+酱	jl	dy
+浆	jl	du
+僵	jl	ra
+疆	jl	ga
+匠	jl	kj
+桨	jl	dm
+绛	jl	sl
+犟	jl	gn
+缰	jl	sa
+洚	jl	dl
+豇	jl	ag
+弶	jl	gx
+耩	jl	lr
+茳	jl	cg
+礓	jl	ua
+强	jl	gi
+虹	jl	ig
+糨	jl	mi
+膙	jl	oi
+鳉	jl	ac
+蔃	jl	ci
+港	jl	ds
+见	jm	ke
+间	jm	mo
+建	jm	zy
+件	jm	rn
+剑	jm	rd
+兼	jm	bn
+键	jm	jz
+减	jm	dk
+贱	jm	kj
+剪	jm	bd
+捡	jm	fa
+健	jm	rz
+检	jm	ma
+箭	jm	vd
+简	jm	vo
+渐	jm	dj
+肩	jm	ho
+尖	jm	xd
+坚	jm	lt
+煎	jm	bh
+监	jm	lm
+拣	jm	fd
+舰	jm	ve
+奸	jm	ng
+碱	jm	uk
+荐	jm	cz
+溅	jm	dj
+鉴	jm	lj
+涧	jm	do
+茧	jm	ci
+歼	jm	dq
+俭	jm	ra
+谏	jm	yj
+笺	jm	vj
+践	jm	zj
+柬	jm	an
+艰	jm	yg
+戋	jm	ad
+蹇	jm	br
+翦	jm	bx
+睑	jm	oa
+腱	jm	oz
+菅	jm	ck
+缄	jm	sk
+槛	jm	mm
+饯	jm	uj
+锏	jm	jo
+囝	jm	kz
+犍	jm	nz
+戬	jm	yg
+蒹	jm	cn
+湔	jm	dd
+鞯	jm	gz
+枧	jm	me
+裥	jm	po
+缣	jm	sn
+笕	jm	ve
+谫	jm	yd
+踺	jm	zz
+鹣	jm	bn
+搛	jm	fn
+毽	jm	mz
+牮	jm	rn
+趼	jm	zk
+鲣	jm	at
+浅	jm	dj
+鞬	jm	gz
+鳒	jm	an
+謇	jm	bk
+堑	jm	it
+楗	jm	mz
+暕	jm	oj
+僭	jm	ro
+篯	jm	vj
+𬣡	jm	yj
+叫	jn	kl
+交	jn	wx
+教	jn	lw
+较	jn	ix
+脚	jn	oe
+角	jn	dy
+胶	jn	ox
+焦	jn	rh
+娇	jn	nl
+浇	jn	dw
+觉	jn	xe
+搅	jn	fe
+缴	jn	sw
+嚼	jn	kc
+矫	jn	ul
+绞	jn	sx
+椒	jn	my
+郊	jn	we
+轿	jn	il
+骄	jn	ml
+窖	jn	bk
+蕉	jn	ch
+礁	jn	uh
+蛟	jn	ix
+姣	jn	nx
+皎	jn	bx
+铰	jn	jx
+饺	jn	ux
+校	jn	mx
+狡	jn	qx
+剿	jn	vd
+跤	jn	zx
+鲛	jn	ax
+侥	jn	rw
+酵	jn	yz
+醮	jn	yh
+茭	jn	cx
+徼	jn	iw
+佼	jn	rx
+湫	jn	dh
+峤	jn	el
+噍	jn	kh
+鹪	jn	rn
+艽	jn	cj
+斠	jn	au
+皭	jn	bc
+敫	jn	bw
+皦	jn	bw
+藠	jn	cb
+滘	jn	dk
+漖	jn	dw
+峧	jn	ex
+燋	jn	hh
+僬	jn	rh
+䴔	jn	wn
+璬	jn	ww
+恔	jn	xx
+接	jp	fn
+借	jp	ro
+解	jp	dn
+节	jp	ce
+姐	jp	nq
+街	jp	ii
+结	jp	sk
+界	jp	tl
+皆	jp	bb
+杰	jp	mh
+届	jp	uy
+洁	jp	dk
+戒	jp	gc
+介	jp	rl
+截	jp	uf
+捷	jp	fr
+揭	jp	fv
+劫	jp	tl
+阶	jp	el
+婕	jp	nr
+藉	jp	co
+嗟	jp	kg
+湝	jp	db
+竭	jp	lv
+孑	jp	va
+喈	jp	kb
+桀	jp	xm
+芥	jp	cl
+睫	jp	or
+颉	jp	ur
+诫	jp	yc
+羯	jp	yv
+诘	jp	yk
+桔	jp	mk
+疖	jp	be
+秸	jp	hk
+蚧	jp	il
+劼	jp	ul
+玠	jp	wl
+讦	jp	yg
+疥	jp	bl
+偈	jp	rv
+碣	jp	uv
+拮	jp	fk
+家	jp	bu
+鲒	jp	ak
+絜	jp	fx
+耤	jp	lo
+楷	jp	mb
+檞	jp	mn
+价	jp	rl
+岊	jp	be
+㛃	jp	fn
+骱	jp	gl
+蜐	jp	il
+她	jp	ny
+褯	jp	pj
+袷	jp	pk
+悈	jp	xc
+就	jq	wy
+酒	jq	dy
+久	jq	pn
+旧	jq	lo
+九	jq	pv
+救	jq	qw
+揪	jq	fh
+玖	jq	wj
+究	jq	bj
+舅	jq	jl
+纠	jq	sl
+鸠	jq	jn
+灸	jq	jh
+咎	jq	wk
+臼	jq	pa
+鹫	jq	wn
+韭	jq	fa
+僦	jq	ry
+厩	jq	iv
+啾	jq	kh
+疚	jq	bj
+赳	jq	tl
+柩	jq	mj
+阄	jq	mv
+鬏	jq	ah
+氿	jq	dj
+㠇	jq	ey
+桕	jq	mj
+蹴	jq	zy
+卷	jr	jv
+捐	jr	fo
+娟	jr	no
+倦	jr	rv
+绢	jr	so
+涓	jr	do
+眷	jr	jo
+鹃	jr	kn
+圈	jr	kv
+隽	jr	rn
+镌	jr	jn
+蠲	jr	bi
+狷	jr	qo
+鄄	jr	xe
+桊	jr	jm
+嶲	jr	ev
+焆	jr	ho
+锩	jr	jv
+棬	jr	mv
+婘	jr	nv
+囧	js	kv
+迥	js	zk
+炯	js	hk
+窘	js	bk
+冏	js	kk
+扃	js	hk
+炅	js	oh
+泂	js	dk
+坰	js	tk
+颎	js	br
+𬳶	js	mk
+䐃	js	oh
+䌹	js	sk
+觉	jt	xe
+绝	jt	sb
+决	jt	dg
+角	jt	dy
+掘	jt	fi
+诀	jt	yg
+爵	jt	pc
+珏	jt	wy
+倔	jt	ri
+撅	jt	fr
+厥	jt	ir
+嚼	jt	kc
+孓	jt	vn
+蕨	jt	cr
+噘	jt	kr
+崛	jt	ei
+攫	jt	fy
+谲	jt	yk
+蹶	jt	zr
+抉	jt	fg
+抉	jt	fn
+傕	jt	rf
+玦	jt	wg
+玦	jt	wn
+噱	jt	ku
+橛	jt	mr
+矍	jt	oy
+劂	jt	id
+镢	jt	jr
+桷	jt	my
+脚	jt	oe
+獗	jt	qr
+觖	jt	dg
+觖	jt	dn
+爝	jt	hc
+玃	jt	qy
+鳜	jt	ar
+㵐	jt	dr
+燋	jt	hh
+𫔎	jt	jk
+𨟠	jt	oe
+矞	jt	sk
+埆	jt	ty
+砄	jt	ug
+砄	jt	un
+叕	jt	yy
+据	ju	fk
+局	ju	uk
+句	ju	bk
+距	ju	zj
+居	ju	uk
+聚	ju	en
+巨	ju	ka
+具	ju	qb
+剧	ju	ud
+举	ju	xl
+菊	ju	cm
+俱	ju	rb
+拒	ju	fj
+矩	ju	uj
+鞠	ju	gm
+锯	ju	jk
+桔	ju	mk
+橘	ju	mk
+惧	ju	xb
+拘	ju	fk
+驹	ju	mk
+炬	ju	hj
+掬	ju	fm
+钜	ju	jj
+狙	ju	qq
+焗	ju	hk
+沮	ju	dq
+讵	ju	yj
+踞	ju	zk
+遽	ju	zu
+苴	ju	cq
+裾	ju	pk
+疽	ju	bq
+莒	ju	ck
+雎	ju	qf
+琚	ju	wk
+苣	ju	cj
+锔	ju	jk
+咀	ju	kq
+倨	ju	rk
+飓	ju	jb
+榉	ju	ml
+屦	ju	un
+窭	ju	bn
+崌	ju	ek
+鞫	ju	gk
+秬	ju	hj
+且	ju	la
+柜	ju	mj
+枸	ju	mk
+趄	ju	tq
+龃	ju	vq
+醵	ju	yu
+踽	ju	zy
+车	ju	al
+泃	ju	dk
+岠	ju	ej
+岨	ju	eq
+犋	ju	nb
+娵	ju	ny
+筥	ju	vk
+𬶋	ju	ak
+蒟	ju	ck
+渠	ju	dm
+澽	ju	du
+椐	ju	mk
+瞿	ju	of
+腒	ju	ok
+䴗	ju	on
+弆	ju	tc
+砠	ju	uq
+珇	ju	wq
+家	jx	bu
+加	jx	lk
+假	jx	ry
+价	jx	rl
+甲	jx	ll
+架	jx	lm
+佳	jx	rt
+夹	jx	an
+嫁	jx	nu
+嘉	jx	uk
+贾	jx	xr
+钾	jx	jj
+驾	jx	lm
+迦	jx	zk
+茄	jx	ck
+颊	jx	jr
+痂	jx	bk
+稼	jx	hu
+珈	jx	wk
+荚	jx	cj
+葭	jx	cy
+枷	jx	mk
+伽	jx	rk
+戛	jx	ag
+岬	jx	ej
+镓	jx	ju
+郏	jx	je
+铗	jx	jj
+笳	jx	vk
+瘕	jx	by
+浃	jx	dj
+恝	jx	fx
+蛱	jx	ij
+袈	jx	ly
+胛	jx	oj
+跏	jx	zk
+斝	jx	ku
+泇	jx	dk
+挟	jx	fj
+拮	jx	fk
+哿	jx	lk
+𬂩	jx	mj
+槚	jx	mr
+袷	jx	pk
+猰	jx	qd
+颉	jx	ur
+嘏	jx	uy
+叚	jx	vy
+均	jy	td
+军	jy	bi
+君	jy	yk
+俊	jy	rw
+菌	jy	ch
+郡	jy	ye
+钧	jy	jd
+骏	jy	mw
+峻	jy	ew
+筠	jy	vd
+隽	jy	rn
+珺	jy	wk
+竣	jy	lw
+浚	jy	dw
+捃	jy	fk
+皲	jy	by
+莙	jy	ck
+葰	jy	cw
+龟	jy	dv
+麇	jy	gh
+焌	jy	hw
+晙	jy	ow
+畯	jy	tw
+鲪	jy	ak
+卡	ka	ub
+喀	ka	kk
+咔	ka	kb
+咖	ka	kk
+咯	ka	kk
+胩	ka	ob
+靠	kc	nf
+考	kc	lv
+烤	kc	hv
+拷	kc	fv
+尻	kc	uj
+铐	kc	jv
+栲	kc	mv
+犒	kc	nk
+洘	kc	dv
+㸆	kc	hf
+开	kd	ac
+凯	kd	ej
+楷	kd	mb
+恺	kd	xj
+揩	kd	fb
+铠	kd	jj
+慨	kd	xv
+锴	kd	jb
+剀	kd	ed
+蒈	kd	cb
+垲	kd	tj
+忾	kd	xq
+锎	kd	jk
+岂	kd	ej
+炌	kd	hl
+闿	kd	mj
+可	ke	dk
+课	ke	yg
+克	ke	ue
+科	ke	hu
+客	ke	bk
+刻	ke	wd
+壳	ke	uj
+颗	ke	gr
+柯	ke	mk
+渴	ke	dv
+棵	ke	mg
+磕	ke	um
+咳	ke	kr
+珂	ke	wk
+苛	ke	ck
+嗑	ke	km
+恪	ke	xk
+坷	ke	tk
+髁	ke	gg
+轲	ke	ik
+颏	ke	wr
+窠	ke	bg
+蝌	ke	iu
+氪	ke	qe
+缂	ke	sg
+岢	ke	ek
+瞌	ke	om
+疴	ke	bk
+溘	ke	dm
+稞	ke	hg
+锞	ke	jg
+骒	ke	mg
+牁	ke	pk
+剋	ke	ud
+匼	ke	kk
+悈	ke	xc
+炣	ke	hk
+铪	ke	jk
+呵	ke	kk
+肯	kf	vo
+啃	kf	ko
+垦	kf	gt
+恳	kf	gx
+裉	kf	pg
+龈	kf	vg
+龂	kf	vj
+珢	kf	wg
+坑	kg	tj
+吭	kg	kj
+铿	kg	jt
+硁	kg	ug
+抗	kh	fj
+康	kh	gn
+扛	kh	fg
+炕	kh	hj
+糠	kh	mn
+亢	kh	wj
+慷	kh	xn
+钪	kh	jj
+闶	kh	mj
+伉	kh	rj
+𩾌	kh	an
+𡐓	kh	tn
+看	kj	uo
+砍	kj	ur
+坎	kj	tr
+刊	kj	gd
+侃	kj	rv
+堪	kj	tv
+勘	kj	ql
+槛	kj	mm
+阚	kj	mw
+龛	kj	rl
+瞰	kj	ow
+磡	kj	ul
+戡	kj	qg
+嵌	kj	er
+莰	kj	cr
+崁	kj	er
+衎	kj	ii
+墈	kj	tl
+嵁	kj	ev
+快	kk	xg
+快	kk	xn
+块	kk	tg
+块	kk	tn
+筷	kk	vg
+侩	kk	rs
+蒯	kk	cd
+会	kk	rs
+哙	kk	ks
+脍	kk	os
+浍	kk	ds
+郐	kk	re
+狯	kk	qs
+鲙	kk	as
+蒉	kk	cr
+㧟	kk	fk
+𫘝	kk	mn
+狂	kl	qw
+矿	kl	ug
+框	kl	mw
+况	kl	de
+匡	kl	kw
+旷	kl	og
+筐	kl	vw
+圹	kl	tg
+邝	kl	ge
+眶	kl	ow
+哐	kl	kw
+诳	kl	yw
+诓	kl	yw
+夼	kl	di
+贶	kl	ke
+洭	kl	dw
+纩	kl	sg
+𫛭	kl	qn
+扩	ko	fg
+阔	ko	mk
+括	ko	fk
+廓	ko	ge
+蛞	ko	ik
+适	ko	zk
+漷	ko	de
+款	kr	ur
+宽	kr	be
+髋	kr	ge
+空	ks	bg
+孔	ks	zv
+控	ks	fg
+恐	ks	gx
+崆	ks	eg
+倥	ks	rg
+箜	ks	vg
+硿	ks	ug
+埪	ks	tg
+矼	ks	ug
+哭	ku	kq
+库	ku	gi
+苦	ku	ck
+酷	ku	yk
+裤	ku	pi
+枯	ku	mk
+窟	ku	bi
+刳	ku	dd
+绔	ku	sk
+骷	ku	gk
+喾	ku	xk
+朏	ku	oi
+矻	ku	uq
+挎	ku	fk
+圐	ku	kf
+亏	kv	ev
+奎	kv	dt
+葵	kv	ct
+魁	kv	gu
+窥	kv	be
+盔	kv	um
+溃	kv	dr
+愧	kv	xg
+馈	kv	ur
+夔	kv	bw
+逵	kv	zt
+揆	kv	ft
+匮	kv	kr
+喹	kv	kt
+岿	kv	ee
+蒉	kv	cr
+戣	kv	vg
+聩	kv	er
+蝰	kv	it
+馗	kv	jz
+喟	kv	ko
+傀	kv	rg
+篑	kv	vr
+愦	kv	xr
+隗	kv	eg
+櫆	kv	mu
+睽	kv	ot
+悝	kv	xl
+煃	kv	ht
+暌	kv	ot
+跬	kv	zt
+骙	kv	mt
+𫠆	kv	ur
+剋	kw	ud
+跨	kx	zk
+夸	kx	dk
+垮	kx	tk
+挎	kx	fk
+胯	kx	ok
+侉	kx	rk
+姱	kx	nk
+困	ky	km
+坤	ky	tu
+昆	ky	ob
+捆	ky	fm
+琨	ky	wb
+鲲	ky	ab
+锟	ky	jb
+醌	ky	yb
+焜	ky	hb
+崑	ky	eb
+悃	ky	xm
+髡	ky	aw
+阃	ky	mm
+堃	ky	ft
+婫	ky	nb
+鹍	ky	on
+裈	ky	pi
+壸	ky	uy
+口	kz	la
+扣	kz	fk
+寇	kz	by
+抠	kz	fx
+叩	kz	ke
+蔻	kz	cy
+眍	kz	ox
+筘	kz	vk
+芤	kz	cv
+𫸩	kz	gx
+竘	kz	lk
+佝	kz	rk
+啦	la	kl
+拉	la	fl
+喇	la	kd
+辣	la	lu
+蜡	la	io
+腊	la	oo
+剌	la	ud
+落	la	ck
+垃	la	tl
+砬	la	ul
+邋	la	zv
+瘌	la	bd
+旯	la	oj
+鞡	la	gl
+𬶟	la	ad
+蝲	la	id
+镴	la	jv
+林	lb	mm
+琳	lb	wm
+淋	lb	dm
+霖	lb	ym
+邻	lb	re
+拎	lb	fs
+麟	lb	gl
+磷	lb	ul
+鳞	lb	al
+凛	lb	dx
+蔺	lb	cf
+吝	lb	wk
+啉	lb	km
+璘	lb	wl
+廪	lb	gx
+膦	lb	ol
+粼	lb	mv
+赁	lb	rr
+嶙	lb	el
+辚	lb	il
+檩	lb	mx
+懔	lb	xx
+遴	lb	zl
+箖	lb	vm
+潾	lb	dl
+瞵	lb	ol
+躏	lb	zf
+𬭸	lb	jl
+临	lb	la
+粦	lb	ml
+𬴊	lb	ml
+翷	lb	mx
+老	lc	lb
+捞	lc	fl
+劳	lc	cl
+牢	lc	bn
+佬	lc	rb
+烙	lc	hk
+涝	lc	dl
+唠	lc	kl
+痨	lc	bl
+姥	lc	nb
+酪	lc	yk
+铑	lc	jb
+落	lc	ck
+醪	lc	yp
+嫪	lc	np
+崂	lc	el
+耢	lc	ll
+栳	lc	mb
+荖	lc	cb
+潦	lc	dx
+铹	lc	jl
+络	lc	sk
+乐	lc	pd
+𫭼	lc	tl
+来	ld	an
+赖	ld	ur
+莱	ld	cl
+濑	ld	dr
+睐	ld	ol
+癞	ld	br
+徕	ld	il
+籁	ld	vr
+涞	ld	dl
+崃	ld	el
+疠	ld	bw
+铼	ld	jl
+赉	ld	lr
+梾	ld	ml
+俫	ld	rl
+了	le	vl
+乐	le	pd
+勒	le	gl
+叻	le	kl
+肋	le	ol
+仂	le	rl
+泐	le	dl
+鳓	le	al
+嘞	le	kl
+饹	le	uk
+簕	le	vl
+冷	lg	ds
+楞	lg	mf
+愣	lg	xf
+棱	lg	mw
+塄	lg	tf
+崚	lg	ew
+堎	lg	tw
+狼	lh	ql
+浪	lh	dl
+郎	lh	de
+朗	lh	do
+廊	lh	ge
+琅	lh	wl
+啷	lh	ke
+榔	lh	me
+螂	lh	ie
+阆	lh	ml
+莨	lh	cl
+崀	lh	el
+埌	lh	tl
+锒	lh	jl
+蒗	lh	cl
+塱	lh	dt
+烺	lh	hl
+稂	lh	hl
+蓢	lh	co
+㮾	lh	dm
+桹	lh	ml
+㫰	lh	ol
+筤	lh	vl
+里	li	la
+李	li	mz
+离	li	wd
+力	li	vp
+理	li	wl
+利	li	hd
+立	li	wa
+丽	li	ad
+例	li	rd
+黎	li	hu
+礼	li	pv
+哩	li	kl
+粒	li	ml
+莉	li	cd
+梨	li	hm
+历	li	il
+厉	li	iw
+沥	li	dl
+吏	li	an
+厘	li	il
+栗	li	xm
+犁	li	hn
+励	li	il
+俐	li	rd
+荔	li	cl
+鲤	li	al
+锂	li	jl
+骊	li	ml
+狸	li	ql
+傈	li	rm
+笠	li	vl
+隶	li	vn
+璃	li	wd
+俪	li	rl
+篱	li	vd
+痢	li	bd
+戾	li	hq
+喱	li	kl
+郦	li	le
+砾	li	ul
+砺	li	uw
+藜	li	cu
+澧	li	da
+漓	li	dd
+莅	li	cl
+溧	li	dm
+俚	li	rl
+唳	li	kq
+鹂	li	ln
+罹	li	sf
+蠡	li	vi
+醴	li	ya
+疬	li	bl
+蛎	li	iw
+栎	li	ml
+娌	li	nl
+詈	li	sk
+鳢	li	aa
+鬲	li	al
+疠	li	bw
+缡	li	sd
+坜	li	tl
+雳	li	yl
+逦	li	zl
+黧	li	hh
+蜊	li	id
+粝	li	mw
+猁	li	qd
+釐	li	wl
+嫠	li	wn
+峛	li	ed
+篥	li	vm
+醨	li	yd
+跞	li	zl
+鲡	li	al
+蓠	li	cd
+苈	li	cl
+浰	li	dd
+浬	li	dl
+凓	li	dm
+沵	li	dx
+𫵷	li	el
+轹	li	il
+镉	li	jl
+呖	li	kl
+朸	li	ml
+枥	li	ml
+㰀	li	mu
+砬	li	ul
+珕	li	wl
+𬍛	li	wl
+悝	li	xl
+叕	li	yy
+蓝	lj	cm
+烂	lj	hs
+兰	lj	bs
+懒	lj	xr
+栏	lj	ms
+岚	lj	ex
+拦	lj	fs
+揽	lj	fe
+篮	lj	vm
+滥	lj	dm
+览	lj	le
+澜	lj	dj
+阑	lj	mj
+缆	lj	se
+榄	lj	me
+谰	lj	yj
+镧	lj	jj
+斓	lj	wj
+婪	lj	mn
+褴	lj	pm
+暕	lj	oj
+罱	lj	sg
+躝	lj	zj
+漤	lj	dn
+啉	lj	km
+襕	lj	pj
+𬒗	lj	ue
+另	lk	kl
+令	lk	rs
+领	lk	rr
+灵	lk	eh
+零	lk	ys
+凌	lk	dw
+玲	lk	ws
+岭	lk	es
+陵	lk	ew
+铃	lk	js
+龄	lk	vs
+菱	lk	cw
+翎	lk	rx
+〇	lk	vv
+伶	lk	rs
+苓	lk	cs
+泠	lk	ds
+绫	lk	sw
+羚	lk	ys
+聆	lk	es
+呤	lk	ks
+棱	lk	mw
+棂	lk	mh
+瓴	lk	rw
+蛉	lk	is
+囹	lk	ks
+酃	lk	ye
+鲮	lk	aw
+柃	lk	ms
+舲	lk	vs
+崚	lk	ew
+姈	lk	ns
+昤	lk	os
+澪	lk	ds
+祾	lk	pw
+鸰	lk	rn
+坽	lk	ts
+㥄	lk	xw
+两	ll	ad
+量	ll	ol
+梁	ll	dm
+亮	ll	wj
+良	ll	dg
+凉	ll	dx
+辆	ll	il
+靓	ll	fe
+粮	ll	ml
+俩	ll	rl
+晾	ll	ox
+谅	ll	yx
+粱	ll	dm
+椋	ll	mx
+魉	ll	gl
+莨	ll	cl
+悢	ll	xl
+踉	ll	zl
+俍	ll	rl
+倞	ll	rx
+墚	ll	tm
+𬜯	ll	cl
+辌	ll	ix
+𫟅	ll	sx
+连	lm	zi
+练	lm	sd
+脸	lm	oa
+联	lm	et
+莲	lm	cz
+链	lm	jz
+恋	lm	wx
+炼	lm	hd
+帘	lm	bj
+廉	lm	gn
+怜	lm	xs
+敛	lm	rw
+濂	lm	dn
+涟	lm	dz
+琏	lm	wz
+镰	lm	jn
+殓	lm	da
+潋	lm	dw
+楝	lm	mj
+鲢	lm	az
+奁	lm	dx
+蠊	lm	in
+裢	lm	pz
+蔹	lm	cw
+裣	lm	pa
+磏	lm	un
+𬶠	lm	aj
+莶	lm	ca
+浰	lm	dd
+梿	lm	mz
+瑓	lm	wj
+聊	ln	ee
+了	ln	vl
+料	ln	mu
+廖	ln	gp
+辽	ln	zl
+疗	ln	bl
+撩	ln	fx
+寮	ln	bx
+撂	ln	fk
+燎	ln	hx
+僚	ln	rx
+寥	ln	bp
+蓼	ln	cp
+嘹	ln	kx
+潦	ln	dx
+獠	ln	qx
+缭	ln	sx
+钌	ln	jl
+镣	ln	jx
+憭	ln	xx
+瞭	ln	ox
+鹩	ln	dn
+尥	ln	uu
+尥	ln	yu
+嫽	ln	nx
+漻	ln	dp
+髎	ln	gp
+橑	ln	mx
+缪	ln	sp
+𪤗	ln	tp
+簝	ln	vx
+蹽	ln	zx
+罗	lo	sx
+落	lo	ck
+洛	lo	dk
+咯	lo	kk
+裸	lo	pg
+骆	lo	mk
+络	lo	sk
+萝	lo	cx
+螺	lo	ix
+摞	lo	fx
+锣	lo	jx
+箩	lo	vx
+珞	lo	wk
+骡	lo	mx
+椤	lo	mx
+雒	lo	wf
+逻	lo	zx
+烙	lo	hk
+倮	lo	rg
+猡	lo	qx
+瘰	lo	bx
+荦	lo	cn
+泺	lo	dl
+捋	lo	fc
+漯	lo	dx
+蓏	lo	cg
+脶	lo	on
+跞	lo	zl
+啰	lo	kx
+硌	lo	uk
+蠃	lo	wf
+列	lp	dd
+咧	lp	kd
+烈	lp	dh
+裂	lp	dy
+猎	lp	qo
+劣	lp	ul
+冽	lp	dd
+洌	lp	dd
+鬣	lp	av
+捩	lp	fq
+趔	lp	td
+埒	lp	tc
+躐	lp	zv
+𫚭	lp	av
+䴕	lp	dn
+脟	lp	oc
+刘	lq	wd
+留	lq	pt
+六	lq	wb
+流	lq	dv
+柳	lq	me
+溜	lq	dt
+瘤	lq	bt
+硫	lq	uv
+陆	lq	ej
+遛	lq	zt
+琉	lq	wv
+榴	lq	mt
+浏	lq	dd
+碌	lq	uu
+鎏	lq	dj
+熘	lq	ht
+绺	lq	sk
+馏	lq	ut
+骝	lq	mt
+旒	lq	fv
+镏	lq	jt
+锍	lq	jv
+珋	lq	we
+鹨	lq	xn
+罶	lq	st
+漻	lq	dp
+瑬	lq	dy
+镠	lq	jp
+飗	lq	jt
+鹠	lq	pn
+疁	lq	tp
+乱	lr	qv
+卵	lr	pd
+栾	lr	wm
+鸾	lr	wn
+峦	lr	we
+銮	lr	wj
+滦	lr	dm
+挛	lr	wu
+娈	lr	wn
+孪	lr	wz
+脔	lr	wr
+龙	ls	ud
+隆	ls	eu
+弄	ls	wc
+笼	ls	vl
+拢	ls	fl
+聋	ls	le
+陇	ls	el
+垄	ls	lt
+珑	ls	wl
+泷	ls	dl
+胧	ls	ol
+窿	ls	bu
+栊	ls	ml
+茏	ls	cl
+咙	ls	kl
+砻	ls	lu
+癃	ls	bu
+哢	ls	kc
+漋	ls	du
+昽	ls	ol
+眬	ls	ol
+尨	ls	ud
+𬕂	ls	vr
+略	lt	tk
+掠	lt	fx
+锊	lt	jc
+䂮	lt	fu
+圙	lt	km
+路	lu	zk
+陆	lu	ej
+录	lu	eu
+鲁	lu	ao
+卢	lu	lu
+露	lu	yk
+炉	lu	hh
+鹿	lu	gb
+禄	lu	pu
+璐	lu	wk
+芦	lu	ch
+卤	lu	lx
+庐	lu	gh
+噜	lu	ko
+麓	lu	mb
+鹭	lu	zn
+潞	lu	dk
+虏	lu	hl
+颅	lu	lr
+掳	lu	fl
+撸	lu	fo
+戮	lu	xg
+泸	lu	du
+橹	lu	mo
+漉	lu	db
+绿	lu	su
+碌	lu	uu
+鲈	lu	au
+渌	lu	du
+赂	lu	kk
+鸬	lu	ln
+逯	lu	zu
+垆	lu	tu
+蕗	lu	ck
+辘	lu	ib
+辂	lu	ik
+氇	lu	mo
+胪	lu	ou
+甪	lu	py
+稑	lu	ht
+镥	lu	jo
+栌	lu	mu
+六	lu	wb
+菉	lu	cu
+轳	lu	iu
+僇	lu	rp
+琭	lu	wu
+蓼	lu	cp
+澛	lu	do
+𬬻	lu	ju
+𫘧	lu	mu
+簏	lu	vb
+箓	lu	vu
+舻	lu	vu
+勠	lu	xl
+率	lv	wu
+绿	lv	su
+吕	lv	kk
+铝	lv	jk
+驴	lv	mh
+旅	lv	fn
+律	lv	iy
+屡	lv	un
+氯	lv	qu
+履	lv	uw
+滤	lv	dx
+虑	lv	hx
+侣	lv	rk
+缕	lv	sn
+捋	lv	fc
+闾	lv	mk
+褛	lv	pn
+榈	lv	mk
+垏	lv	ty
+葎	lv	cy
+膂	lv	fo
+稆	lv	hk
+偻	lv	rn
+梠	lv	mk
+𦝼	lv	on
+类	lw	md
+累	lw	tx
+雷	lw	yt
+泪	lw	do
+磊	lw	uu
+蕾	lw	ct
+嘞	lw	kl
+垒	lw	st
+擂	lw	ft
+勒	lw	gl
+镭	lw	jt
+肋	lw	ol
+耒	lw	fn
+羸	lw	wf
+酹	lw	yc
+诔	lw	yl
+嫘	lw	nx
+儡	lw	rt
+缧	lw	sx
+罍	lw	tf
+癗	lw	bt
+藟	lw	ct
+檑	lw	mt
+礌	lw	ut
+俩	lx	rl
+论	ly	yb
+轮	ly	ib
+伦	ly	rb
+纶	ly	sb
+仑	ly	rb
+抡	ly	fb
+沦	ly	db
+囵	ly	kb
+𬬭	ly	jb
+𫭢	ly	tb
+楼	lz	mn
+喽	lz	kn
+漏	lz	dy
+露	lz	yk
+搂	lz	fn
+娄	lz	mn
+瘘	lz	bn
+陋	lz	ev
+篓	lz	vn
+镂	lz	jn
+蒌	lz	cn
+耧	lz	ln
+蝼	lz	in
+嵝	lz	en
+髅	lz	gn
+偻	lz	rn
+剅	lz	ad
+溇	lz	dn
+䁖	lz	on
+𦝼	lz	on
+𪣻	lz	tn
+呒	m	kw
+呣	mz	km
+吗	ma	km
+嘛	ma	km
+马	ma	va
+骂	ma	km
+妈	ma	nm
+码	ma	um
+麻	ma	gm
+玛	ma	wm
+抹	ma	fm
+麽	ma	gm
+么	ma	ps
+蟆	ma	id
+蚂	ma	im
+杩	ma	mm
+孖	ma	zz
+摩	ma	gu
+犸	ma	qm
+祃	ma	pm
+民	mb	vv
+敏	mb	pw
+闵	mb	mw
+闽	mb	mi
+抿	mb	fm
+珉	mb	wm
+旻	mb	ow
+泯	mb	dm
+岷	mb	em
+皿	mb	la
+悯	mb	xw
+愍	mb	mx
+黾	mb	kd
+缗	mb	so
+玟	mb	ww
+湣	mb	do
+苠	mb	cm
+鳘	mb	pa
+碈	mb	uo
+忞	mb	wx
+毛	mc	pv
+猫	mc	qt
+冒	mc	ko
+冒	mc	oo
+茂	mc	cw
+帽	mc	jo
+茅	mc	cp
+矛	mc	sp
+貌	mc	ve
+贸	mc	pr
+卯	mc	pe
+锚	mc	jt
+懋	mc	mx
+铆	mc	je
+旄	mc	fm
+昴	mc	oe
+茆	mc	ce
+瑁	mc	wo
+髦	mc	am
+峁	mc	ee
+耄	mc	lm
+牦	mc	nm
+泖	mc	de
+袤	mc	wy
+芼	mc	cm
+楙	mc	mm
+眊	mc	om
+蟊	mc	si
+瞀	mc	so
+鄚	mc	ce
+蝥	mc	si
+冇	mc	uk
+买	md	vd
+卖	md	ud
+麦	md	fw
+埋	md	tl
+迈	md	zw
+脉	md	oy
+唛	md	kw
+劢	md	wl
+霾	md	yl
+荬	md	cd
+鿏	md	jw
+么	me	ps
+麽	me	gm
+们	mf	rm
+门	mf	dv
+闷	mf	mx
+焖	mf	hx
+扪	mf	fm
+懑	mf	dx
+鞔	mf	gv
+亹	mf	wq
+钔	mf	jm
+汶	mf	dw
+瞒	mf	ol
+𫞩	mf	wl
+惛	mf	xo
+梦	mg	mx
+猛	mg	qm
+蒙	mg	cn
+蒙	mg	cu
+孟	mg	zm
+盟	mg	om
+萌	mg	co
+锰	mg	jm
+懵	mg	xo
+檬	mg	mn
+檬	mg	mu
+朦	mg	on
+朦	mg	ou
+勐	mg	zl
+濛	mg	dn
+濛	mg	du
+虻	mg	iw
+瞢	mg	co
+甍	mg	cw
+蠓	mg	in
+蠓	mg	iu
+礞	mg	un
+礞	mg	uu
+艋	mg	vm
+蜢	mg	im
+氓	mg	wm
+幪	mg	jn
+幪	mg	ju
+艨	mg	vn
+艨	mg	vu
+鹲	mg	cn
+㠓	mg	en
+㠓	mg	eu
+蟒	mg	ic
+黾	mg	kd
+𫑡	mg	ke
+獴	mg	qn
+獴	mg	qu
+尨	mg	ud
+忙	mh	xw
+盲	mh	wo
+芒	mh	cw
+莽	mh	cc
+茫	mh	cw
+蟒	mh	ic
+氓	mh	wm
+厖	mh	id
+漭	mh	dc
+邙	mh	we
+牻	mh	nd
+硭	mh	uw
+杧	mh	mw
+牤	mh	nw
+尨	mh	ud
+米	mi	dm
+迷	mi	zm
+密	mi	be
+咪	mi	km
+蜜	mi	bi
+秘	mi	hb
+谜	mi	yz
+弥	mi	gx
+觅	mi	pe
+眯	mi	om
+靡	mi	gf
+糜	mi	gm
+醚	mi	yz
+祢	mi	px
+宓	mi	bb
+幂	mi	bj
+蘼	mi	ca
+蘼	mi	cf
+泌	mi	db
+谧	mi	ym
+弭	mi	ge
+汨	mi	do
+嘧	mi	ke
+芈	mi	ll
+麋	mi	gm
+脒	mi	om
+縻	mi	gx
+敉	mi	mw
+蓂	mi	cb
+祕	mi	pb
+猕	mi	qx
+洣	mi	dm
+沵	mi	dx
+醾	mi	ym
+慢	mj	xy
+满	mj	dl
+蛮	mj	wi
+曼	mj	oy
+漫	mj	dy
+瞒	mj	ol
+蔓	mj	cy
+螨	mj	il
+幔	mj	jy
+鳗	mj	ay
+嫚	mj	ny
+缦	mj	sy
+馒	mj	uy
+谩	mj	yy
+鬘	mj	ay
+颟	mj	cr
+镘	mj	jy
+墁	mj	ty
+埋	mj	tl
+𬜬	mj	ck
+𬇕	mj	dw
+鞔	mj	gv
+名	mk	xk
+明	mk	oo
+命	mk	re
+铭	mk	jk
+鸣	mk	kn
+冥	mk	bb
+茗	mk	ck
+溟	mk	db
+螟	mk	ib
+暝	mk	ob
+瞑	mk	ob
+洺	mk	dk
+酩	mk	yk
+蓂	mk	cb
+面	mm	aa
+免	mm	dv
+棉	mm	mj
+眠	mm	om
+绵	mm	sj
+缅	mm	sm
+勉	mm	dl
+冕	mm	kv
+冕	mm	ov
+沔	mm	dm
+娩	mm	nv
+腼	mm	om
+丏	mm	av
+湎	mm	dm
+渑	mm	dd
+偭	mm	rm
+愐	mm	xm
+𩾃	mm	av
+黾	mm	kd
+勔	mm	ml
+眄	mm	om
+秒	mn	hu
+苗	mn	ct
+妙	mn	nu
+庙	mn	gy
+喵	mn	kt
+瞄	mn	ot
+描	mn	ft
+淼	mn	uu
+渺	mn	du
+缪	mn	sp
+邈	mn	ze
+藐	mn	ce
+缈	mn	su
+鹋	mn	cn
+眇	mn	ou
+杪	mn	mu
+莫	mo	cd
+摸	mo	fd
+魔	mo	gg
+末	mo	an
+膜	mo	od
+磨	mo	gu
+模	mo	md
+墨	mo	ht
+抹	mo	fm
+摩	mo	gu
+默	mo	hq
+沫	mo	dm
+没	mo	dy
+陌	mo	eb
+漠	mo	dd
+馍	mo	ud
+茉	mo	cm
+摹	mo	cu
+麽	mo	gm
+谟	mo	yd
+蘑	mo	cu
+寞	mo	bd
+殁	mo	dy
+脉	mo	oy
+蓦	mo	cm
+耱	mo	lu
+嫫	mo	nd
+嬷	mo	nm
+么	mo	ps
+秣	mo	hm
+镆	mo	jd
+貊	mo	vb
+貘	mo	vd
+冒	mo	ko
+冒	mo	oo
+万	mo	ap
+无	mo	ay
+瘼	mo	bd
+藦	mo	cu
+靺	mo	gm
+蟆	mo	id
+嘿	mo	kh
+𬙊	mo	st
+貉	mo	vk
+咩	mp	ky
+灭	mp	ah
+乜	mp	vv
+蔑	mp	cu
+篾	mp	vu
+搣	mp	fh
+缪	mq	sp
+谬	mq	yp
+木	mu	un
+母	mu	vd
+目	mu	ka
+穆	mu	hp
+墓	mu	ct
+慕	mu	cx
+姆	mu	nm
+牧	mu	nw
+幕	mu	cj
+暮	mu	co
+沐	mu	dm
+募	mu	cl
+亩	mu	wt
+钼	mu	jo
+睦	mu	ot
+牡	mu	nt
+牟	mu	sn
+拇	mu	fm
+模	mu	md
+苜	mu	co
+仫	mu	rm
+毪	mu	mn
+莫	mu	cd
+𬭁	mu	jm
+姥	mu	nb
+缪	mu	sp
+𧿹	mu	zm
+没	mw	dy
+每	mw	pm
+美	mw	yd
+梅	mw	mm
+妹	mw	nw
+煤	mw	hm
+眉	mw	vo
+酶	mw	ym
+枚	mw	mw
+媚	mw	no
+霉	mw	ym
+媒	mw	nm
+镁	mw	jd
+玫	mw	ww
+魅	mw	gw
+昧	mw	ow
+寐	mw	bw
+湄	mw	do
+莓	mw	cm
+袂	mw	pg
+楣	mw	mo
+浼	mw	dv
+嵋	mw	eo
+糜	mw	gm
+媄	mw	nd
+鹛	mw	vn
+镅	mw	jo
+瑂	mw	wo
+渼	mw	dd
+郿	mw	ve
+谜	mw	yz
+某	mz	gm
+谋	mz	ym
+眸	mz	on
+牟	mz	sn
+哞	mz	kn
+侔	mz	rn
+鍪	mz	sj
+蛑	mz	in
+缪	mz	sp
+那	na	ve
+拿	na	ru
+哪	na	ke
+娜	na	ne
+纳	na	sn
+呐	na	kn
+钠	na	jn
+捺	na	fx
+衲	na	pn
+镎	na	ju
+肭	na	on
+南	na	ug
+𦰡	na	ce
+内	na	ld
+乸	na	ym
+您	nb	rx
+恁	nb	rx
+闹	nc	mj
+脑	nc	ok
+挠	nc	fw
+恼	nc	xk
+孬	nc	bz
+瑙	nc	wx
+淖	nc	du
+呶	nc	ky
+铙	nc	jw
+猱	nc	qm
+垴	nc	tk
+嫐	nc	nn
+蛲	nc	iw
+臑	nc	oe
+硇	nc	ux
+桡	nc	mw
+峱	nc	qe
+乃	nd	vp
+奶	nd	nn
+耐	nd	ec
+奈	nd	dx
+萘	nd	cx
+氖	nd	qn
+鼐	nd	nv
+柰	nd	mx
+艿	nd	cn
+迺	nd	zx
+耏	nd	ep
+佴	nd	re
+能	nd	sb
+呢	ne	kb
+哪	ne	ke
+呐	ne	kn
+讷	ne	yn
+嫩	nf	nw
+恁	nf	rx
+媆	nf	nd
+能	ng	sb
+嗯	ng	kx
+唔	ng	kk
+囊	nh	ay
+囔	nh	ky
+馕	nh	uy
+曩	nh	oy
+攮	nh	fy
+齉	nh	zy
+瀼	nh	dy
+你	ni	rx
+拟	ni	fr
+呢	ni	kb
+尼	ni	ub
+泥	ni	db
+妮	ni	nb
+腻	ni	or
+逆	ni	zp
+倪	ni	re
+匿	ni	kk
+昵	ni	ob
+霓	ni	ye
+溺	ni	dd
+铌	ni	jb
+睨	ni	oe
+旎	ni	fb
+鲵	ni	ae
+坭	ni	tb
+怩	ni	xb
+猊	ni	qe
+伲	ni	rb
+薿	ni	cr
+麑	ni	ge
+婗	ni	ne
+𨺙	ni	ee
+𫐐	ni	ie
+𫠜	ni	ve
+男	nj	tl
+难	nj	yf
+南	nj	ug
+喃	nj	kg
+楠	nj	mg
+囡	nj	kn
+腩	nj	og
+囝	nj	kz
+赧	nj	ty
+蝻	nj	ig
+萳	nj	cg
+婻	nj	ng
+宁	nk	bd
+凝	nk	dr
+拧	nk	fd
+柠	nk	md
+甯	nk	by
+苧	nk	cd
+咛	nk	kd
+狞	nk	qd
+佞	nk	rn
+泞	nk	dd
+聍	nk	ed
+娘	nl	nl
+酿	nl	yl
+孃	nl	ny
+嬢	nl	ny
+年	nm	pl
+念	nm	rx
+粘	nm	mk
+廿	nm	ca
+捻	nm	fx
+黏	nm	hk
+碾	nm	un
+蔫	nm	ch
+撵	nm	fi
+拈	nm	fk
+辇	nm	fi
+鲇	nm	ak
+鲶	nm	ax
+辗	nm	in
+埝	nm	tx
+撚	nm	fh
+鸟	nn	wd
+尿	nn	uu
+嬲	nn	tl
+脲	nn	ou
+溺	nn	dd
+袅	nn	py
+茑	nn	cn
+诺	no	yk
+挪	no	fe
+喏	no	kk
+糯	no	me
+傩	no	rf
+懦	no	xe
+搦	no	fd
+锘	no	jk
+娜	no	ne
+𦰡	no	ce
+难	no	yf
+捏	np	ft
+涅	np	dt
+聂	np	ey
+镍	np	jm
+孽	np	cz
+乜	np	vv
+颞	np	er
+啮	np	kk
+嗫	np	ky
+蘖	np	cm
+蹑	np	zy
+镊	np	jy
+臬	np	zm
+嵲	np	em
+陧	np	et
+摄	np	fy
+糵	np	cm
+菍	np	cx
+捻	np	fx
+𫔶	np	mm
+牛	nq	pl
+妞	nq	ni
+扭	nq	fi
+纽	nq	si
+钮	nq	ji
+拗	nq	fl
+忸	nq	xi
+狃	nq	qi
+杻	nq	mi
+暖	nr	oy
+弄	ns	wc
+农	ns	dn
+侬	ns	rn
+浓	ns	dn
+脓	ns	on
+哝	ns	kn
+秾	ns	hn
+𬪩	ns	yn
+虐	nt	ha
+疟	nt	ba
+怒	nu	nx
+奴	nu	ny
+努	nu	nl
+弩	nu	ng
+驽	nu	nm
+胬	nu	nr
+孥	nu	nz
+帑	nu	nj
+砮	nu	nu
+笯	nu	vy
+傉	nu	rc
+女	nv	va
+钕	nv	jn
+衄	nv	xi
+恧	nv	ex
+内	nw	ld
+那	nw	ve
+馁	nw	un
+哪	nw	ke
+耨	nz	lc
+哦	oo	kw
+噢	oo	kd
+喔	oo	kt
+嚄	oo	ky
+偶	ou	ry
+欧	ou	kr
+藕	ou	cy
+呕	ou	kx
+鸥	ou	kn
+殴	ou	ky
+沤	ou	dx
+瓯	ou	kw
+耦	ou	ly
+区	ou	kx
+怄	ou	xx
+讴	ou	yx
+𬉼	ou	hx
+吽	ou	kn
+禺	ou	ld
+𠙶	ou	lk
+𫭟	ou	tx
+怕	pa	xb
+爬	pa	vb
+帕	pa	jb
+趴	pa	zb
+啪	pa	kb
+扒	pa	fb
+耙	pa	lb
+琶	pa	wb
+葩	pa	cb
+杷	pa	mb
+钯	pa	jb
+筢	pa	vb
+潖	pa	db
+舥	pa	vb
+品	pb	kk
+拼	pb	fk
+频	pb	vr
+贫	pb	br
+聘	pb	ev
+嫔	pb	nb
+颦	pb	vu
+姘	pb	nk
+牝	pb	nb
+榀	pb	mk
+玭	pb	wb
+𬞟	pb	cr
+跑	pc	zs
+泡	pc	ds
+抛	pc	fl
+炮	pc	hs
+袍	pc	ps
+刨	pc	bd
+疱	pc	bs
+庖	pc	gs
+咆	pc	ks
+匏	pc	ds
+狍	pc	qs
+脬	pc	oz
+藨	pc	ch
+拍	pd	fb
+派	pd	dn
+排	pd	ff
+牌	pd	pu
+哌	pd	kn
+湃	pd	df
+徘	pd	if
+俳	pd	rf
+蒎	pd	cn
+迫	pd	zb
+簰	pd	vu
+喷	pf	kr
+盆	pf	bm
+湓	pf	dm
+碰	pg	uy
+彭	pg	up
+鹏	pg	on
+捧	pg	fl
+朋	pg	oo
+棚	pg	mo
+蓬	pg	cz
+烹	pg	wh
+硼	pg	uo
+澎	pg	dp
+砰	pg	up
+膨	pg	op
+篷	pg	vz
+芃	pg	cf
+嘭	pg	kp
+椪	pg	my
+抨	pg	fp
+堋	pg	to
+怦	pg	xp
+弸	pg	go
+蟛	pg	ip
+搒	pg	ff
+苹	pg	cp
+淜	pg	do
+泙	pg	dp
+亨	pg	wl
+胖	ph	ob
+旁	ph	wf
+庞	ph	gl
+滂	ph	df
+乓	ph	qd
+逄	ph	zl
+彷	ph	if
+螃	ph	if
+膀	ph	of
+磅	ph	uf
+耪	ph	lf
+尨	ph	ud
+雱	ph	yf
+鳑	ph	af
+房	ph	hf
+皮	pi	vy
+批	pi	fb
+屁	pi	ub
+披	pi	fy
+脾	pi	ou
+匹	pi	ke
+劈	pi	ud
+癖	pi	bu
+疲	pi	by
+坯	pi	tp
+辟	pi	uu
+丕	pi	ba
+痞	pi	bk
+啤	pi	ku
+毗	pi	tb
+僻	pi	ru
+噼	pi	ku
+圮	pi	tj
+譬	pi	uk
+邳	pi	be
+陂	pi	ey
+铍	pi	jy
+邳	pi	pe
+琵	pi	wb
+霹	pi	yu
+蜱	pi	iu
+罴	pi	sh
+淠	pi	dl
+媲	pi	nb
+仳	pi	rb
+伾	pi	rp
+甓	pi	uw
+陴	pi	eu
+蚍	pi	ib
+枇	pi	mb
+郫	pi	pe
+裨	pi	pu
+纰	pi	sb
+埤	pi	tu
+砒	pi	ub
+澼	pi	du
+睥	pi	ou
+貔	pi	vb
+鲏	pi	ay
+否	pi	bk
+芘	pi	cb
+苉	pi	ce
+濞	pi	dl
+吡	pi	kb
+𬳵	pi	ma
+𬳵	pi	mp
+椑	pi	mu
+被	pi	py
+狉	pi	qp
+罢	pi	ss
+坏	pi	tb
+嚭	pi	uk
+䴙	pi	un
+鼙	pi	uu
+盘	pj	vm
+潘	pj	dt
+判	pj	bd
+盼	pj	od
+攀	pj	mu
+畔	pj	tb
+叛	pj	by
+番	pj	pt
+磐	pj	vu
+泮	pj	db
+蟠	pj	it
+胖	pj	ob
+爿	pj	vp
+袢	pj	pb
+槃	pj	vm
+襻	pj	pu
+磻	pj	ut
+蹒	pj	zl
+湴	pj	dy
+拌	pj	fb
+柈	pj	mb
+般	pj	vy
+平	pk	au
+凭	pk	rj
+瓶	pk	bw
+评	pk	yp
+屏	pk	uk
+萍	pk	cp
+坪	pk	tp
+苹	pk	cp
+娉	pk	nv
+乒	pk	qp
+呯	pk	kp
+枰	pk	mp
+鲆	pk	ap
+荓	pk	ck
+洴	pk	dk
+淜	pk	do
+泙	pk	dp
+俜	pk	rv
+玶	pk	wp
+𬞟	pk	cr
+冯	pk	dm
+涄	pk	dv
+蚲	pk	ip
+帡	pk	jk
+片	pm	pv
+篇	pm	vc
+骗	pm	mc
+偏	pm	rc
+便	pm	rg
+翩	pm	hx
+骈	pm	mk
+谝	pm	yc
+扁	pm	hc
+胼	pm	ok
+楩	pm	mg
+犏	pm	nc
+蹁	pm	zc
+㛹	pm	ng
+𡎚	pm	tc
+票	pn	xx
+飘	pn	xx
+漂	pn	dx
+朴	pn	mb
+嫖	pn	nx
+瞟	pn	ox
+瓢	pn	xg
+缥	pn	sx
+剽	pn	xd
+殍	pn	dz
+螵	pn	ix
+嘌	pn	kx
+骠	pn	mx
+薸	pn	cx
+莩	pn	cz
+蔈	pn	cx
+破	po	uy
+婆	po	dn
+坡	po	ty
+颇	po	vr
+泼	po	dd
+迫	po	zb
+魄	po	bg
+泊	po	db
+珀	po	wb
+粕	po	mb
+皤	po	bt
+叵	po	kk
+陂	po	ey
+钋	po	jb
+鄱	po	pe
+泺	po	dl
+朴	po	mb
+钷	po	jk
+哱	po	kz
+桲	po	mz
+繁	po	px
+笸	po	vk
+䥽	po	jd
+酦	po	yd
+撇	pp	fw
+瞥	pp	do
+苤	pp	ca
+苤	pp	cp
+氕	pp	qp
+𬭯	pp	jw
+普	pu	bo
+铺	pu	jf
+扑	pu	fb
+谱	pu	yo
+浦	pu	df
+蒲	pu	cf
+朴	pu	mb
+噗	pu	kn
+葡	pu	cf
+瀑	pu	du
+仆	pu	rb
+璞	pu	wn
+濮	pu	dn
+圃	pu	kf
+埔	pu	tf
+溥	pu	dc
+曝	pu	ou
+莆	pu	cf
+菩	pu	ck
+脯	pu	of
+堡	pu	rt
+蹼	pu	zn
+匍	pu	bf
+镨	pu	jo
+氆	pu	mo
+潽	pu	do
+镤	pu	jn
+暴	pu	ou
+墣	pu	tn
+酺	pu	yf
+蒱	pu	cf
+穙	pu	hn
+陪	pw	ek
+配	pw	yj
+赔	pw	kk
+培	pw	tk
+佩	pw	rj
+裴	pw	fy
+呸	pw	ka
+呸	pw	kp
+沛	pw	dl
+胚	pw	oa
+胚	pw	op
+辔	pw	sk
+霈	pw	yl
+醅	pw	yk
+旆	pw	fl
+帔	pw	jy
+衃	pw	xb
+锫	pw	jk
+淠	pw	dl
+𬇙	pw	dr
+妃	pw	nj
+坏	pw	tb
+剖	pz	ld
+抔	pz	fb
+掊	pz	fk
+棓	pz	mk
+垺	pz	tz
+裒	pz	wy
+亲	qb	lm
+秦	qb	fh
+琴	qb	wv
+勤	qb	nl
+钦	qb	jr
+沁	qb	dx
+寝	qb	by
+禽	qb	rd
+侵	qb	ry
+芹	qb	cj
+覃	qb	xu
+擒	qb	fd
+嗪	qb	kh
+衾	qb	ry
+噙	qb	kd
+芩	qb	cv
+溱	qb	dh
+揿	qb	fr
+廑	qb	ga
+螓	qb	ih
+锓	qb	jy
+檎	qb	md
+梣	qb	mv
+矜	qb	sv
+慬	qb	xa
+嵚	qb	er
+𫷷	qb	gr
+吣	qb	kx
+骎	qb	my
+其	qi	qb
+起	qi	tj
+气	qi	pv
+期	qi	qo
+七	qi	av
+器	qi	kk
+齐	qi	wl
+奇	qi	dk
+骑	qi	mk
+妻	qi	an
+旗	qi	fb
+启	qi	hk
+企	qi	rv
+漆	qi	du
+棋	qi	mb
+琪	qi	wb
+弃	qi	wc
+琦	qi	wk
+岂	qi	ej
+汽	qi	dq
+祁	qi	pe
+绮	qi	sk
+戚	qi	wx
+欺	qi	qr
+淇	qi	db
+泣	qi	dl
+契	qi	fd
+祺	qi	pb
+祈	qi	pj
+砌	qi	ud
+柒	qi	dm
+崎	qi	ek
+栖	qi	mx
+岐	qi	ey
+麒	qi	gb
+乞	qi	pv
+鳍	qi	ao
+脐	qi	ol
+歧	qi	vy
+凄	qi	dn
+亓	qi	el
+骐	qi	mb
+畦	qi	tt
+沏	qi	dd
+杞	qi	mj
+耆	qi	lo
+圻	qi	tj
+迄	qi	zq
+颀	qi	jr
+嘁	qi	kx
+憩	qi	qx
+讫	qi	yq
+萁	qi	cb
+葺	qi	ce
+芪	qi	cu
+綦	qi	qx
+蕲	qi	cj
+蛴	qi	il
+槭	qi	mx
+碛	qi	ur
+蹊	qi	zd
+荠	qi	cl
+萋	qi	cn
+屺	qi	ej
+蜞	qi	ib
+芑	qi	cj
+棨	qi	hm
+俟	qi	ru
+跂	qi	zy
+郪	qi	ae
+稽	qi	ho
+亟	qi	la
+婍	qi	nk
+碁	qi	qu
+缉	qi	se
+呇	qi	uk
+鲯	qi	ab
+炁	qi	ah
+䓫	qi	ck
+觭	qi	dk
+洓	qi	dn
+汔	qi	dq
+欹	qi	dr
+揭	qi	fv
+綮	qi	hx
+𬨂	qi	iu
+锜	qi	jk
+啐	qi	ku
+桤	qi	mj
+枝	qi	my
+祇	qi	pu
+伎	qi	ry
+埼	qi	tk
+碶	qi	ud
+𨙸	qi	ue
+磜	qi	ux
+玘	qi	wj
+愭	qi	xo
+恓	qi	xx
+踦	qi	zk
+请	qk	yo
+清	qk	do
+情	qk	xo
+青	qk	fo
+轻	qk	ig
+庆	qk	gd
+晴	qk	oo
+倾	qk	rr
+卿	qk	pe
+氢	qk	qg
+擎	qk	cu
+顷	qk	br
+苘	qk	ck
+氰	qk	qo
+磬	qk	uu
+箐	qk	vo
+罄	qk	uf
+黥	qk	hx
+檠	qk	cm
+亲	qk	lm
+鲭	qk	ao
+綮	qk	hx
+蜻	qk	io
+圊	qk	ko
+勍	qk	wl
+碃	qk	uo
+庼	qk	gr
+𬘬	qk	so
+强	ql	gi
+抢	ql	fv
+枪	ql	mv
+墙	ql	tk
+腔	ql	og
+呛	ql	kv
+蔷	ql	ck
+羌	ql	yv
+羟	ql	yg
+炝	ql	hv
+锵	ql	jc
+樯	ql	mk
+嫱	ql	nk
+镪	ql	ji
+戕	ql	pg
+戗	ql	rg
+跄	ql	zv
+蜣	ql	iv
+襁	ql	pi
+蜣	ql	iq
+锖	ql	jo
+矼	ql	ug
+蔃	ql	ci
+疆	ql	ga
+玱	ql	wv
+钱	qm	jj
+前	qm	bd
+千	qm	pu
+签	qm	va
+欠	qm	dr
+浅	qm	dj
+牵	qm	dn
+潜	qm	do
+迁	qm	zq
+铅	qm	jk
+倩	qm	ro
+乾	qm	uq
+谦	qm	yn
+茜	qm	cx
+嵌	qm	er
+黔	qm	hv
+遣	qm	zk
+纤	qm	sq
+钳	qm	jg
+仟	qm	rq
+歉	qm	br
+骞	qm	bm
+芊	qm	cq
+虔	qm	hw
+芡	qm	cr
+钎	qm	jq
+谴	qm	yz
+阡	qm	eq
+堑	qm	it
+佥	qm	ra
+悭	qm	xt
+搴	qm	bu
+扦	qm	fq
+钤	qm	jv
+荨	qm	cc
+愆	qm	ix
+缱	qm	sz
+蒨	qm	co
+掮	qm	fo
+靬	qm	gg
+慊	qm	xn
+岍	qm	ek
+椠	qm	im
+犍	qm	nz
+肷	qm	or
+褰	qm	by
+汧	qm	dk
+鹐	qm	dn
+𫷷	qm	gr
+杄	qm	mq
+孅	qm	nj
+伣	qm	re
+𬘬	qm	so
+圲	qm	tq
+墘	qm	tq
+磏	qm	un
+桥	qn	ml
+巧	qn	gv
+敲	qn	wy
+乔	qn	yl
+瞧	qn	oh
+翘	qn	ax
+窍	qn	bv
+侨	qn	rl
+俏	qn	ro
+撬	qn	fm
+鞘	qn	go
+樵	qn	mh
+悄	qn	xo
+谯	qn	yh
+跷	qn	zw
+峭	qn	eo
+锹	qn	jh
+橇	qn	mm
+荞	qn	cl
+壳	qn	uj
+峤	qn	el
+憔	qn	xh
+诮	qn	yo
+鞒	qn	gl
+劁	qn	rd
+硗	qn	uw
+燋	qn	hh
+缲	qn	sm
+雀	qn	uf
+睄	qn	oo
+硚	qn	ul
+愀	qn	xh
+且	qp	la
+切	qp	qd
+妾	qp	ln
+窃	qp	bd
+茄	qp	ck
+怯	qp	xs
+锲	qp	jd
+惬	qp	xj
+挈	qp	fu
+箧	qp	vj
+郄	qp	xe
+趄	qp	tq
+癿	qp	bv
+慊	qp	xn
+契	qp	fd
+猰	qp	qd
+伽	qp	rk
+砌	qp	ud
+球	qq	wq
+求	qq	ad
+秋	qq	hh
+邱	qq	qe
+丘	qq	pa
+裘	qq	qy
+囚	qq	kr
+糗	qq	mq
+仇	qq	rj
+泅	qq	dr
+酋	qq	by
+虬	qq	iv
+遒	qq	zy
+楸	qq	mh
+逑	qq	zq
+鳅	qq	ah
+萩	qq	ch
+湫	qq	dh
+犰	qq	qj
+俅	qq	rq
+巯	qq	vv
+蚯	qq	iq
+赇	qq	kq
+龟	qq	dv
+蝤	qq	iy
+訄	qq	jk
+璆	qq	wp
+鼽	qq	zj
+艽	qq	cj
+鞧	qq	gy
+鹙	qq	hn
+𨱇	qq	jq
+全	qr	rw
+权	qr	my
+圈	qr	kv
+泉	qr	bu
+劝	qr	yl
+犬	qr	dd
+券	qr	jd
+拳	qr	ju
+荃	qr	cw
+蜷	qr	iv
+醛	qr	yw
+铨	qr	jw
+诠	qr	yw
+佺	qr	rw
+颧	qr	cr
+绻	qr	sv
+筌	qr	vw
+痊	qr	bw
+悛	qr	xw
+鬈	qr	av
+棬	qr	mv
+辁	qr	iw
+婘	qr	nv
+畎	qr	tq
+瑔	qr	wu
+鳈	qr	au
+𨟠	qr	oe
+穷	qs	bl
+琼	qs	wx
+穹	qs	bg
+邛	qs	ge
+茕	qs	cu
+蛩	qs	gi
+銎	qs	gj
+筇	qs	ve
+䓖	qs	cl
+嬛	qs	ny
+却	qt	te
+缺	qt	fg
+确	qt	uy
+雀	qt	uf
+阙	qt	mr
+瘸	qt	br
+鹊	qt	cn
+阕	qt	mt
+炔	qt	hg
+榷	qt	mf
+悫	qt	ux
+埆	qt	ty
+汋	qt	du
+傕	qt	rf
+碏	qt	uo
+𬒈	qt	xu
+去	qu	ts
+区	qu	kx
+取	qu	ey
+曲	qu	la
+娶	qu	en
+屈	qu	ui
+渠	qu	dm
+驱	qu	mx
+趋	qu	te
+趣	qu	ty
+祛	qu	ps
+蛆	qu	iq
+瞿	qu	of
+躯	qu	ux
+龋	qu	vy
+衢	qu	ii
+觑	qu	he
+佢	qu	rj
+黢	qu	hw
+蘧	qu	cz
+阒	qu	mq
+璩	qu	wu
+蕖	qu	cm
+灈	qu	df
+氍	qu	om
+袪	qu	ps
+诎	qu	yi
+劬	qu	bl
+鸲	qu	bn
+岖	qu	ex
+麹	qu	fm
+蛐	qu	iq
+鼩	qu	jk
+朐	qu	ok
+癯	qu	bf
+苣	qu	cj
+岨	qu	eq
+焌	qu	hw
+蠼	qu	iy
+竘	qu	lk
+胠	qu	os
+磲	qu	um
+戌	qu	wa
+䓛	qu	ci
+𪨰	qu	eq
+㭕	qu	ms
+坥	qu	tq
+掐	qx	fj
+恰	qx	xk
+洽	qx	dk
+卡	qx	ub
+髂	qx	gk
+葜	qx	cd
+袷	qx	pk
+拤	qx	fb
+匼	qx	kk
+群	qy	yy
+裙	qy	pk
+囷	qy	kh
+逡	qy	zw
+麇	qy	gh
+绕	rc	sw
+饶	rc	uw
+扰	rc	fy
+桡	rc	mw
+娆	rc	nw
+荛	rc	cw
+热	re	fh
+惹	re	cx
+喏	re	kk
+若	re	ck
+人	rf	pn
+任	rf	rr
+忍	rf	rx
+仁	rf	re
+认	rf	yr
+刃	rf	dd
+韧	rf	wr
+壬	rf	pu
+壬	rf	qa
+仞	rf	rr
+稔	rf	hx
+妊	rf	nr
+荏	rf	cr
+轫	rf	ir
+衽	rf	pr
+纫	rf	sr
+葚	rf	cv
+饪	rf	ur
+菍	rf	cx
+纴	rf	sr
+讱	rf	yr
+仍	rg	rn
+扔	rg	fn
+礽	rg	pn
+让	rh	yu
+嚷	rh	ky
+壤	rh	ty
+瓤	rh	wg
+攘	rh	fy
+穰	rh	hy
+禳	rh	py
+蘘	rh	cy
+瀼	rh	dy
+儴	rh	ry
+𬙋	rh	sy
+日	ri	ka
+驲	ri	mo
+然	rj	ph
+染	rj	dm
+燃	rj	hh
+冉	rj	la
+髯	rj	ar
+苒	rj	cr
+蚺	rj	ir
+䎃	rj	rx
+若	ro	ck
+弱	ro	gd
+偌	ro	rk
+箬	ro	vk
+爇	ro	ch
+蒻	ro	cd
+鄀	ro	ce
+婼	ro	nk
+叒	ro	yy
+软	rr	ir
+阮	rr	ee
+堧	rr	td
+瓀	rr	we
+媆	rr	nd
+荣	rs	cm
+容	rs	bk
+融	rs	ai
+蓉	rs	ck
+溶	rs	dk
+绒	rs	su
+熔	rs	hk
+榕	rs	mk
+戎	rs	gu
+茸	rs	ce
+嵘	rs	em
+冗	rs	bj
+蝾	rs	im
+狨	rs	qu
+瑢	rs	wk
+镕	rs	jk
+如	ru	nk
+入	ru	pn
+乳	ru	pv
+汝	ru	dn
+儒	ru	re
+茹	ru	ck
+辱	ru	ic
+濡	ru	de
+孺	ru	ze
+褥	ru	pc
+蠕	ru	ie
+嚅	ru	ke
+襦	ru	pe
+洳	ru	dk
+嬬	ru	ne
+蓐	ru	cc
+溽	ru	dc
+铷	ru	jk
+缛	ru	sc
+薷	ru	ce
+女	ru	va
+颥	ru	yr
+瑞	rv	we
+锐	rv	je
+睿	rv	lo
+蕊	rv	cx
+芮	rv	cn
+蕤	rv	cu
+蚋	rv	in
+汭	rv	dn
+枘	rv	mn
+兑	rv	be
+叡	rv	ly
+润	ry	dw
+闰	ry	mw
+肉	rz	nr
+柔	rz	sm
+揉	rz	fm
+鞣	rz	gm
+糅	rz	mm
+蹂	rz	zm
+𫐓	rz	im
+撒	sa	fw
+萨	sa	ci
+洒	sa	dx
+仨	sa	rs
+卅	sa	al
+飒	sa	lx
+挲	sa	du
+靸	sa	gj
+脎	sa	om
+潵	sa	dw
+扫	sc	fe
+骚	sc	mi
+嫂	sc	ny
+搔	sc	fi
+臊	sc	om
+瘙	sc	bi
+缫	sc	sg
+埽	sc	tj
+溞	sc	di
+缲	sc	sm
+梢	sc	mo
+赛	sd	br
+塞	sd	bt
+噻	sd	kt
+腮	sd	ox
+鳃	sd	ax
+思	sd	tx
+色	se	db
+瑟	se	wb
+涩	se	dv
+塞	se	bt
+啬	se	uk
+铯	se	jb
+穑	se	hk
+璱	se	wb
+洓	se	dn
+㴔	se	dx
+槭	se	mx
+森	sf	mm
+僧	sg	ro
+桑	sh	ym
+丧	sh	un
+嗓	sh	km
+搡	sh	fm
+颡	sh	yr
+磉	sh	um
+𬙋	sh	sy
+死	si	db
+四	si	ke
+斯	si	qj
+思	si	tx
+似	si	rr
+司	si	vk
+丝	si	va
+寺	si	tc
+私	si	hs
+撕	si	fj
+肆	si	ay
+嗣	si	kk
+巳	si	vv
+泗	si	de
+祀	si	ps
+食	si	rl
+饲	si	uk
+厮	si	ij
+嘶	si	kj
+伺	si	rk
+俟	si	ru
+锶	si	jx
+驷	si	me
+汜	si	ds
+涘	si	du
+姒	si	nr
+兕	si	ae
+耜	si	lk
+笥	si	vk
+偲	si	rx
+澌	si	dj
+咝	si	ka
+咝	si	ks
+鸶	si	sn
+缌	si	sx
+蛳	si	ij
+楒	si	mx
+虒	si	pj
+凘	si	dj
+㟃	si	ek
+飔	si	jx
+三	sj	ae
+散	sj	cw
+伞	sj	ru
+叁	sj	ss
+糁	sj	mp
+毵	sj	sm
+馓	sj	uw
+潵	sj	dw
+参	sj	sp
+所	so	pj
+锁	so	jr
+索	so	ux
+缩	so	sb
+嗦	so	kx
+莎	so	cu
+唆	so	kw
+梭	so	mw
+琐	so	wr
+娑	so	dn
+蓑	so	cy
+羧	so	yw
+嗍	so	ko
+葰	so	cw
+挲	so	du
+唢	so	kr
+桫	so	mu
+睃	so	ow
+溹	so	dx
+算	sr	vc
+酸	sr	yw
+蒜	sr	cx
+狻	sr	qw
+送	ss	zt
+宋	ss	bm
+松	ss	ms
+颂	ss	br
+耸	ss	re
+诵	ss	yy
+嵩	ss	ek
+怂	ss	rx
+讼	ss	ys
+淞	ss	ds
+崧	ss	es
+菘	ss	cs
+竦	ss	lu
+悚	ss	xu
+忪	ss	xs
+娀	ss	nu
+凇	ss	ds
+㧐	ss	fy
+𪨊	ss	ur
+苏	su	cb
+素	su	fx
+速	su	zu
+俗	su	rk
+诉	su	yi
+宿	su	bb
+塑	su	bt
+酥	su	yh
+粟	su	xm
+肃	su	vd
+溯	su	do
+夙	su	jd
+窣	su	bu
+稣	su	ah
+僳	su	rm
+愫	su	xx
+谡	su	yw
+涑	su	du
+甦	su	gu
+簌	su	vr
+蔌	su	cr
+嗉	su	kx
+傃	su	rx
+缩	su	sb
+觫	su	du
+蹜	su	zb
+骕	su	ms
+鹔	su	sn
+𫗧	su	uu
+岁	sv	ex
+随	sv	ez
+虽	sv	ki
+碎	sv	uu
+遂	sv	zu
+穗	sv	hx
+隋	sv	eo
+髓	sv	gz
+绥	sv	sn
+隧	sv	ez
+睢	sv	of
+祟	sv	ix
+邃	sv	zu
+燧	sv	hz
+眭	sv	ot
+濉	sv	df
+荽	sv	cn
+尿	sv	uu
+谇	sv	yu
+襚	sv	pz
+璲	sv	wz
+旞	sv	fz
+穟	sv	hz
+𫟦	sv	iz
+𬭼	sv	jz
+缞	sv	sy
+孙	sy	zx
+损	sy	fr
+笋	sy	vy
+隼	sy	ru
+荪	sy	cx
+榫	sy	mu
+飧	sy	xl
+狲	sy	qx
+搜	sz	fy
+艘	sz	vy
+叟	sz	py
+嗖	sz	ky
+馊	sz	uy
+嗽	sz	kr
+薮	sz	cw
+廋	sz	gy
+溲	sz	dy
+擞	sz	fw
+螋	sz	iy
+飕	sz	jy
+嗾	sz	ku
+瞍	sz	oy
+蒐	sz	cg
+锼	sz	jy
+他	ta	ry
+她	ta	ny
+它	ta	bb
+塔	ta	tk
+踏	ta	zo
+塌	ta	tx
+榻	ta	mx
+沓	ta	uo
+铊	ta	jb
+蹋	ta	zx
+挞	ta	fz
+闼	ta	mz
+獭	ta	qr
+溻	ta	dx
+褟	ta	px
+遢	ta	zx
+鳎	ta	ax
+拓	ta	fu
+趿	ta	zj
+漯	ta	dx
+鞳	ta	gk
+嗒	ta	kk
+溚	ta	dk
+阘	ta	mx
+祂	ta	py
+鿎	ta	ud
+套	tc	ds
+逃	tc	zd
+陶	tc	ef
+涛	tc	dc
+桃	tc	md
+讨	tc	yc
+淘	tc	df
+掏	tc	ff
+韬	tc	wj
+滔	tc	dj
+焘	tc	fh
+绦	tc	sm
+洮	tc	dd
+萄	tc	cf
+弢	tc	gy
+饕	tc	kl
+鼗	tc	ey
+啕	tc	kf
+叨	tc	kd
+梼	tc	mc
+慆	tc	xj
+𫘦	tc	mf
+绹	tc	sf
+跳	tc	zd
+太	td	dd
+台	td	sk
+泰	td	fu
+抬	td	fk
+胎	td	ok
+态	td	tx
+苔	td	ck
+钛	td	jt
+肽	td	ot
+汰	td	dt
+邰	td	se
+骀	td	mk
+酞	td	yt
+呔	td	kt
+跆	td	zk
+鲐	td	ak
+炱	td	sh
+特	te	nc
+忒	te	yx
+慝	te	kx
+忑	te	xx
+铽	te	jx
+疼	tg	bd
+腾	tg	om
+藤	tg	cu
+滕	tg	ou
+誊	tg	jk
+螣	tg	oi
+熥	tg	hz
+縢	tg	ox
+䲢	tg	oa
+汤	th	dp
+唐	th	gk
+堂	th	xt
+糖	th	mk
+趟	th	tk
+躺	th	uk
+烫	th	dh
+塘	th	tk
+淌	th	dk
+棠	th	xm
+倘	th	rk
+膛	th	ot
+镗	th	jt
+搪	th	fk
+樘	th	mt
+瑭	th	wk
+螳	th	it
+耥	th	lk
+傥	th	re
+帑	th	nj
+羰	th	yh
+蹚	th	zt
+螗	th	ik
+惝	th	xk
+溏	th	dk
+鄌	th	ge
+镋	th	je
+铴	th	jp
+嘡	th	kt
+䣘	th	xe
+提	ti	fr
+体	ti	rb
+题	ti	or
+踢	ti	zw
+替	ti	fo
+梯	ti	mp
+剃	ti	bd
+啼	ti	kj
+蹄	ti	zj
+涕	ti	dp
+剔	ti	od
+缇	ti	sr
+锑	ti	jp
+屉	ti	uu
+惕	ti	xw
+倜	ti	rk
+悌	ti	xp
+鹈	ti	bn
+嚏	ti	kr
+俶	ti	ry
+绨	ti	sp
+醍	ti	yr
+逖	ti	zh
+薙	ti	cf
+荑	ti	cy
+裼	ti	pw
+鳀	ti	ar
+弟	ti	bp
+擿	ti	fz
+棣	ti	mn
+𫘨	ti	mr
+媂	ti	nj
+媞	ti	nr
+䏲	ti	op
+䴘	ti	pn
+禔	ti	pr
+趯	ti	tf
+瑅	ti	wr
+遆	ti	zj
+谈	tj	yh
+弹	tj	gl
+探	tj	fm
+谭	tj	yu
+贪	tj	rr
+叹	tj	ky
+坛	tj	ts
+摊	tj	ff
+坦	tj	ta
+痰	tj	bh
+滩	tj	df
+潭	tj	du
+碳	tj	uh
+炭	tj	eh
+瘫	tj	bf
+檀	tj	ma
+毯	tj	mh
+昙	tj	os
+钽	tj	ja
+澹	tj	dk
+坍	tj	td
+覃	tj	xu
+郯	tj	he
+袒	tj	pa
+倓	tj	rh
+镡	tj	ju
+忐	tj	ux
+惔	tj	xh
+菼	tj	ch
+锬	tj	jh
+啴	tj	kl
+榃	tj	mt
+磹	tj	uu
+璮	tj	wa
+听	tk	kj
+挺	tk	fz
+停	tk	rd
+厅	tk	id
+庭	tk	gz
+亭	tk	wd
+婷	tk	nd
+廷	tk	zr
+汀	tk	dd
+艇	tk	vz
+霆	tk	yz
+烃	tk	hg
+梃	tk	mz
+葶	tk	cd
+蜓	tk	iz
+町	tk	td
+莛	tk	cz
+铤	tk	jz
+侹	tk	rz
+珽	tk	wz
+渟	tk	dd
+桯	tk	mw
+烶	tk	hz
+䗴	tk	iz
+颋	tk	rr
+𬘩	tk	sz
+圢	tk	td
+天	tm	ad
+田	tm	ku
+填	tm	tb
+添	tm	dx
+甜	tm	qg
+舔	tm	qx
+恬	tm	xk
+钿	tm	jt
+忝	tm	tx
+阗	tm	mb
+殄	tm	dp
+腆	tm	ob
+掭	tm	fx
+畋	tm	tw
+湉	tm	dk
+淟	tm	db
+沺	tm	dt
+晪	tm	ob
+佃	tm	rt
+甸	tm	bt
+黇	tm	ck
+栝	tm	mk
+盷	tm	od
+觍	tm	qe
+瑱	tm	wb
+条	tn	wm
+跳	tn	zd
+调	tn	yk
+挑	tn	fd
+眺	tn	od
+苕	tn	ck
+蜩	tn	ik
+佻	tn	rd
+迢	tn	zk
+窕	tn	bd
+粜	tn	im
+朓	tn	od
+祧	tn	pd
+龆	tn	vk
+髫	tn	ak
+鲦	tn	am
+嬥	tn	nf
+笤	tn	vk
+铫	tn	jd
+啁	tn	kk
+㕮	tn	kx
+托	to	fq
+拖	to	fy
+脱	to	oe
+拓	to	fu
+陀	to	eb
+妥	to	pn
+坨	to	tb
+驼	to	mb
+驮	to	md
+砣	to	ub
+沱	to	db
+唾	to	ki
+佗	to	rb
+庹	to	gi
+橐	to	am
+铊	to	jb
+柁	to	mb
+柝	to	mi
+椭	to	mo
+鸵	to	nb
+箨	to	vl
+魄	to	bg
+鼍	to	kd
+侂	to	rq
+酡	to	yb
+跎	to	zb
+𬶍	to	ab
+萚	to	cl
+啴	to	kl
+贴	tp	kk
+帖	tp	jk
+铁	tp	ju
+萜	tp	ck
+餮	tp	dl
+团	tr	kc
+湍	tr	de
+抟	tr	fv
+疃	tr	tl
+彖	tr	vu
+煓	tr	he
+猯	tr	qe
+揣	tr	fe
+同	ts	kk
+通	ts	zy
+痛	ts	by
+铜	ts	jk
+童	ts	ll
+桶	ts	my
+统	ts	se
+筒	ts	vk
+捅	ts	fy
+桐	ts	mk
+彤	ts	dp
+瞳	ts	ol
+佟	ts	rd
+酮	ts	yk
+砼	ts	ug
+潼	ts	dl
+仝	ts	rg
+恸	ts	xl
+侗	ts	rk
+嗵	ts	kz
+僮	ts	rl
+茼	ts	ck
+峒	ts	ek
+垌	ts	tk
+烔	ts	hk
+橦	ts	ml
+曈	ts	ol
+洞	ts	dk
+鲖	ts	ak
+峂	ts	ed
+穜	ts	hl
+熥	ts	hz
+哃	ts	kk
+𦒍	ts	lx
+㛚	ts	ny
+𫍣	ts	yk
+图	tu	kd
+土	tu	ua
+吐	tu	kt
+涂	tu	dh
+兔	tu	dd
+突	tu	bq
+徒	tu	ir
+凸	tu	la
+途	tu	zh
+屠	tu	uo
+秃	tu	hj
+荼	tu	ch
+菟	tu	cd
+钍	tu	jt
+堍	tu	td
+葖	tu	cq
+稌	tu	hh
+梌	tu	mh
+腯	tu	oo
+酴	tu	yh
+𬳿	tu	md
+㻬	tu	wk
+退	tv	zg
+推	tv	ff
+腿	tv	oz
+褪	tv	pz
+忒	tv	yx
+颓	tv	hr
+蜕	tv	ie
+魋	tv	gf
+弟	tv	bp
+𬯎	tv	er
+煺	tv	hz
+忒	tw	yx
+吞	ty	tk
+屯	ty	av
+臀	ty	uo
+囤	ty	kt
+豚	ty	ou
+暾	ty	ow
+饨	ty	ut
+焞	ty	hz
+褪	ty	pz
+坉	ty	tt
+鲀	ty	at
+忳	ty	xt
+头	tz	dd
+投	tz	fy
+偷	tz	rd
+透	tz	zn
+骰	tz	gy
+钭	tz	ju
+愉	tz	xd
+啥	ua	kk
+杀	ua	xm
+傻	ua	rw
+沙	ua	du
+砂	ua	uu
+纱	ua	su
+煞	ua	dh
+莎	ua	cu
+刹	ua	xd
+鲨	ua	da
+厦	ua	iw
+痧	ua	bu
+裟	ua	dy
+霎	ua	yn
+铩	ua	jm
+唼	ua	kn
+杉	ua	mp
+歃	ua	qr
+挲	ua	du
+嗄	ua	kw
+少	uc	xp
+烧	uc	hw
+稍	uc	ho
+邵	uc	de
+绍	uc	sk
+勺	uc	bd
+哨	uc	ko
+韶	uc	lk
+梢	uc	mo
+捎	uc	fo
+芍	uc	cu
+劭	uc	dl
+苕	uc	ck
+杓	uc	mu
+召	uc	dk
+潲	uc	do
+蛸	uc	io
+艄	uc	vo
+鞘	uc	go
+玿	uc	wk
+柖	uc	mk
+睄	uc	oo
+筲	uc	vo
+晒	ud	ox
+筛	ud	vj
+色	ud	db
+酾	ud	yl
+设	ue	yy
+社	ue	pt
+射	ue	uc
+蛇	ue	ib
+摄	ue	fy
+舍	ue	rk
+舌	ue	qk
+涉	ue	dp
+佘	ue	rx
+奢	ue	do
+赦	ue	tw
+赊	ue	kx
+慑	ue	xy
+折	ue	fj
+麝	ue	gc
+畲	ue	rt
+歙	ue	rr
+厍	ue	ii
+滠	ue	dy
+拾	ue	fk
+猞	ue	qk
+奓	ue	dx
+𪨶	ue	ei
+阇	ue	mo
+畬	ue	rt
+神	uf	pu
+深	uf	dm
+沈	uf	dv
+身	uf	pp
+申	uf	ll
+甚	uf	qv
+肾	uf	lo
+审	uf	bu
+伸	uf	ru
+什	uf	ru
+慎	uf	xb
+渗	uf	dp
+谂	uf	yx
+婶	uf	nu
+砷	uf	uu
+参	uf	sp
+珅	uf	wu
+绅	uf	su
+燊	uf	hm
+屾	uf	ee
+哂	uf	kx
+莘	uf	cu
+蜃	uf	ii
+呻	uf	ku
+糁	uf	mp
+胂	uf	ou
+侁	uf	re
+矧	uf	ul
+椹	uf	mv
+娠	uf	nn
+葚	uf	cv
+瞫	uf	ou
+鲹	uf	ap
+瘆	uf	bp
+𬬹	uf	ju
+吲	uf	kl
+𬳽	uf	me
+棽	uf	mv
+信	uf	rk
+甡	uf	uu
+诜	uf	ye
+谌	uf	yv
+生	ug	pf
+省	ug	uo
+声	ug	up
+升	ug	pc
+胜	ug	ou
+盛	ug	im
+圣	ug	yt
+剩	ug	qd
+绳	ug	sd
+晟	ug	oi
+笙	ug	vu
+牲	ug	nu
+昇	ug	ou
+甥	ug	ul
+嵊	ug	en
+乘	ug	qn
+陞	ug	et
+渑	ug	dd
+甸	ug	bt
+眚	ug	uo
+上	uh	la
+伤	uh	rl
+商	uh	wk
+尚	uh	xk
+赏	uh	xr
+殇	uh	dp
+裳	uh	xy
+熵	uh	hk
+觞	uh	dp
+晌	uh	ok
+墒	uh	tk
+绱	uh	sk
+垧	uh	tk
+汤	uh	dp
+埫	uh	tk
+是	ui	or
+时	ui	oc
+事	ui	al
+使	ui	rl
+市	ui	wj
+式	ui	yg
+石	ui	ak
+试	ui	yg
+十	ui	al
+室	ui	bt
+师	ui	lj
+诗	ui	yc
+食	ui	rl
+史	ui	ln
+世	ui	av
+实	ui	bd
+施	ui	fy
+视	ui	pe
+氏	ui	pv
+士	ui	ua
+湿	ui	dy
+失	ui	pf
+识	ui	yb
+始	ui	nk
+饰	ui	uj
+屎	ui	um
+势	ui	fl
+适	ui	zk
+拾	ui	fk
+仕	ui	ru
+尸	ui	vp
+示	ui	ex
+释	ui	pl
+似	ui	rr
+狮	ui	qj
+逝	ui	zj
+誓	ui	fk
+嗜	ui	ko
+侍	ui	rc
+驶	ui	mu
+蚀	ui	ui
+矢	ui	pt
+拭	ui	fg
+什	ui	ru
+噬	ui	ka
+噬	ui	kr
+虱	ui	vi
+柿	ui	mj
+匙	ui	ob
+恃	ui	xc
+弑	ui	xg
+谥	ui	ym
+峙	ui	ec
+轼	ui	ig
+舐	ui	qu
+豕	ui	an
+莳	ui	cc
+铈	ui	jj
+蓍	ui	co
+筮	ui	vr
+奭	ui	db
+殖	ui	dq
+埘	ui	tc
+鲥	ui	ac
+鲺	ui	ai
+栻	ui	mg
+螫	ui	ti
+邿	ui	te
+贳	ui	ur
+酾	ui	yl
+𫚕	ui	aj
+䴓	ui	an
+浉	ui	dj
+泽	ui	dl
+湜	ui	dr
+炻	ui	hu
+鼫	ui	ju
+啫	ui	ko
+嘘	ui	ky
+耆	ui	lo
+栅	ui	mc
+媞	ui	nr
+䏡	ui	ox
+襫	ui	pb
+祏	ui	pu
+畤	ui	tc
+鸤	ui	un
+硕	ui	ur
+𬤊	ui	yr
+山	uj	lk
+删	uj	cd
+闪	uj	mr
+善	uj	yk
+扇	uj	hx
+衫	uj	pp
+珊	uj	wc
+杉	uj	mp
+陕	uj	ej
+擅	uj	fa
+栅	uj	mc
+疝	uj	be
+汕	uj	de
+煽	uj	hx
+姗	uj	nc
+膳	uj	ok
+鳝	uj	ak
+缮	uj	sk
+单	uj	bl
+跚	uj	zc
+掸	uj	fl
+膻	uj	oa
+苫	uj	ck
+赡	uj	kk
+骟	uj	mx
+蟮	uj	ik
+讪	uj	ye
+剡	uj	hd
+嬗	uj	na
+嬗	uj	nd
+潸	uj	do
+钐	uj	jp
+禅	uj	pl
+掞	uj	fh
+晱	uj	oh
+墡	uj	tk
+舢	uj	ve
+鳣	uj	aa
+芟	uj	cy
+嶦	uj	ek
+掺	uj	fp
+睒	uj	oh
+𫮃	uj	tl
+埏	uj	tz
+鄯	uj	ye
+帅	uk	lj
+甩	uk	kv
+摔	uk	fu
+衰	uk	wy
+率	uk	wu
+蟀	uk	iu
+缞	uk	sy
+爽	ul	dx
+双	ul	yy
+霜	ul	yo
+孀	ul	no
+泷	ul	dl
+礵	ul	uo
+骦	ul	mo
+鹴	ul	yn
+说	uo	ye
+硕	uo	ur
+朔	uo	bo
+烁	uo	hl
+数	uo	mw
+槊	uo	bm
+铄	uo	jl
+搠	uo	fo
+蒴	uo	co
+妁	uo	nu
+栓	ur	mw
+涮	ur	dd
+拴	ur	fw
+闩	ur	ma
+腨	ur	oe
+书	uu	vd
+数	uu	mw
+树	uu	mc
+输	uu	id
+属	uu	uy
+熟	uu	wh
+术	uu	md
+舒	uu	rl
+鼠	uu	jv
+叔	uu	uy
+束	uu	an
+淑	uu	dy
+署	uu	so
+疏	uu	vv
+述	uu	zu
+竖	uu	ll
+俞	uu	rd
+梳	uu	mv
+蜀	uu	si
+孰	uu	ww
+殊	uu	dv
+姝	uu	nv
+恕	uu	nx
+薯	uu	co
+漱	uu	dr
+赎	uu	kd
+墅	uu	lt
+枢	uu	mx
+暑	uu	oo
+抒	uu	fl
+庶	uu	gh
+曙	uu	oo
+戍	uu	wd
+蔬	uu	cv
+塾	uu	wt
+黍	uu	hu
+倏	uu	rq
+纾	uu	sl
+菽	uu	cy
+沭	uu	du
+摅	uu	fx
+腧	uu	od
+毹	uu	rm
+陎	uu	ev
+婌	uu	ny
+鄃	uu	re
+澍	uu	dc
+隃	uu	ed
+稌	uu	hh
+秫	uu	hu
+𬬸	uu	ju
+殳	uu	jy
+朱	uu	pw
+悆	uu	rx
+谁	uv	yf
+水	uv	ln
+睡	uv	oi
+税	uv	he
+说	uv	ye
+帨	uv	je
+谁	uw	yf
+刷	ux	ud
+耍	ux	en
+唰	ux	kd
+顺	uy	ir
+舜	uy	pl
+瞬	uy	ol
+吮	uy	ke
+楯	uy	mo
+手	uz	pl
+受	uz	py
+收	uz	vw
+首	uz	bz
+瘦	uz	by
+守	uz	bc
+兽	uz	bk
+售	uz	rk
+寿	uz	fc
+授	uz	fy
+熟	uz	wh
+狩	uz	qc
+绶	uz	sy
+艏	uz	vz
+炸	va	hv
+扎	va	fv
+渣	va	da
+闸	va	mj
+乍	va	pa
+眨	va	of
+札	va	mv
+榨	va	mv
+诈	va	yv
+咋	va	kv
+轧	va	iv
+喳	va	ka
+铡	va	jd
+吒	va	kq
+揸	va	fa
+查	va	ma
+咤	va	kq
+柞	va	mv
+楂	va	ma
+栅	va	mc
+砟	va	uv
+痄	va	bv
+蚱	va	iv
+哳	va	kj
+溠	va	dg
+奓	va	dx
+挓	va	fq
+蜡	va	io
+喋	va	km
+馇	va	ua
+劄	va	vd
+鲊	va	av
+拃	va	fv
+䃎	va	ux
+怍	va	xv
+鲝	va	ya
+霅	va	yk
+齇	va	zq
+找	vc	fg
+照	vc	oh
+招	vc	fk
+赵	vc	tx
+着	vc	yo
+兆	vc	ed
+朝	vc	uo
+昭	vc	ok
+罩	vc	su
+召	vc	dk
+肇	vc	hy
+钊	vc	jd
+诏	vc	yk
+沼	vc	dk
+棹	vc	mu
+爪	vc	pn
+曌	vc	og
+旐	vc	fd
+啁	vc	kk
+嘲	vc	ko
+笊	vc	vv
+𬶐	vc	av
+濯	vc	df
+𬬿	vc	jk
+宅	vd	bq
+摘	vd	fk
+窄	vd	bv
+债	vd	rr
+寨	vd	bm
+斋	vd	we
+翟	vd	xf
+砦	vd	vu
+择	vd	fl
+瘵	vd	bx
+祭	vd	px
+侧	vd	rd
+责	vd	fr
+擿	vd	fz
+齐	vd	wl
+这	ve	zw
+着	ve	yo
+者	ve	lo
+折	ve	fj
+哲	ve	fk
+遮	ve	zh
+浙	ve	dj
+辙	ve	iw
+喆	ve	uk
+褶	ve	pb
+蔗	ve	ch
+辄	ve	iv
+蛰	ve	fi
+蜇	ve	fi
+锗	ve	jo
+赭	ve	to
+谪	ve	yk
+柘	ve	mu
+螫	ve	ti
+磔	ve	um
+晢	ve	fo
+鹧	ve	gn
+䗪	ve	gi
+啫	ve	ko
+詟	ve	lk
+真	vf	ub
+镇	vf	jb
+针	vf	ju
+阵	vf	ei
+振	vf	fn
+珍	vf	wp
+震	vf	yn
+枕	vf	mv
+帧	vf	jr
+朕	vf	ot
+贞	vf	lr
+臻	vf	ah
+甄	vf	xw
+诊	vf	yp
+桢	vf	mr
+祯	vf	pr
+疹	vf	bp
+斟	vf	qu
+侦	vf	rr
+赈	vf	kn
+榛	vf	mh
+圳	vf	ti
+砧	vf	uk
+箴	vf	vk
+轸	vf	ip
+蓁	vf	ch
+鸩	vf	dn
+缜	vf	sb
+胗	vf	op
+稹	vf	hb
+椹	vf	mv
+畛	vf	tp
+鬒	vf	ab
+葴	vf	ck
+溱	vf	dh
+揕	vf	fv
+袗	vf	pp
+瑱	vf	wb
+浈	vf	dr
+昣	vf	op
+禛	vf	pb
+纼	vf	sl
+填	vf	tb
+瑧	vf	wh
+正	vg	av
+整	vg	uv
+证	vg	yv
+郑	vg	be
+争	vg	dl
+挣	vg	fl
+症	vg	bv
+蒸	vg	ch
+征	vg	iv
+政	vg	vw
+睁	vg	ol
+铮	vg	jl
+筝	vg	vl
+怔	vg	xv
+峥	vg	el
+拯	vg	fa
+诤	vg	yl
+钲	vg	jv
+狰	vg	ql
+烝	vg	lh
+丁	vg	al
+鲭	vg	ao
+掟	vg	fr
+徵	vg	iw
+𬘬	vg	so
+憕	vg	xa
+张	vh	gi
+涨	vh	di
+长	vh	pn
+章	vh	lu
+帐	vh	ji
+掌	vh	xu
+账	vh	ki
+杖	vh	mv
+仗	vh	rv
+胀	vh	oi
+丈	vh	an
+障	vh	eu
+彰	vh	lp
+璋	vh	wu
+樟	vh	mu
+漳	vh	du
+嶂	vh	eu
+瘴	vh	bu
+蟑	vh	iu
+幛	vh	ju
+獐	vh	qu
+暲	vh	ou
+仉	vh	rj
+嫜	vh	nu
+鄣	vh	le
+只	vi	kb
+至	vi	at
+值	vi	rq
+指	vi	fo
+知	vi	uk
+制	vi	pd
+直	vi	uq
+之	vi	dn
+治	vi	dk
+纸	vi	su
+志	vi	ux
+支	vi	uy
+致	vi	aw
+智	vi	uo
+质	vi	pr
+置	vi	sq
+止	vi	la
+汁	vi	du
+枝	vi	my
+芝	vi	cv
+职	vi	eb
+执	vi	fw
+植	vi	mq
+脂	vi	oo
+织	vi	sb
+痣	vi	bx
+滞	vi	dj
+芷	vi	cv
+掷	vi	fe
+酯	vi	yo
+旨	vi	bo
+址	vi	tv
+痔	vi	bc
+肢	vi	oy
+趾	vi	zv
+稚	vi	hf
+吱	vi	ky
+炙	vi	ph
+挚	vi	fu
+秩	vi	hu
+徵	vi	iw
+侄	vi	rt
+殖	vi	dq
+栀	vi	mv
+祗	vi	pd
+雉	vi	uf
+郅	vi	ae
+窒	vi	bt
+峙	vi	ec
+祉	vi	pv
+帜	vi	jb
+枳	vi	mb
+彘	vi	vb
+陟	vi	ep
+豸	vi	pp
+贽	vi	fr
+咫	vi	ib
+蛭	vi	it
+帙	vi	ju
+栉	vi	me
+桎	vi	mt
+忮	vi	xy
+觯	vi	dl
+骘	vi	em
+鸷	vi	fn
+絷	vi	fx
+庤	vi	gc
+轵	vi	ib
+蜘	vi	ik
+胝	vi	od
+沚	vi	dv
+禔	vi	pr
+畤	vi	tc
+埴	vi	tq
+黹	vi	yd
+踯	vi	ze
+踬	vi	zr
+擿	vi	fz
+稙	vi	hq
+晊	vi	ot
+氏	vi	pv
+识	vi	yb
+痓	vi	bt
+𦭜	vi	cb
+茋	vi	cd
+泜	vi	dd
+滍	vi	di
+摭	vi	fh
+扺	vi	fu
+拓	vi	fu
+轾	vi	it
+锧	vi	jr
+铚	vi	jt
+郦	vi	le
+榰	vi	mo
+𬃊	vi	mr
+梽	vi	mx
+祇	vi	pu
+卮	vi	pv
+疐	vi	ur
+跱	vi	zc
+蹢	vi	zk
+跖	vi	zu
+站	vj	lk
+占	vj	lk
+战	vj	lg
+展	vj	un
+斩	vj	ij
+沾	vj	dk
+詹	vj	dk
+粘	vj	mk
+蘸	vj	ch
+湛	vj	dv
+盏	vj	jm
+栈	vj	mj
+瞻	vj	ok
+毡	vj	mk
+绽	vj	sr
+颤	vj	wr
+辗	vj	in
+崭	vj	ej
+旃	vj	fd
+谵	vj	yk
+嵁	vj	ev
+栴	vj	md
+搌	vj	fn
+偡	vj	rv
+鳣	vj	aa
+嶦	vj	ek
+飐	vj	jk
+𫗴	vj	ua
+鹯	vj	wn
+拽	vk	fy
+转	vk	iv
+装	vl	dy
+状	vl	dq
+庄	vl	gt
+撞	vl	fl
+壮	vl	du
+妆	vl	dn
+幢	vl	jl
+桩	vl	mt
+僮	vl	rl
+奘	vl	pd
+漴	vl	dx
+戆	vl	lx
+着	vo	yo
+桌	vo	lm
+卓	vo	lu
+捉	vo	fr
+浊	vo	di
+拙	vo	fi
+灼	vo	hu
+啄	vo	kn
+酌	vo	yu
+濯	vo	df
+焯	vo	hu
+镯	vo	ji
+擢	vo	ff
+倬	vo	ru
+斫	vo	uj
+茁	vo	ci
+著	vo	co
+涿	vo	dn
+琢	vo	wn
+晫	vo	ou
+浞	vo	dr
+禚	vo	ph
+诼	vo	yn
+汋	vo	du
+椓	vo	mn
+缴	vo	sw
+䓬	vo	cu
+淖	vo	du
+𬸦	vo	fn
+燋	vo	hh
+䦃	vo	jo
+棁	vo	me
+棹	vo	mu
+叕	vo	yy
+转	vr	iv
+赚	vr	kn
+专	vr	ad
+砖	vr	uv
+传	vr	rv
+撰	vr	fb
+篆	vr	vu
+馔	vr	ub
+啭	vr	kv
+颛	vr	er
+沌	vr	dt
+耑	vr	ee
+瑑	vr	wu
+䏝	vr	ov
+僎	vr	rb
+中	vs	ll
+种	vs	hv
+重	vs	pa
+钟	vs	jv
+众	vs	rr
+仲	vs	rv
+终	vs	sd
+忠	vs	vx
+肿	vs	ov
+冢	vs	bn
+衷	vs	wy
+盅	vs	vm
+锺	vs	jv
+踵	vs	zv
+柊	vs	md
+螽	vs	wi
+穜	vs	hl
+茽	vs	cv
+蚣	vs	is
+舯	vs	vv
+忪	vs	xs
+住	vu	rv
+猪	vu	qo
+主	vu	dw
+朱	vu	pw
+祝	vu	pe
+著	vu	co
+注	vu	dv
+煮	vu	lh
+竹	vu	pl
+驻	vu	mv
+珠	vu	wv
+柱	vu	mv
+助	vu	ql
+诸	vu	yo
+株	vu	mv
+逐	vu	zu
+筑	vu	vf
+铸	vu	jc
+烛	vu	hi
+诛	vu	yv
+渚	vu	do
+贮	vu	ka
+洙	vu	dv
+嘱	vu	ky
+竺	vu	ve
+拄	vu	fv
+蛛	vu	iv
+蛀	vu	iv
+伫	vu	ra
+箸	vu	vo
+铢	vu	jv
+茱	vu	cv
+瞩	vu	oy
+侏	vu	rv
+苎	vu	ca
+炷	vu	hv
+翥	vu	lx
+杼	vu	ml
+瘃	vu	bn
+麈	vu	gv
+褚	vu	po
+躅	vu	zi
+疰	vu	bv
+术	vu	md
+槠	vu	mo
+舳	vu	vy
+柷	vu	me
+砫	vu	uv
+属	vu	uy
+苧	vu	cd
+澍	vu	dc
+潴	vu	do
+蠋	vu	ii
+橥	vu	qm
+纻	vu	sa
+邾	vu	ve
+𬣞	vu	ya
+追	vv	zk
+坠	vv	et
+锥	vv	jf
+缀	vv	sy
+椎	vv	mf
+赘	vv	fr
+骓	vv	mf
+隹	vv	rf
+惴	vv	xe
+缒	vv	sz
+揣	vv	fe
+这	vw	zw
+抓	vx	fv
+爪	vx	pn
+挝	vx	fz
+髽	vx	at
+准	vy	df
+肫	vy	ot
+谆	vy	yz
+屯	vy	av
+窀	vy	bt
+忳	vy	xt
+淳	vy	dz
+衠	vy	ii
+𬘯	vy	sz
+圫	vy	tq
+周	vz	kk
+州	vz	dl
+粥	vz	gg
+洲	vz	dl
+洲	vz	dv
+轴	vz	iy
+舟	vz	pd
+咒	vz	kj
+皱	vz	dy
+肘	vz	oc
+昼	vz	ia
+骤	vz	mn
+宙	vz	by
+绉	vz	se
+纣	vz	sc
+诌	vz	ye
+胄	vz	yo
+帚	vz	ej
+妯	vz	ny
+酎	vz	yc
+繇	vz	px
+碡	vz	um
+籀	vz	vt
+荮	vz	cc
+啁	vz	kk
+椆	vz	mk
+婤	vz	nk
+辀	vz	iv
+赒	vz	kk
+㑇	vz	re
+鸼	vz	vn
+㤘	vz	xe
+调	vz	yk
+哇	wa	kt
+挖	wa	fv
+瓦	wa	ad
+娃	wa	nt
+蛙	wa	it
+袜	wa	pm
+洼	wa	dt
+娲	wa	nn
+佤	wa	rw
+腽	wa	om
+窊	wa	bg
+凹	wa	la
+婠	wa	nk
+畖	wa	tg
+外	wd	xb
+歪	wd	bv
+崴	wd	en
+问	wf	mk
+文	wf	wx
+温	wf	dm
+稳	wf	hx
+闻	wf	me
+吻	wf	kw
+纹	wf	sw
+雯	wf	yw
+蚊	wf	iw
+汶	wf	dw
+瘟	wf	bm
+刎	wf	wd
+玟	wf	ww
+芠	wf	cw
+炆	wf	hw
+紊	wf	wx
+阌	wf	my
+璺	wf	py
+忞	wf	wx
+鳁	wf	am
+蕰	wf	cm
+揾	wf	fm
+辒	wf	im
+榅	wf	mm
+𫘜	wf	mw
+缊	wf	sm
+韫	wf	wm
+翁	wg	bx
+瓮	wg	bw
+嗡	wg	kx
+滃	wg	dx
+蓊	wg	cx
+蕹	wg	cf
+鹟	wg	bn
+𬭩	wg	jx
+王	wh	at
+网	wh	kx
+往	wh	iv
+忘	wh	wx
+望	wh	ww
+汪	wh	dw
+旺	wh	ow
+亡	wh	wv
+妄	wh	wn
+枉	wh	mw
+罔	wh	kw
+惘	wh	xw
+魍	wh	gw
+辋	wh	iw
+尪	wh	uw
+尪	wh	yw
+玩	wj	we
+万	wj	ap
+完	wj	be
+晚	wj	ov
+碗	wj	uv
+湾	wj	dg
+弯	wj	wg
+丸	wj	pd
+婉	wj	nv
+挽	wj	fv
+腕	wj	ov
+皖	wj	be
+宛	wj	bv
+蔓	wj	cy
+绾	wj	sk
+顽	wj	er
+烷	wj	he
+剜	wj	bd
+椀	wj	mv
+琬	wj	wv
+菀	wj	cv
+蜿	wj	iv
+脘	wj	oe
+纨	wj	sw
+莞	wj	ce
+婠	wj	nk
+畹	wj	tv
+惋	wj	xv
+豌	wj	av
+芄	wj	cw
+卍	wj	vv
+涴	wj	dv
+𬇕	wj	dw
+妧	wj	ne
+𬘫	wj	se
+塆	wj	tg
+毌	wj	va
+箢	wj	vv
+我	wo	pd
+喔	wo	kt
+窝	wo	bn
+握	wo	ft
+沃	wo	dy
+卧	wo	ib
+硪	wo	uw
+涡	wo	dn
+倭	wo	rn
+渥	wo	dt
+蜗	wo	in
+肟	wo	ok
+斡	wo	uu
+幄	wo	jt
+偓	wo	rt
+挝	wo	fz
+龌	wo	vt
+莴	wo	cn
+涴	wo	dv
+踒	wo	zn
+馧	wo	hm
+无	wu	ay
+五	wu	aa
+吴	wu	kt
+物	wu	nw
+吾	wu	wk
+武	wu	av
+舞	wu	pl
+屋	wu	ut
+乌	wu	pa
+误	wu	yt
+勿	wu	bp
+雾	wu	yl
+伍	wu	rw
+午	wu	pg
+务	wu	wl
+悟	wu	xk
+捂	wu	fk
+巫	wu	gr
+污	wu	dk
+呜	wu	kw
+毋	wu	va
+戊	wu	gp
+钨	wu	jw
+邬	wu	we
+兀	wu	ae
+晤	wu	ok
+坞	wu	tw
+芜	wu	cw
+梧	wu	mk
+诬	wu	yr
+侮	wu	rm
+妩	wu	nw
+婺	wu	sn
+忤	wu	xw
+寤	wu	bk
+屼	wu	ew
+於	wu	fd
+庑	wu	gw
+焐	wu	hk
+蜈	wu	it
+仵	wu	rw
+骛	wu	sm
+鹜	wu	sn
+圬	wu	tk
+芴	wu	cw
+唔	wu	kk
+洿	wu	dk
+珷	wu	wv
+鹉	wu	an
+阢	wu	ee
+牾	wu	nk
+旿	wu	ow
+亡	wu	wv
+恶	wu	yx
+迕	wu	zw
+痦	wu	bk
+鋈	wu	dj
+浯	wu	dk
+𣲘	wu	dw
+峿	wu	ek
+鹀	wu	gn
+靰	wu	gw
+铻	wu	jk
+鼯	wu	jk
+杌	wu	mw
+郚	wu	we
+珸	wu	wk
+怃	wu	xw
+为	ww	dd
+未	ww	an
+位	ww	rl
+喂	ww	kn
+味	ww	kw
+微	ww	iw
+伟	ww	rw
+魏	ww	hg
+维	ww	sf
+胃	ww	to
+威	ww	wn
+威	ww	xn
+卫	ww	va
+委	ww	hn
+唯	ww	kf
+围	ww	kw
+韦	ww	al
+薇	ww	cw
+伪	ww	rw
+尾	ww	um
+惟	ww	xf
+谓	ww	yo
+危	ww	dv
+炜	ww	hw
+玮	ww	ww
+蔚	ww	cc
+苇	ww	cw
+纬	ww	sw
+畏	ww	tn
+慰	ww	ux
+违	ww	zw
+巍	ww	eg
+萎	ww	cn
+渭	ww	do
+尉	ww	uc
+煨	ww	hn
+偎	ww	rn
+葳	ww	cn
+帷	ww	jf
+圩	ww	ty
+痿	ww	bn
+桅	ww	mv
+潍	ww	df
+帏	ww	jw
+隗	ww	eg
+娓	ww	nm
+猥	ww	qn
+嵬	ww	eg
+逶	ww	zn
+闱	ww	mw
+韪	ww	ow
+猬	ww	qo
+艉	ww	vm
+涠	ww	dw
+崴	ww	en
+诿	ww	yn
+遗	ww	zr
+鲔	ww	ao
+洈	ww	dv
+廆	ww	gg
+碨	ww	un
+霨	ww	yc
+鳚	ww	ac
+鳂	ww	an
+𬶏	ww	av
+𫇭	ww	cw
+䓕	ww	cz
+洧	ww	do
+𬱟	ww	dr
+沩	ww	dw
+溦	ww	dw
+𣲗	ww	dw
+隈	ww	en
+峗	ww	ev
+㧑	ww	fw
+煟	ww	ho
+𬭬	ww	je
+𬀩	ww	ow
+隹	ww	rf
+倭	ww	rn
+螱	ww	ui
+硙	ww	uj
+琟	ww	wf
+亹	ww	wq
+新	xb	lj
+心	xb	dd
+信	xb	rk
+鑫	xb	jj
+欣	xb	jr
+馨	xb	uo
+辛	xb	lu
+芯	xb	cx
+锌	xb	ju
+薪	xb	cj
+昕	xb	oj
+歆	xb	lr
+忻	xb	xj
+莘	xb	cu
+衅	xb	xb
+伈	xb	rx
+炘	xb	hj
+囟	xb	px
+镡	xb	ju
+𫷷	xb	gr
+䜣	xb	yj
+系	xi	px
+西	xi	aa
+洗	xi	de
+戏	xi	yg
+喜	xi	uk
+係	xi	rx
+细	xi	st
+吸	xi	kj
+希	xi	xj
+溪	xi	dd
+兮	xi	bv
+锡	xi	jw
+息	xi	zx
+席	xi	gj
+熙	xi	kh
+稀	xi	hj
+惜	xi	xo
+夕	xi	pd
+习	xi	vd
+袭	xi	ly
+曦	xi	od
+昔	xi	co
+膝	xi	ou
+悉	xi	px
+析	xi	mj
+奚	xi	pd
+玺	xi	dy
+隙	xi	ex
+硒	xi	ux
+汐	xi	dx
+烯	xi	hj
+熄	xi	hx
+嘻	xi	kk
+腊	xi	oo
+禧	xi	pk
+徙	xi	ir
+栖	xi	mx
+嬉	xi	nk
+犀	xi	un
+茜	xi	cx
+熹	xi	uh
+羲	xi	yd
+铣	xi	je
+晰	xi	oj
+浠	xi	dj
+媳	xi	nx
+窸	xi	bx
+觋	xi	ge
+蜥	xi	ij
+皙	xi	mb
+晞	xi	oj
+僖	xi	rk
+郗	xi	xe
+醯	xi	ym
+淅	xi	dj
+唏	xi	kj
+檄	xi	mw
+牺	xi	nx
+翕	xi	rx
+屣	xi	ur
+郤	xi	be
+隰	xi	eh
+蟋	xi	ix
+傒	xi	rd
+饩	xi	uq
+舾	xi	vx
+蹊	xi	zd
+阋	xi	me
+樨	xi	mn
+歙	xi	rr
+卌	xi	al
+蓰	xi	cr
+潟	xi	dh
+觿	xi	dk
+嶍	xi	eb
+巇	xi	eg
+嶲	xi	ev
+爔	xi	hd
+鼷	xi	jd
+咥	xi	kt
+暿	xi	ok
+裼	xi	pw
+枲	xi	sm
+矽	xi	ux
+鳛	xi	ab
+𬶮	xi	ak
+鳃	xi	ax
+穸	xi	bx
+菥	xi	cj
+葸	xi	cx
+洒	xi	dx
+酅	xi	ee
+熻	xi	hx
+螅	xi	ix
+舄	xi	jh
+𬭳	xi	jk
+喺	xi	kx
+𫘬	xi	md
+粞	xi	mx
+睎	xi	oj
+肸	xi	ou
+禊	xi	pd
+谿	xi	pk
+俙	xi	rj
+绤	xi	sk
+豨	xi	uj
+碏	xi	uo
+屃	xi	ur
+憙	xi	ux
+饻	xi	uy
+釐	xi	wl
+𠅤	xi	wx
+郄	xi	xe
+忾	xi	xq
+恓	xi	xx
+䜣	xi	yj
+诶	xi	yu
+行	xk	ii
+性	xk	xu
+型	xk	kt
+星	xk	ou
+姓	xk	nu
+醒	xk	yu
+兴	xk	xb
+形	xk	kp
+幸	xk	tg
+刑	xk	kd
+邢	xk	ke
+杏	xk	mk
+腥	xk	ou
+荇	xk	ci
+猩	xk	qu
+惺	xk	xu
+擤	xk	fl
+煋	xk	hu
+硎	xk	ud
+省	xk	uo
+陉	xk	eg
+饧	xk	up
+悻	xk	xg
+荥	xk	cu
+倖	xk	rg
+铏	xk	jd
+钘	xk	jk
+骍	xk	mu
+婞	xk	ng
+𫰛	xk	ng
+瑆	xk	wu
+想	xl	mx
+向	xl	pk
+像	xl	rn
+象	xl	dn
+相	xl	mo
+香	xl	ho
+项	xl	gr
+乡	xl	vp
+箱	xl	vo
+响	xl	kk
+祥	xl	py
+湘	xl	do
+翔	xl	yx
+巷	xl	cs
+享	xl	wz
+详	xl	yy
+镶	xl	jy
+厢	xl	io
+襄	xl	wy
+橡	xl	mn
+饷	xl	uk
+飨	xl	xl
+缃	xl	so
+降	xl	el
+骧	xl	my
+芗	xl	cx
+庠	xl	gy
+葙	xl	co
+鲞	xl	ja
+儴	xl	ry
+珦	xl	wk
+羊	xl	bl
+𬙋	xl	sy
+瓖	xl	wy
+先	xm	ne
+线	xm	sj
+现	xm	we
+闲	xm	mm
+仙	xm	re
+显	xm	oy
+限	xm	eg
+贤	xm	lr
+嫌	xm	nn
+鲜	xm	ay
+险	xm	ea
+弦	xm	gy
+咸	xm	wk
+咸	xm	xk
+陷	xm	ej
+献	xm	uq
+宪	xm	be
+馅	xm	uj
+掀	xm	fr
+衔	xm	ii
+娴	xm	nm
+腺	xm	ou
+县	xm	qs
+见	xm	ke
+纤	xm	sq
+羡	xm	yr
+冼	xm	de
+酰	xm	ye
+涎	xm	dz
+祆	xm	pt
+舷	xm	vy
+痫	xm	bm
+藓	xm	cy
+蚬	xm	ie
+霰	xm	yw
+苋	xm	ce
+岘	xm	ee
+籼	xm	me
+铣	xm	je
+锨	xm	jr
+暹	xm	zf
+咁	xm	kg
+氙	xm	qe
+跣	xm	ze
+跹	xm	zz
+莶	xm	ca
+洗	xm	de
+鹇	xm	mn
+伭	xm	ry
+孅	xm	nj
+盷	xm	od
+禒	xm	pu
+猃	xm	qa
+忺	xm	xr
+𬸣	xm	bn
+崄	xm	ea
+挦	xm	fc
+掺	xm	fp
+𪾢	xm	oe
+𬀪	xm	oe
+㬎	xm	oh
+狝	xm	qx
+缐	xm	su
+𫄧	xm	sz
+燹	xm	uh
+筅	xm	ve
+玹	xm	wy
+𫍯	xm	yk
+小	xn	ld
+笑	xn	vy
+晓	xn	ow
+肖	xn	xo
+校	xn	mx
+萧	xn	cs
+消	xn	do
+孝	xn	lz
+销	xn	jo
+效	xn	ww
+啸	xn	ks
+筱	xn	vw
+削	xn	xd
+箫	xn	vs
+霄	xn	yo
+潇	xn	ds
+宵	xn	bo
+枭	xn	pm
+硝	xn	uo
+逍	xn	zo
+骁	xn	mw
+嚣	xn	kk
+绡	xn	so
+哓	xn	kw
+哮	xn	kz
+淆	xn	do
+魈	xn	go
+崤	xn	eo
+蛸	xn	io
+虓	xn	jj
+猇	xn	qj
+皛	xn	bb
+洨	xn	dx
+涍	xn	dz
+枵	xn	mv
+睄	xn	oo
+翛	xn	rx
+恔	xn	xx
+熇	xn	hk
+蟏	xn	is
+鸮	xn	kn
+姣	xn	nx
+俏	xn	ro
+敩	xn	xw
+𫍲	xn	yy
+写	xp	by
+些	xp	ve
+谢	xp	yc
+鞋	xp	gt
+邪	xp	ye
+携	xp	fn
+斜	xp	ru
+蟹	xp	di
+协	xp	ub
+歇	xp	or
+泄	xp	du
+泻	xp	dy
+血	xp	pm
+卸	xp	we
+屑	xp	uo
+挟	xp	fj
+蝎	xp	iv
+胁	xp	ob
+械	xp	mc
+谐	xp	yb
+燮	xp	hy
+偕	xp	rb
+榭	xp	mc
+懈	xp	xn
+楔	xp	md
+撷	xp	fr
+亵	xp	wy
+解	xp	dn
+契	xp	fd
+勰	xp	lx
+缬	xp	sr
+绁	xp	su
+邂	xp	zn
+薤	xp	cj
+瀣	xp	dj
+廨	xp	gn
+獬	xp	qn
+偰	xp	rd
+躞	xp	zy
+絜	xp	fx
+薢	xp	cn
+觟	xp	dt
+叶	xp	ku
+颉	xp	ur
+鲑	xp	at
+渫	xp	dm
+澥	xp	dn
+揳	xp	fd
+榍	xp	mo
+㙦	xp	rt
+𬹼	xp	vl
+𤫉	xp	wy
+修	xq	rp
+秀	xq	hn
+休	xq	rm
+绣	xq	sn
+袖	xq	py
+羞	xq	yi
+嗅	xq	kq
+锈	xq	jn
+溴	xq	dq
+宿	xq	bb
+岫	xq	ey
+朽	xq	mv
+咻	xq	km
+琇	xq	wn
+脩	xq	ro
+貅	xq	vm
+庥	xq	gm
+馐	xq	ui
+髹	xq	am
+珛	xq	wo
+滫	xq	do
+鸺	xq	rn
+臭	xq	zq
+䗛	xq	io
+选	xr	ze
+玄	xr	wy
+轩	xr	ig
+宣	xr	ba
+旋	xr	fr
+悬	xr	qx
+炫	xr	hy
+萱	xr	ca
+璇	xr	wr
+喧	xr	ka
+眩	xr	oy
+癣	xr	by
+铉	xr	jy
+暄	xr	oa
+绚	xr	so
+漩	xr	dr
+煊	xr	ha
+渲	xr	da
+瑄	xr	wa
+泫	xr	dy
+楦	xr	ma
+儇	xr	ry
+谖	xr	yy
+券	xr	jd
+禤	xr	px
+县	xr	qs
+玹	xr	wy
+翾	xr	sx
+碹	xr	ua
+揎	xr	fa
+衒	xr	ii
+咺	xr	ka
+昡	xr	oy
+痃	xr	by
+夐	xr	dw
+烜	xr	ha
+𫓶	xr	jo
+𫠊	xr	my
+嬛	xr	ny
+晅	xr	oa
+暅	xr	oa
+暶	xr	or
+伭	xr	ry
+琄	xr	wo
+愃	xr	xa
+𫍽	xr	yy
+熊	xs	sh
+兄	xs	ke
+胸	xs	ok
+雄	xs	uf
+凶	xs	xk
+匈	xs	bk
+夐	xs	dw
+芎	xs	cg
+汹	xs	dk
+讻	xs	yk
+诇	xs	yk
+学	xt	xz
+血	xt	pm
+雪	xt	ye
+薛	xt	cu
+穴	xt	bb
+靴	xt	gb
+削	xt	xd
+谑	xt	ya
+鳕	xt	ae
+踅	xt	fr
+噱	xt	ku
+茓	xt	cb
+峃	xt	xe
+敩	xt	xw
+需	xu	ye
+须	xu	pr
+徐	xu	ih
+许	xu	yw
+虚	xu	hy
+续	xu	sd
+旭	xu	jo
+序	xu	gl
+恤	xu	xx
+嘘	xu	ky
+叙	xu	ry
+蓄	xu	ct
+绪	xu	so
+絮	xu	nx
+胥	xu	vo
+煦	xu	oh
+墟	xu	ty
+戌	xu	wa
+吁	xu	ky
+婿	xu	no
+圩	xu	ty
+栩	xu	mx
+勖	xu	kl
+勖	xu	ol
+畜	xu	wt
+诩	xu	yx
+盱	xu	oy
+顼	xu	wr
+酗	xu	yk
+蓿	xu	cb
+浒	xu	dw
+溆	xu	dy
+垿	xu	tl
+洫	xu	dx
+砉	xu	fu
+魆	xu	gv
+欻	xu	hr
+糈	xu	mo
+昫	xu	ok
+珝	xu	wx
+湑	xu	do
+冔	xu	ky
+朐	xu	ok
+旴	xu	oy
+媭	xu	pn
+休	xu	rm
+𦈡	xu	se
+矞	xu	sk
+恓	xu	xx
+邪	xu	ye
+谞	xu	yo
+醑	xu	yo
+𬣙	xu	yy
+下	xx	ab
+夏	xx	aw
+吓	xx	kx
+瞎	xx	ok
+虾	xx	ix
+霞	xx	yy
+侠	xx	rj
+峡	xx	ej
+辖	xx	ik
+厦	xx	iw
+匣	xx	kj
+暇	xx	oy
+狭	xx	qj
+呷	xx	kj
+瑕	xx	wy
+遐	xx	zy
+狎	xx	qj
+黠	xx	hk
+罅	xx	fh
+柙	xx	mj
+硖	xx	uj
+唬	xx	kj
+瘕	xx	by
+翈	xx	jx
+叚	xx	vy
+寻	xy	ec
+讯	xy	yu
+训	xy	yi
+熏	xy	ph
+薰	xy	ch
+勋	xy	kl
+巡	xy	zv
+旬	xy	bo
+循	xy	io
+迅	xy	zu
+逊	xy	zx
+询	xy	yo
+荀	xy	co
+汛	xy	du
+驯	xy	mi
+巽	xy	sb
+洵	xy	do
+殉	xy	do
+浚	xy	dw
+浔	xy	dc
+徇	xy	io
+埙	xy	tr
+鲟	xy	ac
+蕈	xy	cu
+珣	xy	wo
+恂	xy	xo
+醺	xy	yh
+窨	xy	bo
+峋	xy	eo
+曛	xy	oh
+獯	xy	qh
+郇	xy	be
+荨	xy	cc
+噀	xy	kb
+栒	xy	mo
+𬩽	xy	ee
+𬊈	xy	hc
+蟫	xy	iu
+𫄸	xy	sh
+𬘓	xy	si
+𬍤	xy	wc
+孙	xy	zx
+呀	ya	ky
+丫	ya	bl
+亚	ya	ay
+压	ya	id
+牙	ya	ap
+雅	ya	yf
+押	ya	fj
+鸭	ya	jn
+芽	ya	cy
+崖	ya	et
+娅	ya	ny
+哑	ya	ky
+涯	ya	dt
+吖	ya	ky
+鸦	ya	yn
+衙	ya	ii
+伢	ya	ry
+轧	ya	iv
+蚜	ya	iy
+氩	ya	qy
+垭	ya	ty
+桠	ya	my
+讶	ya	yy
+琊	ya	we
+岈	ya	ey
+睚	ya	ot
+猰	ya	qd
+砑	ya	uy
+玡	ya	wy
+迓	ya	zy
+揠	ya	fn
+姶	ya	nk
+堐	ya	tt
+碣	ya	uv
+邪	ya	ye
+因	yb	kd
+引	yb	gl
+银	yb	jg
+音	yb	lo
+印	yb	pe
+阴	yb	eo
+饮	yb	ur
+尹	yb	vp
+隐	yb	ex
+淫	yb	dr
+殷	yb	py
+吟	yb	kv
+瘾	yb	bx
+茵	yb	cd
+胤	yb	pv
+寅	yb	bb
+荫	yb	co
+铟	yb	jd
+垠	yb	tg
+龈	yb	vg
+洇	yb	dd
+蚓	yb	il
+姻	yb	nd
+喑	yb	ko
+鄞	yb	ne
+霪	yb	yr
+窨	yb	bo
+茚	yb	ce
+氤	yb	qd
+愔	yb	xo
+湮	yb	dt
+崟	yb	ej
+吲	yb	kl
+禋	yb	pt
+狺	yb	qk
+堙	yb	tt
+夤	yb	xb
+蟫	yb	iu
+嚚	yb	kk
+硍	yb	ug
+歅	yb	xr
+䲟	yb	ae
+溵	yb	dy
+慭	yb	lx
+骃	yb	md
+訚	yb	mk
+𬮱	yb	mt
+𬙂	yb	sb
+𬘡	yb	sd
+圻	yb	tj
+龂	yb	vj
+珢	yb	wg
+䜣	yb	yj
+𬤇	yb	yt
+要	yc	xn
+药	yc	cu
+咬	yc	kx
+腰	yc	on
+姚	yc	nd
+妖	yc	ny
+摇	yc	ff
+耀	yc	xf
+邀	yc	zw
+尧	yc	aw
+遥	yc	zf
+瑶	yc	wf
+窑	yc	bf
+幺	yc	vs
+曜	yc	of
+爻	yc	xx
+谣	yc	yf
+夭	yc	pd
+舀	yc	pj
+钥	yc	jo
+吆	yc	ky
+杳	yc	mo
+垚	yc	tt
+肴	yc	xo
+鹞	yc	pn
+侥	yc	rw
+鳐	yc	af
+窈	yc	bl
+徭	yc	if
+繇	yc	px
+崾	yc	en
+媱	yc	nf
+猺	yc	qf
+窅	yc	bo
+珧	yc	wd
+疟	yc	ba
+陶	yc	ef
+靿	yc	gl
+轺	yc	ik
+铫	yc	jd
+么	yc	ps
+约	yc	su
+窕	yc	bd
+滧	yc	dw
+隃	yc	ed
+峣	yc	ew
+乐	yc	pd
+㙘	yc	tn
+也	ye	vv
+页	ye	ar
+叶	ye	ku
+业	ye	la
+野	ye	ll
+夜	ye	wn
+耶	ye	ee
+液	ye	dn
+爷	ye	be
+冶	ye	dk
+烨	ye	hu
+椰	ye	me
+噎	ye	ka
+晔	ye	ou
+曳	ye	lp
+掖	ye	fn
+咽	ye	kd
+谒	ye	yv
+腋	ye	on
+邺	ye	ye
+揶	ye	fe
+靥	ye	im
+铘	ye	je
+邪	ye	ye
+倻	ye	re
+堨	ye	tv
+拽	ye	fy
+楪	ye	mm
+焆	ye	ho
+嘢	ye	kl
+喝	ye	kv
+射	ye	uc
+馌	ye	um
+样	yh	my
+杨	yh	mp
+养	yh	yl
+阳	yh	eo
+羊	yh	bl
+洋	yh	dy
+扬	yh	fp
+痒	yh	by
+氧	yh	qy
+央	yh	lg
+仰	yh	re
+漾	yh	dy
+秧	yh	hy
+佯	yh	ry
+殃	yh	dy
+恙	yh	yx
+泱	yh	dy
+鞅	yh	gy
+炀	yh	hp
+疡	yh	bp
+徉	yh	iy
+垟	yh	ty
+鸯	yh	yn
+烊	yh	hy
+卬	yh	pe
+怏	yh	xy
+羕	yh	yy
+蛘	yh	iy
+钖	yh	jp
+飏	yh	jp
+咉	yh	ky
+旸	yh	op
+玚	yh	wp
+详	yh	yy
+一	yi	aa
+以	yi	vr
+已	yi	vv
+亿	yi	rv
+易	yi	ow
+亦	yi	wd
+意	yi	lx
+伊	yi	ry
+依	yi	ry
+宜	yi	bq
+义	yi	dx
+衣	yi	wy
+仪	yi	ry
+乙	yi	vv
+益	yi	bm
+医	yi	ku
+艺	yi	cv
+异	yi	sc
+矣	yi	su
+翼	yi	xb
+逸	yi	zd
+移	yi	hx
+怡	yi	xk
+译	yi	yl
+尾	yi	um
+疑	yi	br
+毅	yi	ly
+壹	yi	ua
+忆	yi	xv
+咦	yi	ky
+姨	yi	ny
+倚	yi	rk
+议	yi	yy
+遗	yi	zr
+夷	yi	an
+溢	yi	dm
+奕	yi	wd
+抑	yi	fe
+颐	yi	kr
+椅	yi	mk
+役	yi	iy
+邑	yi	kb
+裔	yi	wk
+蚁	yi	iy
+驿	yi	ml
+懿	yi	ux
+弋	yi	ad
+谊	yi	yq
+疫	yi	by
+漪	yi	dk
+轶	yi	iu
+贻	yi	kk
+翊	yi	lx
+胰	yi	oy
+彝	yi	vc
+弈	yi	wc
+沂	yi	dj
+揖	yi	fe
+乂	yi	pn
+佚	yi	ru
+屹	yi	eq
+熠	yi	hb
+咿	yi	ky
+羿	yi	xc
+翌	yi	xl
+诣	yi	yo
+翳	yi	kx
+绎	yi	sl
+刈	yi	xd
+苡	yi	cr
+挹	yi	fb
+噫	yi	kx
+臆	yi	ox
+诒	yi	yk
+艾	yi	cx
+薏	yi	cx
+嶷	yi	er
+旖	yi	fk
+镒	yi	jm
+铱	yi	jy
+猗	yi	qk
+缢	yi	sm
+圯	yi	ts
+埸	yi	tw
+饴	yi	uk
+怿	yi	xl
+迤	yi	zy
+瘗	yi	bt
+峄	yi	el
+钇	yi	jv
+呓	yi	kv
+痍	yi	by
+荑	yi	cy
+殪	yi	da
+浥	yi	db
+黟	yi	hx
+佾	yi	ro
+舣	yi	vy
+癔	yi	bx
+肄	yi	by
+蜴	yi	iw
+宧	yi	bl
+廙	yi	gb
+蛇	yi	ib
+嗌	yi	km
+杙	yi	my
+嫕	yi	nx
+眙	yi	ok
+昳	yi	ou
+佁	yi	rk
+仡	yi	rq
+簃	yi	vx
+酏	yi	yy
+踦	yi	zk
+鹝	yi	an
+鹢	yi	bn
+疙	yi	bq
+𬟁	yi	cn
+潩	yi	db
+欹	yi	dr
+泄	yi	du
+㴔	yi	dx
+洢	yi	dy
+𫖮	yi	er
+燚	yi	hh
+扅	yi	hx
+扆	yi	hy
+螠	yi	im
+蛾	yi	iw
+镱	yi	jx
+𬬩	yi	jy
+繄	yi	kx
+匜	yi	ky
+枍	yi	mv
+椸	yi	my
+祎	yi	pw
+㑊	yi	rd
+食	yi	rl
+𫄷	yi	sx
+射	yi	uc
+勚	yi	ul
+𬺈	yi	vk
+裛	yi	wy
+悒	yi	xb
+叕	yi	yy
+劓	yi	zd
+眼	yj	og
+演	yj	db
+烟	yj	hd
+言	yj	wk
+燕	yj	nh
+严	yj	yp
+岩	yj	eu
+盐	yj	tm
+沿	yj	dk
+颜	yj	ir
+艳	yj	fb
+炎	yj	hh
+研	yj	uk
+延	yj	zv
+妍	yj	nk
+雁	yj	if
+彦	yj	ip
+验	yj	ma
+阎	yj	mj
+焉	yj	vh
+宴	yj	bn
+咽	yj	kd
+闫	yj	ms
+掩	yj	fd
+焰	yj	hj
+厌	yj	iq
+淹	yj	dd
+衍	yj	ii
+嫣	yj	nh
+晏	yj	on
+砚	yj	ue
+焱	yj	hh
+阉	yj	md
+檐	yj	mk
+堰	yj	tn
+琰	yj	wh
+腌	yj	od
+偃	yj	rn
+鄢	yj	ve
+筵	yj	vz
+滟	yj	db
+蜒	yj	iz
+恹	yj	xq
+谚	yj	yp
+奄	yj	dd
+魇	yj	ig
+俨	yj	ry
+湮	yj	dt
+阏	yj	md
+胭	yj	od
+酽	yj	yy
+芫	yj	ce
+赝	yj	ir
+兖	yj	we
+崦	yj	ed
+剡	yj	hd
+餍	yj	il
+唁	yj	kk
+鼹	yj	jn
+弇	yj	rc
+罨	yj	sd
+渰	yj	dc
+沇	yj	de
+漹	yj	dh
+阽	yj	ek
+甗	yj	hw
+蝘	yj	in
+铅	yj	jk
+棪	yj	mh
+殷	yj	py
+戭	yj	bg
+𪩘	yj	eq
+掞	yj	fh
+扊	yj	hh
+虤	yj	hj
+烻	yj	hz
+黡	yj	ih
+厣	yj	ij
+郾	yj	ke
+𬸘	yj	kn
+觃	yj	kz
+䶮	yj	lt
+梴	yj	mz
+嬿	yj	nh
+墕	yj	th
+埏	yj	tz
+歅	yj	xr
+谳	yj	yq
+应	yk	ga
+英	yk	cy
+赢	yk	wf
+硬	yk	ug
+影	yk	op
+营	yk	ck
+迎	yk	ze
+鹰	yk	gn
+盈	yk	nm
+颖	yk	br
+莹	yk	cy
+映	yk	oy
+樱	yk	mn
+婴	yk	kn
+瑛	yk	wy
+莺	yk	cn
+蝇	yk	id
+瀛	yk	df
+滢	yk	dy
+缨	yk	sn
+颍	yk	br
+萤	yk	ci
+萦	yk	cx
+郢	yk	ke
+嬴	yk	wf
+荧	yk	ch
+楹	yk	mm
+璎	yk	wn
+膺	yk	go
+瘿	yk	bn
+茔	yk	ct
+蓥	yk	cj
+罂	yk	kf
+鹦	yk	kn
+撄	yk	fn
+嘤	yk	kn
+媵	yk	on
+荥	yk	cu
+䓨	yk	cf
+溁	yk	dm
+潆	yk	dx
+锳	yk	jy
+桯	yk	mw
+媖	yk	ny
+景	yk	ox
+哟	yo	ku
+唷	yo	ko
+育	yo	wo
+元	yr	ee
+远	yr	ze
+原	yr	ix
+源	yr	dx
+员	yr	kr
+院	yr	ee
+园	yr	ke
+愿	yr	ix
+圆	yr	kr
+袁	yr	ty
+缘	yr	su
+苑	yr	cv
+怨	yr	xx
+冤	yr	bd
+媛	yr	ny
+渊	yr	dl
+援	yr	fy
+猿	yr	qy
+垣	yr	ta
+沅	yr	de
+鸢	yr	yn
+塬	yr	tx
+鸳	yr	xn
+辕	yr	iy
+爰	yr	py
+垸	yr	te
+瑗	yr	wy
+芫	yr	ce
+鼋	yr	ed
+掾	yr	fu
+圜	yr	ky
+橼	yr	mu
+嫄	yr	nx
+妧	yr	ne
+箢	yr	vv
+眢	yr	xo
+䓕	to	cz
+湲	yr	dy
+蜎	yr	io
+羱	yr	yx
+宛	yr	bv
+涴	yr	dv
+螈	yr	ix
+𫘪	yr	mx
+用	ys	kl
+永	ys	dn
+勇	ys	sl
+涌	ys	dy
+拥	ys	fy
+咏	ys	ky
+泳	ys	dy
+庸	ys	gl
+雍	ys	wf
+蛹	ys	iy
+佣	ys	ry
+俑	ys	ry
+甬	ys	sy
+慵	ys	xl
+痈	ys	by
+镛	ys	jl
+壅	ys	wt
+墉	ys	tl
+邕	ys	vb
+鳙	ys	al
+踊	ys	zy
+臃	ys	of
+恿	ys	sx
+埇	ys	ty
+饔	ys	wl
+澭	ys	df
+鄘	ys	ge
+喁	ys	ky
+鲬	ys	ay
+㶲	ys	hy
+栐	ys	my
+颙	ys	yr
+月	yt	ka
+越	yt	tv
+约	yt	su
+岳	yt	qe
+粤	yt	pv
+悦	yt	xe
+阅	yt	me
+跃	yt	zy
+乐	yt	pd
+曰	yt	ka
+说	yt	ye
+玥	yt	wo
+栎	yt	ml
+瀹	yt	dc
+钺	yt	jv
+樾	yt	mv
+哕	yt	kx
+龠	yt	rc
+刖	yt	od
+钥	yt	jo
+籥	yt	vc
+趯	yt	tf
+兑	yt	be
+戉	yt	gv
+爚	yt	hc
+𫐄	yt	iw
+𬸚	yt	qn
+与	yu	aa
+于	yu	al
+鱼	yu	da
+雨	yu	ad
+玉	yu	wd
+欲	yu	br
+余	yu	rh
+语	yu	yk
+宇	yu	by
+遇	yu	zy
+域	yu	ta
+羽	yu	xx
+愈	yu	rx
+浴	yu	dk
+预	yu	sr
+於	yu	fd
+予	yu	sl
+御	yu	ie
+育	yu	wo
+逾	yu	zd
+渝	yu	dd
+喻	yu	kd
+郁	yu	ue
+裕	yu	pk
+虞	yu	ht
+禹	yu	pd
+俞	yu	rd
+瑜	yu	wd
+愚	yu	yx
+渔	yu	da
+豫	yu	sn
+淤	yu	dd
+钰	yu	jy
+娱	yu	nt
+毓	yu	pv
+狱	yu	qq
+誉	yu	xk
+寓	yu	by
+峪	yu	ek
+煜	yu	hl
+瘀	yu	bd
+榆	yu	md
+昱	yu	ol
+屿	yu	ey
+隅	yu	ey
+芋	yu	cy
+吁	yu	ky
+妤	yu	nl
+舆	yu	pb
+驭	yu	my
+聿	yu	vl
+愉	yu	xd
+谕	yu	yd
+鹆	yu	bn
+庾	yu	gy
+腴	yu	oy
+熨	yu	uh
+盂	yu	ym
+欤	yu	yr
+迂	yu	zy
+禺	yu	ld
+阈	yu	ma
+萸	yu	cy
+嵛	yu	ed
+鬻	yu	gl
+谀	yu	yy
+圉	yu	kg
+觎	yu	re
+鹬	yu	sn
+竽	yu	vy
+妪	yu	nx
+狳	yu	qh
+俣	yu	rt
+悆	yu	rx
+雩	yu	yk
+窳	yu	bg
+揄	yu	fd
+燏	yu	hk
+蜮	yu	ia
+舁	yu	jc
+圄	yu	kk
+褕	yu	pd
+臾	yu	pn
+矞	yu	sk
+堉	yu	to
+尉	yu	uc
+饫	yu	uy
+龉	yu	vk
+遹	yu	zk
+谷	yu	bk
+蔚	yu	cc
+薁	yu	cd
+蓣	yu	cr
+隃	yu	ed
+隩	yu	ed
+喁	yu	ky
+彧	yu	ad
+窬	yu	bd
+瘐	yu	by
+菀	yu	cv
+潏	yu	dk
+汩	yu	do
+淯	yu	do
+滪	yu	dr
+㳚	yu	du
+嵎	yu	ey
+粥	yu	gg
+髃	yu	gy
+燠	yu	hd
+蝓	yu	id
+铻	yu	jk
+棫	yu	ma
+奥	yu	pd
+㺄	yu	qd
+畬	yu	rt
+伛	yu	rx
+纡	yu	sy
+圫	yu	tq
+艅	yu	vh
+琟	yu	wf
+吾	yu	wk
+敔	yu	ww
+玙	yu	wy
+瑀	yu	wy
+邘	yu	ye
+邪	yu	ye
+鄅	yu	ye
+晕	yy	oi
+云	yy	es
+运	yy	zs
+韵	yy	ld
+芸	yy	cs
+孕	yy	nz
+允	yy	se
+匀	yy	bd
+蕴	yy	cm
+耘	yy	ls
+昀	yy	od
+陨	yy	er
+筠	yy	vd
+熨	yy	uh
+韫	yy	wm
+殒	yy	dr
+恽	yy	xi
+愠	yy	xm
+酝	yy	ys
+郧	yy	ke
+氲	yy	qm
+鋆	yy	tj
+郓	yy	be
+纭	yy	ss
+馧	yy	hm
+妘	yy	ns
+狁	yy	qe
+涢	yy	dr
+沄	yy	ds
+煴	yy	hm
+员	yy	kr
+榅	yy	mm
+缊	yy	sm
+筼	yy	vr
+赟	yy	wr
+𫖳	yy	yr
+有	yz	uo
+又	yz	vn
+由	yz	la
+油	yz	dy
+游	yz	dz
+友	yz	uy
+右	yz	uk
+优	yz	ry
+幽	yz	ey
+尤	yz	ud
+尤	yz	yd
+忧	yz	xy
+幼	yz	yl
+犹	yz	qy
+邮	yz	ye
+佑	yz	rk
+悠	yz	rx
+呦	yz	kl
+诱	yz	yn
+铀	yz	jy
+釉	yz	py
+疣	yz	by
+酉	yz	xa
+囿	yz	ko
+柚	yz	my
+攸	yz	rw
+鼬	yz	jy
+尢	yz	uv
+祐	yz	pk
+侑	yz	ro
+宥	yz	bo
+猷	yz	bq
+莜	yz	cw
+蚴	yz	il
+铕	yz	jo
+鱿	yz	ay
+黝	yz	hl
+卣	yz	la
+牖	yz	pf
+莠	yz	cn
+莸	yz	cy
+繇	yz	px
+麀	yz	gb
+蝤	yz	iy
+蝣	yz	iz
+耰	yz	lw
+槱	yz	mh
+鲉	yz	ay
+浟	yz	dw
+蚰	yz	iy
+𬨎	yz	iy
+羑	yz	yj
+咋	za	kv
+砸	za	uj
+杂	za	jm
+扎	za	fv
+匝	za	kj
+咂	za	kj
+拶	za	fx
+咱	za	kz
+臜	za	or
+早	zc	ou
+造	zc	zk
+遭	zc	zo
+澡	zc	dm
+糟	zc	mo
+燥	zc	hm
+枣	zc	ad
+灶	zc	ht
+皂	zc	bq
+藻	zc	cm
+噪	zc	km
+凿	zc	yk
+躁	zc	zm
+蚤	zc	ii
+唣	zc	kq
+簉	zc	vz
+璪	zc	wm
+慥	zc	xz
+𥖨	zc	um
+在	zd	ut
+再	zd	ar
+载	zd	ui
+仔	zd	rz
+宰	zd	bu
+哉	zd	uk
+栽	zd	um
+灾	zd	bh
+崽	zd	ex
+甾	zd	vt
+则	ze	kd
+泽	ze	dl
+责	ze	fr
+择	ze	fl
+仄	ze	ir
+啧	ze	kr
+赜	ze	kr
+咋	ze	kv
+帻	ze	jr
+昃	ze	or
+箦	ze	vr
+笮	ze	vv
+舴	ze	vv
+侧	ze	rd
+迮	ze	zv
+怎	zf	vx
+谮	zf	yo
+曾	zg	bo
+增	zg	to
+赠	zg	ko
+憎	zg	xo
+综	zg	sx
+甑	zg	bw
+缯	zg	so
+罾	zg	so
+锃	zg	jw
+鄫	zg	be
+矰	zg	uo
+䎖	zg	bx
+脏	zh	ot
+藏	zh	ci
+葬	zh	cc
+臧	zh	wi
+赃	zh	kt
+驵	zh	mq
+奘	zh	pd
+牂	zh	py
+子	zi	va
+字	zi	bz
+自	zi	po
+紫	zi	vx
+资	zi	dr
+仔	zi	rz
+兹	zi	by
+姿	zi	dn
+梓	zi	mu
+滋	zi	dy
+籽	zi	mz
+渍	zi	dr
+孜	zi	zw
+姊	zi	np
+缁	zi	st
+咨	zi	dk
+恣	zi	dx
+呲	zi	kb
+吱	zi	ky
+趑	zi	tr
+眦	zi	ob
+訾	zi	vk
+鲻	zi	at
+淄	zi	dt
+滓	zi	du
+龇	zi	vb
+笫	zi	vp
+孖	zi	zz
+髭	zi	ab
+耔	zi	lz
+孳	zi	bz
+茈	zi	cb
+嵫	zi	ey
+秭	zi	hp
+辎	zi	it
+锱	zi	jt
+鼒	zi	cv
+觜	zi	vy
+鄑	zi	ye
+粢	zi	dm
+洓	zi	dn
+虸	zi	iz
+镃	zi	jy
+嗞	zi	ky
+赀	zi	vr
+甾	zi	vt
+齐	zi	wl
+咱	zj	kz
+赞	zj	nr
+暂	zj	io
+攒	zj	fr
+簪	zj	vo
+瓒	zj	wr
+錾	zj	ij
+昝	zj	wo
+趱	zj	tr
+寁	zj	br
+拶	zj	fx
+糌	zj	mo
+堑	zj	it
+酂	zj	ne
+做	zo	rw
+作	zo	rv
+坐	zo	rt
+左	zo	ug
+座	zo	gt
+佐	zo	rg
+昨	zo	ov
+唑	zo	kt
+祚	zo	pv
+琢	zo	wn
+嘬	zo	ky
+怍	zo	xv
+酢	zo	yv
+阼	zo	ev
+捽	zo	fu
+柞	zo	mv
+胙	zo	ov
+笮	zo	vv
+撮	zo	fy
+岞	zo	ev
+钻	zr	jk
+赚	zr	kn
+攥	zr	fx
+纂	zr	vx
+缵	zr	sr
+躜	zr	zr
+总	zs	bx
+宗	zs	bx
+纵	zs	sr
+棕	zs	mx
+踪	zs	zx
+粽	zs	mx
+综	zs	sx
+鬃	zs	ax
+腙	zs	ox
+枞	zs	mr
+偬	zs	rx
+倧	zs	rx
+鬷	zs	aw
+疭	zs	br
+熜	zs	hx
+组	zu	sq
+租	zu	hq
+足	zu	kr
+族	zu	fu
+祖	zu	pq
+阻	zu	eq
+卒	zu	wu
+俎	zu	rq
+崒	zu	eu
+镞	zu	ju
+诅	zu	yq
+菹	zu	cq
+珇	zu	wq
+最	zv	oy
+嘴	zv	ky
+罪	zv	sf
+醉	zv	yu
+咀	zv	kq
+蕞	zv	cy
+觜	zv	vy
+槜	zv	mn
+贼	zw	ku
+鲗	zw	ad
+尊	zy	bc
+遵	zy	zc
+樽	zy	mc
+鳟	zy	ac
+嶟	zy	ec
+撙	zy	fc
+噂	zy	kc
+僔	zy	rc
+𨱔	zy	jc
+走	zz	tr
+邹	zz	de
+揍	zz	ft
+奏	zz	ft
+驺	zz	me
+诹	zz	yy
+陬	zz	ey
+鄹	zz	ee
+鲰	zz	ay
