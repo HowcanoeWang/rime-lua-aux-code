@@ -137,3 +137,4 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 * [@AiraNadih](https://github.com/AiraNadih) 增加小鹤码表、优化辅码分号逻辑、触发键改为可配置项，以及润色此说明文档
 * [@expoli](https://github.com/expoli) 对文档说明的修改
 * [@EtaoinWu](https://github.com/EtaoinWu) 候选过滤逻辑性能优化
+* [@gaboolic](https://github.com/gaboolic) 添加的[墨奇辅助码](https://github.com/gaboolic/moqima-tables)
