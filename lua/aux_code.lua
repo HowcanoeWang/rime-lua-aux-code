@@ -64,6 +64,10 @@ end
 -- 閱讀輔碼文件 --
 ----------------
 function AuxFilter.readAuxTxt(txtpath)
+    if AuxFilter.cache then
+        return AuxFilter.cache
+    end
+
     -- log.info("** AuxCode filter", 'read Aux code txt:', txtpath)
 
     local defaultFile = 'ZRM_Aux-code_4.3.txt'
@@ -91,7 +95,8 @@ function AuxFilter.readAuxTxt(txtpath)
     --     log.info(key, table.concat(value, ','))
     -- end
 
-    return auxCodes
+    AuxFilter.cache = auxCodes
+    return AuxFilter.cache
 end
 
 -- local function getUtf8CharLength(byte)
