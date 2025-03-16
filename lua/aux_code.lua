@@ -85,8 +85,11 @@ function AuxFilter.readAuxTxt(txtpath)
         line = line:match("[^\r\n]+") -- 去掉換行符，不然 value 是帶著 \n 的
         local key, value = line:match("([^=]+)=(.+)") -- 分割 = 左右的變數
         if key and value then
-            auxCodes[key] = auxCodes[key] or {}
-            table.insert(auxCodes[key], value)
+            if auxCodes[key] then
+                auxCodes[key] = auxCodes[key] .. " " .. value
+            else
+                auxCodes[key] = value
+            end
         end
     end
     file:close()
@@ -148,7 +151,7 @@ function AuxFilter.fullAux(env, word)
         local char = utf8.char(codePoint)
         local charAuxCodes = AuxFilter.aux_code[char] -- 每個字的輔助碼組
         if charAuxCodes then -- 輔助碼存在
-            for _, code in ipairs(charAuxCodes) do
+            for code in charAuxCodes:gmatch("%S+") do
                 for i = 1, #code do
                     fullAuxCodes[i] = fullAuxCodes[i] or {}
                     fullAuxCodes[i][code:sub(i, i)] = true
@@ -228,7 +231,7 @@ function AuxFilter.func(input, env)
 
             -- 給待選項加上輔助碼提示
             if env.show_aux_notice and auxCodes and #auxCodes > 0 then
-                local codeComment = table.concat(auxCodes, ',')
+                local codeComment = auxCodes:gsub(' ', ',')
                 -- 處理 simplifier
                 if cand:get_dynamic_type() == "Shadow" then
                     local shadowText = cand.text
@@ -271,3 +274,7 @@ function AuxFilter.fini(env)
 end
 
 return AuxFilter
+
+-- Local Variables:
+-- lua-indent-level: 4
+-- End:

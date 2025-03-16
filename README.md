@@ -132,7 +132,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 * [@copperay](https://github.com/copperay) 维护的手心输入法自然码码表 [copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)  
   源文件采用 GB2312 编码且包含手心拼音需要的冗余首码，此项目中的 txt 文件已转换为 UTF-8 编码并且移除了冗余首码，可直接使用（并提供去冗的 python 脚本）。
 * [@dykwok](https://github.com/dykwok) 添加的五笔辅助码 (都会五笔了何苦用拼音=_=)，码表来自 [rime/rime-wubi](https://github.com/rime/rime-wubi)
-* [@ksqsf](https://github.com/ksqsf) 贡献的词语级筛选功能
+* [@ksqsf](https://github.com/ksqsf) 贡献的词语级筛选功能及性能优化
 * [@shewer](https://github.com/shewer) 优化的代码以及辅码文件配置
 * [@AiraNadih](https://github.com/AiraNadih) 增加小鹤码表、优化辅码分号逻辑、触发键改为可配置项，以及润色此说明文档
 * [@expoli](https://github.com/expoli) 对文档说明的修改
