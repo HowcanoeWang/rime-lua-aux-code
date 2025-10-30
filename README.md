@@ -10,14 +10,14 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
 ## 特点
 
-* 通过独立的文件存储辅码，无需生成音形混合词典   
-* 提供包括**自然码辅码表**和**小鹤形码表**在内的两种主流方案 （你甚至能找到**五笔**辅助码）   
-* 在输入末尾键入分隔符 (默认为 `;` ，可自定义配置) 来激活辅码模式，选择候选词并上屏（通过空格或数字）后，可继续输入，插件会自动移除已上屏文字的辅码  
+* 通过独立的文件存储辅码，无需生成音形混合词典
+* 提供包括**自然码辅码表**和**小鹤形码表**在内的两种主流方案 （你甚至能找到**五笔**辅助码和**仓颉五代首尾码**辅助码）
+* 在输入末尾键入分隔符 (默认为 `;` ，可自定义配置) 来激活辅码模式，选择候选词并上屏（通过空格或数字）后，可继续输入，插件会自动移除已上屏文字的辅码
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
-* 在候选单中直接提示单字的辅助码 （可配置关闭）  
+* 在候选单中直接提示单字的辅助码 （可配置关闭）
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_notice.png)
-* 支持词语级筛选 （非首字筛选）  
-  ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)  
+* 支持词语级筛选 （非首字筛选）
+  ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)
   如「白日依山尽」仍然可以匹配到「i」 （尽的辅码）
 * 为优化性能，**未**匹配辅助码的候选**不会**出现在列表中
 * 此方案适用于使用辅助码排序候选项，而非音形结合的**四键单字**输入模式 （请用单字字库来满足需求）
@@ -57,7 +57,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
     一般的，还需要设置允许以 `;` 符号上屏。其他部分根据个人配置自行调整
 
     ```yaml
-      speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA; 
+      speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
     ```
     > :warning: 符号 `;` 为英文半角，而非中文全角
 
@@ -67,16 +67,16 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
         aux_code_trigger: "#"
     ```
 
-    > :warning: 请确保所选字符 `#` 已包含在上述 `speller/alphabet` 的值中    
+    > :warning: 请确保所选字符 `#` 已包含在上述 `speller/alphabet` 的值中
     > 如果是自定义触发键为 `.` 或 `,` ，这两个按键在大部分配置中默认为翻页键，可能还需要禁止该翻页键：
 
     ```yaml
       # 接 key_binder/+:
         bindings:
           # 禁用前翻页键 "."
-          - { when: has_menu, accept: period, send: period } 
+          - { when: has_menu, accept: period, send: period }
           # 禁用后翻页键 ","
-          - { when: has_menu, accept: comma, send: comma } 
+          - { when: has_menu, accept: comma, send: comma }
     ```
 
     如果对自己的辅助码熟悉程度非常有信心不需要任何辅助码提示，可以使用下面的配置进行关闭：
@@ -116,6 +116,30 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
 修改完成后，重新配置 Rime 输入法，新的设置便会生效。
 
+如果您使用的是基于**繁体字**的**朙月拼音**，在打出简体字时需要经过一层 **simplifier**，此时方案 .schema.yaml 文件中 `engine/filter` 段中，如果写成：
+
+```yaml
+engine:
+  filters:
+    - lua_filter@*aux_code/aux_code@aux_code/cangjie5_double
+    - simplifier
+    - uniquifier
+```
+
+  则 lua 脚本会在 simplifier（汉字简化）和 uniquifier（一简对多繁汉字的合并）之前处理：**打出繁体字的辅码，上屏时会转换成简体字**。
+  
+  但如果写成：
+
+```yaml
+engine:
+  filters:
+    - simplifier
+    - uniquifier
+    - lua_filter@*aux_code/aux_code@aux_code/cangjie5_double
+```
+  
+  则 lua 脚本会在汉字简化后处理，**打出简体字的辅码，内部会按照对应的繁体字处理**，但此时**无法正确选择「一简对多繁」情况下繁体字的编码**。
+
 ## 开发与异常处理
 
 目前有两种开发的方式：
@@ -129,7 +153,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
 感谢以下贡献者：
 
-* [@copperay](https://github.com/copperay) 维护的手心输入法自然码码表 [copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)  
+* [@copperay](https://github.com/copperay) 维护的手心输入法自然码码表 [copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main)
   源文件采用 GB2312 编码且包含手心拼音需要的冗余首码，此项目中的 txt 文件已转换为 UTF-8 编码并且移除了冗余首码，可直接使用（并提供去冗的 python 脚本）。
 * [@dykwok](https://github.com/dykwok) 添加的五笔辅助码 (都会五笔了何苦用拼音=_=)，码表来自 [rime/rime-wubi](https://github.com/rime/rime-wubi)
 * [@ksqsf](https://github.com/ksqsf) 贡献的词语级筛选功能及性能优化
