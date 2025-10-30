@@ -99,6 +99,32 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
 至此，Rime 插件的激活步骤基本完成，接下来的操作与桌面平台一致。上述提到的 “用户数据目录” 即桌面端平台的 `Rime 配置文件夹`。
 
+### 繁体输入的注意事项
+
+如果您使用的是基于**繁体字**的**朙月拼音**，在打出简体字时需要经过一层 **simplifier**，此时方案 .schema.yaml 文件中 `engine/filter` 段中，如果写成：
+
+```yaml
+engine:
+  filters:
+    - lua_filter@*aux_code/aux_code@aux_code/cangjie5_double
+    - simplifier
+    - uniquifier
+```
+
+则 lua 脚本会在 simplifier（汉字简化）和 uniquifier（一简对多繁汉字的合并）之前处理：**打出繁体字的辅码，上屏时会转换成简体字**。
+  
+但如果写成：
+
+```yaml
+engine:
+  filters:
+    - simplifier
+    - uniquifier
+    - lua_filter@*aux_code/aux_code@aux_code/cangjie5_double
+```
+  
+则 lua 脚本会在汉字简化后处理，**打出简体字的辅码，内部会按照对应的繁体字处理**，但此时**无法正确选择「一简对多繁」情况下繁体字的编码**。
+
 ## 定制码表
 
 若要制作个人码表，确保文件格式为 UTF-8 编码即可。文件中每一行应对应一个字的辅码，使用 `=` 号作为分隔符。若同一汉字有多种编码方案，应分别在新的一行中列出，如：
@@ -115,30 +141,6 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 接着，需要在 `*.custom.yaml` 文件的相应部分作出修改，把原有的 `- lua_filter@*aux_code@ZRM_Aux-code_4.3` 替换为 `- lua_filter@*aux_code@my_aux_code`（注意，这里不需要加 `.txt` 后缀）。
 
 修改完成后，重新配置 Rime 输入法，新的设置便会生效。
-
-如果您使用的是基于**繁体字**的**朙月拼音**，在打出简体字时需要经过一层 **simplifier**，此时方案 .schema.yaml 文件中 `engine/filter` 段中，如果写成：
-
-```yaml
-engine:
-  filters:
-    - lua_filter@*aux_code/aux_code@aux_code/cangjie5_double
-    - simplifier
-    - uniquifier
-```
-
-  则 lua 脚本会在 simplifier（汉字简化）和 uniquifier（一简对多繁汉字的合并）之前处理：**打出繁体字的辅码，上屏时会转换成简体字**。
-  
-  但如果写成：
-
-```yaml
-engine:
-  filters:
-    - simplifier
-    - uniquifier
-    - lua_filter@*aux_code/aux_code@aux_code/cangjie5_double
-```
-  
-  则 lua 脚本会在汉字简化后处理，**打出简体字的辅码，内部会按照对应的繁体字处理**，但此时**无法正确选择「一简对多繁」情况下繁体字的编码**。
 
 ## 开发与异常处理
 
@@ -162,3 +164,4 @@ engine:
 * [@expoli](https://github.com/expoli) 对文档说明的修改
 * [@EtaoinWu](https://github.com/EtaoinWu) 候选过滤逻辑性能优化
 * [@gaboolic](https://github.com/gaboolic) 添加的[墨奇辅助码](https://github.com/gaboolic/moqima-tables)
+* [@BH2WFR](https://github.com/BH2WFR) 添加的繁体仓颉辅助码以及繁简并输的相关说明
