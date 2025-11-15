@@ -248,7 +248,7 @@ function AuxFilter.func(input, env)
             if #auxStr == 0 then
                 -- 沒有輔助碼、不需篩選，直接返回待選項
                 yield(cand)
-            elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
+            elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified') and
                 AuxFilter.match(fullAuxCodes, auxStr) then
                 -- 匹配到辅助码的待选项，直接插入到候选框中( 获得靠前的位置 )
                 yield(cand)
