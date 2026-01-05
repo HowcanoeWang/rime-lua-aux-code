@@ -88,7 +88,22 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
     > :warning: 本插件使用的自然码方案为修改版，可能和你之前一直使用的有细微区别，建议开启辅助码提示一段时间后，确定输入没问题了再考虑关闭该项
 
-3. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
+    修改完成后，你的输入方案一般如下：（以`double_pinyin_abc.custom.yaml`为例)：
+
+    ```yaml
+    patch:
+      engine/filters/+:
+        - lua_filter@*aux_code@ZRM_Aux-code_4.3
+    
+      speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA`;
+
+      key_binder:
+        bindings:
+          - { when: has_menu, accept: minus, send: Page_Up }
+          - { when: has_menu, accept: equal, send: Page_Down }
+    ```
+
+4. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
 
 #### 安卓平台的小企鹅输入法 5 安装与配置方法
 
