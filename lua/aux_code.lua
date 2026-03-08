@@ -1,6 +1,13 @@
 local AuxFilter = {}
 local parse_aux_input
 
+local function normalize_trigger(token, fallback)
+    if token == nil or token == "" then
+        return fallback
+    end
+    return token
+end
+
 -- local log = require 'log'
 -- log.outfile = "aux_code.log"
 
@@ -13,10 +20,10 @@ function AuxFilter.init(env)
     local config = engine.schema.config
 
     -- 双触发键：learn 与 no_learn
-    env.learn_trigger = config:get_string("key_binder/aux_code_learn_trigger")
-        or config:get_string("key_binder/aux_code_trigger")
+    env.learn_trigger = normalize_trigger(config:get_string("key_binder/aux_code_learn_trigger"), nil)
+        or normalize_trigger(config:get_string("key_binder/aux_code_trigger"), nil)
         or ";"
-    env.no_learn_trigger = config:get_string("key_binder/aux_code_no_learn_trigger") or ""
+    env.no_learn_trigger = normalize_trigger(config:get_string("key_binder/aux_code_no_learn_trigger"), "")
 
     if env.no_learn_trigger == env.learn_trigger then
         env.no_learn_trigger = ""
@@ -27,9 +34,13 @@ function AuxFilter.init(env)
         { mode = "learn", token = env.learn_trigger },
     }
 
-    if env.triggers[1].token == "" then
-        table.remove(env.triggers, 1)
+    local active_triggers = {}
+    for _, item in ipairs(env.triggers) do
+        if item.token ~= "" then
+            table.insert(active_triggers, item)
+        end
     end
+    env.triggers = active_triggers
 
     table.sort(env.triggers, function(a, b)
         return #a.token > #b.token

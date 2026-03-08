@@ -79,6 +79,17 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
     - `aux_code_learn_trigger` 兼容旧的 `aux_code_trigger`。
     - `aux_code_no_learn_trigger` 未设置或为空时，表示禁用「不学习」模式。
     - 若两个触发键配置为同一个值，不学习触发键会自动失效（避免歧义）。
+    - 若两个触发键存在前缀关系（例如 `;` 与 `;;`），插件会优先匹配更长的触发键。
+
+    行为对照：
+
+    | 输入触发键 | 启用辅码筛选 | 用户词库学习 |
+    | --- | --- | --- |
+    | `aux_code_learn_trigger` | 是 | 是 |
+    | `aux_code_no_learn_trigger` | 是 | 否（仅上屏） |
+
+    迁移说明：
+    - 旧配置只写 `aux_code_trigger` 时，行为保持不变（等价于 learn trigger）。
 
     > :warning: 请确保所选字符 `#` 已包含在上述 `speller/alphabet` 的值中
     > 如果是自定义触发键为 `.` 或 `,` ，这两个按键在大部分配置中默认为翻页键，可能还需要禁止该翻页键：
