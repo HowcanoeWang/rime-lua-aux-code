@@ -1,4 +1,48 @@
 local AuxFilter = {}
+local parse_aux_input
+
+local function normalize_trigger(token, fallback)
+    if token == nil or token == "" then
+        return fallback
+    end
+    return token
+end
+
+local function build_missing_dict_message(filename)
+    return "(⚠️config/rime/aux_code/ 中未找到辅码文件 " .. filename .. ")"
+end
+
+local function merge_comment(origin, message)
+    if not origin or origin == "" then
+        return message
+    end
+    if origin:find(message, 1, true) then
+        return origin
+    end
+    return origin .. " | " .. message
+end
+
+local function append_missing_hint(cand, message)
+    if not message or message == "" then
+        return cand
+    end
+
+    if cand:get_dynamic_type() == "Shadow" then
+        local shadow_text = cand.text
+        local shadow_comment = cand.comment or ""
+        local original = cand:get_genuine()
+        if not original then
+            cand.comment = merge_comment(cand.comment, message)
+            return cand
+        end
+
+        local merged = merge_comment((original.comment or "") .. shadow_comment, message)
+        return ShadowCandidate(original, original.type, shadow_text, merged)
+    end
+
+    cand.comment = merge_comment(cand.comment, message)
+    return cand
+end
 
 -- local log = require 'log'
 -- log.outfile = "aux_code.log"
@@ -6,13 +50,52 @@ local AuxFilter = {}
 function AuxFilter.init(env)
     -- log.info("** AuxCode filter", env.name_space)
 
-    AuxFilter.aux_code = AuxFilter.readAuxTxt(env.name_space)
+    local aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(env.name_space)
+    if aux_code then
+        AuxFilter.aux_code = aux_code
+        env.aux_ready = true
+        env.aux_error_msg = nil
+    else
+        AuxFilter.aux_code = {}
+        env.aux_ready = false
+        env.aux_error_msg = build_missing_dict_message(missing_file or (env.name_space .. ".txt"))
+        if log and log.warning then
+            log.warning("aux_code: dictionary load failed: " .. (missing_path or ""))
+        end
+    end
 
     local engine = env.engine
     local config = engine.schema.config
 
-    -- 設定預設觸發鍵為分號，並從配置中讀取自訂的觸發鍵
-    env.trigger_key = config:get_string("key_binder/aux_code_trigger") or ";"
+    -- 双触发键：learn 与 no_learn
+    env.learn_trigger = normalize_trigger(config:get_string("key_binder/aux_code_learn_trigger"), nil)
+        or normalize_trigger(config:get_string("key_binder/aux_code_trigger"), nil)
+        or ";"
+    env.no_learn_trigger = normalize_trigger(config:get_string("key_binder/aux_code_no_learn_trigger"), "")
+
+    if env.no_learn_trigger == env.learn_trigger then
+        env.no_learn_trigger = ""
+    end
+
+    env.triggers = {
+        { mode = "no_learn", token = env.no_learn_trigger },
+        { mode = "learn", token = env.learn_trigger },
+    }
+
+    local active_triggers = {}
+    for _, item in ipairs(env.triggers) do
+        if item.token ~= "" then
+            table.insert(active_triggers, item)
+        end
+    end
+    env.triggers = active_triggers
+
+    table.sort(env.triggers, function(a, b)
+        return #a.token > #b.token
+    end)
+
+    -- 兼容旧逻辑，后续任务会替换为 parse 模式
+    env.trigger_key = env.learn_trigger
     -- 设定是否显示辅助码，默认为显示
     env.show_aux_notice = config:get_string("key_binder/show_aux_notice") or 'true'
     if env.show_aux_notice == "false" then
@@ -25,14 +108,19 @@ function AuxFilter.init(env)
     -- 持續選詞上屏，保持輔助碼分隔符存在 --
     ----------------------------
     env.notifier = engine.context.select_notifier:connect(function(ctx)
-        -- 含有輔助碼分隔符才處理
-        if not string.find(ctx.input, env.trigger_key) then
+        local mode, _, trigger_token = parse_aux_input(ctx.input, env)
+        if mode == "none" then
             return
         end
 
         local preedit = ctx:get_preedit()
-        local removeAuxInput = ctx.input:match("([^,]+)" .. env.trigger_key)
-        local reeditTextFront = preedit.text:match("([^,]+)" .. env.trigger_key)
+        local trigger_pattern = trigger_token:gsub("%W", "%%%1")
+        local removeAuxInput = ctx.input:match("([^,]+)" .. trigger_pattern)
+        local reeditTextFront = preedit.text:match("([^,]+)" .. trigger_pattern)
+
+        if not removeAuxInput then
+            return
+        end
 
         -- ctx.text 隨著選字的進行，oaoaoa； 有如下的輸出：
         -- ---- 有輔助碼 ----
@@ -52,7 +140,7 @@ function AuxFilter.init(env)
         ctx.input = removeAuxInput
         if reeditTextFront and reeditTextFront:match("[a-z]") then
             -- 給詞尾自動添加分隔符，上面的 re.match 會把分隔符刪掉
-            ctx.input = ctx.input .. env.trigger_key
+            ctx.input = ctx.input .. trigger_token
         else
             -- 剩下的直接上屏
             ctx:commit()
@@ -64,20 +152,22 @@ end
 -- 閱讀輔碼文件 --
 ----------------
 function AuxFilter.readAuxTxt(txtpath)
-    if AuxFilter.cache then
-        return AuxFilter.cache
+    local dict_filename = txtpath .. ".txt"
+    local file_absolute_path = rime_api.get_user_data_dir() .. "/aux_code/" .. dict_filename
+
+    if not AuxFilter.cache then
+        AuxFilter.cache = {}
+    end
+
+    if AuxFilter.cache[file_absolute_path] then
+        return AuxFilter.cache[file_absolute_path], nil, dict_filename
     end
 
     -- log.info("** AuxCode filter", 'read Aux code txt:', txtpath)
 
-    local defaultFile = 'ZRM_Aux-code_4.3.txt'
-    local userPath = rime_api.get_user_data_dir() .. "/lua/"
-    local fileAbsolutePath = userPath .. txtpath .. ".txt"
-
-    local file = io.open(fileAbsolutePath, "r") or io.open(userPath .. defaultFile, "r")
+    local file = io.open(file_absolute_path, "r")
     if not file then
-        error("Unable to open auxiliary code file.")
-        return {}
+        return nil, file_absolute_path, dict_filename
     end
 
     local auxCodes = {}
@@ -98,8 +188,8 @@ function AuxFilter.readAuxTxt(txtpath)
     --     log.info(key, table.concat(value, ','))
     -- end
 
-    AuxFilter.cache = auxCodes
-    return AuxFilter.cache
+    AuxFilter.cache[file_absolute_path] = auxCodes
+    return auxCodes, nil, dict_filename
 end
 
 -- local function getUtf8CharLength(byte)
@@ -189,6 +279,39 @@ function AuxFilter.match(fullAux, auxStr)
     return firstKeyMatched and secondKeyMatched
 end
 
+local function escape_lua_pattern(text)
+    return text:gsub("%W", "%%%1")
+end
+
+parse_aux_input = function(input_code, env)
+    if input_code == "" then
+        return "none", "", ""
+    end
+
+    for _, item in ipairs(env.triggers) do
+        local token = item.token
+        if token ~= "" then
+            local token_pattern = escape_lua_pattern(token)
+            if input_code:find(token, 1, true) then
+                local local_split = input_code:match(token_pattern .. "([^,]+)")
+                if not local_split then
+                    return item.mode, "", token
+                end
+                return item.mode, string.sub(local_split, 1, 2), token
+            end
+        end
+    end
+
+    return "none", "", ""
+end
+
+local function to_commit_only_candidate(cand)
+    local rebuilt = Candidate(cand.type, cand.start, cand._end, cand.text, cand.comment)
+    rebuilt.preedit = cand.preedit
+    rebuilt.quality = cand.quality
+    return rebuilt
+end
+
 ------------------
 -- filter 主函數 --
 ------------------
@@ -196,76 +319,87 @@ function AuxFilter.func(input, env)
     local context = env.engine.context
     local inputCode = context.input
 
-    -- 分割部分正式開始
-    local auxStr = ''
+    local mode, auxStr, _ = parse_aux_input(inputCode, env)
 
     -- 判断字符串中是否包含輔助碼分隔符
-    if not string.find(inputCode, env.trigger_key) then
+    if mode == "none" then
         -- 没有输入辅助码引导符，则直接yield所有待选项，不进入后续迭代，提升性能
         for cand in input:iter() do
             yield(cand)
         end
         return
-    else
-        -- 字符串中包含輔助碼分隔符
-        local trigger_pattern = env.trigger_key:gsub("%W", "%%%1") -- 處理特殊字符
-        local localSplit = inputCode:match(trigger_pattern .. "([^,]+)")
-        if localSplit then
-            auxStr = string.sub(localSplit, 1, 2)
-            -- log.info('re.match ' .. local_split)
-        end
-
-        -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
-        -- local insertLater = {}
-
-        -- 遍歷每一個待選項
-        for cand in input:iter() do
-            local auxCodes = AuxFilter.aux_code[cand.text] -- 僅單字非 nil
-            local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
-
-            -- 查看 auxCodes
-            -- log.info(cand.text, #auxCodes)
-            -- for i, cl in ipairs(auxCodes) do
-            --     log.info(i, table.concat(cl, ',', 1, #cl))
-            -- end
-
-            -- 給待選項加上輔助碼提示
-            if env.show_aux_notice and auxCodes and #auxCodes > 0 then
-                local codeComment = auxCodes:gsub(' ', ',')
-                -- 處理 simplifier
-                if cand:get_dynamic_type() == "Shadow" then
-                    local shadowText = cand.text
-                    local shadowComment = cand.comment
-                    local originalCand = cand:get_genuine()
-                    cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
-                        originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
-                else
-                    cand.comment = '(' .. codeComment .. ')'
-                end
-            end
-
-            -- 過濾輔助碼
-            if #auxStr == 0 then
-                -- 沒有輔助碼、不需篩選，直接返回待選項
-                yield(cand)
-            elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase') and
-                AuxFilter.match(fullAuxCodes, auxStr) then
-                -- 匹配到辅助码的待选项，直接插入到候选框中( 获得靠前的位置 )
-                yield(cand)
-            else
-                -- 待选项字词 没有 匹配到当前的辅助码，插入到列表中，最后插入到候选框里( 获得靠后的位置 )
-                -- table.insert(insertLater, cand)
-                -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
-            end
-        end
-
-        -- 把沒有匹配上的待選給添加上
-        -- for _, cand in ipairs(insertLater) do
-        --     yield(cand)
-        -- end
-        -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
-        
     end
+
+    if not env.aux_ready then
+        local should_hint = #auxStr == 0
+        local hinted = false
+        for cand in input:iter() do
+            if should_hint and not hinted then
+                cand = append_missing_hint(cand, env.aux_error_msg)
+                hinted = true
+            end
+            yield(cand)
+        end
+        return
+    end
+
+    -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
+    -- local insertLater = {}
+
+    -- 遍歷每一個待選項
+    for cand in input:iter() do
+        local auxCodes = AuxFilter.aux_code[cand.text] -- 僅單字非 nil
+        local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
+
+        -- 查看 auxCodes
+        -- log.info(cand.text, #auxCodes)
+        -- for i, cl in ipairs(auxCodes) do
+        --     log.info(i, table.concat(cl, ',', 1, #cl))
+        -- end
+
+        -- 給待選項加上輔助碼提示
+        if env.show_aux_notice and auxCodes and #auxCodes > 0 then
+            local codeComment = auxCodes:gsub(' ', ',')
+            -- 處理 simplifier
+            if cand:get_dynamic_type() == "Shadow" then
+                local shadowText = cand.text
+                local shadowComment = cand.comment
+                local originalCand = cand:get_genuine()
+                cand = ShadowCandidate(originalCand, originalCand.type, shadowText,
+                    originalCand.comment .. shadowComment .. '(' .. codeComment .. ')')
+            else
+                cand.comment = '(' .. codeComment .. ')'
+            end
+        end
+
+        -- 過濾輔助碼
+        if #auxStr == 0 then
+            -- 沒有輔助碼、不需篩選，直接返回待選項
+            if mode == "no_learn" then
+                yield(to_commit_only_candidate(cand))
+            else
+                yield(cand)
+            end
+        elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified') and
+            AuxFilter.match(fullAuxCodes, auxStr) then
+            -- 匹配到辅助码的待选项，直接插入到候选框中( 获得靠前的位置 )
+            if mode == "no_learn" then
+                yield(to_commit_only_candidate(cand))
+            else
+                yield(cand)
+            end
+        else
+            -- 待选项字词 没有 匹配到当前的辅助码，插入到列表中，最后插入到候选框里( 获得靠后的位置 )
+            -- table.insert(insertLater, cand)
+            -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
+        end
+    end
+
+    -- 把沒有匹配上的待選給添加上
+    -- for _, cand in ipairs(insertLater) do
+    --     yield(cand)
+    -- end
+    -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
 
 end
 
