@@ -42,54 +42,103 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
 #### 桌面平台 (Windows, macOS 和 Linux)
 
-1. 将本项目中的 `lua/aux_code.lua`、`lua/ZRM_Aux-code_4.3.txt` （自然码辅码表） 或 `lua/flypy_full.txt` （小鹤形码表） 复制到 `Rime 配置文件夹/lua/` 文件夹中。
+1.  找到 Rime 用户配置目录
 
-2. 本插件需附加至特定输入方案。首先，复制你所需使用的输入方案文件名，将文件名中的 `schema` 改为 `custom`。然后，创建并打开一个名为 `*.custom.yaml` 的文件，在其中添加所需内容：
+    先找到你的 Rime 配置目录（后文记作 config_path）。常见路径如下（供参考）：
+
+    - Windows (Weasel/小狼毫)  
+      `C:\Users\<你的用户名>\AppData\Roaming\Rime`
+    - macOS (Squirrel/鼠须管)  
+      `~/Library/Rime`
+    - Linux (fcitx5-rime 或 ibus-rime)  
+      `~/.local/share/fcitx5/rime` 或 `~/.config/ibus/rime`
+
+    不同发行版或输入法前端可能有差异；如果不一致，以你系统里实际“用户目录/配置目录”为准。
+
+2. 放置插件文件到 lua/ 目录
+
+    示例目录结构（file tree）：
+
+    ```
+    (config_path)/
+    ├─ lua/
+    │  ├─ aux_code.lua               # github中的lua/aux_code.lua文件
+    │  ├─ ...
+    │  ├─ ZRM_Aux-code_4.3.txt       # 辅助码码表文件
+    │  └─ flypy_full.txt             # 二选一即可，也可放你自己的码表
+    ├─ ...
+    ├─ double_pinyin_abc.schema.yaml  # 你的输入方案原文件
+    └─ double_pinyin_abc.custom.yaml  # 插件要自定义的文件
+    ```
+
+3. 创建“方案补丁文件” `*.custom.yaml`
+
+
+    <details>
+    <summary>点击查看补丁文件(custom.yaml)和输入方案原文件(schema.yaml)的说明</summary>
+
+    补丁文件就是“**在不改原始 `schema.yaml` 的前提下追加/覆盖配置**”的文件。  
+
+    推荐始终改 `custom`，不要直接改 `schema`。
+
+    - `schema.yaml`：输入方案原文件（通常来自方案包/上游）
+    - `custom.yaml`：你的个人补丁文件（升级后更不容易被覆盖）
+
+    如果你的方案是：
+    
+    - `double_pinyin_abc.schema.yaml`
+
+    那对应补丁文件就是（位于 `...(config_path)/`）：
+    
+    - `double_pinyin_abc.custom.yaml`
+
+    ---
+
+    </details>
+
+    把以下默认配置粘贴到 double_pinyin_abc.custom.yaml：
 
     ```yaml
     patch:
       engine/filters/+:
         - lua_filter@*aux_code@ZRM_Aux-code_4.3
-        # 或下面的小鹤形码方案
-        # - lua_filter@*aux_code@flypy_full
+      
+      speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
+
+      key_binder/+:
+        aux_code_learn_trigger: ";"
+        aux_code_no_learn_trigger: ";;"
+        bindings:
+          - { when: has_menu, accept: minus, send: Page_Up }
+          - { when: has_menu, accept: equal, send: Page_Down }
+        show_aux_notice: true
     ```
 
-    一般的，还需要设置允许以 `;` 符号上屏。其他部分根据个人配置自行调整
+    **详细说明**
+
+    `engine/filters` 中的辅助码方案，前面的前缀`lua_filter@*aux_code@`不要修改，如果要换成别的，请使用方案txt的文件名（不带后缀），例如：
+    ```yaml
+    - lua_filter@*aux_code@flypy_full
+    - lua_filter@*aux_code@cangjie5_quick_code
+    ```
+
+    ---
+
+    `speller/alphabet` 中，需要设置允许以 `;` 符号上屏。其他部分根据个人配置自行调整
 
     ```yaml
       speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
     ```
     > :warning: 符号 `;` 为英文半角，而非中文全角
 
-    如果想修改触发键为别的按键，可以用下面的方法来自定义：
-    ```yaml
-      key_binder/+:
-        aux_code_trigger: "#"
-    ```
+    ---
 
-    新版本也支持分别配置「记录触发键」和「不记录触发键」：
+    `key_binder` 中，如果想修改触发键为别的按键，可以用下面的方法来自定义：
 
     ```yaml
       key_binder/+:
-        aux_code_learn_trigger: ";"      # 辅码筛选，允许用户词库学习
-        aux_code_no_learn_trigger: ";;"  # 辅码筛选，仅上屏不学习
+        aux_code_learn_trigger: "#"
     ```
-
-    说明：
-    - `aux_code_learn_trigger` 兼容旧的 `aux_code_trigger`。
-    - `aux_code_no_learn_trigger` 未设置或为空时，表示禁用「不学习」模式。
-    - 若两个触发键配置为同一个值，不学习触发键会自动失效（避免歧义）。
-    - 若两个触发键存在前缀关系（例如 `;` 与 `;;`），插件会优先匹配更长的触发键。
-
-    行为对照：
-
-    | 输入触发键 | 启用辅码筛选 | 用户词库学习 |
-    | --- | --- | --- |
-    | `aux_code_learn_trigger` | 是 | 是 |
-    | `aux_code_no_learn_trigger` | 是 | 否（仅上屏） |
-
-    迁移说明：
-    - 旧配置只写 `aux_code_trigger` 时，行为保持不变（等价于 learn trigger）。
 
     > :warning: 请确保所选字符 `#` 已包含在上述 `speller/alphabet` 的值中
     > 如果是自定义触发键为 `.` 或 `,` ，这两个按键在大部分配置中默认为翻页键，可能还需要禁止该翻页键：
@@ -103,31 +152,51 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
           - { when: has_menu, accept: comma, send: comma }
     ```
 
+    ---
+
+    同时也支持分别配置「记录用户词库触发键」和「不记录用户词库触发键」：
+
+    ```yaml
+      key_binder/+:
+        aux_code_learn_trigger: ";"      # 辅码筛选，允许候选词进入用户词库
+        aux_code_no_learn_trigger: ";;"  # 辅码筛选，仅上屏，不进入用户词库
+    ```
+
+    行为对照：
+
+    | 输入触发键 | 启用辅码筛选 | 用户词库学习 |
+    | --- | --- | --- |
+    | `aux_code_learn_trigger` | 是 | 是 |
+    | `aux_code_no_learn_trigger` | 是 | 否（仅上屏） |
+
+    案例：
+
+    建议用人名测试，例如：符筑玛（辅助码的谐音，日常语料中较少出现，便于观察学习效果）。
+
+    1. 先用 ;;（不学习模式）  
+      连续输入并上屏多次（例如 5~10 次），符筑玛不应因为这些输入而明显前移到更靠前候选。
+    2. 再用 ;（学习模式）  
+      再输入并上屏（通常少量次数即可观察到变化），符筑玛应更容易出现在候选中（排序趋于前移）。
+
+    规则说明：
+    - `aux_code_learn_trigger` 旧的 `aux_code_trigger`行为保持不变（等价于 learn trigger）。
+    - `aux_code_no_learn_trigger` 未设置或为空时，表示不启用「不进入用户词库」模式。
+    - 若两个触发键配置为同一个值，不进入用户词库的触发键会自动失效（避免歧义）。
+    - 若两个触发键存在前缀关系（例如 `;` 与 `;;`），插件会优先匹配更长的触发键。
+
+    ---
+
     如果对自己的辅助码熟悉程度非常有信心不需要任何辅助码提示，可以使用下面的配置进行关闭：
 
     ```yaml
-      # 接 key_binder/+:
-        show_aux_notice: false  # 设置是否显示辅助码字母提示
+    show_aux_notice: false  # 设置是否显示辅助码字母提示
     ```
 
     > :warning: 本插件使用的自然码方案为修改版，可能和你之前一直使用的有细微区别，建议开启辅助码提示一段时间后，确定输入没问题了再考虑关闭该项
 
-    修改完成后，你的输入方案一般如下：（以`double_pinyin_abc.custom.yaml`为例)：
 
-    ```yaml
-    patch:
-      engine/filters/+:
-        - lua_filter@*aux_code@ZRM_Aux-code_4.3
-    
-      speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA`;
+4. 保存`*.custum.yaml`文件后，后执行一次“重新部署/重新加载配置”。
 
-      key_binder:
-        bindings:
-          - { when: has_menu, accept: minus, send: Page_Up }
-          - { when: has_menu, accept: equal, send: Page_Down }
-    ```
-
-4. 重新配置 Rime 输入法，如果一切顺利，应该就可以使用了。
 
 #### 安卓平台的小企鹅输入法 5 安装与配置方法
 
