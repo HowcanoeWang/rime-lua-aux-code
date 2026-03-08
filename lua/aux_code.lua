@@ -238,6 +238,13 @@ local function parse_aux_input(input_code, env)
     return "none", "", ""
 end
 
+local function to_commit_only_candidate(cand)
+    local rebuilt = Candidate(cand.type, cand.start, cand._end, cand.text, cand.comment)
+    rebuilt.preedit = cand.preedit
+    rebuilt.quality = cand.quality
+    return rebuilt
+end
+
 ------------------
 -- filter 主函數 --
 ------------------
@@ -288,11 +295,19 @@ function AuxFilter.func(input, env)
         -- 過濾輔助碼
         if #auxStr == 0 then
             -- 沒有輔助碼、不需篩選，直接返回待選項
-            yield(cand)
+            if mode == "no_learn" then
+                yield(to_commit_only_candidate(cand))
+            else
+                yield(cand)
+            end
         elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified') and
             AuxFilter.match(fullAuxCodes, auxStr) then
             -- 匹配到辅助码的待选项，直接插入到候选框中( 获得靠前的位置 )
-            yield(cand)
+            if mode == "no_learn" then
+                yield(to_commit_only_candidate(cand))
+            else
+                yield(cand)
+            end
         else
             -- 待选项字词 没有 匹配到当前的辅助码，插入到列表中，最后插入到候选框里( 获得靠后的位置 )
             -- table.insert(insertLater, cand)
