@@ -55,7 +55,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
     不同发行版或输入法前端可能有差异；如果不一致，以你系统里实际“用户目录/配置目录”为准。
 
-2. 放置插件文件到 lua/ 目录
+2. 放置插件文件与辅码文件
 
     示例目录结构（file tree）：
 
@@ -64,6 +64,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
     ├─ lua/
     │  ├─ aux_code.lua               # github中的lua/aux_code.lua文件
     │  ├─ ...
+    ├─ aux_code/
     │  ├─ ZRM_Aux-code_4.3.txt       # 辅助码码表文件
     │  └─ flypy_full.txt             # 二选一即可，也可放你自己的码表
     ├─ ...
@@ -121,6 +122,11 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
     - lua_filter@*aux_code@flypy_full
     - lua_filter@*aux_code@cangjie5_quick_code
     ```
+
+    > :warning: 辅码文件必须放在 `config/rime/aux_code/`（即 Rime 用户目录下的 `aux_code/`）
+    >
+    > 若输入了触发键但未输入辅码（例如 `twtw;`），插件会在首个候选中提示：
+    > `(⚠️config/rime/aux_code/ 中未找到辅码文件 <文件名>.txt)`
 
     ---
 
@@ -233,23 +239,6 @@ engine:
   
 则 lua 脚本会在汉字简化后处理，**打出简体字的辅码，内部会按照对应的繁体字处理**，但此时**无法正确选择「一简对多繁」情况下繁体字的编码**。
 
-## 定制码表
-
-若要制作个人码表，确保文件格式为 UTF-8 编码即可。文件中每一行应对应一个字的辅码，使用 `=` 号作为分隔符。若同一汉字有多种编码方案，应分别在新的一行中列出，如：
-
-```plaintxt
-阿=ek
-厑=ib
-厑=ii
-...
-```
-
-首先，将相关内容或代码保存为 txt 文件，例如命名为 `my_aux_code.txt`。
-
-接着，需要在 `*.custom.yaml` 文件的相应部分作出修改，把原有的 `- lua_filter@*aux_code@ZRM_Aux-code_4.3` 替换为 `- lua_filter@*aux_code@my_aux_code`（注意，这里不需要加 `.txt` 后缀）。
-
-修改完成后，重新配置 Rime 输入法，新的设置便会生效。
-
 ## 开发与异常处理
 
 目前有两种开发的方式：
@@ -273,3 +262,4 @@ engine:
 * [@EtaoinWu](https://github.com/EtaoinWu) 候选过滤逻辑性能优化
 * [@gaboolic](https://github.com/gaboolic) 添加的[墨奇辅助码](https://github.com/gaboolic/moqima-tables)
 * [@BH2WFR](https://github.com/BH2WFR) 添加的繁体仓颉辅助码以及繁简并输的相关说明
+* [@silv3rarr0w](https://github.com/silv3rarr0w) 添加的自然码纯血版方案以及对辅助码存放文件夹的更新方案建议
