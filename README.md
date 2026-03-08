@@ -67,6 +67,19 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
         aux_code_trigger: "#"
     ```
 
+    新版本也支持分别配置「记录触发键」和「不记录触发键」：
+
+    ```yaml
+      key_binder/+:
+        aux_code_learn_trigger: ";"      # 辅码筛选，允许用户词库学习
+        aux_code_no_learn_trigger: ";;"  # 辅码筛选，仅上屏不学习
+    ```
+
+    说明：
+    - `aux_code_learn_trigger` 兼容旧的 `aux_code_trigger`。
+    - `aux_code_no_learn_trigger` 未设置或为空时，表示禁用「不学习」模式。
+    - 若两个触发键配置为同一个值，不学习触发键会自动失效（避免歧义）。
+
     > :warning: 请确保所选字符 `#` 已包含在上述 `speller/alphabet` 的值中
     > 如果是自定义触发键为 `.` 或 `,` ，这两个按键在大部分配置中默认为翻页键，可能还需要禁止该翻页键：
 

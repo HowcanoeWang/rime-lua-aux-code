@@ -11,8 +11,31 @@ function AuxFilter.init(env)
     local engine = env.engine
     local config = engine.schema.config
 
-    -- 設定預設觸發鍵為分號，並從配置中讀取自訂的觸發鍵
-    env.trigger_key = config:get_string("key_binder/aux_code_trigger") or ";"
+    -- 双触发键：learn 与 no_learn
+    env.learn_trigger = config:get_string("key_binder/aux_code_learn_trigger")
+        or config:get_string("key_binder/aux_code_trigger")
+        or ";"
+    env.no_learn_trigger = config:get_string("key_binder/aux_code_no_learn_trigger") or ""
+
+    if env.no_learn_trigger == env.learn_trigger then
+        env.no_learn_trigger = ""
+    end
+
+    env.triggers = {
+        { mode = "no_learn", token = env.no_learn_trigger },
+        { mode = "learn", token = env.learn_trigger },
+    }
+
+    if env.triggers[1].token == "" then
+        table.remove(env.triggers, 1)
+    end
+
+    table.sort(env.triggers, function(a, b)
+        return #a.token > #b.token
+    end)
+
+    -- 兼容旧逻辑，后续任务会替换为 parse 模式
+    env.trigger_key = env.learn_trigger
     -- 设定是否显示辅助码，默认为显示
     env.show_aux_notice = config:get_string("key_binder/show_aux_notice") or 'true'
     if env.show_aux_notice == "false" then
