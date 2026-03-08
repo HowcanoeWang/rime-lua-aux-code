@@ -8,13 +8,61 @@ local function normalize_trigger(token, fallback)
     return token
 end
 
+local function build_missing_dict_message(filename)
+    return "(⚠️config/rime/aux_code/ 中未找到辅码文件 " .. filename .. ")"
+end
+
+local function merge_comment(origin, message)
+    if not origin or origin == "" then
+        return message
+    end
+    if origin:find(message, 1, true) then
+        return origin
+    end
+    return origin .. " | " .. message
+end
+
+local function append_missing_hint(cand, message)
+    if not message or message == "" then
+        return cand
+    end
+
+    if cand:get_dynamic_type() == "Shadow" then
+        local shadow_text = cand.text
+        local shadow_comment = cand.comment or ""
+        local original = cand:get_genuine()
+        if not original then
+            cand.comment = merge_comment(cand.comment, message)
+            return cand
+        end
+
+        local merged = merge_comment((original.comment or "") .. shadow_comment, message)
+        return ShadowCandidate(original, original.type, shadow_text, merged)
+    end
+
+    cand.comment = merge_comment(cand.comment, message)
+    return cand
+end
+
 -- local log = require 'log'
 -- log.outfile = "aux_code.log"
 
 function AuxFilter.init(env)
     -- log.info("** AuxCode filter", env.name_space)
 
-    AuxFilter.aux_code = AuxFilter.readAuxTxt(env.name_space)
+    local aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(env.name_space)
+    if aux_code then
+        AuxFilter.aux_code = aux_code
+        env.aux_ready = true
+        env.aux_error_msg = nil
+    else
+        AuxFilter.aux_code = {}
+        env.aux_ready = false
+        env.aux_error_msg = build_missing_dict_message(missing_file or (env.name_space .. ".txt"))
+        if log and log.warning then
+            log.warning("aux_code: dictionary load failed: " .. (missing_path or ""))
+        end
+    end
 
     local engine = env.engine
     local config = engine.schema.config
@@ -104,20 +152,22 @@ end
 -- 閱讀輔碼文件 --
 ----------------
 function AuxFilter.readAuxTxt(txtpath)
-    if AuxFilter.cache then
-        return AuxFilter.cache
+    local dict_filename = txtpath .. ".txt"
+    local file_absolute_path = rime_api.get_user_data_dir() .. "/aux_code/" .. dict_filename
+
+    if not AuxFilter.cache then
+        AuxFilter.cache = {}
+    end
+
+    if AuxFilter.cache[file_absolute_path] then
+        return AuxFilter.cache[file_absolute_path], nil, dict_filename
     end
 
     -- log.info("** AuxCode filter", 'read Aux code txt:', txtpath)
 
-    local defaultFile = 'ZRM_Aux-code_4.3.txt'
-    local userPath = rime_api.get_user_data_dir() .. "/lua/"
-    local fileAbsolutePath = userPath .. txtpath .. ".txt"
-
-    local file = io.open(fileAbsolutePath, "r") or io.open(userPath .. defaultFile, "r")
+    local file = io.open(file_absolute_path, "r")
     if not file then
-        error("Unable to open auxiliary code file.")
-        return {}
+        return nil, file_absolute_path, dict_filename
     end
 
     local auxCodes = {}
@@ -138,8 +188,8 @@ function AuxFilter.readAuxTxt(txtpath)
     --     log.info(key, table.concat(value, ','))
     -- end
 
-    AuxFilter.cache = auxCodes
-    return AuxFilter.cache
+    AuxFilter.cache[file_absolute_path] = auxCodes
+    return auxCodes, nil, dict_filename
 end
 
 -- local function getUtf8CharLength(byte)
@@ -275,6 +325,19 @@ function AuxFilter.func(input, env)
     if mode == "none" then
         -- 没有输入辅助码引导符，则直接yield所有待选项，不进入后续迭代，提升性能
         for cand in input:iter() do
+            yield(cand)
+        end
+        return
+    end
+
+    if not env.aux_ready then
+        local should_hint = #auxStr == 0
+        local hinted = false
+        for cand in input:iter() do
+            if should_hint and not hinted then
+                cand = append_missing_hint(cand, env.aux_error_msg)
+                hinted = true
+            end
             yield(cand)
         end
         return
