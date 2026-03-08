@@ -1,4 +1,5 @@
 local AuxFilter = {}
+local parse_aux_input
 
 -- local log = require 'log'
 -- log.outfile = "aux_code.log"
@@ -48,14 +49,19 @@ function AuxFilter.init(env)
     -- 持續選詞上屏，保持輔助碼分隔符存在 --
     ----------------------------
     env.notifier = engine.context.select_notifier:connect(function(ctx)
-        -- 含有輔助碼分隔符才處理
-        if not string.find(ctx.input, env.trigger_key) then
+        local mode, _, trigger_token = parse_aux_input(ctx.input, env)
+        if mode == "none" then
             return
         end
 
         local preedit = ctx:get_preedit()
-        local removeAuxInput = ctx.input:match("([^,]+)" .. env.trigger_key)
-        local reeditTextFront = preedit.text:match("([^,]+)" .. env.trigger_key)
+        local trigger_pattern = trigger_token:gsub("%W", "%%%1")
+        local removeAuxInput = ctx.input:match("([^,]+)" .. trigger_pattern)
+        local reeditTextFront = preedit.text:match("([^,]+)" .. trigger_pattern)
+
+        if not removeAuxInput then
+            return
+        end
 
         -- ctx.text 隨著選字的進行，oaoaoa； 有如下的輸出：
         -- ---- 有輔助碼 ----
@@ -75,7 +81,7 @@ function AuxFilter.init(env)
         ctx.input = removeAuxInput
         if reeditTextFront and reeditTextFront:match("[a-z]") then
             -- 給詞尾自動添加分隔符，上面的 re.match 會把分隔符刪掉
-            ctx.input = ctx.input .. env.trigger_key
+            ctx.input = ctx.input .. trigger_token
         else
             -- 剩下的直接上屏
             ctx:commit()
@@ -216,7 +222,7 @@ local function escape_lua_pattern(text)
     return text:gsub("%W", "%%%1")
 end
 
-local function parse_aux_input(input_code, env)
+parse_aux_input = function(input_code, env)
     if input_code == "" then
         return "none", "", ""
     end
