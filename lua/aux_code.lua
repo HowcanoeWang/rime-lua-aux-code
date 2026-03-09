@@ -49,8 +49,12 @@ end
 
 function AuxFilter.init(env)
     -- log.info("** AuxCode filter", env.name_space)
-
-    local aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(env.name_space)
+    local shared_data_dir = rime_api.get_shared_data_dir() .. "/aux_code/"
+    local user_data_dir = rime_api.get_user_data_dir() .. "/aux_code/"
+    local aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(user_data_dir, env.name_space) -- 程序目录和用户目录都找一下，用户目录优先
+    if not aux_code then
+        aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(shared_data_dir, env.name_space)
+    end
     if aux_code then
         AuxFilter.aux_code = aux_code
         env.aux_ready = true
@@ -151,9 +155,9 @@ end
 ----------------
 -- 閱讀輔碼文件 --
 ----------------
-function AuxFilter.readAuxTxt(txtpath)
-    local dict_filename = txtpath .. ".txt"
-    local file_absolute_path = rime_api.get_user_data_dir() .. "/aux_code/" .. dict_filename
+function AuxFilter.readAuxTxt(file_dir, dict_name)
+    local dict_filename = dict_name .. ".txt"
+    local file_absolute_path = file_dir .. dict_filename
 
     if not AuxFilter.cache then
         AuxFilter.cache = {}
@@ -231,7 +235,7 @@ end
 --             a a
 --             u h
 --       (竖着拍成左右两个字符串)
---   第一个辅码键的不重复列表为：fullAuxCodes[1]= urpao 
+--   第一个辅码键的不重复列表为：fullAuxCodes[1]= urpao
 --   第二个辅码键的不重复列表为：fullAuxCodes[2]= urhafi
 -- -----------------------------------------------
 function AuxFilter.fullAux(env, word)
