@@ -9,7 +9,7 @@
 | `flypy_full.txt` | 小鹤形码（全码） | 社区贡献（[@AiraNadih](https://github.com/AiraNadih)） |
 | `wubi86-code.txt` | 五笔 86 辅助码 | [rime/rime-wubi](https://github.com/rime/rime-wubi) |
 | `moqi_aux_code.txt` | 墨奇辅助码 | [gaboolic/moqima-tables](https://github.com/gaboolic/moqima-tables) |
-| `cangjie5_quick_code.txt` | 仓颉五代（快码/首尾码方案） | 社区贡献（[@BH2WFR](https://github.com/BH2WFR)） |
+| `cangjie5_quick_code.txt` | 仓颉五代（快码/首尾码方案） | 社区贡献（[@BH2WFR](https://github.com/BH2WFR)） 原始码表：[rime/rime-cangjie](https://github.com/rime/rime-cangjie) |
 
 ## 使用说明
 
@@ -32,3 +32,13 @@
 接着，需要在 `*.custom.yaml` 文件的相应部分作出修改，把原有的 `- lua_filter@*aux_code@ZRM_Aux-code_4.3` 替换为 `- lua_filter@*aux_code@my_aux_code`（注意，这里不需要加 `.txt` 后缀）。
 
 修改完成后，重新配置 Rime 输入法，新的设置便会生效。
+
+## 各辅码方案的注意事项
+
+- **仓颉五代首尾码**（五代速成）辅助码：
+  - 码表来自 [rime/rime-cangjie](https://github.com/rime/rime-cangjie)，并基于此编码，使用脚本进行了自动化的首尾码摘取，并依据「朙月拼音」方案码表，去除了所有没有拼音编码的汉字。
+  - 单码字（如「日」）的辅码，可仅输入一个字母，也支持「z+字母」，如「日」字的辅码可为 `a`（日） 或 `za`（z日）
+  - 汉字「〇」的辅码定为 `r` (口) 或 `zr`（`z口`）
+  - 首码不可以使用 `x`（難）
+  - 部分汉字存在繁简同码问题，建议在输入方案中设置 `simplifier/tips` 为 `all`，以开启繁简转换前原始汉字的提示。
+  - 如果您使用的是朙月拼音方案，输入辅码时，请务必输入繁体字的辅码，否则会造成词库混乱！

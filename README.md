@@ -46,11 +46,11 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
     先找到你的 Rime 配置目录（后文记作 config_path）。常见路径如下（供参考）：
 
-    - Windows (Weasel/小狼毫)  
+    - Windows (Weasel/小狼毫)
       `C:\Users\<你的用户名>\AppData\Roaming\Rime`
-    - macOS (Squirrel/鼠须管)  
+    - macOS (Squirrel/鼠须管)
       `~/Library/Rime`
-    - Linux (fcitx5-rime 或 ibus-rime)  
+    - Linux (fcitx5-rime 或 ibus-rime)
       `~/.local/share/fcitx5/rime` 或 `~/.config/ibus/rime`
 
     不同发行版或输入法前端可能有差异；如果不一致，以你系统里实际“用户目录/配置目录”为准。
@@ -78,7 +78,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
     <details>
     <summary>点击查看补丁文件(custom.yaml)和输入方案原文件(schema.yaml)的说明</summary>
 
-    补丁文件就是“**在不改原始 `schema.yaml` 的前提下追加/覆盖配置**”的文件。  
+    补丁文件就是“**在不改原始 `schema.yaml` 的前提下追加/覆盖配置**”的文件。
 
     推荐始终改 `custom`，不要直接改 `schema`。
 
@@ -179,9 +179,9 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
     建议用人名测试，例如：符筑玛（辅助码的谐音，日常语料中较少出现，便于观察学习效果）。
 
-    1. 先用 ;;（不学习模式）  
+    1. 先用 ;;（不学习模式）
       连续输入并上屏多次（例如 5~10 次），符筑玛不应因为这些输入而明显前移到更靠前候选。
-    2. 再用 ;（学习模式）  
+    2. 再用 ;（学习模式）
       再输入并上屏（通常少量次数即可观察到变化），符筑玛应更容易出现在候选中（排序趋于前移）。
 
     规则说明：
@@ -238,6 +238,7 @@ engine:
 ```
   
 则 lua 脚本会在汉字简化后处理，**打出简体字的辅码，内部会按照对应的繁体字处理**，但此时**无法正确选择「一简对多繁」情况下繁体字的编码**。
+
 
 ## 开发与异常处理
 
