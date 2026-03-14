@@ -57,10 +57,12 @@ function AuxFilter.init(env)
     end
     if aux_code then
         AuxFilter.aux_code = aux_code
+        AuxFilter.aux_index = AuxFilter.build_char_aux_index(aux_code)
         env.aux_ready = true
         env.aux_error_msg = nil
     else
         AuxFilter.aux_code = {}
+        AuxFilter.aux_index = {}
         env.aux_ready = false
         env.aux_error_msg = build_missing_dict_message(missing_file or (env.name_space .. ".txt"))
         if log and log.warning then
@@ -208,121 +210,82 @@ end
 --     end
 -- end
 
--- 輔助函數，用於獲取表格的所有鍵
-local function table_keys(t)
-    local keys = {}
-    for key, _ in pairs(t) do
-        table.insert(keys, key)
-    end
-    return keys
-end
-
------------------------------------------------
--- 計算詞語整體的輔助碼
--- 目前定義為
---   把字或词组的所有辅码，第一个键堆到一起，第二个键堆到一起
---   例子：
---       候选(word) = 拜日
---          【拜】 的辅码有 charAuxCodes=
---             p a
---             p u
---             u a
---             u f
---             u u
---          【日】 的辅码有 charAuxCodes=
---             o r
---             r i
---             a a
---             u h
---       (竖着拍成左右两个字符串)
---   第一个辅码键的不重复列表为：fullAuxCodes[1]= urpao
---   第二个辅码键的不重复列表为：fullAuxCodes[2]= urhafi
--- -----------------------------------------------
-function AuxFilter.fullAux(env, word)
-    local fullAuxCodes = {}
-    -- log.info('候选词：', word)
-    for _, codePoint in utf8.codes(word) do
-        local char = utf8.char(codePoint)
-        local charAuxCodes = AuxFilter.aux_code[char] -- 每個字的輔助碼組
-        if charAuxCodes then -- 輔助碼存在
-            for code in charAuxCodes:gmatch("%S+") do
-                for i = 1, #code do
-                    fullAuxCodes[i] = fullAuxCodes[i] or {}
-                    fullAuxCodes[i][code:sub(i, i)] = true
-                end
+-- 预处理辅码索引，避免在候选循环中重复拆分字符串。
+-- k1: 记录每个字可命中的首键；k12: 记录前两键完整命中。
+function AuxFilter.build_char_aux_index(aux_code)
+    local index = {}
+    for char, codes in pairs(aux_code) do
+        local entry = { k1 = {}, k12 = {} }
+        for code in codes:gmatch("%S+") do
+            if #code >= 1 then
+                entry.k1[code:sub(1, 1)] = true
+            end
+            if #code >= 2 then
+                entry.k12[code:sub(1, 2)] = true
             end
         end
+        index[char] = entry
     end
-
-    -- 將表格轉換為字符串
-    for i, chars in pairs(fullAuxCodes) do
-        fullAuxCodes[i] = table.concat(table_keys(chars), "")
-    end
-
-    return fullAuxCodes
+    return index
 end
 
------------------------------------------------
--- 判斷 auxStr 是否匹配 fullAux
------------------------------------------------
-function AuxFilter.match(fullAux, auxStr)
-    if #fullAux == 0 then
-        return false
-    end
-
-    local firstKeyMatched = fullAux[1]:find(auxStr:sub(1, 1)) ~= nil
-    -- 如果辅助码只有一个键，且第一个键匹配，则返回 true
-    if #auxStr == 1 then
-        return firstKeyMatched
-    end
-
-    -- 如果辅助码有两个或更多键，检查第二个键是否匹配
-    local secondKeyMatched = fullAux[2] and fullAux[2]:find(auxStr:sub(2, 2)) ~= nil
-
-    -- 只有当第一个键和第二个键都匹配时，才返回 true
-    return firstKeyMatched and secondKeyMatched
-end
-
-local function get_first_utf8_char(text)
-    if not text or text == "" then
-        return nil
-    end
-    for _, codePoint in utf8.codes(text) do
-        return utf8.char(codePoint)
-    end
-    return nil
-end
-
-local function first_char_exact_match(word, auxStr)
+local function char_matches_aux(char, auxStr)
     if auxStr == "" then
         return false
     end
 
-    local first_char = get_first_utf8_char(word)
-    if not first_char then
-        return false
-    end
-
-    local charAuxCodes = AuxFilter.aux_code[first_char]
-    if not charAuxCodes then
+    local entry = AuxFilter.aux_index[char]
+    if not entry then
         return false
     end
 
     if #auxStr == 1 then
-        for code in charAuxCodes:gmatch("%S+") do
-            if code:sub(1, 1) == auxStr then
-                return true
-            end
-        end
-        return false
+        return entry.k1[auxStr] == true
     end
 
-    for code in charAuxCodes:gmatch("%S+") do
-        if code:sub(1, 2) == auxStr then
-            return true
+    return entry.k12[auxStr:sub(1, 2)] == true
+end
+
+-- 词组匹配按字位逐个检查，命中即返回。
+-- 这样只允许同一个字完整命中，避免旧逻辑跨字混拼误命中。
+local function find_phrase_match(word, auxStr)
+    if auxStr == "" or not word or word == "" then
+        return nil
+    end
+
+    local pos = 0
+    for _, codePoint in utf8.codes(word) do
+        pos = pos + 1
+        local char = utf8.char(codePoint)
+        if char_matches_aux(char, auxStr) then
+            return { pos = pos, char = char }
         end
     end
-    return false
+
+    return nil
+end
+
+local function is_phrase_candidate(cand)
+    return cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified'
+end
+
+local function append_phrase_match_hint(cand, matched_char, auxStr)
+    local hint = "(" .. matched_char .. ":" .. auxStr .. ")"
+
+    if cand:get_dynamic_type() == "Shadow" then
+        local shadow_text = cand.text
+        local shadow_comment = cand.comment or ""
+        local original = cand:get_genuine()
+        if not original then
+            cand.comment = merge_comment(cand.comment, hint)
+            return cand
+        end
+        local merged = merge_comment((original.comment or "") .. shadow_comment, hint)
+        return ShadowCandidate(original, original.type, shadow_text, merged)
+    end
+
+    cand.comment = merge_comment(cand.comment, hint)
+    return cand
 end
 
 local function escape_lua_pattern(text)
@@ -402,7 +365,6 @@ function AuxFilter.func(input, env)
     -- 遍歷每一個待選項
     for cand in input:iter() do
         local auxCodes = AuxFilter.aux_code[cand.text] -- 僅單字非 nil
-        local fullAuxCodes = AuxFilter.fullAux(env, cand.text)
 
         -- 查看 auxCodes
         -- log.info(cand.text, #auxCodes)
@@ -429,10 +391,15 @@ function AuxFilter.func(input, env)
         if #auxStr == 0 then
             -- 沒有輔助碼、不需篩選，直接返回待選項
             yield(to_yield_candidate(cand))
-        elseif #auxStr > 0 and (cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified') then
-            if first_char_exact_match(cand.text, auxStr) then
+        elseif #auxStr > 0 and is_phrase_candidate(cand) then
+            local matched = find_phrase_match(cand.text, auxStr)
+            if matched and env.show_aux_notice then
+                cand = append_phrase_match_hint(cand, matched.char, auxStr)
+            end
+
+            if matched and matched.pos == 1 then
                 table.insert(first_exact_bucket, cand)
-            elseif fullAuxCodes and AuxFilter.match(fullAuxCodes, auxStr) then
+            elseif matched then
                 table.insert(full_aux_bucket, cand)
             end
         else
