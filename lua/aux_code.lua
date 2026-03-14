@@ -283,6 +283,48 @@ function AuxFilter.match(fullAux, auxStr)
     return firstKeyMatched and secondKeyMatched
 end
 
+local function get_first_utf8_char(text)
+    if not text or text == "" then
+        return nil
+    end
+    for _, codePoint in utf8.codes(text) do
+        return utf8.char(codePoint)
+    end
+    return nil
+end
+
+local function first_char_exact_match(word, auxStr)
+    if auxStr == "" then
+        return false
+    end
+
+    local first_char = get_first_utf8_char(word)
+    if not first_char then
+        return false
+    end
+
+    local charAuxCodes = AuxFilter.aux_code[first_char]
+    if not charAuxCodes then
+        return false
+    end
+
+    if #auxStr == 1 then
+        for code in charAuxCodes:gmatch("%S+") do
+            if code:sub(1, 1) == auxStr then
+                return true
+            end
+        end
+        return false
+    end
+
+    for code in charAuxCodes:gmatch("%S+") do
+        if code:sub(1, 2) == auxStr then
+            return true
+        end
+    end
+    return false
+end
+
 local function escape_lua_pattern(text)
     return text:gsub("%W", "%%%1")
 end
@@ -347,8 +389,15 @@ function AuxFilter.func(input, env)
         return
     end
 
-    -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
-    -- local insertLater = {}
+    local first_exact_bucket = {}
+    local full_aux_bucket = {}
+
+    local function to_yield_candidate(cand)
+        if mode == "no_learn" then
+            return to_commit_only_candidate(cand)
+        end
+        return cand
+    end
 
     -- 遍歷每一個待選項
     for cand in input:iter() do
@@ -379,18 +428,12 @@ function AuxFilter.func(input, env)
         -- 過濾輔助碼
         if #auxStr == 0 then
             -- 沒有輔助碼、不需篩選，直接返回待選項
-            if mode == "no_learn" then
-                yield(to_commit_only_candidate(cand))
-            else
-                yield(cand)
-            end
-        elseif #auxStr > 0 and fullAuxCodes and (cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified') and
-            AuxFilter.match(fullAuxCodes, auxStr) then
-            -- 匹配到辅助码的待选项，直接插入到候选框中( 获得靠前的位置 )
-            if mode == "no_learn" then
-                yield(to_commit_only_candidate(cand))
-            else
-                yield(cand)
+            yield(to_yield_candidate(cand))
+        elseif #auxStr > 0 and (cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified') then
+            if first_char_exact_match(cand.text, auxStr) then
+                table.insert(first_exact_bucket, cand)
+            elseif fullAuxCodes and AuxFilter.match(fullAuxCodes, auxStr) then
+                table.insert(full_aux_bucket, cand)
             end
         else
             -- 待选项字词 没有 匹配到当前的辅助码，插入到列表中，最后插入到候选框里( 获得靠后的位置 )
@@ -398,6 +441,20 @@ function AuxFilter.func(input, env)
             -- 更新逻辑：没有匹配上就不出现再候选框里，提升性能
         end
     end
+
+    local seen = {}
+    local function yield_bucket(bucket)
+        for _, cand in ipairs(bucket) do
+            local key = cand.type .. "\t" .. cand.start .. "\t" .. cand._end .. "\t" .. cand.text
+            if not seen[key] then
+                seen[key] = true
+                yield(to_yield_candidate(cand))
+            end
+        end
+    end
+
+    yield_bucket(first_exact_bucket)
+    yield_bucket(full_aux_bucket)
 
     -- 把沒有匹配上的待選給添加上
     -- for _, cand in ipairs(insertLater) do
