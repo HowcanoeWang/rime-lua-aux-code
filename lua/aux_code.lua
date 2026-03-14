@@ -269,6 +269,22 @@ local function is_phrase_candidate(cand)
     return cand.type == 'user_phrase' or cand.type == 'phrase' or cand.type == 'simplified'
 end
 
+local function is_multi_char_text(text)
+    if not text or text == "" then
+        return false
+    end
+
+    local count = 0
+    for _ in utf8.codes(text) do
+        count = count + 1
+        if count > 1 then
+            return true
+        end
+    end
+
+    return false
+end
+
 local function append_phrase_match_hint(cand, matched_char, auxStr)
     local hint = "(" .. matched_char .. ":" .. auxStr .. ")"
 
@@ -393,7 +409,8 @@ function AuxFilter.func(input, env)
             yield(to_yield_candidate(cand))
         elseif #auxStr > 0 and is_phrase_candidate(cand) then
             local matched = find_phrase_match(cand.text, auxStr)
-            if matched and env.show_aux_notice then
+            -- 仅词组候选显示命中提示，单字继续沿用“显示全部辅码”。
+            if matched and env.show_aux_notice and is_multi_char_text(cand.text) then
                 cand = append_phrase_match_hint(cand, matched.char, auxStr)
             end
 
