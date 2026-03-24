@@ -5,7 +5,8 @@
 | 文件名 | 辅码方案 | 来源 |
 | --- | --- | --- |
 | `ZRM_Aux-code_4.3.txt` | 自然码辅码（修改版，去冗余首码） | [copperay/ZRM_Aux-code](https://github.com/copperay/ZRM_Aux-code/tree/main) |
-| `ZRM-wanxiang.txt` | 原版自然码码表（对应关系更精确） | [amzxyz/rime_wanxiang](https://github.com/amzxyz/rime_wanxiang) |
+| `ZRM-wanxiang.txt` | 原版自然码辅码（对应关系更精确） | [amzxyz/rime_wanxiang](https://github.com/amzxyz/rime_wanxiang) |
+| `ZRM-moran.txt` | 魔然自然码辅码（冗余码稍多于原版） | [rimeinn/rime-moran](https://github.com/rimeinn/rime-moran) |
 | `flypy_full.txt` | 小鹤形码（全码） | 社区贡献（[@AiraNadih](https://github.com/AiraNadih)） |
 | `wubi86-code.txt` | 五笔 86 辅助码 | [rime/rime-wubi](https://github.com/rime/rime-wubi) |
 | `moqi_aux_code.txt` | 墨奇辅助码 | [gaboolic/moqima-tables](https://github.com/gaboolic/moqima-tables) |
