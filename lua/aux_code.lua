@@ -177,8 +177,8 @@ function AuxFilter.readAuxTxt(file_dir, dict_name)
     end
 
     local auxCodes = {}
-    for line in file:lines() do
-        line = line:match("[^\r\n]+") -- 去掉換行符，不然 value 是帶著 \n 的
+    for _line in file:lines() do
+        local line = _line:match("[^\r\n]+") -- 去掉換行符，不然 value 是帶著 \n 的
         local key, value = line:match("([^=]+)=(.+)") -- 分割 = 左右的變數
         if key and value then
             if auxCodes[key] then
@@ -358,7 +358,8 @@ function AuxFilter.func(input, env)
     if not env.aux_ready then
         local should_hint = #auxStr == 0
         local hinted = false
-        for cand in input:iter() do
+        for _cand in input:iter() do
+            local cand = _cand
             if should_hint and not hinted then
                 cand = append_missing_hint(cand, env.aux_error_msg)
                 hinted = true
@@ -379,7 +380,8 @@ function AuxFilter.func(input, env)
     end
 
     -- 遍歷每一個待選項
-    for cand in input:iter() do
+    for _cand in input:iter() do
+        local cand = _cand
         local auxCodes = AuxFilter.aux_code[cand.text] -- 僅單字非 nil
 
         -- 查看 auxCodes
