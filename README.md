@@ -10,20 +10,15 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
 ## 特点
 
-* 通过独立的文件存储辅码，无需生成音形混合词典
-* 提供包括**自然码辅码表**和**小鹤形码表**在内的两种主流方案 （你甚至能找到**五笔**辅助码和**仓颉五代首尾码**辅助码）
-* 在输入末尾键入分隔符 (默认为 `;` ，可自定义配置) 来激活辅码模式，选择候选词并上屏（通过空格或数字）后，可继续输入，插件会自动移除已上屏文字的辅码
+* 辅码独立存放，无需生成音形混合词典；内置[多种主流辅助码码表](./aux_code/readme.md)，也支持自定义码表
+* 输入分隔符（默认 `;`）即可按辅码筛选候选；连续选词时，插件会自动清理已上屏文字的辅码    
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
-* 在候选单中直接提示单字的辅助码 （可配置关闭）
+* 输入辅码后可直接用标点上屏候选，无需额外按空格
+* 可在候选单提示单字辅码（可手动配置关闭）    
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_notice.png)
-* 支持词语级筛选 （非首字筛选）
-  ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)
-  如「白日依山尽」仍然可以匹配到「i」 （尽的辅码）
-* 输入辅码后，词组候选按双层规则排序：
-  1) 候选首字完整匹配当前辅码（优先）
-  2) 候选非首字命中当前辅码（次级）
-  说明：「首字」指当前候选词条的第一个字（当前正在选词的 segment），不包含已上屏前文；匹配按字位进行，不会跨字混拼。
-* 词组命中时会在候选注释中显示命中字与输入辅码（如 `椰子蟹(蟹:ij)`）；单字仍显示该字全部辅助码
+* 支持词语级筛选：可匹配词中任意字，并优先显示首字命中的候选    
+  ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_word.png)    
+  如「白日依山尽」可用 `i` 匹配「尽」；词组命中时会显示命中字与辅码，如 `椰子蟹(蟹:ij)`
 * 为优化性能，**未**匹配辅助码的候选**不会**出现在列表中
 * 此方案适用于使用辅助码排序候选项，而非音形结合的**四键单字**输入模式 （请用单字字库来满足需求）
 
@@ -141,6 +136,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
       speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
     ```
     > :warning: 符号 `;` 为英文半角，而非中文全角
+    > 输入辅码后的标点不需要加入 `speller/alphabet`。保持标点由 Rime 原有标点流程处理即可，例如输入 `ni;fy.` 时，`.` 会用于触发候选上屏并继续按当前方案的标点规则处理。
 
     ---
 
