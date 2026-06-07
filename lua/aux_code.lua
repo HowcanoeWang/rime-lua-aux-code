@@ -1,5 +1,8 @@
 local AuxFilter = {}
 local parse_aux_input
+local escape_lua_pattern
+local has_non_alpha_after_aux
+local split_aux_input
 
 local function normalize_trigger(token, fallback)
     if token == nil or token == "" then
@@ -120,9 +123,8 @@ function AuxFilter.init(env)
         end
 
         local preedit = ctx:get_preedit()
-        local trigger_pattern = trigger_token:gsub("%W", "%%%1")
-        local removeAuxInput = ctx.input:match("([^,]+)" .. trigger_pattern)
-        local reeditTextFront = preedit.text:match("([^,]+)" .. trigger_pattern)
+        local removeAuxInput, _, after_aux = split_aux_input(ctx.input, trigger_token)
+        local reeditTextFront = preedit.text:match("^(.-)" .. escape_lua_pattern(trigger_token))
 
         if not removeAuxInput then
             return
@@ -143,12 +145,12 @@ function AuxFilter.init(env)
         -- log.info('select_notifier', ctx.input, removeAuxInput, preedit.text, reeditTextFront)
 
         -- 當最終不含有任何字母時 (候選)，就跳出分割模式，並把輔助碼分隔符刪掉
-        ctx.input = removeAuxInput
         if reeditTextFront and reeditTextFront:match("[a-z]") then
             -- 給詞尾自動添加分隔符，上面的 re.match 會把分隔符刪掉
-            ctx.input = ctx.input .. trigger_token
+            ctx.input = removeAuxInput .. trigger_token .. after_aux
         else
             -- 剩下的直接上屏
+            ctx.input = removeAuxInput .. after_aux
             ctx:commit()
         end
     end)
@@ -304,8 +306,31 @@ local function append_phrase_match_hint(cand, matched_char, auxStr)
     return cand
 end
 
-local function escape_lua_pattern(text)
+escape_lua_pattern = function(text)
     return text:gsub("%W", "%%%1")
+end
+
+has_non_alpha_after_aux = function(input_code, env)
+    for _, item in ipairs(env.triggers) do
+        local token = item.token
+        if token ~= "" then
+            local token_pattern = escape_lua_pattern(token)
+            if input_code:match(token_pattern .. "[a-z]+([^a-z].*)$") then
+                return true
+            end
+        end
+    end
+
+    return false
+end
+
+split_aux_input = function(input_code, trigger_token)
+    local trigger_pattern = escape_lua_pattern(trigger_token)
+    local front, aux, after_aux = input_code:match("^(.-)" .. trigger_pattern .. "([a-z]*)(.*)$")
+    if after_aux then
+        after_aux = after_aux:match("^" .. trigger_pattern .. "[a-z]+(.*)$") or after_aux
+    end
+    return front, aux, after_aux or ""
 end
 
 parse_aux_input = function(input_code, env)
@@ -318,7 +343,7 @@ parse_aux_input = function(input_code, env)
         if token ~= "" then
             local token_pattern = escape_lua_pattern(token)
             if input_code:find(token, 1, true) then
-                local local_split = input_code:match(token_pattern .. "([^,]+)")
+                local local_split = input_code:match(token_pattern .. "([a-z]+)")
                 if not local_split then
                     return item.mode, "", token
                 end
@@ -349,6 +374,13 @@ function AuxFilter.func(input, env)
     -- 判断字符串中是否包含輔助碼分隔符
     if mode == "none" then
         -- 没有输入辅助码引导符，则直接yield所有待选项，不进入后续迭代，提升性能
+        for cand in input:iter() do
+            yield(cand)
+        end
+        return
+    end
+
+    if has_non_alpha_after_aux(inputCode, env) then
         for cand in input:iter() do
             yield(cand)
         end
