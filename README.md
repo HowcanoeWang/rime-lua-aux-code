@@ -10,7 +10,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
 ## 特点
 
-* 辅码独立存放，无需生成音形混合词典；内置[多种主流辅助码码表](./aux_code/readme.md)，也支持自定义码表
+* 辅码独立存放，无需生成音形混合词典；内置[多种主流辅助码码表](./aux_code/README.md)，也支持自定义码表
 * 输入分隔符（默认 `;`）即可按辅码筛选候选；连续选词时，插件会自动清理已上屏文字的辅码    
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
 * 输入辅码后可直接用标点上屏候选，无需额外按空格
