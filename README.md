@@ -11,7 +11,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 ## 特点
 
 * 辅码独立存放，无需生成音形混合词典；内置[多种主流辅助码码表](./aux_code/README.md)，也支持自定义码表
-* 输入分隔符（默认 `;`）即可按辅码筛选候选；连续选词时，插件会自动清理已上屏文字的辅码    
+* 输入触发符（默认 `;`）即可按辅码筛选候选；可另设不写入用户词库的触发符（默认 `;;`）；连续选词时，插件会自动清理已上屏文字的辅码<br>
   ![](https://cdn.jsdelivr.net/gh/HowcanoeWang/rime-lua-aux-code/static/aux_split.png)
 * 输入辅码后可直接用标点上屏候选，无需额外按空格
 * 可在候选单提示单字辅码（可手动配置关闭）    
@@ -104,105 +104,105 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
       engine/filters/+:
         - lua_filter@*aux_code@ZRM_Aux-code_4.3
       
+      aux_code:
+        learn_trigger: ";"
+        no_learn_trigger: ";;"
+        show_aux_notice: true
+
       speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
 
-      key_binder/+:
-        aux_code_learn_trigger: ";"
-        aux_code_no_learn_trigger: ";;"
-        bindings:
-          - { when: has_menu, accept: minus, send: Page_Up }
-          - { when: has_menu, accept: equal, send: Page_Down }
-        show_aux_notice: true
+      key_binder/bindings/+:
+        - { when: has_menu, accept: minus, send: Page_Up }
+        - { when: has_menu, accept: equal, send: Page_Down }
     ```
 
     **详细说明**
 
-    `engine/filters` 中的辅助码方案，前面的前缀`lua_filter@*aux_code@`不要修改，如果要换成别的，请使用方案txt的文件名（不带后缀），例如：
-    ```yaml
-    - lua_filter@*aux_code@flypy_full
-    - lua_filter@*aux_code@cangjie5_quick_code
-    ```
+    1. 选择辅码码表
 
-    > :warning: 辅码文件必须放在 `config/rime/aux_code/`（即 Rime 用户目录下的 `aux_code/`）
-    >
-    > 若输入了触发键但未输入辅码（例如 `twtw;`），插件会在首个候选中提示：
-    > `(⚠️config/rime/aux_code/ 中未找到辅码文件 <文件名>.txt)`
+       `engine/filters` 中的 `lua_filter@*aux_code@` 前缀不要修改，最后一段应填写辅码 txt 文件名（不带后缀）。例如：
 
-    ---
+       ```yaml
+       - lua_filter@*aux_code@flypy_full
+       - lua_filter@*aux_code@cangjie5_quick_code
+       ```
 
-    `speller/alphabet` 中，需要设置允许以 `;` 符号上屏。其他部分根据个人配置自行调整
+       > :warning: 辅码文件必须放在 Rime 用户目录下的 `aux_code/` 目录。
+       >
+       > 如果对应文件不存在，输入主编码和触发符（例如 `twtw;`）时，插件会在首个候选中提示：
+       > `(⚠️config/rime/aux_code/ 中未找到辅码文件 <文件名>.txt)`
 
-    ```yaml
-      speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
-    ```
-    > :warning: 符号 `;` 为英文半角，而非中文全角
-    > 输入辅码后的标点不需要加入 `speller/alphabet`。保持标点由 Rime 原有标点流程处理即可，例如输入 `ni;fy.` 时，`.` 会用于触发候选上屏并继续按当前方案的标点规则处理。
+    2. 配置辅码插件
 
-    ---
+       `aux_code` 是插件自己的配置项。默认提供两个相互独立的触发符：
 
-    `key_binder` 中，如果想修改触发键为别的按键，可以用下面的方法来自定义：
+       ```yaml
+       aux_code:
+         learn_trigger: ";"      # 辅码筛选，允许候选词进入用户词库
+         no_learn_trigger: ";;"  # 辅码筛选，仅上屏，不进入用户词库
+         show_aux_notice: true    # 在候选中显示单字辅码提示
+       ```
 
-    ```yaml
-      key_binder/+:
-        aux_code_learn_trigger: "#"
-    ```
+       | 配置项 | 启用辅码筛选 | 用户词库学习 |
+       | --- | --- | --- |
+       | `learn_trigger` | 是 | 是 |
+       | `no_learn_trigger` | 是 | 否（仅上屏） |
 
-    > :warning: 请确保所选字符 `#` 已包含在上述 `speller/alphabet` 的值中
-    > 如果是自定义触发键为 `.` 或 `,` ，这两个按键在大部分配置中默认为翻页键，可能还需要禁止该翻页键：
+       `;;` 只是默认值，并不是 `no_learn_trigger` 必须重复两次 `learn_trigger`。两个触发符可以完全不同，例如：
 
-    ```yaml
-      # 接 key_binder/+:
-        bindings:
-          # 禁用前翻页键 "."
-          - { when: has_menu, accept: period, send: period }
-          # 禁用后翻页键 ","
-          - { when: has_menu, accept: comma, send: comma }
-    ```
+       ```yaml
+       aux_code:
+         learn_trigger: ";"
+         no_learn_trigger: "#"
+         show_aux_notice: true
+       ```
 
-    ---
+       触发符只有出现在主编码之后才会生效。例如 `ni;fy` 会启用辅码筛选，以 `;` 开头的输入则不会被当作辅码输入。
 
-    同时也支持分别配置「记录用户词库触发键」和「不记录用户词库触发键」：
+       其他规则：
 
-    ```yaml
-      key_binder/+:
-        aux_code_learn_trigger: ";"      # 辅码筛选，允许候选词进入用户词库
-        aux_code_no_learn_trigger: ";;"  # 辅码筛选，仅上屏，不进入用户词库
-    ```
+       - `no_learn_trigger` 未设置或为空时，不启用「不进入用户词库」模式。
+       - 两个触发符相同时，`no_learn_trigger` 自动失效，以避免歧义。
+       - 两个触发符存在前缀关系时（例如 `;` 与 `;;`），插件优先匹配更长的触发符。
+       - 不需要单字辅码提示时，将 `show_aux_notice` 设置为 `false`。
 
-    行为对照：
+       可以用较少见的人名观察用户词库学习效果。例如先用 `;;` 多次输入“符筑玛”，其排序不应明显前移；再改用 `;` 输入，候选排序应逐渐前移。
 
-    | 输入触发键 | 启用辅码筛选 | 用户词库学习 |
-    | --- | --- | --- |
-    | `aux_code_learn_trigger` | 是 | 是 |
-    | `aux_code_no_learn_trigger` | 是 | 否（仅上屏） |
+    3. 将触发字符加入 `speller/alphabet`
 
-    案例：
+       所有触发符使用的字符都必须包含在 `speller/alphabet` 中。默认的 `;` 配置如下：
 
-    建议用人名测试，例如：符筑玛（辅助码的谐音，日常语料中较少出现，便于观察学习效果）。
+       ```yaml
+       speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
+       ```
 
-    1. 先用 ;;（不学习模式）
-      连续输入并上屏多次（例如 5~10 次），符筑玛不应因为这些输入而明显前移到更靠前候选。
-    2. 再用 ;（学习模式）
-      再输入并上屏（通常少量次数即可观察到变化），符筑玛应更容易出现在候选中（排序趋于前移）。
+       如果使用 `;` 和 `#` 两个触发符，则两个字符都要加入，并建议用引号包裹包含 `#` 的 YAML 字符串：
 
-    规则说明：
-    - `aux_code_learn_trigger` 旧的 `aux_code_trigger`行为保持不变（等价于 learn trigger）。
-    - `aux_code_no_learn_trigger` 未设置或为空时，表示不启用「不进入用户词库」模式。
-    - 若两个触发键配置为同一个值，不进入用户词库的触发键会自动失效（避免歧义）。
-    - 若两个触发键存在前缀关系（例如 `;` 与 `;;`），插件会优先匹配更长的触发键。
+       ```yaml
+       speller/alphabet: "zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;#"
+       ```
 
-    ---
+       > :warning: `;` 等符号应使用英文半角字符。输入辅码后的上屏标点不需要加入 `speller/alphabet`，例如 `ni;fy.` 中的 `.` 仍由 Rime 原有标点流程处理。
 
-    如果对自己的辅助码熟悉程度非常有信心不需要任何辅助码提示，可以使用下面的配置进行关闭：
+    4. 必要时处理按键冲突
 
-    ```yaml
-    show_aux_notice: false  # 设置是否显示辅助码字母提示
-    ```
+       `key_binder` 只用于真正的按键映射，不存放插件配置。如果将触发符设置为 `.` 或 `,`，它们可能与输入方案的翻页键冲突，需要调整对应绑定：
 
-    > :warning: 本插件使用的自然码方案为修改版，可能和你之前一直使用的有细微区别，建议开启辅助码提示一段时间后，确定输入没问题了再考虑关闭该项
+       ```yaml
+       patch:
+         key_binder/bindings/+:
+           # 禁用前翻页键 "."
+           - { when: has_menu, accept: period, send: period }
+           # 禁用后翻页键 ","
+           - { when: has_menu, accept: comma, send: comma }
+       ```
+
+       > :warning: 是否存在冲突取决于当前输入方案；没有冲突时不需要添加这些绑定。
+
+       本插件使用的自然码方案为修改版，可能和你之前使用的码表有细微区别。建议先开启辅码提示，确认输入习惯和码表一致后再关闭。
 
 
-4. 保存`*.custum.yaml`文件后，后执行一次“重新部署/重新加载配置”。
+4. 保存 `*.custom.yaml` 文件后，执行一次“重新部署/重新加载配置”。
 
 
 #### 安卓平台的小企鹅输入法 5 安装与配置方法

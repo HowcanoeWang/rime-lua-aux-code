@@ -35,15 +35,21 @@ local function make_env(input_code)
     }
 end
 
-local function make_init_env(trigger, no_learn_trigger)
+local function make_init_env(trigger, no_learn_trigger, show_aux_notice)
     local callback
     local config = {
         get_string = function(_, key)
-            if key == "key_binder/aux_code_learn_trigger" then
+            if key == "aux_code/learn_trigger" then
                 return trigger
             end
-            if key == "key_binder/aux_code_no_learn_trigger" then
+            if key == "aux_code/no_learn_trigger" then
                 return no_learn_trigger
+            end
+            return nil
+        end,
+        get_bool = function(_, key)
+            if key == "aux_code/show_aux_notice" then
+                return show_aux_notice
             end
             return nil
         end,
@@ -104,6 +110,42 @@ local function test_letter_aux_still_filters_candidates()
     assert_equal(output[1].text, "你", "matching candidate should remain")
 end
 
+local function test_trigger_at_input_start_bypasses_filtering()
+    local output = collect_output(";z", {
+        ["你"] = { k1 = { z = true }, k12 = {} },
+    })
+
+    assert_equal(#output, 2, "trigger at input start should not enable aux filtering")
+    assert_equal(output[1].text, "你", "first candidate should remain")
+    assert_equal(output[2].text, "泥", "second candidate should remain")
+end
+
+local function test_init_reads_aux_code_config()
+    local env = make_init_env(";", "#", false)
+    local old_rime_api = _G.rime_api
+    local old_read_aux_txt = AuxFilter.readAuxTxt
+    _G.rime_api = {
+        get_shared_data_dir = function()
+            return "/tmp"
+        end,
+        get_user_data_dir = function()
+            return "/tmp"
+        end,
+    }
+    AuxFilter.readAuxTxt = function()
+        return {}
+    end
+
+    AuxFilter.init(env)
+
+    AuxFilter.readAuxTxt = old_read_aux_txt
+    _G.rime_api = old_rime_api
+
+    assert_equal(env.learn_trigger, ";", "learn trigger should use aux_code config")
+    assert_equal(env.no_learn_trigger, "#", "no-learn trigger should use aux_code config")
+    assert_equal(env.show_aux_notice, false, "notice flag should use aux_code config")
+end
+
 local function test_repeated_trigger_does_not_leave_aux_residue()
     local ctx = { input = "ni;;fy" }
     local committed = false
@@ -141,4 +183,6 @@ end
 
 test_punctuation_after_aux_bypasses_filtering()
 test_letter_aux_still_filters_candidates()
+test_trigger_at_input_start_bypasses_filtering()
+test_init_reads_aux_code_config()
 test_repeated_trigger_does_not_leave_aux_residue()

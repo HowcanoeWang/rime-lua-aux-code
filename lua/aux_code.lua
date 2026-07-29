@@ -77,10 +77,8 @@ function AuxFilter.init(env)
     local config = engine.schema.config
 
     -- 双触发键：learn 与 no_learn
-    env.learn_trigger = normalize_trigger(config:get_string("key_binder/aux_code_learn_trigger"), nil)
-        or normalize_trigger(config:get_string("key_binder/aux_code_trigger"), nil)
-        or ";"
-    env.no_learn_trigger = normalize_trigger(config:get_string("key_binder/aux_code_no_learn_trigger"), "")
+    env.learn_trigger = normalize_trigger(config:get_string("aux_code/learn_trigger"), ";")
+    env.no_learn_trigger = normalize_trigger(config:get_string("aux_code/no_learn_trigger"), "")
 
     if env.no_learn_trigger == env.learn_trigger then
         env.no_learn_trigger = ""
@@ -103,15 +101,9 @@ function AuxFilter.init(env)
         return #a.token > #b.token
     end)
 
-    -- 兼容旧逻辑，后续任务会替换为 parse 模式
-    env.trigger_key = env.learn_trigger
     -- 设定是否显示辅助码，默认为显示
-    env.show_aux_notice = config:get_string("key_binder/show_aux_notice") or 'true'
-    if env.show_aux_notice == "false" then
-        env.show_aux_notice = false
-    else
-        env.show_aux_notice = true
-    end
+    local show_aux_notice = config:get_bool("aux_code/show_aux_notice")
+    env.show_aux_notice = show_aux_notice == nil or show_aux_notice
 
     ----------------------------
     -- 持續選詞上屏，保持輔助碼分隔符存在 --
@@ -342,7 +334,8 @@ parse_aux_input = function(input_code, env)
         local token = item.token
         if token ~= "" then
             local token_pattern = escape_lua_pattern(token)
-            if input_code:find(token, 1, true) then
+            local trigger_start = input_code:find(token, 1, true)
+            if trigger_start and trigger_start > 1 then
                 local local_split = input_code:match(token_pattern .. "([a-z]+)")
                 if not local_split then
                     return item.mode, "", token
