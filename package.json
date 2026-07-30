@@ -1,0 +1,32 @@
+{
+  "name": "rime-lua-aux-code",
+  "version": "1.0.0-beta.1",
+  "description": "Rime Lua auxiliary code filter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HowcanoeWang/rime-lua-aux-code.git"
+  },
+  "homepage": "https://github.com/HowcanoeWang/rime-lua-aux-code#readme",
+  "bugs": {
+    "url": "https://github.com/HowcanoeWang/rime-lua-aux-code/issues"
+  },
+  "files": [
+    "lua/aux_code.lua",
+    "lua/aux_code_updater.lua"
+  ],
+  "rimePlugin": {
+    "schema": 1,
+    "updaterApi": 1,
+    "files": {
+      "lua/aux_code.lua": "sha512-A+kYfZou156iyuFJAGecPDEaQV+YUFhXpnZf+Nxv4+sBO0XJh8nGalyE9CHnCBfgA+d5dkZwTO3KqLamfiFTbQ==",
+      "lua/aux_code_updater.lua": "sha512-ZCo8CSU/YvRUXzSGMD7juqUivNlPmGyvTgPX0wev3An4OuW2OGrng3du98aujOS+QnA6SAz0jP+VtV6vY6ZdbA=="
+    }
+  },
+  "scripts": {
+    "update-hashes": "node scripts/update-package-hashes.mjs",
+    "verify-package": "node scripts/verify-package.mjs",
+    "test": "node scripts/run-tests.mjs",
+    "prepack": "node scripts/verify-package.mjs"
+  }
+}

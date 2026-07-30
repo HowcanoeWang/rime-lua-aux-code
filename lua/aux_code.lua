@@ -1,4 +1,5 @@
 local AuxFilter = {}
+AuxFilter.VERSION = "1.0.0-beta.1"
 local parse_aux_input
 local escape_lua_pattern
 local has_non_alpha_after_aux
@@ -104,6 +105,23 @@ function AuxFilter.init(env)
     -- 设定是否显示辅助码，默认为显示
     local show_aux_notice = config:get_bool("aux_code/show_aux_notice")
     env.show_aux_notice = show_aux_notice == nil or show_aux_notice
+
+    local ok, Updater = pcall(require, "aux_code_updater")
+    if ok and Updater then
+        local ok_init, handle = pcall(Updater.init, {
+            config = config,
+            user_data_dir = rime_api.get_user_data_dir(),
+            current_version = AuxFilter.VERSION,
+        })
+        if ok_init and handle then
+            env.updater = {
+                handle = handle,
+                poll = Updater.poll,
+                take_notice = Updater.take_notice,
+                fini = Updater.fini,
+            }
+        end
+    end
 
     ----------------------------
     -- 持續選詞上屏，保持輔助碼分隔符存在 --
@@ -364,18 +382,38 @@ function AuxFilter.func(input, env)
 
     local mode, auxStr, _ = parse_aux_input(inputCode, env)
 
+    local notice = nil
+    local notice_applied = false
+    if env.updater then
+        local ok = pcall(env.updater.poll, env.updater.handle)
+        if ok then
+            local ok_notice, value = pcall(env.updater.take_notice, env.updater.handle)
+            if ok_notice then
+                notice = value
+            end
+        end
+    end
+
+    local function apply_notice(cand)
+        if notice and not notice_applied then
+            notice_applied = true
+            return append_missing_hint(cand, notice)
+        end
+        return cand
+    end
+
     -- 判断字符串中是否包含輔助碼分隔符
     if mode == "none" then
         -- 没有输入辅助码引导符，则直接yield所有待选项，不进入后续迭代，提升性能
         for cand in input:iter() do
-            yield(cand)
+            yield(apply_notice(cand))
         end
         return
     end
 
     if has_non_alpha_after_aux(inputCode, env) then
         for cand in input:iter() do
-            yield(cand)
+            yield(apply_notice(cand))
         end
         return
     end
@@ -389,7 +427,7 @@ function AuxFilter.func(input, env)
                 cand = append_missing_hint(cand, env.aux_error_msg)
                 hinted = true
             end
-            yield(cand)
+            yield(apply_notice(cand))
         end
         return
     end
@@ -433,7 +471,7 @@ function AuxFilter.func(input, env)
         -- 過濾輔助碼
         if #auxStr == 0 then
             -- 沒有輔助碼、不需篩選，直接返回待選項
-            yield(to_yield_candidate(cand))
+            yield(apply_notice(to_yield_candidate(cand)))
         elseif #auxStr > 0 and is_phrase_candidate(cand) then
             local matched = find_phrase_match(cand.text, auxStr)
             -- 仅词组候选显示命中提示，单字继续沿用“显示全部辅码”。
@@ -459,7 +497,7 @@ function AuxFilter.func(input, env)
             local key = cand.type .. "\t" .. cand.start .. "\t" .. cand._end .. "\t" .. cand.text
             if not seen[key] then
                 seen[key] = true
-                yield(to_yield_candidate(cand))
+                yield(apply_notice(to_yield_candidate(cand)))
             end
         end
     end
@@ -476,7 +514,12 @@ function AuxFilter.func(input, env)
 end
 
 function AuxFilter.fini(env)
-    env.notifier:disconnect()
+    if env.updater then
+        pcall(env.updater.fini, env.updater.handle)
+    end
+    if env.notifier then
+        env.notifier:disconnect()
+    end
 end
 
 return AuxFilter

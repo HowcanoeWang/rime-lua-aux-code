@@ -1,0 +1,56 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Setup Lua
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lua5.4
+
+      - name: Lua syntax check
+        run: luac -p lua/aux_code.lua lua/aux_code_updater.lua
+
+      - name: Run tests
+        run: npm test
+
+      - name: Verify tag matches package version
+        run: |
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          PKG_VERSION="$(node -pe "require('./package.json').version")"
+          if [ "$TAG_VERSION" != "$PKG_VERSION" ]; then
+            echo "error: tag version ($TAG_VERSION) != package version ($PKG_VERSION)"
+            exit 1
+          fi
+          echo "version ok: $PKG_VERSION"
+
+      - name: npm pack (dry-run)
+        run: npm pack --dry-run
+
+      - name: npm publish
+        run: |
+          PKG_NAME="$(node -pe "require('./package.json').name")"
+          PKG_VERSION="$(node -pe "require('./package.json').version")"
+          if [[ "$PKG_VERSION" == *-* ]]; then
+            npm publish --provenance --access public --tag beta
+          else
+            npm publish --provenance --access public --tag latest
+            npm dist-tag add "$PKG_NAME@$PKG_VERSION" beta
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

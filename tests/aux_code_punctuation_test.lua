@@ -121,6 +121,9 @@ local function test_trigger_at_input_start_bypasses_filtering()
 end
 
 local function test_init_reads_aux_code_config()
+    package.preload["aux_code_updater"] = function() return false end
+    package.loaded["aux_code_updater"] = nil
+
     local env = make_init_env(";", "#", false)
     local old_rime_api = _G.rime_api
     local old_read_aux_txt = AuxFilter.readAuxTxt
@@ -144,9 +147,13 @@ local function test_init_reads_aux_code_config()
     assert_equal(env.learn_trigger, ";", "learn trigger should use aux_code config")
     assert_equal(env.no_learn_trigger, "#", "no-learn trigger should use aux_code config")
     assert_equal(env.show_aux_notice, false, "notice flag should use aux_code config")
+    assert_equal(env.updater, nil, "updater should be nil when module is absent")
 end
 
 local function test_repeated_trigger_does_not_leave_aux_residue()
+    package.preload["aux_code_updater"] = function() return false end
+    package.loaded["aux_code_updater"] = nil
+
     local ctx = { input = "ni;;fy" }
     local committed = false
     local env = make_init_env(";", "")
@@ -179,6 +186,7 @@ local function test_repeated_trigger_does_not_leave_aux_residue()
 
     assert_equal(ctx.input, "ni", "repeated trigger residue should be removed")
     assert_equal(committed, true, "selection should commit after clearing residue")
+    assert_equal(env.updater, nil, "updater should be nil when module is absent")
 end
 
 test_punctuation_after_aux_bypasses_filtering()

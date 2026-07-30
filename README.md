@@ -62,7 +62,8 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
     ```
     (config_path)/
     ├─ lua/
-    │  ├─ aux_code.lua               # github中的lua/aux_code.lua文件
+    │  ├─ aux_code.lua               # GitHub 中的 lua/aux_code.lua
+    │  ├─ aux_code_updater.lua       # GitHub 中的 lua/aux_code_updater.lua
     │  ├─ ...
     ├─ aux_code/
     │  ├─ ZRM_Aux-code_4.3.txt       # 辅助码码表文件
@@ -108,6 +109,8 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
         learn_trigger: ";"
         no_learn_trigger: ";;"
         show_aux_notice: true
+        update_mode: notify
+        check_interval_days: 7
 
       speller/alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA;
 
@@ -138,9 +141,11 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
        ```yaml
        aux_code:
-         learn_trigger: ";"      # 辅码筛选，允许候选词进入用户词库
-         no_learn_trigger: ";;"  # 辅码筛选，仅上屏，不进入用户词库
-         show_aux_notice: true    # 在候选中显示单字辅码提示
+         learn_trigger: ";"       # 辅码筛选，允许候选词进入用户词库
+         no_learn_trigger: ";;"   # 辅码筛选，仅上屏，不进入用户词库
+         show_aux_notice: true     # 在候选中显示单字辅码提示
+         update_mode: notify       # off、notify 或 auto，默认仅提醒
+         check_interval_days: 7   # 每隔多少天检查一次更新
        ```
 
        | 配置项 | 启用辅码筛选 | 用户词库学习 |
@@ -165,8 +170,25 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
        - 两个触发符相同时，`no_learn_trigger` 自动失效，以避免歧义。
        - 两个触发符存在前缀关系时（例如 `;` 与 `;;`），插件优先匹配更长的触发符。
        - 不需要单字辅码提示时，将 `show_aux_notice` 设置为 `false`。
+       - `check_interval_days` 只接受正整数，无效值按 7 天处理。
 
        可以用较少见的人名观察用户词库学习效果。例如先用 `;;` 多次输入“符筑玛”，其排序不应明显前移；再改用 `;` 输入，候选排序应逐渐前移。
+
+       更新模式说明：
+
+       | `update_mode` | 行为 |
+       | --- | --- |
+       | `off` | 不检查更新，也不创建更新状态目录 |
+       | `notify` | 默认值，只通过候选注释提醒，不下载程序包 |
+       | `auto` | 校验通过后自动替换两个 Lua 文件，重新部署后生效 |
+
+       更新检查优先访问 npmmirror，失败后尝试 npm 官方 Registry。`notify` 需要系统可用的 `curl`；`auto` 还需要 `tar` 及 SHA-512 工具（Windows 为 `certutil`，macOS/Linux 为 `shasum` 或 `sha512sum`）。网络、权限、工具或校验异常都不会影响辅码筛选。
+
+       npm/npmmirror 只承担后续程序更新，不提供首次安装：首次仍从 GitHub 获取两个 Lua 文件和自选码表。自动更新只处理 `lua/aux_code.lua` 与 `lua/aux_code_updater.lua`，不会修改 `aux_code/*.txt`、`*.yaml` 或用户自定义内容。检测到任一 Lua 文件被修改时，`auto` 会取消覆盖并仅作提醒。
+
+       预发布版本自动跟踪 npm 的 `beta` 标签，用于验证更新流程；正式版本只跟踪 `latest`。发布正式版时，`beta` 用户会升级到对应稳定版本。
+
+       Android 上可继续手动安装插件，但不保证更新功能可用。
 
     3. 将触发字符加入 `speller/alphabet`
 
