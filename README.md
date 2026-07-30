@@ -188,6 +188,17 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
        预发布版本自动跟踪 npm 的 `beta` 标签，用于验证更新流程；正式版本只跟踪 `latest`。发布正式版时，`beta` 用户会升级到对应稳定版本。
 
+       从旧版本升级时，插件会继续读取原先位于 `key_binder` 下的配置，并在首次选定候选前持续提醒迁移。新配置优先，更新器不会自动修改任何 YAML：
+
+       | 旧配置 | 新配置 |
+       | --- | --- |
+       | `key_binder/aux_code_trigger` | `aux_code/learn_trigger` |
+       | `key_binder/aux_code_learn_trigger` | `aux_code/learn_trigger` |
+       | `key_binder/aux_code_no_learn_trigger` | `aux_code/no_learn_trigger` |
+       | `key_binder/show_aux_notice` | `aux_code/show_aux_notice` |
+
+       若需要明确关闭不学习触发符，可以设置 `aux_code/no_learn_trigger: ""`，该值会覆盖旧配置。
+
        Android 上可继续手动安装插件，但不保证更新功能可用。
 
     3. 将触发字符加入 `speller/alphabet`

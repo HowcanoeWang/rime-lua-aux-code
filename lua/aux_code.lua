@@ -1,5 +1,5 @@
 local AuxFilter = {}
-AuxFilter.VERSION = "1.0.0-beta.1"
+AuxFilter.VERSION = "1.0.0-beta.2"
 local parse_aux_input
 local escape_lua_pattern
 local has_non_alpha_after_aux
@@ -10,6 +10,48 @@ local function normalize_trigger(token, fallback)
         return fallback
     end
     return token
+end
+
+local function get_config_value(config, method, key)
+    local fn = config and config[method]
+    if type(fn) ~= "function" then
+        return nil
+    end
+    local ok, value = pcall(fn, config, key)
+    if not ok then
+        return nil
+    end
+    return value
+end
+
+local function read_string_with_legacy(config, current_key, legacy_keys)
+    local value = get_config_value(config, "get_string", current_key)
+    if value ~= nil then
+        return value, false
+    end
+    for _, key in ipairs(legacy_keys) do
+        value = get_config_value(config, "get_string", key)
+        if value ~= nil then
+            return value, true
+        end
+    end
+    return nil, false
+end
+
+local function read_notice_setting(config)
+    local value = get_config_value(config, "get_bool", "aux_code/show_aux_notice")
+    if value ~= nil then
+        return value, false
+    end
+    value = get_config_value(config, "get_bool", "key_binder/show_aux_notice")
+    if value ~= nil then
+        return value, true
+    end
+    local legacy = get_config_value(config, "get_string", "key_binder/show_aux_notice")
+    if legacy ~= nil then
+        return legacy ~= "false", true
+    end
+    return true, false
 end
 
 local function build_missing_dict_message(filename)
@@ -77,9 +119,16 @@ function AuxFilter.init(env)
     local engine = env.engine
     local config = engine.schema.config
 
-    -- 双触发键：learn 与 no_learn
-    env.learn_trigger = normalize_trigger(config:get_string("aux_code/learn_trigger"), ";")
-    env.no_learn_trigger = normalize_trigger(config:get_string("aux_code/no_learn_trigger"), "")
+    -- 新配置优先；仅在对应新键缺失时读取旧 key_binder 配置。
+    local learn_trigger, legacy_learn = read_string_with_legacy(config, "aux_code/learn_trigger", {
+        "key_binder/aux_code_learn_trigger",
+        "key_binder/aux_code_trigger",
+    })
+    local no_learn_trigger, legacy_no_learn = read_string_with_legacy(config, "aux_code/no_learn_trigger", {
+        "key_binder/aux_code_no_learn_trigger",
+    })
+    env.learn_trigger = normalize_trigger(learn_trigger, ";")
+    env.no_learn_trigger = normalize_trigger(no_learn_trigger, "")
 
     if env.no_learn_trigger == env.learn_trigger then
         env.no_learn_trigger = ""
@@ -102,9 +151,10 @@ function AuxFilter.init(env)
         return #a.token > #b.token
     end)
 
-    -- 设定是否显示辅助码，默认为显示
-    local show_aux_notice = config:get_bool("aux_code/show_aux_notice")
-    env.show_aux_notice = show_aux_notice == nil or show_aux_notice
+    local legacy_notice
+    env.show_aux_notice, legacy_notice = read_notice_setting(config)
+    env.uses_legacy_config = legacy_learn or legacy_no_learn or legacy_notice
+    env.legacy_notice_pending = env.uses_legacy_config
 
     local ok, Updater = pcall(require, "aux_code_updater")
     if ok and Updater then
@@ -127,6 +177,8 @@ function AuxFilter.init(env)
     -- 持續選詞上屏，保持輔助碼分隔符存在 --
     ----------------------------
     env.notifier = engine.context.select_notifier:connect(function(ctx)
+        env.legacy_notice_pending = false
+
         local mode, _, trigger_token = parse_aux_input(ctx.input, env)
         if mode == "none" then
             return
@@ -382,17 +434,22 @@ function AuxFilter.func(input, env)
 
     local mode, auxStr, _ = parse_aux_input(inputCode, env)
 
-    local notice = nil
+    local notices = {}
+    local legacy_notice_pending = env.legacy_notice_pending
+    if legacy_notice_pending then
+        notices[#notices + 1] = "请迁移辅助码插件旧版配置"
+    end
     local notice_applied = false
     if env.updater then
         local ok = pcall(env.updater.poll, env.updater.handle)
         if ok then
             local ok_notice, value = pcall(env.updater.take_notice, env.updater.handle)
-            if ok_notice then
-                notice = value
+            if ok_notice and value then
+                notices[#notices + 1] = value
             end
         end
     end
+    local notice = #notices > 0 and table.concat(notices, " | ") or nil
 
     local function apply_notice(cand)
         if notice and not notice_applied then
