@@ -48,7 +48,7 @@ local function append_missing_hint(cand, message)
     return cand
 end
 
--- local log = require 'log'
+-- local log = require 'aux_code_log'
 -- log.outfile = "aux_code.log"
 
 function AuxFilter.init(env)

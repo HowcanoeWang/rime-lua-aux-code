@@ -19,7 +19,7 @@
     "schema": 1,
     "updaterApi": 1,
     "files": {
-      "lua/aux_code.lua": "sha512-A+kYfZou156iyuFJAGecPDEaQV+YUFhXpnZf+Nxv4+sBO0XJh8nGalyE9CHnCBfgA+d5dkZwTO3KqLamfiFTbQ==",
+      "lua/aux_code.lua": "sha512-Pngjcx9mkjLnx4Tdoe6ZltTm4AwSx3GxWKUDbnVnAOevvfMfykBW9R8mnabwATMA6ejsFJQ/lfaE5fOttUOVjg==",
       "lua/aux_code_updater.lua": "sha512-ZCo8CSU/YvRUXzSGMD7juqUivNlPmGyvTgPX0wev3An4OuW2OGrng3du98aujOS+QnA6SAz0jP+VtV6vY6ZdbA=="
     }
   },
