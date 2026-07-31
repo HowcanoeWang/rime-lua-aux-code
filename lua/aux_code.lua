@@ -1,5 +1,5 @@
 local AuxFilter = {}
-AuxFilter.VERSION = "1.0.0-beta.2"
+AuxFilter.VERSION = "1.0.0-beta.3"
 local parse_aux_input
 local escape_lua_pattern
 local has_non_alpha_after_aux
@@ -155,6 +155,7 @@ function AuxFilter.init(env)
     env.show_aux_notice, legacy_notice = read_notice_setting(config)
     env.uses_legacy_config = legacy_learn or legacy_no_learn or legacy_notice
     env.legacy_notice_pending = env.uses_legacy_config
+    env.update_notice = nil
 
     local ok, Updater = pcall(require, "aux_code_updater")
     if ok and Updater then
@@ -168,6 +169,7 @@ function AuxFilter.init(env)
                 handle = handle,
                 poll = Updater.poll,
                 take_notice = Updater.take_notice,
+                ack_notice = Updater.ack_notice,
                 fini = Updater.fini,
             }
         end
@@ -178,6 +180,10 @@ function AuxFilter.init(env)
     ----------------------------
     env.notifier = engine.context.select_notifier:connect(function(ctx)
         env.legacy_notice_pending = false
+        if env.update_notice and env.updater and env.updater.ack_notice then
+            pcall(env.updater.ack_notice, env.updater.handle)
+        end
+        env.update_notice = nil
 
         local mode, _, trigger_token = parse_aux_input(ctx.input, env)
         if mode == "none" then
@@ -441,12 +447,15 @@ function AuxFilter.func(input, env)
     end
     local notice_applied = false
     if env.updater then
-        local ok = pcall(env.updater.poll, env.updater.handle)
-        if ok then
+        pcall(env.updater.poll, env.updater.handle)
+        if not env.update_notice then
             local ok_notice, value = pcall(env.updater.take_notice, env.updater.handle)
             if ok_notice and value then
-                notices[#notices + 1] = value
+                env.update_notice = value
             end
+        end
+        if env.update_notice then
+            notices[#notices + 1] = env.update_notice
         end
     end
     local notice = #notices > 0 and table.concat(notices, " | ") or nil

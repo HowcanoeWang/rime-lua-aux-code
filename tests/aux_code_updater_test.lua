@@ -389,6 +389,14 @@ local function make_config(mode)
     end }
 end
 
+local function write_state_fixture(user_data_dir, content)
+    local state_dir = user_data_dir .. "/aux_code/.update"
+    mkdir(state_dir)
+    local file = assert(io.open(state_dir .. "/state.json", "wb"))
+    file:write(content)
+    file:close()
+end
+
 local function test_updater_init_off()
     local h = Updater.init({ config = make_config("off"), user_data_dir = "/tmp/test_off", current_version = "1.0.0" })
     assert_ok(h, "init off")
@@ -409,6 +417,104 @@ end
 
 local function test_updater_take_notice()
     assert_nil(Updater.take_notice(nil), "nil handle")
+    Updater.ack_notice(nil)
+    passed = passed + 1
+end
+
+local function test_restore_legacy_update_notice_state()
+    local d = make_tmp()
+    write_state_fixture(d,
+        [[{"last_attempt_at":123,"last_notify_at":456,"last_notify_version":"1.0.0-beta.2"}]])
+    local h = Updater.init({
+        config = make_config("notify"),
+        user_data_dir = d,
+        current_version = "1.0.0-beta.1",
+    })
+
+    Updater.poll(h)
+    assert_eq(h.phase, T.PHASE.NOTIFIED, "legacy state restores pending update notice")
+    local notice = Updater.take_notice(h)
+    assert_ok(notice and notice:find("1.0.0%-beta%.2"), "restored notice includes target version")
+    assert_ok(type(h.state.pending_notice) == "table", "taken notice is persisted until acknowledgement")
+
+    Updater.ack_notice(h)
+    assert_nil(h.state.pending_notice, "ack clears persisted notice")
+    assert_nil(h.state.last_notify_version, "ack clears legacy pending version")
+    assert_nil(h.state.last_notify_at, "ack clears legacy pending timestamp")
+    Updater.fini(h)
+end
+
+local function test_restore_generic_notice_state()
+    local d = make_tmp()
+    local h = Updater.init({
+        config = make_config("auto"),
+        user_data_dir = d,
+        current_version = "1.0.0",
+    })
+    Updater.poll(h)
+    h.notice = "更新出错: test"
+    h.notice_consumed = false
+    assert_eq(Updater.take_notice(h), "更新出错: test", "generic notice can be taken")
+    Updater.fini(h)
+
+    local restored = Updater.init({
+        config = make_config("auto"),
+        user_data_dir = d,
+        current_version = "1.0.0",
+    })
+    Updater.poll(restored)
+    assert_eq(restored.phase, T.PHASE.NOTIFIED, "generic notice is restored after reinitialization")
+    assert_eq(Updater.take_notice(restored), "更新出错: test", "restored generic notice keeps its message")
+    Updater.ack_notice(restored)
+    Updater.fini(restored)
+end
+
+local function test_stale_completed_notice_is_discarded()
+    local d = make_tmp()
+    write_state_fixture(d, [[{"pending_notice":{"kind":"updated","message":"redeploy","source_version":"1.0.0-beta.1","version":"1.0.0-beta.2"}}]])
+    local h = Updater.init({
+        config = make_config("auto"),
+        user_data_dir = d,
+        current_version = "1.0.0-beta.2",
+    })
+
+    Updater.poll(h)
+    assert_eq(h.phase, T.PHASE.IDLE, "completed notice is stale after the new version loads")
+    assert_nil(Updater.take_notice(h), "stale completed notice is not shown")
+    assert_nil(h.state.pending_notice, "stale completed notice is removed from state")
+    Updater.fini(h)
+end
+
+local function test_stale_available_notice_is_discarded()
+    local d = make_tmp()
+    write_state_fixture(d, [[{"pending_notice":{"kind":"update_available","message":"update","source_version":"1.0.0-beta.1","version":"1.0.0-beta.2"}}]])
+    local h = Updater.init({
+        config = make_config("notify"),
+        user_data_dir = d,
+        current_version = "1.0.0-beta.2",
+    })
+
+    Updater.poll(h)
+    assert_eq(h.phase, T.PHASE.IDLE, "available notice is stale after its version loads")
+    assert_nil(Updater.take_notice(h), "installed version notice is not shown")
+    assert_nil(h.state.pending_notice, "installed version notice is removed from state")
+    Updater.fini(h)
+end
+
+local function test_cross_version_generic_notice_is_discarded()
+    local d = make_tmp()
+    write_state_fixture(d, [[{"pending_notice":{"kind":"generic","message":"old error","source_version":"1.0.0-beta.1"}}]])
+    local h = Updater.init({
+        config = make_config("auto"),
+        user_data_dir = d,
+        current_version = "1.0.0-beta.2",
+    })
+
+    Updater.poll(h)
+    assert_eq(h.phase, T.PHASE.IDLE, "generic notice expires after a version change")
+    assert_nil(Updater.take_notice(h), "old-version generic notice is not shown")
+    assert_nil(h.state.pending_notice, "old-version generic notice is removed from state")
+    Updater.fini(h)
 end
 
 local function test_updater_fini_safe()
@@ -579,6 +685,11 @@ test_updater_init_off()
 test_updater_beta_tag()
 test_updater_init_no_dir()
 test_updater_take_notice()
+test_restore_legacy_update_notice_state()
+test_restore_generic_notice_state()
+test_stale_completed_notice_is_discarded()
+test_stale_available_notice_is_discarded()
+test_cross_version_generic_notice_is_discarded()
 test_updater_fini_safe()
 test_updater_lifecycle_off()
 test_updater_lifecycle_idle_no_workers()

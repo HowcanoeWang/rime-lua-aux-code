@@ -182,6 +182,8 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
        | `notify` | 默认值，只通过候选注释提醒，不下载程序包 |
        | `auto` | 校验通过后自动替换两个 Lua 文件，重新部署后生效 |
 
+       更新与迁移提示会持续显示到首次选定候选。尚未确认的更新提示会在重新部署后恢复，避免因候选刷新而遗漏。
+
        更新检查优先访问 npmmirror，失败后尝试 npm 官方 Registry。`notify` 需要系统可用的 `curl`；`auto` 还需要 `tar` 及 SHA-512 工具（Windows 为 `certutil`，macOS/Linux 为 `shasum` 或 `sha512sum`）。网络、权限、工具或校验异常都不会影响辅码筛选。
 
        npm/npmmirror 只承担后续程序更新，不提供首次安装：首次仍从 GitHub 获取两个 Lua 文件和自选码表。自动更新只处理 `lua/aux_code.lua` 与 `lua/aux_code_updater.lua`，不会修改 `aux_code/*.txt`、`*.yaml` 或用户自定义内容。检测到任一 Lua 文件被修改时，`auto` 会取消覆盖并仅作提醒。

@@ -488,6 +488,79 @@ local function save_state(state_dir, state)
     return atomic_rename(tmp, sp)
 end
 
+local function restore_pending_notice(h)
+    local pending = h.state.pending_notice
+    if type(pending) ~= "table" then
+        local version = h.state.last_notify_version
+        local should = version and should_update(parse_semver(h.current_version), parse_semver(version))
+        if should then
+            pending = {
+                kind = "update_available",
+                message = "有新版本 " .. version .. " (当前 " .. h.current_version .. ")，可手动更新",
+                source_version = h.current_version,
+                version = version,
+            }
+            h.state.pending_notice = pending
+            h.state.last_notify_version = nil
+            h.state.last_notify_at = nil
+            save_state(h.state_dir, h.state)
+        elseif version then
+            h.state.last_notify_version = nil
+            h.state.last_notify_at = nil
+            save_state(h.state_dir, h.state)
+        end
+    end
+
+    if type(pending) ~= "table" or type(pending.message) ~= "string" or pending.message == "" then
+        return false
+    end
+
+    local stale = false
+    if pending.kind == "update_available" then
+        stale = not should_update(parse_semver(h.current_version), parse_semver(pending.version))
+    elseif pending.kind == "updated" then
+        local cmp = compare_semver(pending.version, h.current_version)
+        stale = not cmp or cmp <= 0
+    elseif pending.source_version and pending.source_version ~= h.current_version then
+        stale = true
+    end
+
+    if stale then
+        h.state.pending_notice = nil
+        h.state.last_notify_version = nil
+        h.state.last_notify_at = nil
+        save_state(h.state_dir, h.state)
+        return false
+    end
+
+    h.notice = pending.message
+    h.notice_consumed = false
+    h.remote_version = pending.version
+    h.phase = pending.kind == "updated" and PHASE.DONE or PHASE.NOTIFIED
+    return true
+end
+
+local function persist_pending_notice(h, message)
+    local pending = {
+        kind = "generic",
+        message = message,
+        source_version = h.current_version,
+    }
+    if h.phase == PHASE.DONE and h.remote_version then
+        pending.kind = "updated"
+        pending.version = h.remote_version
+    elseif h.mode == MODE.NOTIFY and h.phase == PHASE.NOTIFIED and h.remote_version
+        and ((type(h.state.pending_notice) == "table"
+                and h.state.pending_notice.kind == "update_available"
+                and h.state.pending_notice.version == h.remote_version)
+            or h.state.last_notify_version == h.remote_version) then
+        pending.kind = "update_available"
+        pending.version = h.remote_version
+    end
+    h.state.pending_notice = pending
+    save_state(h.state_dir, h.state)
+end
+
 local function parse_dist_tags(json_str, tag)
     local parsed = parse_json(json_str)
     if not parsed then return nil end
@@ -616,6 +689,7 @@ local function advance_phase(h)
             h.state.transaction = nil
             save_state(h.state_dir, h.state)
         end
+        if restore_pending_notice(h) then return end
         h.phase = PHASE.IDLE
         return
     end
@@ -1032,6 +1106,7 @@ local function advance_phase(h)
         h.state.last_update_version = h.remote_version
         h.state.last_update_time = os.time()
         h.state.last_notify_version = nil
+        h.state.last_notify_at = nil
         if not save_state(h.state_dir, h.state) then
             h.state.transaction = transaction
             h.state.last_update_version = previous_update_version
@@ -1146,6 +1221,7 @@ function Updater.take_notice(h)
     if h.notice and not h.notice_consumed then
         h.notice_consumed = true
         local n = h.notice
+        persist_pending_notice(h, n)
         h.notice = nil
         if h.phase == PHASE.NOTIFIED or h.phase == PHASE.DONE then
             h.phase = PHASE.IDLE
@@ -1154,6 +1230,20 @@ function Updater.take_notice(h)
         return n
     end
     return nil
+end
+
+function Updater.ack_notice(h)
+    if not h then return end
+    h.notice = nil
+    h.notice_consumed = true
+    h.state.pending_notice = nil
+    h.state.last_notify_version = nil
+    h.state.last_notify_at = nil
+    if h.phase == PHASE.NOTIFIED or h.phase == PHASE.DONE then
+        h.phase = PHASE.IDLE
+    end
+    save_state(h.state_dir, h.state)
+    if not h.worker then rm_rf(work_dir(h)) end
 end
 
 function Updater.fini(h)

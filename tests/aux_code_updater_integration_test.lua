@@ -130,6 +130,9 @@ local function make_init_env()
                 },
             },
         },
+        get_select_callback = function()
+            return callback
+        end,
     }
 end
 
@@ -397,6 +400,61 @@ local function test_notice_applied_only_once()
     clear_updater_preload()
 end
 
+local function test_notice_remains_until_candidate_selection()
+    local take_count = 0
+    local ack_count = 0
+    mock_updater({
+        init = function(_)
+            return {}
+        end,
+        poll = function() end,
+        take_notice = function()
+            take_count = take_count + 1
+            if take_count == 1 then return "Update available" end
+            return nil
+        end,
+        ack_notice = function()
+            ack_count = ack_count + 1
+        end,
+        fini = function() end,
+    })
+    local old_api = stub_rime_api()
+    local old_read_aux_txt = AuxFilter.readAuxTxt
+    AuxFilter.readAuxTxt = function()
+        return {}
+    end
+
+    local env = make_init_env()
+    AuxFilter.init(env)
+    AuxFilter.readAuxTxt = old_read_aux_txt
+    restore_rime_api(old_api)
+    env.engine.context.input = "ni"
+
+    local function run_filter()
+        local output = {}
+        local old_yield = _G.yield
+        _G.yield = function(cand) output[#output + 1] = cand end
+        AuxFilter.func(make_input({ make_candidate({ text = "你" }) }), env)
+        _G.yield = old_yield
+        return output[1]
+    end
+
+    local first = run_filter()
+    local second = run_filter()
+    assert_truthy(string.find(first.comment, "Update available", 1, true),
+        "update notice should be shown")
+    assert_truthy(string.find(second.comment, "Update available", 1, true),
+        "update notice should remain visible while composing")
+    assert_equal(take_count, 1, "cached update notice should only be taken once")
+
+    env.get_select_callback()(env.engine.context)
+    local after_selection = run_filter()
+    assert_equal(after_selection.comment, nil, "update notice should stop after candidate selection")
+    assert_equal(ack_count, 1, "candidate selection should acknowledge the update notice")
+    AuxFilter.fini(env)
+    clear_updater_preload()
+end
+
 --------------------------------------------------
 -- Test 6: ShadowCandidate comment not corrupted --
 --------------------------------------------------
@@ -460,7 +518,7 @@ end
 -- Test 7: AuxFilter.VERSION is set --
 --------------------------------------------------
 local function test_version_is_set()
-    assert_equal(AuxFilter.VERSION, "1.0.0-beta.2", "VERSION should be beta.2")
+    assert_equal(AuxFilter.VERSION, "1.0.0-beta.3", "VERSION should be beta.3")
 end
 
 --------------------------------------------------
@@ -633,6 +691,7 @@ test_updater_init_throws_is_caught()
 test_updater_poll_throws_is_caught()
 test_notice_on_first_regular_candidate()
 test_notice_applied_only_once()
+test_notice_remains_until_candidate_selection()
 test_shadow_candidate_comment_not_corrupted()
 test_notice_with_aux_error_path()
 test_fini_cleans_up_updater()
