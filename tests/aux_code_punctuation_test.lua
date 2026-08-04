@@ -35,7 +35,7 @@ local function make_env(input_code)
     }
 end
 
-local function make_init_env(trigger, no_learn_trigger, show_aux_notice, legacy)
+local function make_init_env(trigger, no_learn_trigger, show_aux_notice, legacy, name_space)
     local callback
     legacy = legacy or {}
     local config = {
@@ -59,7 +59,7 @@ local function make_init_env(trigger, no_learn_trigger, show_aux_notice, legacy)
     }
 
     return {
-        name_space = "missing_aux_code_test",
+        name_space = name_space or "*aux_code",
         engine = {
             schema = { config = config },
             context = {
@@ -77,7 +77,7 @@ local function make_init_env(trigger, no_learn_trigger, show_aux_notice, legacy)
     }
 end
 
-local function init_filter(env)
+local function init_filter(env, read_aux_txt)
     package.preload["aux_code_updater"] = function() return false end
     package.loaded["aux_code_updater"] = nil
     local old_rime_api = _G.rime_api
@@ -86,11 +86,54 @@ local function init_filter(env)
         get_shared_data_dir = function() return "/tmp" end,
         get_user_data_dir = function() return "/tmp" end,
     }
-    AuxFilter.readAuxTxt = function() return {} end
+    AuxFilter.readAuxTxt = read_aux_txt or function() return {} end
     AuxFilter.init(env)
     AuxFilter.readAuxTxt = old_read_aux_txt
     _G.rime_api = old_rime_api
     return env
+end
+
+local function test_init_reads_dictionary_config()
+    local loaded_dictionary
+    local env = init_filter(make_init_env(nil, nil, nil, {
+        strings = { ["aux_code/dictionary"] = "cangjie5_quick_code" },
+    }), function(_, dictionary)
+        loaded_dictionary = dictionary
+        return {}
+    end)
+    assert_equal(env.dictionary, "cangjie5_quick_code", "dictionary should use aux_code config")
+    assert_equal(loaded_dictionary, "cangjie5_quick_code", "configured dictionary should be loaded")
+    assert_equal(env.uses_legacy_config, false, "new dictionary config should not trigger migration")
+    AuxFilter.fini(env)
+end
+
+local function test_dictionary_config_overrides_legacy_namespace()
+    local env = init_filter(make_init_env(nil, nil, nil, {
+        strings = { ["aux_code/dictionary"] = "cangjie5_quick_code" },
+    }, "old_dictionary"))
+    assert_equal(env.dictionary, "cangjie5_quick_code", "new dictionary should override legacy namespace")
+    assert_equal(env.uses_legacy_config, true, "legacy filter syntax should still trigger migration")
+    AuxFilter.fini(env)
+end
+
+local function test_init_reads_legacy_dictionary_namespace()
+    local loaded_dictionary
+    local env = init_filter(make_init_env(nil, nil, nil, nil, "aux_code/cangjie5_quick_code"),
+        function(_, dictionary)
+            loaded_dictionary = dictionary
+            return {}
+        end)
+    assert_equal(env.dictionary, "cangjie5_quick_code", "legacy namespace should remain compatible")
+    assert_equal(loaded_dictionary, "cangjie5_quick_code", "legacy namespace dictionary should be loaded")
+    assert_equal(env.uses_legacy_config, true, "legacy namespace should trigger migration")
+    AuxFilter.fini(env)
+end
+
+local function test_init_uses_default_dictionary()
+    local env = init_filter(make_init_env())
+    assert_equal(env.dictionary, "ZRM_Aux-code_4.3", "new filter syntax should use the default dictionary")
+    assert_equal(env.uses_legacy_config, false, "default dictionary should not trigger migration")
+    AuxFilter.fini(env)
 end
 
 local function collect_output(input_code, aux_index)
@@ -280,6 +323,10 @@ test_punctuation_after_aux_bypasses_filtering()
 test_letter_aux_still_filters_candidates()
 test_trigger_at_input_start_bypasses_filtering()
 test_init_reads_aux_code_config()
+test_init_reads_dictionary_config()
+test_dictionary_config_overrides_legacy_namespace()
+test_init_reads_legacy_dictionary_namespace()
+test_init_uses_default_dictionary()
 test_init_reads_legacy_key_binder_config()
 test_new_config_overrides_legacy_config()
 test_legacy_config_notice_remains_until_selection()

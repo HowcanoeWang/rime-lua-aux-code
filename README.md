@@ -103,9 +103,10 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
     ```yaml
     patch:
       engine/filters/+:
-        - lua_filter@*aux_code@ZRM_Aux-code_4.3
+        - lua_filter@*aux_code
       
       aux_code:
+        dictionary: ZRM_Aux-code_4.3
         learn_trigger: ";"
         no_learn_trigger: ";;"
         show_aux_notice: true
@@ -123,12 +124,18 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
     1. 选择辅码码表
 
-       `engine/filters` 中的 `lua_filter@*aux_code@` 前缀不要修改，最后一段应填写辅码 txt 文件名（不带后缀）。例如：
+       `engine/filters` 固定填写 `lua_filter@*aux_code`，辅码 txt 文件名（不带后缀）在 `aux_code/dictionary` 中配置。例如：
 
        ```yaml
-       - lua_filter@*aux_code@flypy_full
-       - lua_filter@*aux_code@cangjie5_quick_code
+       aux_code:
+         dictionary: flypy_full
+
+       # 或
+       aux_code:
+         dictionary: cangjie5_quick_code
        ```
+
+       `dictionary` 未设置或为空时，默认使用 `ZRM_Aux-code_4.3`。
 
        > :warning: 辅码文件必须放在 Rime 用户目录下的 `aux_code/` 目录。
        >
@@ -141,6 +148,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
        ```yaml
        aux_code:
+         dictionary: ZRM_Aux-code_4.3  # 辅码码表文件名，不含 .txt
          learn_trigger: ";"       # 辅码筛选，允许候选词进入用户词库
          no_learn_trigger: ";;"   # 辅码筛选，仅上屏，不进入用户词库
          show_aux_notice: true     # 在候选中显示单字辅码提示
@@ -190,10 +198,11 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 
        预发布版本自动跟踪 npm 的 `beta` 标签，用于验证更新流程；正式版本只跟踪 `latest`。发布正式版时，`beta` 用户会升级到对应稳定版本。
 
-       从旧版本升级时，插件会继续读取原先位于 `key_binder` 下的配置，并在首次选定候选前持续提醒迁移。新配置优先，更新器不会自动修改任何 YAML：
+       从旧版本升级时，插件会继续读取旧 filter 写法及原先位于 `key_binder` 下的配置，并在首次选定候选前持续提醒迁移。新配置优先，更新器不会自动修改任何 YAML：
 
        | 旧配置 | 新配置 |
        | --- | --- |
+       | `lua_filter@*aux_code@<码表名>` | `lua_filter@*aux_code` 与 `aux_code/dictionary: <码表名>` |
        | `key_binder/aux_code_trigger` | `aux_code/learn_trigger` |
        | `key_binder/aux_code_learn_trigger` | `aux_code/learn_trigger` |
        | `key_binder/aux_code_no_learn_trigger` | `aux_code/no_learn_trigger` |
@@ -256,7 +265,7 @@ RIME 输入法辅助码与音形分离插件 -> <a href="https://www.bilibili.co
 ```yaml
 engine:
   filters:
-    - lua_filter@*aux_code/aux_code@aux_code/cangjie5_double
+    - lua_filter@*aux_code
     - simplifier
     - uniquifier
 ```
@@ -270,7 +279,7 @@ engine:
   filters:
     - simplifier
     - uniquifier
-    - lua_filter@*aux_code/aux_code@aux_code/cangjie5_double
+    - lua_filter@*aux_code
 ```
   
 则 lua 脚本会在汉字简化后处理，**打出简体字的辅码，内部会按照对应的繁体字处理**，但此时**无法正确选择「一简对多繁」情况下繁体字的编码**。

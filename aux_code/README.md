@@ -14,8 +14,9 @@
 
 ## 使用说明
 
-- `lua_filter@*aux_code@<文件名去掉 .txt>` 中的名称需要与上表文件名对应。
-- 例如：`lua_filter@*aux_code@ZRM_Aux-code_4.3` 对应 `ZRM_Aux-code_4.3.txt`。
+- `engine/filters` 固定填写 `lua_filter@*aux_code`。
+- 在 `aux_code/dictionary` 中填写上表文件名去掉 `.txt` 后的部分。
+- 例如 `dictionary: ZRM_Aux-code_4.3` 对应 `ZRM_Aux-code_4.3.txt`。
 
 ## 定制码表
 
@@ -30,7 +31,7 @@
 
 首先，将相关内容或代码保存为 txt 文件，例如命名为 `my_aux_code.txt`，并放到 `config/rime/aux_code/` 目录。
 
-接着，需要在 `*.custom.yaml` 文件的相应部分作出修改，把原有的 `- lua_filter@*aux_code@ZRM_Aux-code_4.3` 替换为 `- lua_filter@*aux_code@my_aux_code`（注意，这里不需要加 `.txt` 后缀）。
+接着，在 `*.custom.yaml` 的 `aux_code` 配置中设置 `dictionary: my_aux_code`（不加 `.txt` 后缀）；`engine/filters` 仍保持 `- lua_filter@*aux_code`。
 
 修改完成后，重新配置 Rime 输入法，新的设置便会生效。
 

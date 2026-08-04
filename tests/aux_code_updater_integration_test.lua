@@ -118,7 +118,7 @@ local function make_init_env()
     }
 
     return {
-        name_space = "aux_code_updater_test",
+        name_space = "*aux_code",
         engine = {
             schema = { config = config },
             context = {
@@ -518,7 +518,7 @@ end
 -- Test 7: AuxFilter.VERSION is set --
 --------------------------------------------------
 local function test_version_is_set()
-    assert_equal(AuxFilter.VERSION, "1.0.0-beta.3", "VERSION should be beta.3")
+    assert_equal(AuxFilter.VERSION, "1.0.0-beta.4", "VERSION should be beta.4")
 end
 
 --------------------------------------------------

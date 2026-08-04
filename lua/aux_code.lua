@@ -1,5 +1,6 @@
 local AuxFilter = {}
-AuxFilter.VERSION = "1.0.0-beta.3"
+AuxFilter.VERSION = "1.0.0-beta.4"
+local DEFAULT_DICTIONARY = "ZRM_Aux-code_4.3"
 local parse_aux_input
 local escape_lua_pattern
 local has_non_alpha_after_aux
@@ -54,6 +55,23 @@ local function read_notice_setting(config)
     return true, false
 end
 
+local function read_dictionary_setting(config, name_space)
+    local legacy_name_space = type(name_space) == "string" and name_space ~= ""
+        and name_space ~= "*aux_code" and name_space ~= "aux_code"
+    local configured = get_config_value(config, "get_string", "aux_code/dictionary")
+    if type(configured) == "string" and configured ~= "" then
+        return configured, legacy_name_space
+    end
+
+    if legacy_name_space then
+        local legacy = name_space:match("([^/\\]+)$")
+        if legacy and legacy ~= "" then
+            return legacy, true
+        end
+    end
+    return DEFAULT_DICTIONARY, false
+end
+
 local function build_missing_dict_message(filename)
     return "(⚠️config/rime/aux_code/ 中未找到辅码文件 " .. filename .. ")"
 end
@@ -95,11 +113,16 @@ end
 
 function AuxFilter.init(env)
     -- log.info("** AuxCode filter", env.name_space)
+    local engine = env.engine
+    local config = engine.schema.config
+    local legacy_dictionary
+    env.dictionary, legacy_dictionary = read_dictionary_setting(config, env.name_space)
+
     local shared_data_dir = rime_api.get_shared_data_dir() .. "/aux_code/"
     local user_data_dir = rime_api.get_user_data_dir() .. "/aux_code/"
-    local aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(user_data_dir, env.name_space) -- 程序目录和用户目录都找一下，用户目录优先
+    local aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(user_data_dir, env.dictionary) -- 程序目录和用户目录都找一下，用户目录优先
     if not aux_code then
-        aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(shared_data_dir, env.name_space)
+        aux_code, missing_path, missing_file = AuxFilter.readAuxTxt(shared_data_dir, env.dictionary)
     end
     if aux_code then
         AuxFilter.aux_code = aux_code
@@ -110,14 +133,11 @@ function AuxFilter.init(env)
         AuxFilter.aux_code = {}
         AuxFilter.aux_index = {}
         env.aux_ready = false
-        env.aux_error_msg = build_missing_dict_message(missing_file or (env.name_space .. ".txt"))
+        env.aux_error_msg = build_missing_dict_message(missing_file or (env.dictionary .. ".txt"))
         if log and log.warning then
             log.warning("aux_code: dictionary load failed: " .. (missing_path or ""))
         end
     end
-
-    local engine = env.engine
-    local config = engine.schema.config
 
     -- 新配置优先；仅在对应新键缺失时读取旧 key_binder 配置。
     local learn_trigger, legacy_learn = read_string_with_legacy(config, "aux_code/learn_trigger", {
@@ -153,7 +173,7 @@ function AuxFilter.init(env)
 
     local legacy_notice
     env.show_aux_notice, legacy_notice = read_notice_setting(config)
-    env.uses_legacy_config = legacy_learn or legacy_no_learn or legacy_notice
+    env.uses_legacy_config = legacy_dictionary or legacy_learn or legacy_no_learn or legacy_notice
     env.legacy_notice_pending = env.uses_legacy_config
     env.update_notice = nil
 
