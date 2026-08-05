@@ -1,6 +1,6 @@
 {
   "name": "rime-lua-aux-code",
-  "version": "1.0.0-beta.4",
+  "version": "1.0.0",
   "description": "Rime Lua auxiliary code filter",
   "license": "MIT",
   "repository": {
@@ -19,7 +19,7 @@
     "schema": 1,
     "updaterApi": 1,
     "files": {
-      "lua/aux_code.lua": "sha512-YQ6UuF2+6CAW2YmqMfYIBhkEmynLtUCziec1fPGEeXkw8NlKGG0GynhyIllxlVovzpUAy+p/HaktnTiLZXWMTg==",
+      "lua/aux_code.lua": "sha512-wfo9PjToLKwSoyZPQEO3mE5qah4wvmNuL/cGpd74nmcdG0QHVXLyX7Ilt0Zpe4kcDUzYiqPWqIBhKn4w5SEdLQ==",
       "lua/aux_code_updater.lua": "sha512-hRh7mn/t6WY+sq/0LTjXWMgLu77sXsQ/+FHIc87kADxricdIxI5f8aeGJtQcMGYHY4dFT4OuZjRU0a905PFj5g=="
     }
   },

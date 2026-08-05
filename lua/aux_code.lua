@@ -1,5 +1,5 @@
 local AuxFilter = {}
-AuxFilter.VERSION = "1.0.0-beta.4"
+AuxFilter.VERSION = "1.0.0"
 local DEFAULT_DICTIONARY = "ZRM_Aux-code_4.3"
 local parse_aux_input
 local escape_lua_pattern
