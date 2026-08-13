@@ -53,9 +53,3 @@ jobs:
           else
             npm publish --provenance --access public --tag latest
           fi
-
-      - name: Point beta tag to stable release
-        if: ${{ !contains(github.ref_name, '-') }}
-        run: npm dist-tag add "rime-lua-aux-code@${GITHUB_REF_NAME#v}" beta
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
