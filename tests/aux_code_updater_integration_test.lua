@@ -518,7 +518,7 @@ end
 -- Test 7: AuxFilter.VERSION is set --
 --------------------------------------------------
 local function test_version_is_set()
-    assert_equal(AuxFilter.VERSION, "1.0.0", "VERSION should be stable 1.0.0")
+    assert_equal(AuxFilter.VERSION, "1.0.1", "VERSION should be stable 1.0.1")
 end
 
 --------------------------------------------------
