@@ -282,6 +282,13 @@ local function parse_semver(version)
     }
 end
 
+local function read_installed_version(lua_dir)
+    local content = read_file(path_join(lua_dir, "aux_code.lua"))
+    local version = content and content:match('AuxFilter%.VERSION%s*=%s*"([^"]+)"')
+    if not parse_semver(version) then return nil end
+    return version
+end
+
 local function compare_prerelease(a, b)
     if not a and not b then return 0 end
     if not a then return 1 end
@@ -848,10 +855,28 @@ local function advance_phase(h)
             local hash_file = path_join(work_dir(h), fname .. ".sha512")
             local hex = extract_sha512_hex(read_file(hash_file) or "")
             if not hex or not verify_sri(hex, h.current_meta.files[fname]) then
+                local installed_version = read_installed_version(h.lua_dir)
+                if installed_version and installed_version ~= h.current_version then
+                    h.current_version = installed_version
+                    local installed_semver = parse_semver(installed_version)
+                    h.dist_tag = installed_semver.is_prerelease and "beta" or "latest"
+                    h.disk_version_changed = installed_version
+                    h.current_meta = nil
+                    h.phase = PHASE.LAUNCH_CURRENT_META
+                    return
+                end
                 h.notice = "本地文件 " .. fname .. " 已被修改，自动更新取消"
                 h.notice_consumed = false
                 h.phase = PHASE.NOTIFIED; return
             end
+        end
+        if h.disk_version_changed then
+            h.remote_version = h.disk_version_changed
+            h.disk_version_changed = nil
+            h.notice = "已自动更新到 " .. h.remote_version .. "，请完全重启输入法以生效"
+            h.notice_consumed = false
+            h.phase = PHASE.DONE
+            return
         end
         h.phase = PHASE.LAUNCH_TARGET_META
         return
@@ -1116,7 +1141,7 @@ local function advance_phase(h)
             h.phase = PHASE.ERROR
             return
         end
-        h.notice = "已自动更新到 " .. h.remote_version .. "，请重新部署 Rime 以生效"
+        h.notice = "已自动更新到 " .. h.remote_version .. "，请完全重启输入法以生效"
         h.notice_consumed = false
         h.phase = PHASE.DONE
         return

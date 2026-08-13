@@ -600,6 +600,59 @@ local function test_same_version_returns_to_idle()
     Updater.fini(h)
 end
 
+local function test_stale_runtime_version_rechecks_installed_version()
+    local d = make_tmp()
+    local work = d .. "/aux_code/.update/work"
+    local lua_dir = d .. "/lua"
+    mkdir(work)
+    mkdir(lua_dir)
+
+    local aux = assert(io.open(lua_dir .. "/aux_code.lua", "wb"))
+    aux:write('local AuxFilter = {}\nAuxFilter.VERSION = "1.0.0"\n')
+    aux:close()
+    local updater = assert(io.open(lua_dir .. "/aux_code_updater.lua", "wb"))
+    updater:write("return {}\n")
+    updater:close()
+
+    local h = Updater.init({ config = make_config("auto"), user_data_dir = d, current_version = "1.0.0-beta.4" })
+    h.state = {}
+    h.phase = T.PHASE.HASHING_LOCAL
+    h.current_meta = {
+        files = {
+            ["aux_code.lua"] = "sha512-old",
+            ["aux_code_updater.lua"] = "sha512-old",
+        },
+    }
+    for _, name in ipairs(T.UPDATE_FILES) do
+        local hash = assert(io.open(work .. "/" .. name .. ".sha512", "wb"))
+        hash:write(string.rep("a", 128), "  ", name, "\n")
+        hash:close()
+    end
+
+    Updater.poll(h)
+
+    assert_eq(h.current_version, "1.0.0", "disk version replaces stale runtime version")
+    assert_eq(h.dist_tag, "latest", "refreshed stable version tracks latest")
+    assert_eq(h.phase, T.PHASE.LAUNCH_CURRENT_META, "installed version metadata is rechecked")
+    assert_nil(h.notice, "stale runtime version is not reported as a local modification")
+
+    local verified_hex = string.rep("b", 128)
+    local verified_sri = "sha512-" .. T.BASE64_ENCODE(T.HEX_TO_BINARY(verified_hex))
+    h.current_meta = { files = {} }
+    for _, name in ipairs(T.UPDATE_FILES) do
+        h.current_meta.files[name] = verified_sri
+        local hash = assert(io.open(work .. "/" .. name .. ".sha512", "wb"))
+        hash:write(verified_hex, "\n")
+        hash:close()
+    end
+    h.phase = T.PHASE.HASHING_LOCAL
+    Updater.poll(h)
+
+    assert_eq(h.phase, T.PHASE.DONE, "verified disk update waits for input method restart")
+    assert_ok(h.notice and h.notice:find("完全重启输入法", 1, true), "restart notice explains required action")
+    Updater.fini(h)
+end
+
 local function test_transaction_backup_restore()
     local d = make_tmp()
     local backup_dir = d .. "/aux_code/.update/backup"
@@ -697,6 +750,7 @@ test_updater_poll_error_caught()
 test_updater_fini_preserves_worker_dir()
 test_last_attempt_rate_limit()
 test_same_version_returns_to_idle()
+test_stale_runtime_version_rechecks_installed_version()
 test_transaction_backup_restore()
 
 for _, path in ipairs(TMP_DIRS) do cleanup(path) end
